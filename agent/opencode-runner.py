@@ -31,20 +31,6 @@ OPENCODE_PORT = 4096      # Port for opencode serve
 OPENCODE_MODEL = "zen/big-pickle"  # Free tier model via OpenCode Zen
 OPENCODE_ATTACH = f"http://localhost:{OPENCODE_PORT}"
 
-# Ensure Zen API key is available (from auth.json or env)
-ZEN_API_KEY = os.environ.get("ZEN_API_KEY", "")
-if not ZEN_API_KEY:
-    # Try to read from opencode auth.json
-    auth_path = Path.home() / ".local/share/opencode/auth.json"
-    if auth_path.exists():
-        try:
-            auth_data = json.loads(auth_path.read_text())
-            ZEN_API_KEY = auth_data.get("opencode-go", {}).get("key", "")
-        except Exception:
-            pass
-    if ZEN_API_KEY:
-        os.environ["ZEN_API_KEY"] = ZEN_API_KEY
-
 # Hard-coded safety: repos we never write to directly
 UPSTREAM_REPOS = set()  # Populated from preflight check
 

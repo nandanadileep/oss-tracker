@@ -34,7 +34,7 @@ Commit and push
 
 ## Why Self-Hosted?
 
-1. **opencode is already configured** — no need to manage API keys in GitHub secrets
+1. **opencode is already configured** — Zen free tier works without API keys
 2. **OpenCode Zen free tier** — zero cost, uses models like `big-pickle`, `deepseek-v4-flash-free`, `gpt-5-nano`
 3. **Persistent state** — opencode server stays warm between runs
 4. **gh CLI authenticated** — already set up as `Mr-Neutr0n`
