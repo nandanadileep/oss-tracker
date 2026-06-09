@@ -149,9 +149,14 @@ jobs:
 
       - name: Commit and push updates
         if: github.event.inputs.dry_run != 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.email "64578610+Mr-Neutr0n@users.noreply.github.com"
           git config user.name "Mr-Neutr0n"
+          
+          # Set remote URL with token for push
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
           
           # Add any updated state files
           git add -A .oss-harness/state/

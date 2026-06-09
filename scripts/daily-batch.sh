@@ -64,9 +64,15 @@ fi
 mapfile -t PR_LIST < <(python3 -c "
 import json
 with open('$QUEUE_FILE') as f:
-    queue = json.load(f)
-    # Filter out done/deferred items if the queue has structure
-    # For now, assume simple list of 'owner/repo#number' strings
+    data = json.load(f)
+    # Handle both old flat array and new structured format
+    if isinstance(data, list):
+        queue = data
+    elif isinstance(data, dict) and 'queue' in data:
+        queue = data['queue']
+    else:
+        queue = []
+    
     for item in queue[:$BATCH_SIZE]:
         if isinstance(item, str) and '#' in item:
             print(item)
