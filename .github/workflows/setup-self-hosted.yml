@@ -1,0 +1,40 @@
+name: Setup Self-Hosted Runner
+
+on:
+  workflow_dispatch:
+
+jobs:
+  setup-guide:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Print setup instructions
+        run: |
+          echo "═══════════════════════════════════════════════════════════════"
+          echo "  Self-Hosted Runner Setup Guide"
+          echo "═══════════════════════════════════════════════════════════════"
+          echo ""
+          echo "The daily OSS agent requires a self-hosted runner because:"
+          echo "  1. opencode is already configured on your machine"
+          echo "  2. Fireworks AI free tier is used (no API key needed in secrets)"
+          echo "  3. gh CLI is already authenticated"
+          echo ""
+          echo "Run the setup script on your machine:"
+          echo ""
+          echo "  chmod +x scripts/setup-runner.sh"
+          echo "  ./scripts/setup-runner.sh"
+          echo ""
+          echo "This will:"
+          echo "  - Download the GitHub Actions runner"
+          echo "  - Register it with your oss-tracker repo"
+          echo "  - Create a startup script"
+          echo "  - (macOS) Create a LaunchAgent for automatic startup"
+          echo ""
+          echo "After setup, the runner will appear at:"
+          echo "  https://github.com/Mr-Neutr0n/oss-tracker/settings/actions/runners"
+          echo ""
+          echo "The runner will pick up jobs from the 'daily-oss-agent.yml' workflow."
+          echo ""
+          echo "═══════════════════════════════════════════════════════════════"

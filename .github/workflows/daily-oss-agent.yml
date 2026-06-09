@@ -1,0 +1,85 @@
+name: Daily OSS Agent
+
+on:
+  schedule:
+    - cron: "0 9 * * *"  # 9 AM UTC daily
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: "Number of PRs to process (default: 5)"
+        required: false
+        default: "5"
+      dry_run:
+        description: "Dry run (no writes)"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  daily-batch:
+    runs-on: [self-hosted, macOS]  # Uses the user's machine where opencode is configured
+    # Fallback: uncomment below and comment above to use GitHub-hosted runner
+    # runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout oss-tracker
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Verify tooling
+        run: |
+          echo "=== Tooling Check ==="
+          which gh && gh --version | head -1
+          which opencode && opencode --version | head -1
+          which python3 && python3 --version
+          which git && git --version | head -1
+          echo "=== Environment ==="
+          echo "HOME=$HOME"
+          echo "PATH=$PATH"
+          echo "Runner: $(uname -a)"
+
+      - name: Run daily batch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BATCH_SIZE: ${{ github.event.inputs.batch_size || '5' }}
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+          # For GitHub-hosted runner fallback, set FIREWORKS_API_KEY here
+          # FIREWORKS_API_KEY: ${{ secrets.FIREWORKS_API_KEY }}
+        run: |
+          chmod +x scripts/daily-batch.sh
+          ./scripts/daily-batch.sh "$BATCH_SIZE" "$DRY_RUN"
+
+      - name: Commit and push updates
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.email "64578610+Mr-Neutr0n@users.noreply.github.com"
+          git config user.name "Mr-Neutr0n"
+          
+          # Add any updated state files
+          git add -A .oss-harness/state/
+          git add -A .oss-harness/reports/
+          git add -A progress.md
+          
+          # Only commit if there are changes
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "automation: daily batch $(date -u +%Y-%m-%d)"
+            git push origin main
+          fi
+
+      - name: Create summary issue (if failures)
+        if: failure()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            -R "${{ github.repository }}" \
+            -t "Daily batch failed: $(date -u +%Y-%m-%d)" \
+            -b "The daily OSS agent workflow failed. Check the Actions logs for details." \
+            -l "automation-failure"
