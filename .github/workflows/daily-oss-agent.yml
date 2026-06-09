@@ -48,8 +48,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BATCH_SIZE: ${{ github.event.inputs.batch_size || '5' }}
           DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
-          # For GitHub-hosted runner fallback, set FIREWORKS_API_KEY here
-          # FIREWORKS_API_KEY: ${{ secrets.FIREWORKS_API_KEY }}
+          # OpenCode Zen API key (for self-hosted runner, reads from ~/.local/share/opencode/auth.json)
+          # For GitHub-hosted runner, add ZEN_API_KEY to repository secrets
+          ZEN_API_KEY: ${{ secrets.ZEN_API_KEY }}
         run: |
           chmod +x scripts/daily-batch.sh
           ./scripts/daily-batch.sh "$BATCH_SIZE" "$DRY_RUN"

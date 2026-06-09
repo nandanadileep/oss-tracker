@@ -42,10 +42,10 @@ Nandana's tool is a **repo-local CI repair agent** — it fixes the repo it's in
 
 ### Runner Strategy: Self-Hosted (Recommended)
 
-The user already has `opencode` installed at `~/.opencode/bin/opencode` with a Fireworks AI provider configured (`fireworks/deepseek-v4-pro`). Fireworks AI has a generous free tier (1M tokens/day for many models). A self-hosted runner on the user's machine:
+The user already has `opencode` installed at `~/.opencode/bin/opencode` with an **OpenCode Zen** provider configured (free tier). The Zen API key is already stored in `~/.local/share/opencode/auth.json` under `opencode-go`. A self-hosted runner on the user's machine:
 
 - **Uses existing `opencode` config** — no API keys to manage in GitHub secrets
-- **Truly free** — stays within Fireworks free tier for 5 PRs/day
+- **Truly free** — OpenCode Zen free tier includes models like `big-pickle`, `deepseek-v4-flash-free`, `gpt-5-nano`
 - **Persistent state** — `opencode` server doesn't need cold boot on every run
 - **Already has `gh` CLI** — authenticated as `Mr-Neutr0n`
 - **Already has the repo** — `/Users/harikp/Desktop/oss` is the working directory
@@ -54,7 +54,7 @@ The user already has `opencode` installed at `~/.opencode/bin/opencode` with a F
 
 If the user wants to run on GitHub's infrastructure:
 - Install `opencode` in the workflow (via npm or custom installer)
-- Pass `FIREWORKS_API_KEY` as a GitHub secret
+- Pass `ZEN_API_KEY` as a GitHub secret (from `opencode.ai/auth`)
 - Less ideal because: ephemeral state, API key management, cold boot latency
 
 ### Automation Flow
@@ -86,7 +86,7 @@ Based on the docs and the user's existing setup:
 
 ```bash
 # Option 1: Direct run (creates a new session each time)
-opencode run --format json --model fireworks/deepseek-v4-pro \
+opencode run --format json --model zen/big-pickle \
   "Analyze PR #123 in repo X. Context: [structured data]. Return JSON with decision and reasoning."
 
 # Option 2: Attach to a running server (faster, no cold boot)
@@ -136,7 +136,7 @@ We take our `AGENTS.md` hard rules and turn them into code:
 
 ### Phase 3: Intelligence (Future)
 
-1. Dual-model setup: use `deepseek-v4-pro` for analysis, `qwen3p6-plus` for quick triage
+1. Dual-model setup: use `zen/big-pickle` for analysis, `zen/gpt-5-nano` for quick triage
 2. CI log parser: automatically fetch and parse CI failure logs
 3. Automated test verification: run `pytest` locally before pushing fix commits
 

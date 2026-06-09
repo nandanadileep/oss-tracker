@@ -4,7 +4,7 @@
 
 ## Overview
 
-The `oss-tracker` repository now runs an autonomous agent that processes your open-source PR backlog every day. It uses `opencode` in headless mode (no API keys, free via Fireworks AI) to analyze PRs and decide whether to nudge, fix, close, or skip them.
+The `oss-tracker` repository now runs an autonomous agent that processes your open-source PR backlog every day. It uses `opencode` in headless mode with **OpenCode Zen free tier** (zero cost) to analyze PRs and decide whether to nudge, fix, close, or skip them.
 
 ## Architecture
 
@@ -35,7 +35,7 @@ Commit and push
 ## Why Self-Hosted?
 
 1. **opencode is already configured** — no need to manage API keys in GitHub secrets
-2. **Fireworks AI free tier** — stays within 1M tokens/day for 5 PRs
+2. **OpenCode Zen free tier** — zero cost, uses models like `big-pickle`, `deepseek-v4-flash-free`, `gpt-5-nano`
 3. **Persistent state** — opencode server stays warm between runs
 4. **gh CLI authenticated** — already set up as `Mr-Neutr0n`
 5. **Local tools** — git, python3, uv, etc. are all installed
@@ -55,7 +55,7 @@ The agent reads `queue.json` and picks the top 5 actionable PRs:
 For each PR, the agent:
 1. Fetches live data via `gh pr view` (comments, reviews, CI status, files)
 2. Constructs a structured prompt with all context
-3. Sends it to `opencode` (DeepSeek V4 Pro via Fireworks AI)
+3. Sends it to `opencode` (Big Pickle via OpenCode Zen free tier)
 4. Receives a JSON decision:
    ```json
    {
@@ -167,7 +167,7 @@ Click **Run workflow** → set `dry_run: true` → **Run**.
 
 ## Cost
 
-- **Fireworks AI**: Free tier (1M tokens/day) — 5 PRs/day uses ~50K-100K tokens
+- **OpenCode Zen**: Free tier (100 requests/day) — 5 PRs/day uses ~5 requests
 - **GitHub Actions**: Self-hosted runner = free (no GitHub-hosted minutes)
 - **Total**: $0
 
@@ -187,7 +187,7 @@ Click **Run workflow** → set `dry_run: true` → **Run**.
 2. **CI log parser**: Automatically fetch and parse CI failure logs
 3. **Local test verification**: Run `pytest` before pushing fix commits
 4. **Smart deferral**: Auto-requeue PRs after maintainer replies
-5. **Multi-model**: Use `qwen3p6-plus` for quick triage, `deepseek-v4-pro` for deep analysis
+5. **Multi-model**: Use `zen/gpt-5-nano` for quick triage, `zen/big-pickle` for deep analysis
 
 ## License
 
