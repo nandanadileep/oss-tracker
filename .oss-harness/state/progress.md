@@ -613,6 +613,13 @@ Stayed with `vwxyzjn/cleanrl#554` because it was still the highest-leverage acti
 
 ### 2026-06-06 — Session 8 continued: final envpool isolate
 
+### 2026-06-09 — Harness pushed to private GitHub repo
+
+- **Created:** `Mr-Neutr0n/oss-tracker` (private repository) on GitHub.
+- **Pushed:** All 27 files from `/Users/harikp/Desktop/oss` to `main` branch.
+- **Collaborator added:** `nandanadileep` invited with `push` (write) permission.
+- **Rationale:** Cloud backup + shared workspace for the OSS harness. Enables GitHub Actions cron and shared tracking without relying on local files only.
+
 Checked the fresh rerun on `vwxyzjn/cleanrl#554` before returning to colder backlog. The branch was very close: nearly the whole matrix had turned green, leaving only `test-envpool-envs` red.
 
 **Exact remaining failure:**
