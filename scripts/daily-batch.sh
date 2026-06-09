@@ -88,30 +88,6 @@ CLOSED=0
 FIXED=0
 FAILED=0
 
-# Start opencode server in background for reuse
-echo "→ Starting opencode server..."
-opencode serve --port 4096 &
-SERVER_PID=$!
-
-# Wait for server to be ready
-for i in {1..30}; do
-    if curl -s -o /dev/null -w "%{http_code}" http://localhost:4096/health 2>/dev/null | grep -q "200"; then
-        echo -e "${GREEN}✓ opencode server ready${NC}"
-        break
-    fi
-    sleep 1
-    if [[ $i -eq 30 ]]; then
-        echo -e "${YELLOW}⚠ opencode server not ready, continuing anyway${NC}"
-    fi
-done
-
-cleanup() {
-    echo "→ Stopping opencode server..."
-    kill $SERVER_PID 2>/dev/null || true
-    wait $SERVER_PID 2>/dev/null || true
-}
-trap cleanup EXIT
-
 # Process each PR
 for PR_ITEM in "${PR_LIST[@]}"; do
     echo ""

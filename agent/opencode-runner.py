@@ -214,7 +214,6 @@ def run_opencode(prompt: str) -> str:
     """Run opencode in headless mode and return the model text output."""
     cmd = [
         "opencode", "run",
-        "--attach", OPENCODE_ATTACH,
         "--format", "json",
         "--model", OPENCODE_MODEL,
         prompt
@@ -385,19 +384,12 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="No writes")
     args = parser.parse_args()
     
-    server = None
-    try:
-        server = start_opencode_server()
-        decision = analyze_pr(args.repo, args.number, args.dry_run)
-        
-        # For single-PR mode, we just print the decision
-        # In batch mode, the caller (daily-batch.sh) handles execution
-        print(f"\n📋 Final Decision:")
-        print(json.dumps(asdict(decision), indent=2))
-        
-    finally:
-        if server:
-            stop_opencode_server(server)
+    decision = analyze_pr(args.repo, args.number, args.dry_run)
+    
+    # For single-PR mode, we just print the decision
+    # In batch mode, the caller (daily-batch.sh) handles execution
+    print(f"\n📋 Final Decision:")
+    print(json.dumps(asdict(decision), indent=2))
 
 if __name__ == "__main__":
     main()

@@ -33,6 +33,7 @@ jobs:
         run: |
           echo "→ Installing opencode..."
           curl -fsSL https://opencode.ai/install | bash
+          export PATH="$HOME/.opencode/bin:$PATH"
           echo "$HOME/.opencode/bin" >> $GITHUB_PATH
           echo "✓ opencode installed"
           opencode --version
@@ -173,5 +174,4 @@ jobs:
           gh issue create \
             -R "${{ github.repository }}" \
             -t "Daily batch failed: $(date -u +%Y-%m-%d)" \
-            -b "The daily OSS agent workflow failed. Check the Actions logs for details." \
-            -l "automation-failure"
+            -b "The daily OSS agent workflow failed. Check the Actions logs for details."
