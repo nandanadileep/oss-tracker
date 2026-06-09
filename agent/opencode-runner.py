@@ -211,7 +211,7 @@ Analyze now and return the JSON.
 # ── Opencode Execution ─────────────────────────────────────────────────────
 
 def run_opencode(prompt: str) -> str:
-    """Run opencode in headless mode and return the raw output."""
+    """Run opencode in headless mode and return the model text output."""
     cmd = [
         "opencode", "run",
         "--attach", OPENCODE_ATTACH,
@@ -225,38 +225,49 @@ def run_opencode(prompt: str) -> str:
     if result.returncode != 0:
         raise RuntimeError(f"opencode run failed: {result.stderr}")
     
-    # Parse JSON events from output
+    # Parse JSON events from output - collect text from "text" events
     output_lines = result.stdout.strip().split("\n")
-    for line in reversed(output_lines):
+    text_parts = []
+    for line in output_lines:
         try:
             event = json.loads(line)
-            if event.get("type") == "message.updated":
-                content = event.get("properties", {}).get("content", "")
-                return content
+            if event.get("type") == "text":
+                text = event.get("part", {}).get("text", "")
+                if text:
+                    text_parts.append(text)
         except json.JSONDecodeError:
             continue
+    
+    if text_parts:
+        return "\n".join(text_parts)
     
     # Fallback: return raw output
     return result.stdout
 
 def parse_decision(output: str) -> Decision:
     """Extract JSON decision from opencode output."""
-    # Try to find JSON block
-    json_match = re.search(r'\{.*\}', output, re.DOTALL)
-    if not json_match:
+    # Find the last JSON block in the output
+    json_blocks = re.findall(r'\{.*\}', output, re.DOTALL)
+    if not json_blocks:
         raise ValueError("No JSON found in opencode output")
     
-    try:
-        data = json.loads(json_match.group())
-        return Decision(
-            action=data.get("action", "skip"),
-            reason=data.get("reason", "parse error"),
-            confidence=data.get("confidence", 1),
-            comment_body=data.get("comment_body"),
-            requires_human=data.get("requires_human", False)
-        )
-    except json.JSONDecodeError as e:
-        raise ValueError(f"Invalid JSON in opencode output: {e}")
+    # Try each block from last to first
+    for block in reversed(json_blocks):
+        try:
+            data = json.loads(block)
+            # Validate it has the expected fields
+            if "action" in data:
+                return Decision(
+                    action=data.get("action", "skip"),
+                    reason=data.get("reason", "parse error"),
+                    confidence=data.get("confidence", 1),
+                    comment_body=data.get("comment_body"),
+                    requires_human=data.get("requires_human", False)
+                )
+        except json.JSONDecodeError:
+            continue
+    
+    raise ValueError("Invalid JSON in opencode output")
 
 # ── Execution ───────────────────────────────────────────────────────────────
 
@@ -336,7 +347,7 @@ def analyze_pr(repo: str, number: int, dry_run: bool) -> Decision:
         ci_status=ci_status,
         comments=pr_data.get("comments", []),
         reviews=pr_data.get("reviews", []),
-        files_changed=pr_data.get("files", {}).get("totalCount", 0),
+        files_changed=len(pr_data.get("files", [])),
         additions=pr_data.get("additions", 0),
         deletions=pr_data.get("deletions", 0),
         stale_days=0,  # Calculated from updatedAt
