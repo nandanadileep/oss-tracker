@@ -9,9 +9,11 @@ The `oss-tracker` repository now runs an autonomous agent that processes your op
 ## Architecture
 
 ```
-GitHub Actions (cron: daily 9 AM UTC)
+GitHub Actions (cron: daily 9 AM UTC, cloud-hosted runner)
   ↓
-Self-Hosted Runner (your machine)
+Install opencode (via official install script)
+  ↓
+Configure Zen provider (free tier, no API key)
   ↓
 Checkout oss-tracker
   ↓
@@ -21,24 +23,23 @@ Select top 5 PRs
   ↓
 For each PR:
   a. Fetch live data (gh pr view, comments, CI status)
-  b. Start opencode serve (if not running)
-  c. Run opencode run --attach --format json
-  d. Parse JSON decision
-  e. Execute via gh CLI
-  f. Log to progress.md
+  b. Run opencode run --format json
+  c. Parse JSON decision
+  d. Execute via gh CLI
+  e. Log to progress.md
   ↓
 Update queue.json
   ↓
 Commit and push
 ```
 
-## Why Self-Hosted?
+## Why GitHub Actions Cloud?
 
-1. **opencode is already configured** — Zen free tier works without API keys
-2. **OpenCode Zen free tier** — zero cost, uses models like `big-pickle`, `deepseek-v4-flash-free`, `gpt-5-nano`
-3. **Persistent state** — opencode server stays warm between runs
-4. **gh CLI authenticated** — already set up as `Mr-Neutr0n`
-5. **Local tools** — git, python3, uv, etc. are all installed
+1. **Runs 24/7** — No need to keep your laptop on
+2. **OpenCode Zen free tier** — zero cost, no API key required
+3. **Always fresh** — Each run starts with a clean environment
+4. **GitHub-native** — Uses `GITHUB_TOKEN` for all operations
+5. **Visible** — Workflow runs show in GitHub Actions UI
 
 ## Daily Flow
 
@@ -121,37 +122,16 @@ The automation codifies the harness's hard rules:
 
 ## Setup
 
-### 1. Register the Runner
+### 1. Enable GitHub Actions
 
-On your machine:
+In your repository settings, make sure GitHub Actions is enabled:
+https://github.com/Mr-Neutr0n/oss-tracker/settings/actions
 
-```bash
-cd ~/oss
-chmod +x scripts/setup-runner.sh
-./scripts/setup-runner.sh
-```
+### 2. Verify `GITHUB_TOKEN` Permissions
 
-This downloads the GitHub Actions runner and registers it with `oss-tracker`.
+The workflow uses `GITHUB_TOKEN` which is automatically provided. Make sure it has `contents: write` and `issues: write` permissions (already set in the workflow).
 
-### 2. Start the Runner
-
-```bash
-# Manual
-cd ~/oss-runner
-./start-runner.sh
-
-# Or as a macOS service (recommended)
-launchctl load ~/Library/LaunchAgents/com.github.oss-agent.runner.plist
-```
-
-### 3. Verify
-
-In GitHub, check:
-https://github.com/Mr-Neutr0n/oss-tracker/settings/actions/runners
-
-You should see `oss-agent-<hostname>` as an idle runner.
-
-### 4. Trigger a Test Run
+### 3. Trigger a Test Run
 
 Go to:
 https://github.com/Mr-Neutr0n/oss-tracker/actions/workflows/daily-oss-agent.yml
@@ -168,18 +148,18 @@ Click **Run workflow** → set `dry_run: true` → **Run**.
 ## Cost
 
 - **OpenCode Zen**: Free tier (100 requests/day) — 5 PRs/day uses ~5 requests
-- **GitHub Actions**: Self-hosted runner = free (no GitHub-hosted minutes)
+- **GitHub Actions**: Ubuntu runner = free (public repos get unlimited minutes)
 - **Total**: $0
 
 ## Troubleshooting
 
 | Issue | Solution |
 |---|---|
-| Runner not showing up | Check `gh auth status` and re-run setup |
-| opencode not found | Add `~/.opencode/bin` to PATH in the runner config |
-| opencode server fails | Check if port 4096 is already in use; change `OPENCODE_PORT` |
-| PR analysis fails | Check `gh` CLI permissions; ensure `repo` scope is granted |
+| opencode install fails | Check network connectivity; retry workflow |
+| Zen model not found | Verify `opencode.json` is correctly written in workflow |
+| PR analysis fails | Check `GITHUB_TOKEN` permissions; ensure `repo` scope is granted |
 | Batch creates no actions | Queue may be empty or all PRs recently nudged |
+| Rate limit exceeded | Zen free tier allows 100 requests/day; batch size is already capped at 5 |
 
 ## Future Enhancements
 

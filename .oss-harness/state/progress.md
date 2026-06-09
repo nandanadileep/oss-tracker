@@ -649,8 +649,8 @@ Checked the fresh rerun on `vwxyzjn/cleanrl#554` before returning to colder back
 - Tested with `anthropics/skills#362` → decision: skip (already nudged)
 - Tested with `Lightning-AI/pytorch-lightning#21539` → decision: skip (already nudged)
 - Zen free tier models available: big-pickle, deepseek-v4-flash-free, gpt-5-nano, mimo-v2.5-free, qwen3.6-plus-free
-- Next: Run the setup script and trigger first real batch
-- Tested with  → decision: skip (already nudged)
-- Zen free tier models available: big-pickle, deepseek-v4-flash-free, gpt-5-nano, mimo-v2.5-free, qwen3.6-plus-free
-- Next: Run the setup script and trigger first real batch
+- Verified: GitHub Actions cloud works — installed opencode fresh, configured Zen, ran successfully
+- Updated workflow to use `ubuntu-latest` instead of self-hosted runner
+- Removed all self-hosted runner setup scripts
+- Next: Trigger first real batch from GitHub Actions
 

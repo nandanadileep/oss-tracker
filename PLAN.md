@@ -40,22 +40,38 @@ Nandana's tool is a **repo-local CI repair agent** — it fixes the repo it's in
 
 ## 2. Proposed Architecture
 
-### Runner Strategy: Self-Hosted (Recommended)
+### Runner Strategy: GitHub Actions Cloud
 
-The user already has `opencode` installed at `~/.opencode/bin/opencode` with an **OpenCode Zen** provider configured (free tier). The Zen API key is already stored in `~/.local/share/opencode/auth.json` under `opencode-go`. A self-hosted runner on the user's machine:
+The automation runs on GitHub-hosted `ubuntu-latest` runners, installing `opencode` fresh each time:
 
-- **Uses existing `opencode` config** — no API keys to manage in GitHub secrets
-- **Truly free** — OpenCode Zen free tier includes models like `big-pickle`, `deepseek-v4-flash-free`, `gpt-5-nano`
-- **Persistent state** — `opencode` server doesn't need cold boot on every run
-- **Already has `gh` CLI** — authenticated as `Mr-Neutr0n`
-- **Already has the repo** — `/Users/harikp/Desktop/oss` is the working directory
+- **Runs 24/7** — No dependency on your laptop being on
+- **Truly free** — OpenCode Zen free tier + GitHub Actions public repo minutes = $0
+- **No API keys** — Zen free tier requires no authentication
+- **GitHub-native** — Uses `GITHUB_TOKEN` for all operations
+- **Visible** — Workflow runs show in GitHub Actions UI
 
-### Alternative: GitHub-Hosted Runner
+### Installation in Workflow
 
-If the user wants to run on GitHub's infrastructure:
-- Install `opencode` in the workflow (via npm or custom installer)
-- Pass `ZEN_API_KEY` as a GitHub secret (from `opencode.ai/auth`)
-- Less ideal because: ephemeral state, API key management, cold boot latency
+```bash
+# Install opencode via official script
+curl -fsSL https://opencode.ai/install | bash
+
+# Configure Zen provider (no API key needed)
+mkdir -p ~/.config/opencode
+cat > ~/.config/opencode/opencode.json << 'EOF'
+{
+  "model": "zen/big-pickle",
+  "provider": {
+    "zen": {
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "https://opencode.ai/zen/v1"
+      }
+    }
+  }
+}
+EOF
+```
 
 ### Automation Flow
 
@@ -96,7 +112,7 @@ opencode run --attach http://localhost:4096 --format json \
   "Analyze PR #123..."
 ```
 
-For the automation, Option 2 is better because it avoids the cold boot latency on every PR. The workflow can start `opencode serve` in the background, then attach for each PR analysis.
+For the automation, we use direct run (`opencode run`) because each workflow is ephemeral — no need to maintain a persistent server.
 
 ## 3. Safety Codified in the Automation
 
@@ -118,14 +134,15 @@ We take our `AGENTS.md` hard rules and turn them into code:
 ### Phase 1: Infrastructure (This Session)
 
 1. Create `.github/workflows/daily-oss-agent.yml` — the main cron workflow
-2. Create `.github/workflows/setup-self-hosted.yml` — instructions for registering the runner
-3. Create `agent/opencode-runner.py` — Python wrapper that:
-   - Starts `opencode serve` in background
-   - Runs `opencode run --attach` for each PR
+   - Runs on `ubuntu-latest` (GitHub-hosted)
+   - Installs opencode via official install script
+   - Configures Zen provider with no API key
+   - Runs the daily batch
+2. Create `agent/opencode-runner.py` — Python wrapper that:
+   - Runs `opencode run` for each PR
    - Parses JSON output
    - Executes decisions via `gh` CLI
-   - Stops `opencode serve` on completion
-4. Create `scripts/daily-batch.sh` — shell orchestrator
+3. Create `scripts/daily-batch.sh` — shell orchestrator
 
 ### Phase 2: Guardrails (Next Session)
 
@@ -144,13 +161,11 @@ We take our `AGENTS.md` hard rules and turn them into code:
 
 | File | Purpose |
 |---|---|
-| `.github/workflows/daily-oss-agent.yml` | Main cron workflow |
-| `.github/workflows/setup-self-hosted.yml` | Self-hosted runner setup guide |
+| `.github/workflows/daily-oss-agent.yml` | Main cron workflow (GitHub-hosted runner) |
 | `agent/opencode-runner.py` | Python wrapper for `opencode` CLI |
 | `agent/guardrails.py` | Deterministic safety guardrails |
 | `agent/state.py` | Attempt tracking, file edit log |
 | `scripts/daily-batch.sh` | Shell orchestrator |
-| `scripts/setup-runner.sh` | One-time runner registration script |
 | `docs/AUTOMATION.md` | How the automation works |
 
 ## 6. Daily Schedule

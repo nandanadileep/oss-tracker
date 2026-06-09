@@ -20,9 +20,7 @@ permissions:
 
 jobs:
   daily-batch:
-    runs-on: [self-hosted, macOS]  # Uses the user's machine where opencode is configured
-    # Fallback: uncomment below and comment above to use GitHub-hosted runner
-    # runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # GitHub-hosted runner (cloud)
     
     steps:
       - name: Checkout oss-tracker
@@ -30,6 +28,98 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
+
+      - name: Install opencode
+        run: |
+          echo "→ Installing opencode..."
+          curl -fsSL https://opencode.ai/install | bash
+          echo "$HOME/.opencode/bin" >> $GITHUB_PATH
+          echo "✓ opencode installed"
+          opencode --version
+
+      - name: Configure opencode for Zen
+        run: |
+          echo "→ Configuring OpenCode Zen provider..."
+          mkdir -p "$HOME/.config/opencode"
+          cat > "$HOME/.config/opencode/opencode.json" << 'EOF'
+          {
+            "$schema": "https://opencode.ai/config.json",
+            "model": "zen/big-pickle",
+            "small_model": "zen/gpt-5-nano",
+            "provider": {
+              "zen": {
+                "npm": "@ai-sdk/openai-compatible",
+                "name": "OpenCode Zen",
+                "options": {
+                  "baseURL": "https://opencode.ai/zen/v1"
+                },
+                "models": {
+                  "big-pickle": {
+                    "name": "Big Pickle",
+                    "id": "big-pickle",
+                    "modalities": {
+                      "input": ["text"],
+                      "output": ["text"]
+                    },
+                    "limit": {
+                      "context": 200000,
+                      "output": 65536
+                    }
+                  },
+                  "deepseek-v4-flash-free": {
+                    "name": "DeepSeek V4 Flash Free",
+                    "id": "deepseek-v4-flash-free",
+                    "modalities": {
+                      "input": ["text"],
+                      "output": ["text"]
+                    },
+                    "limit": {
+                      "context": 200000,
+                      "output": 65536
+                    }
+                  },
+                  "gpt-5-nano": {
+                    "name": "GPT 5 Nano",
+                    "id": "gpt-5-nano",
+                    "modalities": {
+                      "input": ["text"],
+                      "output": ["text"]
+                    },
+                    "limit": {
+                      "context": 128000,
+                      "output": 32768
+                    }
+                  },
+                  "mimo-v2.5-free": {
+                    "name": "MiMo V2.5 Free",
+                    "id": "mimo-v2.5-free",
+                    "modalities": {
+                      "input": ["text"],
+                      "output": ["text"]
+                    },
+                    "limit": {
+                      "context": 200000,
+                      "output": 65536
+                    }
+                  },
+                  "qwen3.6-plus-free": {
+                    "name": "Qwen3.6 Plus Free",
+                    "id": "qwen3.6-plus-free",
+                    "modalities": {
+                      "input": ["text"],
+                      "output": ["text"]
+                    },
+                    "limit": {
+                      "context": 200000,
+                      "output": 65536
+                    }
+                  }
+                }
+              }
+            }
+          }
+          EOF
+          echo "✓ Zen provider configured"
 
       - name: Verify tooling
         run: |
@@ -41,7 +131,11 @@ jobs:
           echo "=== Environment ==="
           echo "HOME=$HOME"
           echo "PATH=$PATH"
-          echo "Runner: $(uname -a)"
+
+      - name: Test opencode with Zen
+        run: |
+          echo "→ Testing opencode with Zen free tier..."
+          opencode run --model zen/gpt-5-nano "Say 'Zen cloud test'" 2>&1 | head -10
 
       - name: Run daily batch
         env:
