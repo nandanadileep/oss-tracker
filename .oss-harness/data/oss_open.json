@@ -1,0 +1,2836 @@
+[
+  {
+    "createdAt": "2026-02-15T16:43:53Z",
+    "isDraft": false,
+    "number": 9384,
+    "repository": {
+      "name": "vision",
+      "nameWithOwner": "pytorch/vision"
+    },
+    "state": "open",
+    "title": "fix resize_mask ignoring NEAREST_EXACT interpolation",
+    "updatedAt": "2026-02-23T18:04:49Z",
+    "url": "https://github.com/pytorch/vision/pull/9384"
+  },
+  {
+    "createdAt": "2026-02-15T16:30:52Z",
+    "isDraft": false,
+    "number": 3133,
+    "repository": {
+      "name": "hydra",
+      "nameWithOwner": "facebookresearch/hydra"
+    },
+    "state": "open",
+    "title": "fix overrides dropped when --multirun flag appears between them",
+    "updatedAt": "2026-05-16T02:13:19Z",
+    "url": "https://github.com/facebookresearch/hydra/pull/3133"
+  },
+  {
+    "createdAt": "2026-02-15T15:35:23Z",
+    "isDraft": false,
+    "number": 10265,
+    "repository": {
+      "name": "determined",
+      "nameWithOwner": "determined-ai/determined"
+    },
+    "state": "open",
+    "title": "fix json_encode to handle non-string dict keys",
+    "updatedAt": "2026-02-15T15:35:26Z",
+    "url": "https://github.com/determined-ai/determined/pull/10265"
+  },
+  {
+    "createdAt": "2026-02-15T15:26:15Z",
+    "isDraft": false,
+    "number": 21539,
+    "repository": {
+      "name": "pytorch-lightning",
+      "nameWithOwner": "Lightning-AI/pytorch-lightning"
+    },
+    "state": "open",
+    "title": "fix tqdm progress bar using refresh() instead of update()",
+    "updatedAt": "2026-02-20T07:17:23Z",
+    "url": "https://github.com/Lightning-AI/pytorch-lightning/pull/21539"
+  },
+  {
+    "createdAt": "2026-02-14T00:32:33Z",
+    "isDraft": false,
+    "number": 3450,
+    "repository": {
+      "name": "PyGithub",
+      "nameWithOwner": "PyGithub/PyGithub"
+    },
+    "state": "open",
+    "title": "fix totalCount KeyError when last link has no page param",
+    "updatedAt": "2026-02-15T11:01:42Z",
+    "url": "https://github.com/PyGithub/PyGithub/pull/3450"
+  },
+  {
+    "createdAt": "2026-02-14T00:17:44Z",
+    "isDraft": false,
+    "number": 14303,
+    "repository": {
+      "name": "sphinx",
+      "nameWithOwner": "sphinx-doc/sphinx"
+    },
+    "state": "open",
+    "title": "fix mock objects not supporting | union type operator",
+    "updatedAt": "2026-04-14T11:10:47Z",
+    "url": "https://github.com/sphinx-doc/sphinx/pull/14303"
+  },
+  {
+    "createdAt": "2026-02-14T00:07:52Z",
+    "isDraft": false,
+    "number": 2554,
+    "repository": {
+      "name": "moviepy",
+      "nameWithOwner": "Zulko/moviepy"
+    },
+    "state": "open",
+    "title": "fix AttributeError on CompositeVideoClip with non-composite mask",
+    "updatedAt": "2026-02-14T00:07:52Z",
+    "url": "https://github.com/Zulko/moviepy/pull/2554"
+  },
+  {
+    "createdAt": "2026-02-13T23:35:38Z",
+    "isDraft": false,
+    "number": 7665,
+    "repository": {
+      "name": "onnx",
+      "nameWithOwner": "onnx/onnx"
+    },
+    "state": "open",
+    "title": "fix pytorch_half_pixel coordinate transform for single-pixel output",
+    "updatedAt": "2026-02-14T00:58:00Z",
+    "url": "https://github.com/onnx/onnx/pull/7665"
+  },
+  {
+    "createdAt": "2026-02-13T23:17:10Z",
+    "isDraft": false,
+    "number": 1243,
+    "repository": {
+      "name": "arrow",
+      "nameWithOwner": "arrow-py/arrow"
+    },
+    "state": "open",
+    "title": "fix IndexError in DateTimeParser.parse with malformed format strings",
+    "updatedAt": "2026-02-13T23:18:22Z",
+    "url": "https://github.com/arrow-py/arrow/pull/1243"
+  },
+  {
+    "createdAt": "2026-02-13T23:03:55Z",
+    "isDraft": false,
+    "number": 8004,
+    "repository": {
+      "name": "datasets",
+      "nameWithOwner": "huggingface/datasets"
+    },
+    "state": "open",
+    "title": "fix save_to_disk/load_from_disk with pathlib.Path input",
+    "updatedAt": "2026-02-13T23:03:55Z",
+    "url": "https://github.com/huggingface/datasets/pull/8004"
+  },
+  {
+    "createdAt": "2026-02-13T22:07:32Z",
+    "isDraft": false,
+    "number": 3028,
+    "repository": {
+      "name": "lancedb",
+      "nameWithOwner": "lancedb/lancedb"
+    },
+    "state": "open",
+    "title": "fix: handle null type in _align_field_types for nullable struct fields",
+    "updatedAt": "2026-02-13T22:40:48Z",
+    "url": "https://github.com/lancedb/lancedb/pull/3028"
+  },
+  {
+    "createdAt": "2026-02-13T21:47:51Z",
+    "isDraft": false,
+    "number": 32317,
+    "repository": {
+      "name": "dify",
+      "nameWithOwner": "langgenius/dify"
+    },
+    "state": "open",
+    "title": "fix: json body corruption when string variables contain special characters",
+    "updatedAt": "2026-02-18T08:52:48Z",
+    "url": "https://github.com/langgenius/dify/pull/32317"
+  },
+  {
+    "createdAt": "2026-02-13T20:50:06Z",
+    "isDraft": false,
+    "number": 11344,
+    "repository": {
+      "name": "wandb",
+      "nameWithOwner": "wandb/wandb"
+    },
+    "state": "open",
+    "title": "fix: use mutable policy in Artifact.new_file() to prevent file loss during offline sync",
+    "updatedAt": "2026-02-13T20:50:07Z",
+    "url": "https://github.com/wandb/wandb/pull/11344"
+  },
+  {
+    "createdAt": "2026-02-13T20:03:18Z",
+    "isDraft": false,
+    "number": 6437,
+    "repository": {
+      "name": "chroma",
+      "nameWithOwner": "chroma-core/chroma"
+    },
+    "state": "open",
+    "title": "fix config roundtrip test failing for simple_ef",
+    "updatedAt": "2026-02-13T20:06:42Z",
+    "url": "https://github.com/chroma-core/chroma/pull/6437"
+  },
+  {
+    "createdAt": "2026-02-13T19:36:09Z",
+    "isDraft": false,
+    "number": 3764,
+    "repository": {
+      "name": "httpx",
+      "nameWithOwner": "encode/httpx"
+    },
+    "state": "open",
+    "title": "Percent-encode pipe character in URL paths",
+    "updatedAt": "2026-02-13T19:36:09Z",
+    "url": "https://github.com/encode/httpx/pull/3764"
+  },
+  {
+    "createdAt": "2026-02-13T14:29:43Z",
+    "isDraft": false,
+    "number": 3912,
+    "repository": {
+      "name": "seaborn",
+      "nameWithOwner": "mwaskom/seaborn"
+    },
+    "state": "open",
+    "title": "Fix crash with custom tick formatters/locators and Est()",
+    "updatedAt": "2026-02-13T14:29:43Z",
+    "url": "https://github.com/mwaskom/seaborn/pull/3912"
+  },
+  {
+    "createdAt": "2026-02-13T14:28:30Z",
+    "isDraft": false,
+    "number": 11164,
+    "repository": {
+      "name": "xarray",
+      "nameWithOwner": "pydata/xarray"
+    },
+    "state": "open",
+    "title": "Fix inconsistent hue color mapping in plot.line",
+    "updatedAt": "2026-02-13T18:13:51Z",
+    "url": "https://github.com/pydata/xarray/pull/11164"
+  },
+  {
+    "createdAt": "2026-02-13T14:23:54Z",
+    "isDraft": false,
+    "number": 6024,
+    "repository": {
+      "name": "mage-ai",
+      "nameWithOwner": "mage-ai/mage-ai"
+    },
+    "state": "open",
+    "title": "Fix DataFrame dtype silently reverting between blocks",
+    "updatedAt": "2026-02-13T18:51:49Z",
+    "url": "https://github.com/mage-ai/mage-ai/pull/6024"
+  },
+  {
+    "createdAt": "2026-02-13T14:23:16Z",
+    "isDraft": false,
+    "number": 3911,
+    "repository": {
+      "name": "seaborn",
+      "nameWithOwner": "mwaskom/seaborn"
+    },
+    "state": "open",
+    "title": "Handle common_norm for density stat in Hist",
+    "updatedAt": "2026-02-13T14:23:16Z",
+    "url": "https://github.com/mwaskom/seaborn/pull/3911"
+  },
+  {
+    "createdAt": "2026-02-13T13:39:24Z",
+    "isDraft": false,
+    "number": 10736,
+    "repository": {
+      "name": "poetry",
+      "nameWithOwner": "python-poetry/poetry"
+    },
+    "state": "open",
+    "title": "Fix file scripts not copied to bin on poetry install",
+    "updatedAt": "2026-02-13T13:55:24Z",
+    "url": "https://github.com/python-poetry/poetry/pull/10736"
+  },
+  {
+    "createdAt": "2026-02-13T11:42:01Z",
+    "isDraft": false,
+    "number": 5549,
+    "repository": {
+      "name": "BentoML",
+      "nameWithOwner": "bentoml/BentoML"
+    },
+    "state": "open",
+    "title": "Fix run_in_spark crash with new-style services (APIMethod)",
+    "updatedAt": "2026-02-13T11:42:55Z",
+    "url": "https://github.com/bentoml/BentoML/pull/5549"
+  },
+  {
+    "createdAt": "2026-02-13T11:39:07Z",
+    "isDraft": false,
+    "number": 21444,
+    "repository": {
+      "name": "cudf",
+      "nameWithOwner": "rapidsai/cudf"
+    },
+    "state": "open",
+    "title": "Fix to_pandas() failure on DataFrames with reordered DatetimeIndex freq",
+    "updatedAt": "2026-02-25T22:59:20Z",
+    "url": "https://github.com/rapidsai/cudf/pull/21444"
+  },
+  {
+    "createdAt": "2026-02-13T09:40:29Z",
+    "isDraft": false,
+    "number": 18774,
+    "repository": {
+      "name": "tvm",
+      "nameWithOwner": "apache/tvm"
+    },
+    "state": "open",
+    "title": "[ONNX] Fix Split operator for uneven splits with num_outputs",
+    "updatedAt": "2026-03-15T21:00:47Z",
+    "url": "https://github.com/apache/tvm/pull/18774"
+  },
+  {
+    "createdAt": "2026-02-13T09:36:24Z",
+    "isDraft": false,
+    "number": 12293,
+    "repository": {
+      "name": "dask",
+      "nameWithOwner": "dask/dask"
+    },
+    "state": "open",
+    "title": "Fix wrong dtype when using masked_array with Python float",
+    "updatedAt": "2026-02-13T10:14:40Z",
+    "url": "https://github.com/dask/dask/pull/12293"
+  },
+  {
+    "createdAt": "2026-02-11T18:45:49Z",
+    "isDraft": false,
+    "number": 1260,
+    "repository": {
+      "name": "InternVL",
+      "nameWithOwner": "OpenGVLab/InternVL"
+    },
+    "state": "open",
+    "title": "fix: replace mutable default arguments with None",
+    "updatedAt": "2026-02-11T18:45:49Z",
+    "url": "https://github.com/OpenGVLab/InternVL/pull/1260"
+  },
+  {
+    "createdAt": "2026-02-11T18:45:20Z",
+    "isDraft": false,
+    "number": 186,
+    "repository": {
+      "name": "Merlion",
+      "nameWithOwner": "salesforce/Merlion"
+    },
+    "state": "open",
+    "title": "Fix mutable default argument in __deepcopy__ methods",
+    "updatedAt": "2026-02-11T18:45:26Z",
+    "url": "https://github.com/salesforce/Merlion/pull/186"
+  },
+  {
+    "createdAt": "2026-02-11T18:45:14Z",
+    "isDraft": false,
+    "number": 140,
+    "repository": {
+      "name": "Latte",
+      "nameWithOwner": "Vchitect/Latte"
+    },
+    "state": "open",
+    "title": "Fix NotImplemented errors, xformers attention shape, and missing text conditioning",
+    "updatedAt": "2026-02-11T18:45:14Z",
+    "url": "https://github.com/Vchitect/Latte/pull/140"
+  },
+  {
+    "createdAt": "2026-02-11T18:45:07Z",
+    "isDraft": false,
+    "number": 797,
+    "repository": {
+      "name": "TTS",
+      "nameWithOwner": "mozilla/TTS"
+    },
+    "state": "open",
+    "title": "Fix three bugs in vocoder loss computation",
+    "updatedAt": "2026-02-11T18:45:07Z",
+    "url": "https://github.com/mozilla/TTS/pull/797"
+  },
+  {
+    "createdAt": "2026-02-11T18:44:30Z",
+    "isDraft": false,
+    "number": 6363,
+    "repository": {
+      "name": "espnet",
+      "nameWithOwner": "espnet/espnet"
+    },
+    "state": "open",
+    "title": "fix: raise NotImplementedError and avoid mutable default args",
+    "updatedAt": "2026-04-27T14:20:33Z",
+    "url": "https://github.com/espnet/espnet/pull/6363"
+  },
+  {
+    "createdAt": "2026-02-11T18:44:25Z",
+    "isDraft": false,
+    "number": 1191,
+    "repository": {
+      "name": "nuscenes-devkit",
+      "nameWithOwner": "nutonomy/nuscenes-devkit"
+    },
+    "state": "open",
+    "title": "Fix broken assertions in RadarPointCloud PCD header parsing",
+    "updatedAt": "2026-02-11T23:59:55Z",
+    "url": "https://github.com/nutonomy/nuscenes-devkit/pull/1191"
+  },
+  {
+    "createdAt": "2026-02-11T18:44:01Z",
+    "isDraft": false,
+    "number": 108,
+    "repository": {
+      "name": "VideoCrafter",
+      "nameWithOwner": "AILab-CVC/VideoCrafter"
+    },
+    "state": "open",
+    "title": "Fix operator precedence bug in lvlb_weights and mutable default arguments",
+    "updatedAt": "2026-02-11T18:44:01Z",
+    "url": "https://github.com/AILab-CVC/VideoCrafter/pull/108"
+  },
+  {
+    "createdAt": "2026-02-11T18:43:45Z",
+    "isDraft": false,
+    "number": 554,
+    "repository": {
+      "name": "CogVLM",
+      "nameWithOwner": "zai-org/CogVLM"
+    },
+    "state": "open",
+    "title": "fix: replace mutable default argument in override_dist_dtype_device_args",
+    "updatedAt": "2026-02-11T18:43:45Z",
+    "url": "https://github.com/zai-org/CogVLM/pull/554"
+  },
+  {
+    "createdAt": "2026-02-11T18:43:38Z",
+    "isDraft": false,
+    "number": 3775,
+    "repository": {
+      "name": "FastChat",
+      "nameWithOwner": "lm-sys/FastChat"
+    },
+    "state": "open",
+    "title": "Fix mutable default argument and unreachable exception handler",
+    "updatedAt": "2026-02-11T18:43:38Z",
+    "url": "https://github.com/lm-sys/FastChat/pull/3775"
+  },
+  {
+    "createdAt": "2026-02-11T18:43:37Z",
+    "isDraft": false,
+    "number": 7915,
+    "repository": {
+      "name": "dgl",
+      "nameWithOwner": "dmlc/dgl"
+    },
+    "state": "open",
+    "title": "fix: use raise instead of return for exceptions and avoid mutable default args",
+    "updatedAt": "2026-02-11T18:43:37Z",
+    "url": "https://github.com/dmlc/dgl/pull/7915"
+  },
+  {
+    "createdAt": "2026-02-11T18:43:13Z",
+    "isDraft": false,
+    "number": 2208,
+    "repository": {
+      "name": "RecBole",
+      "nameWithOwner": "RUCAIBox/RecBole"
+    },
+    "state": "open",
+    "title": "fix: use raise instead of return for ValueError; fix mutable default argument",
+    "updatedAt": "2026-02-11T18:43:13Z",
+    "url": "https://github.com/RUCAIBox/RecBole/pull/2208"
+  },
+  {
+    "createdAt": "2026-02-11T18:43:07Z",
+    "isDraft": false,
+    "number": 812,
+    "repository": {
+      "name": "CogVideo",
+      "nameWithOwner": "zai-org/CogVideo"
+    },
+    "state": "open",
+    "title": "fix: replace mutable default arguments in trainer.py",
+    "updatedAt": "2026-02-11T18:43:07Z",
+    "url": "https://github.com/zai-org/CogVideo/pull/812"
+  },
+  {
+    "createdAt": "2026-02-11T18:38:45Z",
+    "isDraft": false,
+    "number": 1377,
+    "repository": {
+      "name": "xformers",
+      "nameWithOwner": "facebookresearch/xformers"
+    },
+    "state": "open",
+    "title": "Fix incorrect error message and inconsistent ndim check",
+    "updatedAt": "2026-02-11T18:38:51Z",
+    "url": "https://github.com/facebookresearch/xformers/pull/1377"
+  },
+  {
+    "createdAt": "2026-02-11T18:38:44Z",
+    "isDraft": false,
+    "number": 13125,
+    "repository": {
+      "name": "diffusers",
+      "nameWithOwner": "huggingface/diffusers"
+    },
+    "state": "open",
+    "title": "Fix CogVideoX scheduler prev_timestep for non-leading spacing",
+    "updatedAt": "2026-02-11T18:38:44Z",
+    "url": "https://github.com/huggingface/diffusers/pull/13125"
+  },
+  {
+    "createdAt": "2026-02-11T18:38:41Z",
+    "isDraft": false,
+    "number": 3779,
+    "repository": {
+      "name": "Open-Assistant",
+      "nameWithOwner": "LAION-AI/Open-Assistant"
+    },
+    "state": "open",
+    "title": "Fix ZeroDivisionError and NaN propagation in reward model metrics",
+    "updatedAt": "2026-02-11T18:38:43Z",
+    "url": "https://github.com/LAION-AI/Open-Assistant/pull/3779"
+  },
+  {
+    "createdAt": "2026-02-11T18:38:23Z",
+    "isDraft": false,
+    "number": 1740,
+    "repository": {
+      "name": "unilm",
+      "nameWithOwner": "microsoft/unilm"
+    },
+    "state": "open",
+    "title": "Fix ZeroDivisionError in TrOCR scoring metrics",
+    "updatedAt": "2026-02-11T18:38:23Z",
+    "url": "https://github.com/microsoft/unilm/pull/1740"
+  },
+  {
+    "createdAt": "2026-02-11T18:37:58Z",
+    "isDraft": false,
+    "number": 683,
+    "repository": {
+      "name": "nanoGPT",
+      "nameWithOwner": "karpathy/nanoGPT"
+    },
+    "state": "open",
+    "title": "Fix MPS device detection and deprecated GradScaler API",
+    "updatedAt": "2026-02-11T18:37:58Z",
+    "url": "https://github.com/karpathy/nanoGPT/pull/683"
+  },
+  {
+    "createdAt": "2026-02-11T18:37:31Z",
+    "isDraft": false,
+    "number": 1412,
+    "repository": {
+      "name": "llama",
+      "nameWithOwner": "meta-llama/llama"
+    },
+    "state": "open",
+    "title": "Fix file descriptor leaks in generation.py and setup.py",
+    "updatedAt": "2026-02-11T18:37:37Z",
+    "url": "https://github.com/meta-llama/llama/pull/1412"
+  },
+  {
+    "createdAt": "2026-02-11T18:37:01Z",
+    "isDraft": false,
+    "number": 320,
+    "repository": {
+      "name": "vision_transformer",
+      "nameWithOwner": "google-research/vision_transformer"
+    },
+    "state": "open",
+    "title": "Fix checkpoint saving using wrong interval config",
+    "updatedAt": "2026-02-11T18:37:18Z",
+    "url": "https://github.com/google-research/vision_transformer/pull/320"
+  },
+  {
+    "createdAt": "2026-02-11T18:36:41Z",
+    "isDraft": false,
+    "number": 324,
+    "repository": {
+      "name": "stanford_alpaca",
+      "nameWithOwner": "tatsu-lab/stanford_alpaca"
+    },
+    "state": "open",
+    "title": "Fix aliased list references in _tokenize_fn",
+    "updatedAt": "2026-02-11T18:36:41Z",
+    "url": "https://github.com/tatsu-lab/stanford_alpaca/pull/324"
+  },
+  {
+    "createdAt": "2026-02-11T18:36:11Z",
+    "isDraft": false,
+    "number": 811,
+    "repository": {
+      "name": "CogVideo",
+      "nameWithOwner": "zai-org/CogVideo"
+    },
+    "state": "open",
+    "title": "Fix loop variable shadowing in validation that corrupts sample iteration",
+    "updatedAt": "2026-02-11T18:36:11Z",
+    "url": "https://github.com/zai-org/CogVideo/pull/811"
+  },
+  {
+    "createdAt": "2026-02-11T18:35:51Z",
+    "isDraft": false,
+    "number": 73,
+    "repository": {
+      "name": "LaVie",
+      "nameWithOwner": "Vchitect/LaVie"
+    },
+    "state": "open",
+    "title": "Fix np.int deprecation causing AttributeError on NumPy 1.24+",
+    "updatedAt": "2026-02-11T18:35:51Z",
+    "url": "https://github.com/Vchitect/LaVie/pull/73"
+  },
+  {
+    "createdAt": "2026-02-11T18:35:21Z",
+    "isDraft": false,
+    "number": 8739,
+    "repository": {
+      "name": "MONAI",
+      "nameWithOwner": "Project-MONAI/MONAI"
+    },
+    "state": "open",
+    "title": "Fix division by zero in clDice loss harmonic mean",
+    "updatedAt": "2026-03-01T00:58:37Z",
+    "url": "https://github.com/Project-MONAI/MONAI/pull/8739"
+  },
+  {
+    "createdAt": "2026-02-11T18:35:06Z",
+    "isDraft": false,
+    "number": 3869,
+    "repository": {
+      "name": "mmsegmentation",
+      "nameWithOwner": "open-mmlab/mmsegmentation"
+    },
+    "state": "open",
+    "title": "[Fix] Fix indentation bug in hd_loss that mishandles ignore_index",
+    "updatedAt": "2026-02-12T09:40:55Z",
+    "url": "https://github.com/open-mmlab/mmsegmentation/pull/3869"
+  },
+  {
+    "createdAt": "2026-02-11T18:34:52Z",
+    "isDraft": false,
+    "number": 10600,
+    "repository": {
+      "name": "pytorch_geometric",
+      "nameWithOwner": "pyg-team/pytorch_geometric"
+    },
+    "state": "open",
+    "title": "Fix missing hyperedge weight application in HypergraphConv",
+    "updatedAt": "2026-05-18T18:21:41Z",
+    "url": "https://github.com/pyg-team/pytorch_geometric/pull/10600"
+  },
+  {
+    "createdAt": "2026-02-11T18:34:38Z",
+    "isDraft": false,
+    "number": 583,
+    "repository": {
+      "name": "dinov2",
+      "nameWithOwner": "facebookresearch/dinov2"
+    },
+    "state": "open",
+    "title": "Fix numerical overflow in Sinkhorn-Knopp teacher normalization",
+    "updatedAt": "2026-02-11T18:34:45Z",
+    "url": "https://github.com/facebookresearch/dinov2/pull/583"
+  },
+  {
+    "createdAt": "2026-02-11T18:34:20Z",
+    "isDraft": false,
+    "number": 182,
+    "repository": {
+      "name": "shap-e",
+      "nameWithOwner": "openai/shap-e"
+    },
+    "state": "open",
+    "title": "Fix AttributeError in RayCollisionFunction.backward",
+    "updatedAt": "2026-02-11T18:34:20Z",
+    "url": "https://github.com/openai/shap-e/pull/182"
+  },
+  {
+    "createdAt": "2026-02-11T18:34:18Z",
+    "isDraft": false,
+    "number": 267,
+    "repository": {
+      "name": "taming-transformers",
+      "nameWithOwner": "CompVis/taming-transformers"
+    },
+    "state": "open",
+    "title": "Fix NameError in EMAVectorQuantizer.__init__",
+    "updatedAt": "2026-02-11T18:34:18Z",
+    "url": "https://github.com/CompVis/taming-transformers/pull/267"
+  },
+  {
+    "createdAt": "2026-02-11T18:34:16Z",
+    "isDraft": false,
+    "number": 120,
+    "repository": {
+      "name": "point-e",
+      "nameWithOwner": "openai/point-e"
+    },
+    "state": "open",
+    "title": "Fix loop variable shadowing in marching_cubes_mesh",
+    "updatedAt": "2026-02-11T19:28:14Z",
+    "url": "https://github.com/openai/point-e/pull/120"
+  },
+  {
+    "createdAt": "2026-02-11T18:33:52Z",
+    "isDraft": false,
+    "number": 404,
+    "repository": {
+      "name": "latent-diffusion",
+      "nameWithOwner": "CompVis/latent-diffusion"
+    },
+    "state": "open",
+    "title": "Fix operator precedence in x0 LVLB weights and NaN assertion",
+    "updatedAt": "2026-02-11T18:33:52Z",
+    "url": "https://github.com/CompVis/latent-diffusion/pull/404"
+  },
+  {
+    "createdAt": "2026-02-11T18:33:45Z",
+    "isDraft": false,
+    "number": 185,
+    "repository": {
+      "name": "Merlion",
+      "nameWithOwner": "salesforce/Merlion"
+    },
+    "state": "open",
+    "title": "Fix BoxCoxTransform inverse for negative lambda",
+    "updatedAt": "2026-02-11T18:33:52Z",
+    "url": "https://github.com/salesforce/Merlion/pull/185"
+  },
+  {
+    "createdAt": "2026-02-11T18:33:43Z",
+    "isDraft": false,
+    "number": 91,
+    "repository": {
+      "name": "CoOp",
+      "nameWithOwner": "KaiyangZhou/CoOp"
+    },
+    "state": "open",
+    "title": "Fix hardcoded CUDA device in feature extractor",
+    "updatedAt": "2026-02-11T18:33:43Z",
+    "url": "https://github.com/KaiyangZhou/CoOp/pull/91"
+  },
+  {
+    "createdAt": "2026-02-11T18:33:32Z",
+    "isDraft": false,
+    "number": 388,
+    "repository": {
+      "name": "Swin-Transformer",
+      "nameWithOwner": "microsoft/Swin-Transformer"
+    },
+    "state": "open",
+    "title": "Fix typo in absolute_pos_embed dimension check (C1 != C1 -> C1 != C2)",
+    "updatedAt": "2026-02-11T18:33:32Z",
+    "url": "https://github.com/microsoft/Swin-Transformer/pull/388"
+  },
+  {
+    "createdAt": "2026-02-11T18:33:26Z",
+    "isDraft": false,
+    "number": 853,
+    "repository": {
+      "name": "segment-anything",
+      "nameWithOwner": "facebookresearch/segment-anything"
+    },
+    "state": "open",
+    "title": "Fix division by zero in calculate_stability_score",
+    "updatedAt": "2026-02-11T18:33:32Z",
+    "url": "https://github.com/facebookresearch/segment-anything/pull/853"
+  },
+  {
+    "createdAt": "2026-02-11T18:33:22Z",
+    "isDraft": false,
+    "number": 5512,
+    "repository": {
+      "name": "detectron2",
+      "nameWithOwner": "facebookresearch/detectron2"
+    },
+    "state": "open",
+    "title": "Replace deprecated logger.warn() with logger.warning()",
+    "updatedAt": "2026-02-11T18:33:28Z",
+    "url": "https://github.com/facebookresearch/detectron2/pull/5512"
+  },
+  {
+    "createdAt": "2026-02-11T18:33:07Z",
+    "isDraft": false,
+    "number": 2207,
+    "repository": {
+      "name": "RecBole",
+      "nameWithOwner": "RUCAIBox/RecBole"
+    },
+    "state": "open",
+    "title": "Fix error handling bugs in url.py makedirs and download_url",
+    "updatedAt": "2026-02-11T18:33:07Z",
+    "url": "https://github.com/RUCAIBox/RecBole/pull/2207"
+  },
+  {
+    "createdAt": "2026-02-11T18:32:53Z",
+    "isDraft": false,
+    "number": 3033,
+    "repository": {
+      "name": "speechbrain",
+      "nameWithOwner": "speechbrain/speechbrain"
+    },
+    "state": "open",
+    "title": "Fix closure variable bug in classification_error",
+    "updatedAt": "2026-02-16T23:14:39Z",
+    "url": "https://github.com/speechbrain/speechbrain/pull/3033"
+  },
+  {
+    "createdAt": "2026-02-11T18:32:35Z",
+    "isDraft": false,
+    "number": 1259,
+    "repository": {
+      "name": "InternVL",
+      "nameWithOwner": "OpenGVLab/InternVL"
+    },
+    "state": "open",
+    "title": "Fix raise NotImplemented to raise NotImplementedError in wrap_llm_lora",
+    "updatedAt": "2026-02-11T18:32:35Z",
+    "url": "https://github.com/OpenGVLab/InternVL/pull/1259"
+  },
+  {
+    "createdAt": "2026-02-11T18:32:29Z",
+    "isDraft": false,
+    "number": 530,
+    "repository": {
+      "name": "CLIP",
+      "nameWithOwner": "openai/CLIP"
+    },
+    "state": "open",
+    "title": "Clamp logit_scale to prevent numerical instability",
+    "updatedAt": "2026-02-11T18:32:29Z",
+    "url": "https://github.com/openai/CLIP/pull/530"
+  },
+  {
+    "createdAt": "2026-02-11T18:32:28Z",
+    "isDraft": false,
+    "number": 107,
+    "repository": {
+      "name": "VideoCrafter",
+      "nameWithOwner": "AILab-CVC/VideoCrafter"
+    },
+    "state": "open",
+    "title": "Fix operator precedence bug in VLBO loss weights",
+    "updatedAt": "2026-02-11T18:32:28Z",
+    "url": "https://github.com/AILab-CVC/VideoCrafter/pull/107"
+  },
+  {
+    "createdAt": "2026-02-11T18:32:15Z",
+    "isDraft": false,
+    "number": 7914,
+    "repository": {
+      "name": "dgl",
+      "nameWithOwner": "dmlc/dgl"
+    },
+    "state": "open",
+    "title": "Fix ZeroDivisionError in linkx_homophily",
+    "updatedAt": "2026-02-11T18:32:15Z",
+    "url": "https://github.com/dmlc/dgl/pull/7914"
+  },
+  {
+    "createdAt": "2026-02-11T18:31:33Z",
+    "isDraft": false,
+    "number": 911,
+    "repository": {
+      "name": "Open-Sora",
+      "nameWithOwner": "hpcaitech/Open-Sora"
+    },
+    "state": "open",
+    "title": "Fix swapped height/width dimensions in I2VDenoiser",
+    "updatedAt": "2026-02-11T18:31:33Z",
+    "url": "https://github.com/hpcaitech/Open-Sora/pull/911"
+  },
+  {
+    "createdAt": "2026-02-11T18:31:24Z",
+    "isDraft": false,
+    "number": 3140,
+    "repository": {
+      "name": "mmdetection3d",
+      "nameWithOwner": "open-mmlab/mmdetection3d"
+    },
+    "state": "open",
+    "title": "[Fix] Replace hardcoded .cuda() with device-aware .to() in MinkUNet voxelization",
+    "updatedAt": "2026-02-12T09:40:52Z",
+    "url": "https://github.com/open-mmlab/mmdetection3d/pull/3140"
+  },
+  {
+    "createdAt": "2026-02-11T18:30:48Z",
+    "isDraft": false,
+    "number": 139,
+    "repository": {
+      "name": "Latte",
+      "nameWithOwner": "Vchitect/Latte"
+    },
+    "state": "open",
+    "title": "fix: replace bare except clauses in dataset loading",
+    "updatedAt": "2026-02-11T18:30:48Z",
+    "url": "https://github.com/Vchitect/Latte/pull/139"
+  },
+  {
+    "createdAt": "2026-02-11T18:30:32Z",
+    "isDraft": false,
+    "number": 553,
+    "repository": {
+      "name": "CogVLM",
+      "nameWithOwner": "zai-org/CogVLM"
+    },
+    "state": "open",
+    "title": "fix: replace hardcoded .cuda() with dynamic device selection",
+    "updatedAt": "2026-02-11T18:30:32Z",
+    "url": "https://github.com/zai-org/CogVLM/pull/553"
+  },
+  {
+    "createdAt": "2026-02-11T18:30:21Z",
+    "isDraft": false,
+    "number": 3773,
+    "repository": {
+      "name": "FastChat",
+      "nameWithOwner": "lm-sys/FastChat"
+    },
+    "state": "open",
+    "title": "Replace bare except clauses with except Exception",
+    "updatedAt": "2026-02-11T18:30:21Z",
+    "url": "https://github.com/lm-sys/FastChat/pull/3773"
+  },
+  {
+    "createdAt": "2026-02-11T18:30:02Z",
+    "isDraft": false,
+    "number": 1516,
+    "repository": {
+      "name": "ChatGLM-6B",
+      "nameWithOwner": "zai-org/ChatGLM-6B"
+    },
+    "state": "open",
+    "title": "Fix hardcoded CUDA device in api.py to support MPS and CPU fallback",
+    "updatedAt": "2026-02-11T18:30:02Z",
+    "url": "https://github.com/zai-org/ChatGLM-6B/pull/1516"
+  },
+  {
+    "createdAt": "2026-02-11T18:29:47Z",
+    "isDraft": false,
+    "number": 1921,
+    "repository": {
+      "name": "LLaVA",
+      "nameWithOwner": "haotian-liu/LLaVA"
+    },
+    "state": "open",
+    "title": "fix: replace hardcoded .cuda() with dynamic device inference",
+    "updatedAt": "2026-02-11T18:29:47Z",
+    "url": "https://github.com/haotian-liu/LLaVA/pull/1921"
+  },
+  {
+    "createdAt": "2026-02-11T18:24:41Z",
+    "isDraft": false,
+    "number": 845,
+    "repository": {
+      "name": "mamba",
+      "nameWithOwner": "state-spaces/mamba"
+    },
+    "state": "open",
+    "title": "fix: remove double softplus on dt in non-fused Mamba2",
+    "updatedAt": "2026-03-27T22:01:28Z",
+    "url": "https://github.com/state-spaces/mamba/pull/845"
+  },
+  {
+    "createdAt": "2026-02-11T18:21:34Z",
+    "isDraft": false,
+    "number": 751,
+    "repository": {
+      "name": "ControlNet",
+      "nameWithOwner": "lllyasviel/ControlNet"
+    },
+    "state": "open",
+    "title": "fix: undefined variable in conditioning warning",
+    "updatedAt": "2026-02-11T18:21:34Z",
+    "url": "https://github.com/lllyasviel/ControlNet/pull/751"
+  },
+  {
+    "createdAt": "2026-02-11T18:21:17Z",
+    "isDraft": false,
+    "number": 1316,
+    "repository": {
+      "name": "gaussian-splatting",
+      "nameWithOwner": "graphdeco-inria/gaussian-splatting"
+    },
+    "state": "open",
+    "title": "fix: visibility_filter returns wrong type for indexing",
+    "updatedAt": "2026-02-11T18:21:17Z",
+    "url": "https://github.com/graphdeco-inria/gaussian-splatting/pull/1316"
+  },
+  {
+    "createdAt": "2026-02-11T18:21:11Z",
+    "isDraft": false,
+    "number": 2147,
+    "repository": {
+      "name": "yolov7",
+      "nameWithOwner": "WongKinYiu/yolov7"
+    },
+    "state": "open",
+    "title": "fix: OTA target scaling uses height for both dimensions",
+    "updatedAt": "2026-02-11T18:21:11Z",
+    "url": "https://github.com/WongKinYiu/yolov7/pull/2147"
+  },
+  {
+    "createdAt": "2026-02-11T18:20:40Z",
+    "isDraft": false,
+    "number": 89,
+    "repository": {
+      "name": "TensoRF",
+      "nameWithOwner": "apchenstu/TensoRF"
+    },
+    "state": "open",
+    "title": "fix: cross-product produces left-handed coordinate frame",
+    "updatedAt": "2026-02-11T18:20:40Z",
+    "url": "https://github.com/apchenstu/TensoRF/pull/89"
+  },
+  {
+    "createdAt": "2026-02-11T18:20:36Z",
+    "isDraft": false,
+    "number": 908,
+    "repository": {
+      "name": "stable-diffusion",
+      "nameWithOwner": "CompVis/stable-diffusion"
+    },
+    "state": "open",
+    "title": "fix: NaN assertion uses .all() instead of .any()",
+    "updatedAt": "2026-02-11T18:20:36Z",
+    "url": "https://github.com/CompVis/stable-diffusion/pull/908"
+  },
+  {
+    "createdAt": "2026-02-11T18:20:33Z",
+    "isDraft": false,
+    "number": 3932,
+    "repository": {
+      "name": "composer",
+      "nameWithOwner": "mosaicml/composer"
+    },
+    "state": "open",
+    "title": "fix: correct CutMix bounding box dimension swap",
+    "updatedAt": "2026-02-11T18:20:34Z",
+    "url": "https://github.com/mosaicml/composer/pull/3932"
+  },
+  {
+    "createdAt": "2026-02-11T18:20:19Z",
+    "isDraft": false,
+    "number": 6407,
+    "repository": {
+      "name": "ColossalAI",
+      "nameWithOwner": "hpcaitech/ColossalAI"
+    },
+    "state": "open",
+    "title": "fix: numerically unstable log-odds in ORPO loss",
+    "updatedAt": "2026-02-11T18:20:20Z",
+    "url": "https://github.com/hpcaitech/ColossalAI/pull/6407"
+  },
+  {
+    "createdAt": "2026-02-11T18:20:17Z",
+    "isDraft": false,
+    "number": 130,
+    "repository": {
+      "name": "Grounded-SAM-2",
+      "nameWithOwner": "IDEA-Research/Grounded-SAM-2"
+    },
+    "state": "open",
+    "title": "fix: prevent division by zero in IoU calculation for empty masks",
+    "updatedAt": "2026-02-11T18:20:17Z",
+    "url": "https://github.com/IDEA-Research/Grounded-SAM-2/pull/130"
+  },
+  {
+    "createdAt": "2026-02-11T18:19:30Z",
+    "isDraft": false,
+    "number": 146,
+    "repository": {
+      "name": "StableCascade",
+      "nameWithOwner": "Stability-AI/StableCascade"
+    },
+    "state": "open",
+    "title": "fix: correct clip_txt_pool variable name typo",
+    "updatedAt": "2026-02-11T18:19:30Z",
+    "url": "https://github.com/Stability-AI/StableCascade/pull/146"
+  },
+  {
+    "createdAt": "2026-02-11T18:19:26Z",
+    "isDraft": false,
+    "number": 3931,
+    "repository": {
+      "name": "composer",
+      "nameWithOwner": "mosaicml/composer"
+    },
+    "state": "open",
+    "title": "fix: Progressive Resizing logs height twice instead of width",
+    "updatedAt": "2026-02-11T18:19:27Z",
+    "url": "https://github.com/mosaicml/composer/pull/3931"
+  },
+  {
+    "createdAt": "2026-02-11T18:19:17Z",
+    "isDraft": false,
+    "number": 31,
+    "repository": {
+      "name": "jaxrl",
+      "nameWithOwner": "ikostrikov/jaxrl"
+    },
+    "state": "open",
+    "title": "fix: correct SAC target entropy to -action_dim",
+    "updatedAt": "2026-02-11T18:19:17Z",
+    "url": "https://github.com/ikostrikov/jaxrl/pull/31"
+  },
+  {
+    "createdAt": "2026-02-11T18:19:05Z",
+    "isDraft": false,
+    "number": 88,
+    "repository": {
+      "name": "TensoRF",
+      "nameWithOwner": "apchenstu/TensoRF"
+    },
+    "state": "open",
+    "title": "fix: correct undefined method name for step size computation",
+    "updatedAt": "2026-02-11T18:19:05Z",
+    "url": "https://github.com/apchenstu/TensoRF/pull/88"
+  },
+  {
+    "createdAt": "2026-02-11T18:18:38Z",
+    "isDraft": false,
+    "number": 538,
+    "repository": {
+      "name": "cleanrl",
+      "nameWithOwner": "vwxyzjn/cleanrl"
+    },
+    "state": "open",
+    "title": "fix: use single_action_space in DDPG for vectorized envs",
+    "updatedAt": "2026-02-11T18:18:42Z",
+    "url": "https://github.com/vwxyzjn/cleanrl/pull/538"
+  },
+  {
+    "createdAt": "2026-02-11T18:18:33Z",
+    "isDraft": false,
+    "number": 2146,
+    "repository": {
+      "name": "yolov7",
+      "nameWithOwner": "WongKinYiu/yolov7"
+    },
+    "state": "open",
+    "title": "fix: remove hardcoded cuda:0 in OTA loss for multi-GPU support",
+    "updatedAt": "2026-02-11T18:18:33Z",
+    "url": "https://github.com/WongKinYiu/yolov7/pull/2146"
+  },
+  {
+    "createdAt": "2026-02-11T18:18:31Z",
+    "isDraft": false,
+    "number": 6406,
+    "repository": {
+      "name": "ColossalAI",
+      "nameWithOwner": "hpcaitech/ColossalAI"
+    },
+    "state": "open",
+    "title": "fix: remove hardcoded bfloat16 dtype in OddsRatioLoss",
+    "updatedAt": "2026-02-11T18:18:32Z",
+    "url": "https://github.com/hpcaitech/ColossalAI/pull/6406"
+  },
+  {
+    "createdAt": "2026-02-11T18:18:02Z",
+    "isDraft": false,
+    "number": 30,
+    "repository": {
+      "name": "jaxrl",
+      "nameWithOwner": "ikostrikov/jaxrl"
+    },
+    "state": "open",
+    "title": "fix: correct wrong kwarg name in AWAC",
+    "updatedAt": "2026-02-11T18:18:02Z",
+    "url": "https://github.com/ikostrikov/jaxrl/pull/30"
+  },
+  {
+    "createdAt": "2026-02-11T18:17:55Z",
+    "isDraft": false,
+    "number": 662,
+    "repository": {
+      "name": "yolov9",
+      "nameWithOwner": "WongKinYiu/yolov9"
+    },
+    "state": "open",
+    "title": "fix: prevent division by zero in loss when no targets",
+    "updatedAt": "2026-02-11T18:17:55Z",
+    "url": "https://github.com/WongKinYiu/yolov9/pull/662"
+  },
+  {
+    "createdAt": "2026-02-11T18:17:17Z",
+    "isDraft": false,
+    "number": 318,
+    "repository": {
+      "name": "Depth-Anything-V2",
+      "nameWithOwner": "DepthAnything/Depth-Anything-V2"
+    },
+    "state": "open",
+    "title": "fix: respect model device in image preprocessing",
+    "updatedAt": "2026-02-11T18:17:17Z",
+    "url": "https://github.com/DepthAnything/Depth-Anything-V2/pull/318"
+  },
+  {
+    "createdAt": "2026-02-11T18:17:11Z",
+    "isDraft": false,
+    "number": 6405,
+    "repository": {
+      "name": "ColossalAI",
+      "nameWithOwner": "hpcaitech/ColossalAI"
+    },
+    "state": "open",
+    "title": "fix: KTO evaluation iterates wrong dataloader",
+    "updatedAt": "2026-02-11T18:17:12Z",
+    "url": "https://github.com/hpcaitech/ColossalAI/pull/6405"
+  },
+  {
+    "createdAt": "2026-02-11T18:17:10Z",
+    "isDraft": false,
+    "number": 183,
+    "repository": {
+      "name": "dreamgaussian",
+      "nameWithOwner": "dreamgaussian/dreamgaussian"
+    },
+    "state": "open",
+    "title": "fix: correct camera center computation",
+    "updatedAt": "2026-02-11T18:17:10Z",
+    "url": "https://github.com/dreamgaussian/dreamgaussian/pull/183"
+  },
+  {
+    "createdAt": "2026-02-11T18:17:05Z",
+    "isDraft": false,
+    "number": 598,
+    "repository": {
+      "name": "audiocraft",
+      "nameWithOwner": "facebookresearch/audiocraft"
+    },
+    "state": "open",
+    "title": "fix: correct dimension for prefix removal",
+    "updatedAt": "2026-02-11T18:17:11Z",
+    "url": "https://github.com/facebookresearch/audiocraft/pull/598"
+  },
+  {
+    "createdAt": "2026-02-11T18:16:38Z",
+    "isDraft": false,
+    "number": 2145,
+    "repository": {
+      "name": "yolov7",
+      "nameWithOwner": "WongKinYiu/yolov7"
+    },
+    "state": "open",
+    "title": "fix: add missing .sigmoid() in SigmoidBin inference path",
+    "updatedAt": "2026-02-11T18:16:38Z",
+    "url": "https://github.com/WongKinYiu/yolov7/pull/2145"
+  },
+  {
+    "createdAt": "2026-02-11T18:16:24Z",
+    "isDraft": false,
+    "number": 907,
+    "repository": {
+      "name": "stable-diffusion",
+      "nameWithOwner": "CompVis/stable-diffusion"
+    },
+    "state": "open",
+    "title": "fix: correct operator precedence in lvlb_weights calculation",
+    "updatedAt": "2026-02-11T18:16:24Z",
+    "url": "https://github.com/CompVis/stable-diffusion/pull/907"
+  },
+  {
+    "createdAt": "2026-02-11T18:16:17Z",
+    "isDraft": false,
+    "number": 377,
+    "repository": {
+      "name": "stable-dreamfusion",
+      "nameWithOwner": "ashawkey/stable-dreamfusion"
+    },
+    "state": "open",
+    "title": "fix: correct swapped cx/cy principal point",
+    "updatedAt": "2026-02-11T18:16:17Z",
+    "url": "https://github.com/ashawkey/stable-dreamfusion/pull/377"
+  },
+  {
+    "createdAt": "2026-02-11T18:15:52Z",
+    "isDraft": false,
+    "number": 2730,
+    "repository": {
+      "name": "whisper",
+      "nameWithOwner": "openai/whisper"
+    },
+    "state": "open",
+    "title": "fix: raise TypeError instead of returning it",
+    "updatedAt": "2026-02-11T18:15:52Z",
+    "url": "https://github.com/openai/whisper/pull/2730"
+  },
+  {
+    "createdAt": "2026-02-11T14:37:35Z",
+    "isDraft": false,
+    "number": 247,
+    "repository": {
+      "name": "HunyuanDiT",
+      "nameWithOwner": "Tencent-Hunyuan/HunyuanDiT"
+    },
+    "state": "open",
+    "title": "fix: preserve input dtype instead of hardcoding float16 in attention layers",
+    "updatedAt": "2026-02-12T09:40:46Z",
+    "url": "https://github.com/Tencent-Hunyuan/HunyuanDiT/pull/247"
+  },
+  {
+    "createdAt": "2026-02-11T14:37:32Z",
+    "isDraft": false,
+    "number": 299,
+    "repository": {
+      "name": "InstantID",
+      "nameWithOwner": "instantX-research/InstantID"
+    },
+    "state": "open",
+    "title": "fix: handle undefined ip_hidden_states in self-attention path",
+    "updatedAt": "2026-02-11T14:37:32Z",
+    "url": "https://github.com/instantX-research/InstantID/pull/299"
+  },
+  {
+    "createdAt": "2026-02-11T14:37:09Z",
+    "isDraft": false,
+    "number": 530,
+    "repository": {
+      "name": "threestudio",
+      "nameWithOwner": "threestudio-project/threestudio"
+    },
+    "state": "open",
+    "title": "fix: use noise_pred_uncond as base term in CFG formula",
+    "updatedAt": "2026-02-11T14:37:09Z",
+    "url": "https://github.com/threestudio-project/threestudio/pull/530"
+  },
+  {
+    "createdAt": "2026-02-11T14:37:08Z",
+    "isDraft": false,
+    "number": 190,
+    "repository": {
+      "name": "imaginaire",
+      "nameWithOwner": "NVlabs/imaginaire"
+    },
+    "state": "open",
+    "title": "fix: correct tautological dtype comparison in SPADE generator",
+    "updatedAt": "2026-02-11T14:37:08Z",
+    "url": "https://github.com/NVlabs/imaginaire/pull/190"
+  },
+  {
+    "createdAt": "2026-02-11T14:36:44Z",
+    "isDraft": false,
+    "number": 662,
+    "repository": {
+      "name": "bark",
+      "nameWithOwner": "suno-ai/bark"
+    },
+    "state": "open",
+    "title": "fix: disable dropout during inference in scaled_dot_product_attention",
+    "updatedAt": "2026-02-11T14:36:44Z",
+    "url": "https://github.com/suno-ai/bark/pull/662"
+  },
+  {
+    "createdAt": "2026-02-11T14:36:00Z",
+    "isDraft": false,
+    "number": 164,
+    "repository": {
+      "name": "PixArt-sigma",
+      "nameWithOwner": "PixArt-alpha/PixArt-sigma"
+    },
+    "state": "open",
+    "title": "fix: correct channel split and kwargs unpacking in forward_with_cfg",
+    "updatedAt": "2026-02-11T14:36:00Z",
+    "url": "https://github.com/PixArt-alpha/PixArt-sigma/pull/164"
+  },
+  {
+    "createdAt": "2026-02-11T14:35:54Z",
+    "isDraft": false,
+    "number": 2756,
+    "repository": {
+      "name": "Retrieval-based-Voice-Conversion-WebUI",
+      "nameWithOwner": "RVC-Project/Retrieval-based-Voice-Conversion-WebUI"
+    },
+    "state": "open",
+    "title": "fix: iterate individual resblock hooks instead of parent container hooks",
+    "updatedAt": "2026-02-11T14:35:54Z",
+    "url": "https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI/pull/2756"
+  },
+  {
+    "createdAt": "2026-02-11T14:35:54Z",
+    "isDraft": false,
+    "number": 436,
+    "repository": {
+      "name": "AnimateDiff",
+      "nameWithOwner": "guoyww/AnimateDiff"
+    },
+    "state": "open",
+    "title": "fix: correct boolean logic in zero_rank_print that prevented all output",
+    "updatedAt": "2026-02-11T14:35:54Z",
+    "url": "https://github.com/guoyww/AnimateDiff/pull/436"
+  },
+  {
+    "createdAt": "2026-02-11T14:35:48Z",
+    "isDraft": false,
+    "number": 168,
+    "repository": {
+      "name": "DynamiCrafter",
+      "nameWithOwner": "Doubiiu/DynamiCrafter"
+    },
+    "state": "open",
+    "title": "fix: correct operator precedence in lvlb_weights for x0 parameterization",
+    "updatedAt": "2026-02-11T14:35:48Z",
+    "url": "https://github.com/Doubiiu/DynamiCrafter/pull/168"
+  },
+  {
+    "createdAt": "2026-02-11T14:24:59Z",
+    "isDraft": false,
+    "number": 107,
+    "repository": {
+      "name": "Cradle",
+      "nameWithOwner": "BAAI-Agents/Cradle"
+    },
+    "state": "open",
+    "title": "fix: remove duplicate load() and add missing @classmethod in BasicVectorMemory",
+    "updatedAt": "2026-02-11T14:24:59Z",
+    "url": "https://github.com/BAAI-Agents/Cradle/pull/107"
+  },
+  {
+    "createdAt": "2026-02-11T14:24:47Z",
+    "isDraft": false,
+    "number": 1827,
+    "repository": {
+      "name": "CosyVoice",
+      "nameWithOwner": "FunAudioLLM/CosyVoice"
+    },
+    "state": "open",
+    "title": "fix: support batched inference in solve_euler by removing hardcoded batch size",
+    "updatedAt": "2026-02-11T14:24:47Z",
+    "url": "https://github.com/FunAudioLLM/CosyVoice/pull/1827"
+  },
+  {
+    "createdAt": "2026-02-11T14:24:47Z",
+    "isDraft": false,
+    "number": 1258,
+    "repository": {
+      "name": "InternVL",
+      "nameWithOwner": "OpenGVLab/InternVL"
+    },
+    "state": "open",
+    "title": "fix: correct torch.torch.int32 typo to torch.int32",
+    "updatedAt": "2026-02-11T14:24:47Z",
+    "url": "https://github.com/OpenGVLab/InternVL/pull/1258"
+  },
+  {
+    "createdAt": "2026-02-11T14:24:33Z",
+    "isDraft": false,
+    "number": 507,
+    "repository": {
+      "name": "flux",
+      "nameWithOwner": "black-forest-labs/flux"
+    },
+    "state": "open",
+    "title": "fix: pass attention_mask to T5/CLIP encoder in HFEmbedder",
+    "updatedAt": "2026-02-11T14:24:33Z",
+    "url": "https://github.com/black-forest-labs/flux/pull/507"
+  },
+  {
+    "createdAt": "2026-02-11T14:24:23Z",
+    "isDraft": false,
+    "number": 234,
+    "repository": {
+      "name": "Janus",
+      "nameWithOwner": "deepseek-ai/Janus"
+    },
+    "state": "open",
+    "title": "fix: remove inconsistent +1e-5 offset in entropy loss log_softmax",
+    "updatedAt": "2026-02-11T14:24:23Z",
+    "url": "https://github.com/deepseek-ai/Janus/pull/234"
+  },
+  {
+    "createdAt": "2026-02-11T14:21:53Z",
+    "isDraft": false,
+    "number": 428,
+    "repository": {
+      "name": "Baichuan2",
+      "nameWithOwner": "baichuan-inc/Baichuan2"
+    },
+    "state": "open",
+    "title": "fix: use ignore_index for user-turn marker token label in fine-tuning",
+    "updatedAt": "2026-02-11T14:21:53Z",
+    "url": "https://github.com/baichuan-inc/Baichuan2/pull/428"
+  },
+  {
+    "createdAt": "2026-02-11T14:21:52Z",
+    "isDraft": false,
+    "number": 474,
+    "repository": {
+      "name": "generative-models",
+      "nameWithOwner": "Stability-AI/generative-models"
+    },
+    "state": "open",
+    "title": "fix: pass all arguments through gradient checkpoint in BasicTransformerBlock",
+    "updatedAt": "2026-02-11T14:21:52Z",
+    "url": "https://github.com/Stability-AI/generative-models/pull/474"
+  },
+  {
+    "createdAt": "2026-02-11T14:21:46Z",
+    "isDraft": false,
+    "number": 185,
+    "repository": {
+      "name": "EmotiVoice",
+      "nameWithOwner": "netease-youdao/EmotiVoice"
+    },
+    "state": "open",
+    "title": "fix: replace bare except with specific exception types in load_my_state_dict",
+    "updatedAt": "2026-02-11T14:21:46Z",
+    "url": "https://github.com/netease-youdao/EmotiVoice/pull/185"
+  },
+  {
+    "createdAt": "2026-02-11T14:21:43Z",
+    "isDraft": false,
+    "number": 1826,
+    "repository": {
+      "name": "CosyVoice",
+      "nameWithOwner": "FunAudioLLM/CosyVoice"
+    },
+    "state": "open",
+    "title": "fix: avoid variable shadowing of timestep `t` in compute_loss",
+    "updatedAt": "2026-02-11T14:21:43Z",
+    "url": "https://github.com/FunAudioLLM/CosyVoice/pull/1826"
+  },
+  {
+    "createdAt": "2026-02-11T14:19:35Z",
+    "isDraft": false,
+    "number": 473,
+    "repository": {
+      "name": "generative-models",
+      "nameWithOwner": "Stability-AI/generative-models"
+    },
+    "state": "open",
+    "title": "fix: correct cross-frame attention repeat factor in MemoryEfficientCrossAttention",
+    "updatedAt": "2026-02-11T14:19:35Z",
+    "url": "https://github.com/Stability-AI/generative-models/pull/473"
+  },
+  {
+    "createdAt": "2026-02-11T14:18:24Z",
+    "isDraft": false,
+    "number": 472,
+    "repository": {
+      "name": "generative-models",
+      "nameWithOwner": "Stability-AI/generative-models"
+    },
+    "state": "open",
+    "title": "fix: use max_scale for trapezoid guider plateau instead of 1.0",
+    "updatedAt": "2026-02-11T14:18:24Z",
+    "url": "https://github.com/Stability-AI/generative-models/pull/472"
+  },
+  {
+    "createdAt": "2026-02-11T14:18:09Z",
+    "isDraft": false,
+    "number": 471,
+    "repository": {
+      "name": "generative-models",
+      "nameWithOwner": "Stability-AI/generative-models"
+    },
+    "state": "open",
+    "title": "fix: add missing n_frames attribute in StandardDiffusionLoss",
+    "updatedAt": "2026-02-11T14:18:09Z",
+    "url": "https://github.com/Stability-AI/generative-models/pull/471"
+  },
+  {
+    "createdAt": "2026-02-11T14:17:57Z",
+    "isDraft": false,
+    "number": 107,
+    "repository": {
+      "name": "AudioGPT",
+      "nameWithOwner": "AIGC-Audio/AudioGPT"
+    },
+    "state": "open",
+    "title": "fix: resample audio when sample rates differ in merge_audio",
+    "updatedAt": "2026-02-11T14:17:57Z",
+    "url": "https://github.com/AIGC-Audio/AudioGPT/pull/107"
+  },
+  {
+    "createdAt": "2026-02-11T14:17:51Z",
+    "isDraft": false,
+    "number": 596,
+    "repository": {
+      "name": "Open-Sora-Plan",
+      "nameWithOwner": "PKU-YuanGroup/Open-Sora-Plan"
+    },
+    "state": "open",
+    "title": "fix: correct attention mask padding amount in prepare_attention_mask",
+    "updatedAt": "2026-02-11T14:17:51Z",
+    "url": "https://github.com/PKU-YuanGroup/Open-Sora-Plan/pull/596"
+  },
+  {
+    "createdAt": "2026-02-11T14:12:47Z",
+    "isDraft": false,
+    "number": 233,
+    "repository": {
+      "name": "Janus",
+      "nameWithOwner": "deepseek-ai/Janus"
+    },
+    "state": "open",
+    "title": "fix: preserve original dtype in Upsample instead of hardcoding bfloat16",
+    "updatedAt": "2026-02-11T14:12:47Z",
+    "url": "https://github.com/deepseek-ai/Janus/pull/233"
+  },
+  {
+    "createdAt": "2026-02-11T14:11:46Z",
+    "isDraft": false,
+    "number": 232,
+    "repository": {
+      "name": "Janus",
+      "nameWithOwner": "deepseek-ai/Janus"
+    },
+    "state": "open",
+    "title": "fix: use actual codebook size for usage tracking buffer in VectorQuantizer",
+    "updatedAt": "2026-02-11T14:11:46Z",
+    "url": "https://github.com/deepseek-ai/Janus/pull/232"
+  },
+  {
+    "createdAt": "2026-02-11T14:10:11Z",
+    "isDraft": false,
+    "number": 150,
+    "repository": {
+      "name": "DeepSeek-VL2",
+      "nameWithOwner": "deepseek-ai/DeepSeek-VL2"
+    },
+    "state": "open",
+    "title": "fix: remove trailing space in 'map' string comparison in reset_classifier",
+    "updatedAt": "2026-02-11T14:10:11Z",
+    "url": "https://github.com/deepseek-ai/DeepSeek-VL2/pull/150"
+  },
+  {
+    "createdAt": "2026-02-11T14:06:22Z",
+    "isDraft": false,
+    "number": 179,
+    "repository": {
+      "name": "MuseV",
+      "nameWithOwner": "TMElyralab/MuseV"
+    },
+    "state": "open",
+    "title": "Fix undefined mask variable in TransformerTemporalModel.forward()",
+    "updatedAt": "2026-02-11T14:06:22Z",
+    "url": "https://github.com/TMElyralab/MuseV/pull/179"
+  },
+  {
+    "createdAt": "2026-02-11T14:05:55Z",
+    "isDraft": false,
+    "number": 120,
+    "repository": {
+      "name": "1d-tokenizer",
+      "nameWithOwner": "bytedance/1d-tokenizer"
+    },
+    "state": "open",
+    "title": "Fix swapped commitment_cost (beta) in VQ loss computation",
+    "updatedAt": "2026-02-11T14:05:55Z",
+    "url": "https://github.com/bytedance/1d-tokenizer/pull/120"
+  },
+  {
+    "createdAt": "2026-02-11T14:05:55Z",
+    "isDraft": false,
+    "number": 32,
+    "repository": {
+      "name": "SEINE",
+      "nameWithOwner": "Vchitect/SEINE"
+    },
+    "state": "open",
+    "title": "Fix dimension indexing in separation_content_motion()",
+    "updatedAt": "2026-02-11T14:05:55Z",
+    "url": "https://github.com/Vchitect/SEINE/pull/32"
+  },
+  {
+    "createdAt": "2026-02-11T14:05:46Z",
+    "isDraft": false,
+    "number": 153,
+    "repository": {
+      "name": "Bunny",
+      "nameWithOwner": "BAAI-DCAI/Bunny"
+    },
+    "state": "open",
+    "title": "Fix dict iteration bug in get_peft_state_maybe_zero_3",
+    "updatedAt": "2026-02-11T14:05:46Z",
+    "url": "https://github.com/BAAI-DCAI/Bunny/pull/153"
+  },
+  {
+    "createdAt": "2026-02-11T14:05:39Z",
+    "isDraft": false,
+    "number": 406,
+    "repository": {
+      "name": "MuseTalk",
+      "nameWithOwner": "TMElyralab/MuseTalk"
+    },
+    "state": "open",
+    "title": "Fix SyncNet API call in train.py: get_vision_embed -> get_image_embed",
+    "updatedAt": "2026-02-11T14:05:39Z",
+    "url": "https://github.com/TMElyralab/MuseTalk/pull/406"
+  },
+  {
+    "createdAt": "2026-02-11T14:05:31Z",
+    "isDraft": false,
+    "number": 650,
+    "repository": {
+      "name": "facechain",
+      "nameWithOwner": "modelscope/facechain"
+    },
+    "state": "open",
+    "title": "Fix LoRA memory leak in merge_lora.py",
+    "updatedAt": "2026-02-11T14:06:57Z",
+    "url": "https://github.com/modelscope/facechain/pull/650"
+  },
+  {
+    "createdAt": "2026-02-11T14:05:01Z",
+    "isDraft": false,
+    "number": 264,
+    "repository": {
+      "name": "Ask-Anything",
+      "nameWithOwner": "OpenGVLab/Ask-Anything"
+    },
+    "state": "open",
+    "title": "Fix BOS token embedding: use embed_tokens() instead of raw integer",
+    "updatedAt": "2026-02-11T14:05:01Z",
+    "url": "https://github.com/OpenGVLab/Ask-Anything/pull/264"
+  },
+  {
+    "createdAt": "2026-02-11T14:04:57Z",
+    "isDraft": false,
+    "number": 162,
+    "repository": {
+      "name": "VGen",
+      "nameWithOwner": "ali-vilab/VGen"
+    },
+    "state": "open",
+    "title": "Fix multiple bugs in distributed utils, SpatialTransformer, and diffusion schedules",
+    "updatedAt": "2026-02-11T15:58:52Z",
+    "url": "https://github.com/ali-vilab/VGen/pull/162"
+  },
+  {
+    "createdAt": "2026-02-11T14:04:48Z",
+    "isDraft": false,
+    "number": 557,
+    "repository": {
+      "name": "LivePortrait",
+      "nameWithOwner": "KlingAIResearch/LivePortrait"
+    },
+    "state": "open",
+    "title": "Fix identity comparison (is not) to value comparison (!=)",
+    "updatedAt": "2026-03-02T18:21:26Z",
+    "url": "https://github.com/KlingAIResearch/LivePortrait/pull/557"
+  },
+  {
+    "createdAt": "2026-02-11T14:04:40Z",
+    "isDraft": false,
+    "number": 640,
+    "repository": {
+      "name": "GFPGAN",
+      "nameWithOwner": "TencentARC/GFPGAN"
+    },
+    "state": "open",
+    "title": "Fix optimizer beta type error for PyTorch 2.x+",
+    "updatedAt": "2026-02-11T14:04:40Z",
+    "url": "https://github.com/TencentARC/GFPGAN/pull/640"
+  },
+  {
+    "createdAt": "2026-02-11T12:32:06Z",
+    "isDraft": false,
+    "number": 310,
+    "repository": {
+      "name": "HunyuanVideo",
+      "nameWithOwner": "Tencent-Hunyuan/HunyuanVideo"
+    },
+    "state": "open",
+    "title": "Fix vanilla and torch attention cu_seqlens handling",
+    "updatedAt": "2026-02-12T09:40:49Z",
+    "url": "https://github.com/Tencent-Hunyuan/HunyuanVideo/pull/310"
+  },
+  {
+    "createdAt": "2026-02-11T12:31:00Z",
+    "isDraft": false,
+    "number": 803,
+    "repository": {
+      "name": "GLM-4",
+      "nameWithOwner": "zai-org/GLM-4"
+    },
+    "state": "open",
+    "title": "Fix combine=True masking only last assistant turn in multi-turn finetuning",
+    "updatedAt": "2026-02-11T12:31:00Z",
+    "url": "https://github.com/zai-org/GLM-4/pull/803"
+  },
+  {
+    "createdAt": "2026-02-11T12:30:39Z",
+    "isDraft": false,
+    "number": 119,
+    "repository": {
+      "name": "1d-tokenizer",
+      "nameWithOwner": "bytedance/1d-tokenizer"
+    },
+    "state": "open",
+    "title": "Fix ResnetBlock shortcut projection in maskgit_vqgan",
+    "updatedAt": "2026-02-11T12:30:39Z",
+    "url": "https://github.com/bytedance/1d-tokenizer/pull/119"
+  },
+  {
+    "createdAt": "2026-02-11T12:30:38Z",
+    "isDraft": false,
+    "number": 910,
+    "repository": {
+      "name": "Open-Sora",
+      "nameWithOwner": "hpcaitech/Open-Sora"
+    },
+    "state": "open",
+    "title": "Fix height/width swap and other bugs in dataset utils",
+    "updatedAt": "2026-02-11T12:30:38Z",
+    "url": "https://github.com/hpcaitech/Open-Sora/pull/910"
+  },
+  {
+    "createdAt": "2026-02-11T12:02:59Z",
+    "isDraft": false,
+    "number": 3580,
+    "repository": {
+      "name": "lm-evaluation-harness",
+      "nameWithOwner": "EleutherAI/lm-evaluation-harness"
+    },
+    "state": "open",
+    "title": "fix: clean up MasakhaNEWS prompt whitespace and typo",
+    "updatedAt": "2026-02-11T12:02:59Z",
+    "url": "https://github.com/EleutherAI/lm-evaluation-harness/pull/3580"
+  },
+  {
+    "createdAt": "2026-02-09T22:04:34Z",
+    "isDraft": false,
+    "number": 486,
+    "repository": {
+      "name": "agent-lightning",
+      "nameWithOwner": "microsoft/agent-lightning"
+    },
+    "state": "open",
+    "title": "Fix TraceToMessages KeyError on multi-turn rollouts",
+    "updatedAt": "2026-02-28T02:51:30Z",
+    "url": "https://github.com/microsoft/agent-lightning/pull/486"
+  },
+  {
+    "createdAt": "2026-02-09T22:04:29Z",
+    "isDraft": false,
+    "number": 485,
+    "repository": {
+      "name": "agent-lightning",
+      "nameWithOwner": "microsoft/agent-lightning"
+    },
+    "state": "open",
+    "title": "Fix KeyError in convert_to_openai_messages for incomplete messages",
+    "updatedAt": "2026-02-28T02:55:43Z",
+    "url": "https://github.com/microsoft/agent-lightning/pull/485"
+  },
+  {
+    "createdAt": "2026-02-09T22:03:11Z",
+    "isDraft": false,
+    "number": 484,
+    "repository": {
+      "name": "agent-lightning",
+      "nameWithOwner": "microsoft/agent-lightning"
+    },
+    "state": "open",
+    "title": "Fix tracer missing triplets from LangChain with_structured_output",
+    "updatedAt": "2026-02-28T02:52:18Z",
+    "url": "https://github.com/microsoft/agent-lightning/pull/484"
+  },
+  {
+    "createdAt": "2026-02-09T22:02:37Z",
+    "isDraft": false,
+    "number": 483,
+    "repository": {
+      "name": "agent-lightning",
+      "nameWithOwner": "microsoft/agent-lightning"
+    },
+    "state": "open",
+    "title": "Fix memory leak in RL training loop causing OOM at ~220GB",
+    "updatedAt": "2026-02-28T02:54:36Z",
+    "url": "https://github.com/microsoft/agent-lightning/pull/483"
+  },
+  {
+    "createdAt": "2026-02-09T22:00:18Z",
+    "isDraft": false,
+    "number": 482,
+    "repository": {
+      "name": "agent-lightning",
+      "nameWithOwner": "microsoft/agent-lightning"
+    },
+    "state": "open",
+    "title": "Fix mRoPE position ID crash on Qwen2-VL prompt truncation",
+    "updatedAt": "2026-03-03T14:52:21Z",
+    "url": "https://github.com/microsoft/agent-lightning/pull/482"
+  },
+  {
+    "createdAt": "2026-02-09T21:56:26Z",
+    "isDraft": false,
+    "number": 363,
+    "repository": {
+      "name": "skills",
+      "nameWithOwner": "anthropics/skills"
+    },
+    "state": "open",
+    "title": "Fix feature-dev workflow phases skipped due to TodoWrite overwrite",
+    "updatedAt": "2026-02-12T18:11:36Z",
+    "url": "https://github.com/anthropics/skills/pull/363"
+  },
+  {
+    "createdAt": "2026-02-09T21:56:08Z",
+    "isDraft": false,
+    "number": 481,
+    "repository": {
+      "name": "agent-lightning",
+      "nameWithOwner": "microsoft/agent-lightning"
+    },
+    "state": "open",
+    "title": "Fix aiohttp ClientSession leak in LightningStoreClient",
+    "updatedAt": "2026-02-28T02:53:26Z",
+    "url": "https://github.com/microsoft/agent-lightning/pull/481"
+  },
+  {
+    "createdAt": "2026-02-09T21:55:54Z",
+    "isDraft": false,
+    "number": 362,
+    "repository": {
+      "name": "skills",
+      "nameWithOwner": "anthropics/skills"
+    },
+    "state": "open",
+    "title": "Fix skill-creator UTF-8 panic on multi-byte characters",
+    "updatedAt": "2026-02-12T18:11:34Z",
+    "url": "https://github.com/anthropics/skills/pull/362"
+  },
+  {
+    "createdAt": "2026-02-09T21:52:04Z",
+    "isDraft": false,
+    "number": 480,
+    "repository": {
+      "name": "agent-lightning",
+      "nameWithOwner": "microsoft/agent-lightning"
+    },
+    "state": "open",
+    "title": "Fix failed rollouts counted as completed in AgentModeDaemon",
+    "updatedAt": "2026-02-28T02:56:32Z",
+    "url": "https://github.com/microsoft/agent-lightning/pull/480"
+  },
+  {
+    "createdAt": "2026-02-09T21:50:55Z",
+    "isDraft": false,
+    "number": 361,
+    "repository": {
+      "name": "skills",
+      "nameWithOwner": "anthropics/skills"
+    },
+    "state": "open",
+    "title": "Detect unquoted YAML special characters in description fields",
+    "updatedAt": "2026-02-12T18:11:32Z",
+    "url": "https://github.com/anthropics/skills/pull/361"
+  },
+  {
+    "createdAt": "2026-02-09T18:41:25Z",
+    "isDraft": false,
+    "number": 1256,
+    "repository": {
+      "name": "InternVL",
+      "nameWithOwner": "OpenGVLab/InternVL"
+    },
+    "state": "open",
+    "title": "Fix OOM in dynamic_preprocess for extreme aspect ratios",
+    "updatedAt": "2026-02-12T18:11:14Z",
+    "url": "https://github.com/OpenGVLab/InternVL/pull/1256"
+  },
+  {
+    "createdAt": "2026-02-09T18:41:12Z",
+    "isDraft": false,
+    "number": 13111,
+    "repository": {
+      "name": "diffusers",
+      "nameWithOwner": "huggingface/diffusers"
+    },
+    "state": "open",
+    "title": "Fix AudioLDM2Pipeline AttributeError with GPT2Model",
+    "updatedAt": "2026-02-12T18:11:24Z",
+    "url": "https://github.com/huggingface/diffusers/pull/13111"
+  },
+  {
+    "createdAt": "2026-02-09T18:40:51Z",
+    "isDraft": false,
+    "number": 34163,
+    "repository": {
+      "name": "vllm",
+      "nameWithOwner": "vllm-project/vllm"
+    },
+    "state": "open",
+    "title": "[Bug] Fix MLPSpeculatorConfig missing num_attention_heads attribute",
+    "updatedAt": "2026-05-07T12:52:10Z",
+    "url": "https://github.com/vllm-project/vllm/pull/34163"
+  },
+  {
+    "createdAt": "2026-02-09T18:39:48Z",
+    "isDraft": false,
+    "number": 2407,
+    "repository": {
+      "name": "optimum",
+      "nameWithOwner": "huggingface/optimum"
+    },
+    "state": "open",
+    "title": "Fix get_wikitext2 tokenization bug causing sequence length warning",
+    "updatedAt": "2026-05-14T02:23:28Z",
+    "url": "https://github.com/huggingface/optimum/pull/2407"
+  },
+  {
+    "createdAt": "2026-02-09T18:38:22Z",
+    "isDraft": false,
+    "number": 4175,
+    "repository": {
+      "name": "audio",
+      "nameWithOwner": "pytorch/audio"
+    },
+    "state": "open",
+    "title": "Include file path in audio loading error messages",
+    "updatedAt": "2026-02-09T18:38:28Z",
+    "url": "https://github.com/pytorch/audio/pull/4175"
+  },
+  {
+    "createdAt": "2026-02-09T18:37:23Z",
+    "isDraft": false,
+    "number": 4174,
+    "repository": {
+      "name": "audio",
+      "nameWithOwner": "pytorch/audio"
+    },
+    "state": "open",
+    "title": "Handle non-UTF-8 metadata in audio file stream info",
+    "updatedAt": "2026-02-09T18:37:29Z",
+    "url": "https://github.com/pytorch/audio/pull/4174"
+  },
+  {
+    "createdAt": "2026-02-09T18:36:37Z",
+    "isDraft": false,
+    "number": 17685,
+    "repository": {
+      "name": "PaddleOCR",
+      "nameWithOwner": "PaddlePaddle/PaddleOCR"
+    },
+    "state": "open",
+    "title": "Fix IndexError in NMS when detection output is 1-dimensional",
+    "updatedAt": "2026-03-02T04:18:28Z",
+    "url": "https://github.com/PaddlePaddle/PaddleOCR/pull/17685"
+  },
+  {
+    "createdAt": "2026-02-09T18:35:08Z",
+    "isDraft": false,
+    "number": 13110,
+    "repository": {
+      "name": "diffusers",
+      "nameWithOwner": "huggingface/diffusers"
+    },
+    "state": "open",
+    "title": "Add bounds check for AuraFlow positional embedding indices",
+    "updatedAt": "2026-02-12T18:11:22Z",
+    "url": "https://github.com/huggingface/diffusers/pull/13110"
+  },
+  {
+    "createdAt": "2026-02-09T18:33:34Z",
+    "isDraft": false,
+    "number": 13109,
+    "repository": {
+      "name": "diffusers",
+      "nameWithOwner": "huggingface/diffusers"
+    },
+    "state": "open",
+    "title": "Fix SanaCombinedTimestepGuidanceEmbeddings to handle missing guidance",
+    "updatedAt": "2026-02-12T18:11:20Z",
+    "url": "https://github.com/huggingface/diffusers/pull/13109"
+  },
+  {
+    "createdAt": "2026-02-09T18:33:01Z",
+    "isDraft": false,
+    "number": 2406,
+    "repository": {
+      "name": "optimum",
+      "nameWithOwner": "huggingface/optimum"
+    },
+    "state": "open",
+    "title": "Export __version__ from top-level optimum package",
+    "updatedAt": "2026-05-14T02:23:29Z",
+    "url": "https://github.com/huggingface/optimum/pull/2406"
+  },
+  {
+    "createdAt": "2026-02-09T18:31:34Z",
+    "isDraft": false,
+    "number": 13108,
+    "repository": {
+      "name": "diffusers",
+      "nameWithOwner": "huggingface/diffusers"
+    },
+    "state": "open",
+    "title": "Fix DDIMScheduler.step() prev_timestep for non-leading spacing",
+    "updatedAt": "2026-02-12T18:11:18Z",
+    "url": "https://github.com/huggingface/diffusers/pull/13108"
+  },
+  {
+    "createdAt": "2026-02-09T18:31:27Z",
+    "isDraft": false,
+    "number": 1255,
+    "repository": {
+      "name": "InternVL",
+      "nameWithOwner": "OpenGVLab/InternVL"
+    },
+    "state": "open",
+    "title": "Fix ValueError for unsupported LLM architectures in InternVLChatConfig",
+    "updatedAt": "2026-02-12T18:11:12Z",
+    "url": "https://github.com/OpenGVLab/InternVL/pull/1255"
+  },
+  {
+    "createdAt": "2026-02-09T13:09:08Z",
+    "isDraft": false,
+    "number": 572,
+    "repository": {
+      "name": "seamless_communication",
+      "nameWithOwner": "facebookresearch/seamless_communication"
+    },
+    "state": "open",
+    "title": "fix: add missing T2TT and T2ST task choices to CLI predict",
+    "updatedAt": "2026-02-12T18:11:10Z",
+    "url": "https://github.com/facebookresearch/seamless_communication/pull/572"
+  },
+  {
+    "createdAt": "2026-02-08T13:01:19Z",
+    "isDraft": false,
+    "number": 43842,
+    "repository": {
+      "name": "transformers",
+      "nameWithOwner": "huggingface/transformers"
+    },
+    "state": "open",
+    "title": "fix(cli): Fix TypeAdapter NameError when pydantic is not installed",
+    "updatedAt": "2026-02-08T16:08:04Z",
+    "url": "https://github.com/huggingface/transformers/pull/43842"
+  },
+  {
+    "createdAt": "2026-02-08T12:56:56Z",
+    "isDraft": false,
+    "number": 13103,
+    "repository": {
+      "name": "diffusers",
+      "nameWithOwner": "huggingface/diffusers"
+    },
+    "state": "open",
+    "title": "fix(pipeline): Preserve dtype in from_pipe() instead of defaulting to float32",
+    "updatedAt": "2026-02-12T18:11:08Z",
+    "url": "https://github.com/huggingface/diffusers/pull/13103"
+  },
+  {
+    "createdAt": "2026-02-08T12:14:29Z",
+    "isDraft": false,
+    "number": 13102,
+    "repository": {
+      "name": "diffusers",
+      "nameWithOwner": "huggingface/diffusers"
+    },
+    "state": "open",
+    "title": "fix(controlnet): Use deep copy in ZImageControlNet.from_transformer",
+    "updatedAt": "2026-02-08T12:49:55Z",
+    "url": "https://github.com/huggingface/diffusers/pull/13102"
+  },
+  {
+    "createdAt": "2026-02-08T06:21:50Z",
+    "isDraft": false,
+    "number": 1021,
+    "repository": {
+      "name": "llama-cookbook",
+      "nameWithOwner": "meta-llama/llama-cookbook"
+    },
+    "state": "open",
+    "title": "fix: convert string values to enum types in update_config",
+    "updatedAt": "2026-02-12T18:11:56Z",
+    "url": "https://github.com/meta-llama/llama-cookbook/pull/1021"
+  },
+  {
+    "createdAt": "2026-02-08T06:16:44Z",
+    "isDraft": false,
+    "number": 2027,
+    "repository": {
+      "name": "Qwen3-VL",
+      "nameWithOwner": "QwenLM/Qwen3-VL"
+    },
+    "state": "open",
+    "title": "fix: prevent false label masking when 'assistant' appears in user content",
+    "updatedAt": "2026-02-12T18:11:58Z",
+    "url": "https://github.com/QwenLM/Qwen3-VL/pull/2027"
+  },
+  {
+    "createdAt": "2026-02-07T08:12:08Z",
+    "isDraft": false,
+    "number": 661,
+    "repository": {
+      "name": "bark",
+      "nameWithOwner": "suno-ai/bark"
+    },
+    "state": "open",
+    "title": "fix: add weights_only=False for PyTorch 2.6+ compatibility",
+    "updatedAt": "2026-02-12T18:12:00Z",
+    "url": "https://github.com/suno-ai/bark/pull/661"
+  },
+  {
+    "createdAt": "2026-02-07T08:08:38Z",
+    "isDraft": false,
+    "number": 13094,
+    "repository": {
+      "name": "diffusers",
+      "nameWithOwner": "huggingface/diffusers"
+    },
+    "state": "open",
+    "title": "fix: correct Z-Image guidance scale threshold from > 1 to > 0",
+    "updatedAt": "2026-02-13T20:39:47Z",
+    "url": "https://github.com/huggingface/diffusers/pull/13094"
+  },
+  {
+    "createdAt": "2026-02-07T08:06:58Z",
+    "isDraft": false,
+    "number": 13093,
+    "repository": {
+      "name": "diffusers",
+      "nameWithOwner": "huggingface/diffusers"
+    },
+    "state": "open",
+    "title": "fix: add PyTorch version check for torch.accelerator in gather_size_by_comm",
+    "updatedAt": "2026-02-13T13:44:17Z",
+    "url": "https://github.com/huggingface/diffusers/pull/13093"
+  },
+  {
+    "createdAt": "2026-02-07T06:54:07Z",
+    "isDraft": false,
+    "number": 220,
+    "repository": {
+      "name": "CogVLM2",
+      "nameWithOwner": "zai-org/CogVLM2"
+    },
+    "state": "open",
+    "title": "Fix compatibility with transformers >= 4.45",
+    "updatedAt": "2026-02-12T18:10:58Z",
+    "url": "https://github.com/zai-org/CogVLM2/pull/220"
+  },
+  {
+    "createdAt": "2026-02-07T06:50:58Z",
+    "isDraft": false,
+    "number": 18397,
+    "repository": {
+      "name": "sglang",
+      "nameWithOwner": "sgl-project/sglang"
+    },
+    "state": "open",
+    "title": "Fix ReDoS vulnerability in PythonicDetector",
+    "updatedAt": "2026-02-07T06:51:02Z",
+    "url": "https://github.com/sgl-project/sglang/pull/18397"
+  },
+  {
+    "createdAt": "2026-02-06T23:49:17Z",
+    "isDraft": false,
+    "number": 435,
+    "repository": {
+      "name": "AnimateDiff",
+      "nameWithOwner": "guoyww/AnimateDiff"
+    },
+    "state": "open",
+    "title": "Fix diffusers compatibility: handle renamed modules",
+    "updatedAt": "2026-02-09T08:32:58Z",
+    "url": "https://github.com/guoyww/AnimateDiff/pull/435"
+  },
+  {
+    "createdAt": "2026-02-06T23:42:16Z",
+    "isDraft": false,
+    "number": 72,
+    "repository": {
+      "name": "LaVie",
+      "nameWithOwner": "Vchitect/LaVie"
+    },
+    "state": "open",
+    "title": "Fix diffusers compatibility: handle renamed pipeline_utils module",
+    "updatedAt": "2026-02-09T08:31:52Z",
+    "url": "https://github.com/Vchitect/LaVie/pull/72"
+  },
+  {
+    "createdAt": "2026-02-06T23:40:02Z",
+    "isDraft": false,
+    "number": 387,
+    "repository": {
+      "name": "deforum-stable-diffusion",
+      "nameWithOwner": "deforum/deforum-stable-diffusion"
+    },
+    "state": "open",
+    "title": "Fix skimage match_histograms() deprecation: replace multichannel with channel_axis",
+    "updatedAt": "2026-02-09T08:33:04Z",
+    "url": "https://github.com/deforum/deforum-stable-diffusion/pull/387"
+  },
+  {
+    "createdAt": "2026-02-06T23:37:29Z",
+    "isDraft": false,
+    "number": 595,
+    "repository": {
+      "name": "Open-Sora-Plan",
+      "nameWithOwner": "PKU-YuanGroup/Open-Sora-Plan"
+    },
+    "state": "open",
+    "title": "Fix incorrectly wrapped prompt lines in sora.txt",
+    "updatedAt": "2026-02-09T08:31:54Z",
+    "url": "https://github.com/PKU-YuanGroup/Open-Sora-Plan/pull/595"
+  },
+  {
+    "createdAt": "2026-02-06T23:35:48Z",
+    "isDraft": false,
+    "number": 113,
+    "repository": {
+      "name": "Show-o",
+      "nameWithOwner": "showlab/Show-o"
+    },
+    "state": "open",
+    "title": "Fix safety checker AttributeError by converting PIL Images to numpy arrays",
+    "updatedAt": "2026-02-09T08:34:39Z",
+    "url": "https://github.com/showlab/Show-o/pull/113"
+  },
+  {
+    "createdAt": "2026-02-06T23:34:31Z",
+    "isDraft": false,
+    "number": 441,
+    "repository": {
+      "name": "CodeFormer",
+      "nameWithOwner": "sczhou/CodeFormer"
+    },
+    "state": "open",
+    "title": "Fix memory allocation error by lazy loading latent_gt_dict",
+    "updatedAt": "2026-02-09T08:31:47Z",
+    "url": "https://github.com/sczhou/CodeFormer/pull/441"
+  },
+  {
+    "createdAt": "2026-02-06T23:33:05Z",
+    "isDraft": false,
+    "number": 574,
+    "repository": {
+      "name": "Wan2.1",
+      "nameWithOwner": "Wan-Video/Wan2.1"
+    },
+    "state": "open",
+    "title": "Fix WanVAE_.encode() to return both mu and log_var",
+    "updatedAt": "2026-02-09T08:31:55Z",
+    "url": "https://github.com/Wan-Video/Wan2.1/pull/574"
+  },
+  {
+    "createdAt": "2026-02-06T23:29:59Z",
+    "isDraft": false,
+    "number": 163,
+    "repository": {
+      "name": "PixArt-sigma",
+      "nameWithOwner": "PixArt-alpha/PixArt-sigma"
+    },
+    "state": "open",
+    "title": "Fix Windows compatibility by using os.devnull",
+    "updatedAt": "2026-02-09T08:32:16Z",
+    "url": "https://github.com/PixArt-alpha/PixArt-sigma/pull/163"
+  },
+  {
+    "createdAt": "2026-02-06T21:08:41Z",
+    "isDraft": false,
+    "number": 1715,
+    "repository": {
+      "name": "pytorch-CycleGAN-and-pix2pix",
+      "nameWithOwner": "junyanz/pytorch-CycleGAN-and-pix2pix"
+    },
+    "state": "open",
+    "title": "Fix DDP normalization type check logic",
+    "updatedAt": "2026-02-09T08:32:22Z",
+    "url": "https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/pull/1715"
+  },
+  {
+    "createdAt": "2026-02-06T21:06:57Z",
+    "isDraft": false,
+    "number": 132,
+    "repository": {
+      "name": "deep-head-pose",
+      "nameWithOwner": "natanielruiz/deep-head-pose"
+    },
+    "state": "open",
+    "title": "Replace deprecated transforms.Scale with transforms.Resize",
+    "updatedAt": "2026-02-09T08:33:02Z",
+    "url": "https://github.com/natanielruiz/deep-head-pose/pull/132"
+  },
+  {
+    "createdAt": "2026-02-06T21:03:47Z",
+    "isDraft": false,
+    "number": 98,
+    "repository": {
+      "name": "encodec",
+      "nameWithOwner": "facebookresearch/encodec"
+    },
+    "state": "open",
+    "title": "Fix channel dimension mismatch in DiscriminatorSTFT",
+    "updatedAt": "2026-02-12T18:10:55Z",
+    "url": "https://github.com/facebookresearch/encodec/pull/98"
+  },
+  {
+    "createdAt": "2026-02-06T21:03:04Z",
+    "isDraft": false,
+    "number": 97,
+    "repository": {
+      "name": "encodec",
+      "nameWithOwner": "facebookresearch/encodec"
+    },
+    "state": "open",
+    "title": "Fix torchaudio.load() Path compatibility issue",
+    "updatedAt": "2026-02-12T18:10:53Z",
+    "url": "https://github.com/facebookresearch/encodec/pull/97"
+  },
+  {
+    "createdAt": "2026-02-06T21:00:44Z",
+    "isDraft": false,
+    "number": 286,
+    "repository": {
+      "name": "video-retalking",
+      "nameWithOwner": "OpenTalker/video-retalking"
+    },
+    "state": "open",
+    "title": "Fix UnboundLocalError when no faces are detected",
+    "updatedAt": "2026-02-09T08:32:25Z",
+    "url": "https://github.com/OpenTalker/video-retalking/pull/286"
+  },
+  {
+    "createdAt": "2026-02-06T20:58:31Z",
+    "isDraft": false,
+    "number": 165,
+    "repository": {
+      "name": "sam-hq",
+      "nameWithOwner": "SysCV/sam-hq"
+    },
+    "state": "open",
+    "title": "Fix --local-rank argument compatibility with torchrun",
+    "updatedAt": "2026-02-09T08:32:24Z",
+    "url": "https://github.com/SysCV/sam-hq/pull/165"
+  },
+  {
+    "createdAt": "2026-02-06T20:48:45Z",
+    "isDraft": false,
+    "number": 470,
+    "repository": {
+      "name": "generative-models",
+      "nameWithOwner": "Stability-AI/generative-models"
+    },
+    "state": "open",
+    "title": "Fix variable name mismatch in simple_video_sample.py",
+    "updatedAt": "2026-02-12T18:10:51Z",
+    "url": "https://github.com/Stability-AI/generative-models/pull/470"
+  },
+  {
+    "createdAt": "2026-02-06T20:47:16Z",
+    "isDraft": false,
+    "number": 387,
+    "repository": {
+      "name": "Swin-Transformer",
+      "nameWithOwner": "microsoft/Swin-Transformer"
+    },
+    "state": "open",
+    "title": "Fix KeyError when LOCAL_RANK env var is not set",
+    "updatedAt": "2026-02-09T08:32:19Z",
+    "url": "https://github.com/microsoft/Swin-Transformer/pull/387"
+  },
+  {
+    "createdAt": "2026-02-06T20:44:58Z",
+    "isDraft": false,
+    "number": 5510,
+    "repository": {
+      "name": "detectron2",
+      "nameWithOwner": "facebookresearch/detectron2"
+    },
+    "state": "open",
+    "title": "Replace pkg_resources with os.path for config file lookup",
+    "updatedAt": "2026-02-12T18:10:49Z",
+    "url": "https://github.com/facebookresearch/detectron2/pull/5510"
+  },
+  {
+    "createdAt": "2026-02-06T20:39:15Z",
+    "isDraft": false,
+    "number": 505,
+    "repository": {
+      "name": "LLaVA-NeXT",
+      "nameWithOwner": "LLaVA-VL/LLaVA-NeXT"
+    },
+    "state": "open",
+    "title": "Add missing math and sys imports in llava_trainer.py",
+    "updatedAt": "2026-02-12T18:10:47Z",
+    "url": "https://github.com/LLaVA-VL/LLaVA-NeXT/pull/505"
+  },
+  {
+    "createdAt": "2026-02-06T18:30:08Z",
+    "isDraft": false,
+    "number": 330,
+    "repository": {
+      "name": "ultravox",
+      "nameWithOwner": "fixie-ai/ultravox"
+    },
+    "state": "open",
+    "title": "Fix audio chat only working for first message in gradio_demo",
+    "updatedAt": "2026-02-12T18:10:45Z",
+    "url": "https://github.com/fixie-ai/ultravox/pull/330"
+  },
+  {
+    "createdAt": "2026-02-06T18:29:07Z",
+    "isDraft": false,
+    "number": 810,
+    "repository": {
+      "name": "LAVIS",
+      "nameWithOwner": "salesforce/LAVIS"
+    },
+    "state": "open",
+    "title": "Update transformers to fix CVE-2023-7018 security vulnerability",
+    "updatedAt": "2026-02-12T18:10:43Z",
+    "url": "https://github.com/salesforce/LAVIS/pull/810"
+  },
+  {
+    "createdAt": "2026-02-06T18:22:51Z",
+    "isDraft": false,
+    "number": 303,
+    "repository": {
+      "name": "qlora",
+      "nameWithOwner": "artidoro/qlora"
+    },
+    "state": "open",
+    "title": "fix: update outdated dependency versions",
+    "updatedAt": "2026-02-09T08:33:05Z",
+    "url": "https://github.com/artidoro/qlora/pull/303"
+  },
+  {
+    "createdAt": "2026-02-06T18:13:51Z",
+    "isDraft": false,
+    "number": 326,
+    "repository": {
+      "name": "moondream",
+      "nameWithOwner": "m87-labs/moondream"
+    },
+    "state": "open",
+    "title": "feat: add use_flex_decoding parameter for non-CUDA devices",
+    "updatedAt": "2026-02-12T18:10:40Z",
+    "url": "https://github.com/m87-labs/moondream/pull/326"
+  },
+  {
+    "createdAt": "2026-02-06T16:23:31Z",
+    "isDraft": false,
+    "number": 231,
+    "repository": {
+      "name": "Janus",
+      "nameWithOwner": "deepseek-ai/Janus"
+    },
+    "state": "open",
+    "title": "fix: use float32 on CPU to avoid half-precision convolution error",
+    "updatedAt": "2026-02-12T18:10:35Z",
+    "url": "https://github.com/deepseek-ai/Janus/pull/231"
+  },
+  {
+    "createdAt": "2026-02-06T16:18:33Z",
+    "isDraft": false,
+    "number": 230,
+    "repository": {
+      "name": "Janus",
+      "nameWithOwner": "deepseek-ai/Janus"
+    },
+    "state": "open",
+    "title": "fix: update PyTorch version requirement to >=2.1.0",
+    "updatedAt": "2026-02-12T18:10:33Z",
+    "url": "https://github.com/deepseek-ai/Janus/pull/230"
+  },
+  {
+    "createdAt": "2026-02-05T22:48:54Z",
+    "isDraft": false,
+    "number": 5509,
+    "repository": {
+      "name": "detectron2",
+      "nameWithOwner": "facebookresearch/detectron2"
+    },
+    "state": "open",
+    "title": "Fix mask visualization to exclude holes from polygon drawing",
+    "updatedAt": "2026-02-09T18:41:06Z",
+    "url": "https://github.com/facebookresearch/detectron2/pull/5509"
+  },
+  {
+    "createdAt": "2026-02-05T22:46:12Z",
+    "isDraft": false,
+    "number": 21529,
+    "repository": {
+      "name": "pytorch-lightning",
+      "nameWithOwner": "Lightning-AI/pytorch-lightning"
+    },
+    "state": "open",
+    "title": "Fix numpy 2.4.0 compatibility in TensorBoard logger",
+    "updatedAt": "2026-03-19T14:04:49Z",
+    "url": "https://github.com/Lightning-AI/pytorch-lightning/pull/21529"
+  },
+  {
+    "createdAt": "2026-02-05T20:54:09Z",
+    "isDraft": false,
+    "number": 47,
+    "repository": {
+      "name": "FlowCytometryTools",
+      "nameWithOwner": "eyurtsev/FlowCytometryTools"
+    },
+    "state": "open",
+    "title": "Fix Python 3.10+ compatibility: use collections.abc.Iterable",
+    "updatedAt": "2026-02-09T08:33:09Z",
+    "url": "https://github.com/eyurtsev/FlowCytometryTools/pull/47"
+  },
+  {
+    "createdAt": "2026-02-05T20:51:45Z",
+    "isDraft": false,
+    "number": 5645,
+    "repository": {
+      "name": "fairseq",
+      "nameWithOwner": "facebookresearch/fairseq"
+    },
+    "state": "open",
+    "title": "Fix NumPy 1.24+ compatibility: replace deprecated np.float",
+    "updatedAt": "2026-02-09T08:22:35Z",
+    "url": "https://github.com/facebookresearch/fairseq/pull/5645"
+  },
+  {
+    "createdAt": "2026-02-05T20:51:36Z",
+    "isDraft": false,
+    "number": 1241,
+    "repository": {
+      "name": "AlphaPose",
+      "nameWithOwner": "MVIG-SJTU/AlphaPose"
+    },
+    "state": "open",
+    "title": "Fix NumPy 1.24+ compatibility: replace deprecated np.float",
+    "updatedAt": "2026-02-09T08:32:57Z",
+    "url": "https://github.com/MVIG-SJTU/AlphaPose/pull/1241"
+  },
+  {
+    "createdAt": "2026-02-05T20:20:37Z",
+    "isDraft": false,
+    "number": 106,
+    "repository": {
+      "name": "Trajectron-plus-plus",
+      "nameWithOwner": "StanfordASL/Trajectron-plus-plus"
+    },
+    "state": "open",
+    "title": "Fix Python 3.10+ and NumPy 1.24+ deprecations",
+    "updatedAt": "2026-02-09T08:33:00Z",
+    "url": "https://github.com/StanfordASL/Trajectron-plus-plus/pull/106"
+  },
+  {
+    "createdAt": "2026-02-05T20:20:22Z",
+    "isDraft": false,
+    "number": 809,
+    "repository": {
+      "name": "LAVIS",
+      "nameWithOwner": "salesforce/LAVIS"
+    },
+    "state": "open",
+    "title": "Fix GradCAM ReLU placement per original paper",
+    "updatedAt": "2026-02-05T20:35:30Z",
+    "url": "https://github.com/salesforce/LAVIS/pull/809"
+  },
+  {
+    "createdAt": "2026-02-05T20:20:16Z",
+    "isDraft": false,
+    "number": 443,
+    "repository": {
+      "name": "GroundingDINO",
+      "nameWithOwner": "IDEA-Research/GroundingDINO"
+    },
+    "state": "open",
+    "title": "Fix deprecated supervision library API in docstrings",
+    "updatedAt": "2026-02-12T18:10:30Z",
+    "url": "https://github.com/IDEA-Research/GroundingDINO/pull/443"
+  },
+  {
+    "createdAt": "2026-02-05T19:45:01Z",
+    "isDraft": false,
+    "number": 1031,
+    "repository": {
+      "name": "SadTalker",
+      "nameWithOwner": "OpenTalker/SadTalker"
+    },
+    "state": "open",
+    "title": "fix: NumPy >=1.24 compatibility",
+    "updatedAt": "2026-02-09T08:33:07Z",
+    "url": "https://github.com/OpenTalker/SadTalker/pull/1031"
+  },
+  {
+    "createdAt": "2026-02-05T19:44:40Z",
+    "isDraft": false,
+    "number": 774,
+    "repository": {
+      "name": "Wav2Lip",
+      "nameWithOwner": "Rudrabha/Wav2Lip"
+    },
+    "state": "open",
+    "title": "fix: use keyword arguments for librosa.filters.mel",
+    "updatedAt": "2026-02-09T08:32:21Z",
+    "url": "https://github.com/Rudrabha/Wav2Lip/pull/774"
+  },
+  {
+    "createdAt": "2026-02-05T16:48:34Z",
+    "isDraft": false,
+    "number": 43775,
+    "repository": {
+      "name": "transformers",
+      "nameWithOwner": "huggingface/transformers"
+    },
+    "state": "open",
+    "title": "fix(moe): normalize auxiliary loss by top_k for correct load balancing",
+    "updatedAt": "2026-02-05T18:14:28Z",
+    "url": "https://github.com/huggingface/transformers/pull/43775"
+  },
+  {
+    "createdAt": "2026-02-05T16:44:12Z",
+    "isDraft": false,
+    "number": 7211,
+    "repository": {
+      "name": "autogen",
+      "nameWithOwner": "microsoft/autogen"
+    },
+    "state": "open",
+    "title": "fix(core): preserve $defs array/primitive types in schema_to_pydantic_model",
+    "updatedAt": "2026-02-12T18:10:26Z",
+    "url": "https://github.com/microsoft/autogen/pull/7211"
+  },
+  {
+    "createdAt": "2026-02-04T20:00:53Z",
+    "isDraft": false,
+    "number": 12287,
+    "repository": {
+      "name": "ComfyUI",
+      "nameWithOwner": "Comfy-Org/ComfyUI"
+    },
+    "state": "open",
+    "title": "fix: prevent symlink-based path traversal in /view endpoint",
+    "updatedAt": "2026-02-16T12:19:36Z",
+    "url": "https://github.com/Comfy-Org/ComfyUI/pull/12287"
+  },
+  {
+    "createdAt": "2025-12-21T11:07:21Z",
+    "isDraft": false,
+    "number": 204,
+    "repository": {
+      "name": "strix",
+      "nameWithOwner": "usestrix/strix"
+    },
+    "state": "open",
+    "title": "feat(prompts): add 6 new vulnerability prompt modules",
+    "updatedAt": "2026-05-21T20:53:05Z",
+    "url": "https://github.com/usestrix/strix/pull/204"
+  },
+  {
+    "createdAt": "2025-12-21T10:55:33Z",
+    "isDraft": false,
+    "number": 203,
+    "repository": {
+      "name": "strix",
+      "nameWithOwner": "usestrix/strix"
+    },
+    "state": "open",
+    "title": "security: fix token exposure, info disclosure, and path validation vulnerabilities",
+    "updatedAt": "2026-05-21T20:53:04Z",
+    "url": "https://github.com/usestrix/strix/pull/203"
+  },
+  {
+    "createdAt": "2025-12-21T10:06:37Z",
+    "isDraft": false,
+    "number": 5088,
+    "repository": {
+      "name": "public-apis",
+      "nameWithOwner": "public-apis/public-apis"
+    },
+    "state": "open",
+    "title": "Add Fantasy Premier League to Sports & Fitness",
+    "updatedAt": "2026-02-21T20:24:06Z",
+    "url": "https://github.com/public-apis/public-apis/pull/5088"
+  },
+  {
+    "createdAt": "2025-12-21T10:06:22Z",
+    "isDraft": false,
+    "number": 5087,
+    "repository": {
+      "name": "public-apis",
+      "nameWithOwner": "public-apis/public-apis"
+    },
+    "state": "open",
+    "title": "Add Flagcdn to Geocoding",
+    "updatedAt": "2026-02-21T20:24:09Z",
+    "url": "https://github.com/public-apis/public-apis/pull/5087"
+  },
+  {
+    "createdAt": "2025-12-21T10:04:59Z",
+    "isDraft": false,
+    "number": 5086,
+    "repository": {
+      "name": "public-apis",
+      "nameWithOwner": "public-apis/public-apis"
+    },
+    "state": "open",
+    "title": "Add Tenor to Photography",
+    "updatedAt": "2026-02-21T20:24:12Z",
+    "url": "https://github.com/public-apis/public-apis/pull/5086"
+  },
+  {
+    "createdAt": "2025-12-21T10:04:47Z",
+    "isDraft": false,
+    "number": 5085,
+    "repository": {
+      "name": "public-apis",
+      "nameWithOwner": "public-apis/public-apis"
+    },
+    "state": "open",
+    "title": "Add Pravatar to Photography",
+    "updatedAt": "2026-02-21T20:24:15Z",
+    "url": "https://github.com/public-apis/public-apis/pull/5085"
+  },
+  {
+    "createdAt": "2025-12-21T10:04:31Z",
+    "isDraft": false,
+    "number": 5084,
+    "repository": {
+      "name": "public-apis",
+      "nameWithOwner": "public-apis/public-apis"
+    },
+    "state": "open",
+    "title": "Add Multiavatar to Test Data",
+    "updatedAt": "2026-02-21T20:24:19Z",
+    "url": "https://github.com/public-apis/public-apis/pull/5084"
+  },
+  {
+    "createdAt": "2025-12-21T10:04:15Z",
+    "isDraft": false,
+    "number": 5083,
+    "repository": {
+      "name": "public-apis",
+      "nameWithOwner": "public-apis/public-apis"
+    },
+    "state": "open",
+    "title": "Add UI Avatars to Test Data",
+    "updatedAt": "2026-02-21T20:24:22Z",
+    "url": "https://github.com/public-apis/public-apis/pull/5083"
+  },
+  {
+    "createdAt": "2025-12-21T10:03:37Z",
+    "isDraft": false,
+    "number": 5082,
+    "repository": {
+      "name": "public-apis",
+      "nameWithOwner": "public-apis/public-apis"
+    },
+    "state": "open",
+    "title": "Add DummyJSON to Test Data",
+    "updatedAt": "2026-02-21T20:24:25Z",
+    "url": "https://github.com/public-apis/public-apis/pull/5082"
+  }
+]

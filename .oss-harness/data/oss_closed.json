@@ -1,0 +1,2172 @@
+[
+  {
+    "closedAt": "2026-05-07T06:08:23Z",
+    "createdAt": "2026-05-07T06:03:06Z",
+    "isDraft": false,
+    "number": 1,
+    "repository": {
+      "name": "owly-health-website",
+      "nameWithOwner": "adinarayanan2003/owly-health-website"
+    },
+    "state": "merged",
+    "title": "seo: fix all P0\u2013P2 issues from SEO/GEO audit",
+    "updatedAt": "2026-05-07T06:08:23Z",
+    "url": "https://github.com/adinarayanan2003/owly-health-website/pull/1"
+  },
+  {
+    "closedAt": "2026-02-22T04:15:18Z",
+    "createdAt": "2026-02-22T03:05:20Z",
+    "isDraft": false,
+    "number": 4,
+    "repository": {
+      "name": "owly-website",
+      "nameWithOwner": "aadithva/owly-website"
+    },
+    "state": "merged",
+    "title": "PR",
+    "updatedAt": "2026-02-22T04:15:18Z",
+    "url": "https://github.com/aadithva/owly-website/pull/4"
+  },
+  {
+    "closedAt": "2026-02-22T03:04:45Z",
+    "createdAt": "2026-02-22T02:18:35Z",
+    "isDraft": false,
+    "number": 3,
+    "repository": {
+      "name": "owly-website",
+      "nameWithOwner": "aadithva/owly-website"
+    },
+    "state": "closed",
+    "title": "Add Google Analytics tag for production traffic verification.",
+    "updatedAt": "2026-02-22T03:04:45Z",
+    "url": "https://github.com/aadithva/owly-website/pull/3"
+  },
+  {
+    "closedAt": "2026-03-27T02:18:24Z",
+    "createdAt": "2026-02-17T16:24:51Z",
+    "isDraft": false,
+    "number": 4494,
+    "repository": {
+      "name": "zenml",
+      "nameWithOwner": "zenml-io/zenml"
+    },
+    "state": "closed",
+    "title": "fix mlflow env var conflicts with orchestrator-injected values",
+    "updatedAt": "2026-03-27T02:18:24Z",
+    "url": "https://github.com/zenml-io/zenml/pull/4494"
+  },
+  {
+    "closedAt": "2026-02-17T09:08:34Z",
+    "createdAt": "2026-02-16T20:29:02Z",
+    "isDraft": false,
+    "number": 2,
+    "repository": {
+      "name": "owly-website",
+      "nameWithOwner": "aadithva/owly-website"
+    },
+    "state": "merged",
+    "title": "Add SEO infrastructure, fix CTAs, add OG/favicon",
+    "updatedAt": "2026-02-17T09:08:34Z",
+    "url": "https://github.com/aadithva/owly-website/pull/2"
+  },
+  {
+    "closedAt": "2026-05-12T21:08:35Z",
+    "createdAt": "2026-02-15T15:30:24Z",
+    "isDraft": false,
+    "number": 61075,
+    "repository": {
+      "name": "ray",
+      "nameWithOwner": "ray-project/ray"
+    },
+    "state": "merged",
+    "title": "[Train] Allow `contextlib.redirect_stdout()` to bypass print redirect to logs",
+    "updatedAt": "2026-05-12T21:08:35Z",
+    "url": "https://github.com/ray-project/ray/pull/61075"
+  },
+  {
+    "closedAt": "2026-02-14T08:11:35Z",
+    "createdAt": "2026-02-14T08:09:49Z",
+    "isDraft": false,
+    "number": 1,
+    "repository": {
+      "name": "owly-website",
+      "nameWithOwner": "aadithva/owly-website"
+    },
+    "state": "merged",
+    "title": "Restore ZoomParallax and fix sticky positioning",
+    "updatedAt": "2026-02-14T08:11:35Z",
+    "url": "https://github.com/aadithva/owly-website/pull/1"
+  },
+  {
+    "closedAt": "2026-03-21T17:35:51Z",
+    "createdAt": "2026-02-14T04:53:37Z",
+    "isDraft": false,
+    "number": 4231,
+    "repository": {
+      "name": "strawberry",
+      "nameWithOwner": "strawberry-graphql/strawberry"
+    },
+    "state": "closed",
+    "title": "fix asdict to handle Some and UNSET values",
+    "updatedAt": "2026-03-21T17:35:51Z",
+    "url": "https://github.com/strawberry-graphql/strawberry/pull/4231"
+  },
+  {
+    "closedAt": "2026-04-29T07:01:41Z",
+    "createdAt": "2026-02-14T03:27:26Z",
+    "isDraft": false,
+    "number": 3208,
+    "repository": {
+      "name": "click",
+      "nameWithOwner": "pallets/click"
+    },
+    "state": "merged",
+    "title": "fix help hint showing shadowed option name",
+    "updatedAt": "2026-05-14T00:48:42Z",
+    "url": "https://github.com/pallets/click/pull/3208"
+  },
+  {
+    "closedAt": "2026-02-16T15:50:03Z",
+    "createdAt": "2026-02-14T00:01:29Z",
+    "isDraft": false,
+    "number": 3609,
+    "repository": {
+      "name": "dash",
+      "nameWithOwner": "plotly/dash"
+    },
+    "state": "merged",
+    "title": "add backward compat alias for _Wildcard",
+    "updatedAt": "2026-02-16T15:50:04Z",
+    "url": "https://github.com/plotly/dash/pull/3609"
+  },
+  {
+    "closedAt": "2026-03-10T04:05:56Z",
+    "createdAt": "2026-02-13T23:47:40Z",
+    "isDraft": false,
+    "number": 3500,
+    "repository": {
+      "name": "nltk",
+      "nameWithOwner": "nltk/nltk"
+    },
+    "state": "merged",
+    "title": "fix floating point precision in language model probability sums",
+    "updatedAt": "2026-03-10T04:14:05Z",
+    "url": "https://github.com/nltk/nltk/pull/3500"
+  },
+  {
+    "closedAt": "2026-02-17T16:45:59Z",
+    "createdAt": "2026-02-13T22:26:05Z",
+    "isDraft": false,
+    "number": 8313,
+    "repository": {
+      "name": "marimo",
+      "nameWithOwner": "marimo-team/marimo"
+    },
+    "state": "merged",
+    "title": "stop hardcoding us-central1 as vertex ai default location",
+    "updatedAt": "2026-02-17T16:46:10Z",
+    "url": "https://github.com/marimo-team/marimo/pull/8313"
+  },
+  {
+    "closedAt": "2026-04-29T09:34:00Z",
+    "createdAt": "2026-02-13T22:18:12Z",
+    "isDraft": false,
+    "number": 5214,
+    "repository": {
+      "name": "opik",
+      "nameWithOwner": "comet-ml/opik"
+    },
+    "state": "closed",
+    "title": "fix anthropic cache_creation_input_tokens miscategorized as completion tokens",
+    "updatedAt": "2026-04-29T09:34:01Z",
+    "url": "https://github.com/comet-ml/opik/pull/5214"
+  },
+  {
+    "closedAt": "2026-02-17T16:23:05Z",
+    "createdAt": "2026-02-13T22:00:36Z",
+    "isDraft": false,
+    "number": 4487,
+    "repository": {
+      "name": "zenml",
+      "nameWithOwner": "zenml-io/zenml"
+    },
+    "state": "closed",
+    "title": "fix mlflow env var conflicts with orchestrator-injected values",
+    "updatedAt": "2026-02-17T16:23:05Z",
+    "url": "https://github.com/zenml-io/zenml/pull/4487"
+  },
+  {
+    "closedAt": "2026-02-13T22:29:45Z",
+    "createdAt": "2026-02-13T21:54:57Z",
+    "isDraft": false,
+    "number": 20677,
+    "repository": {
+      "name": "prefect",
+      "nameWithOwner": "PrefectHQ/prefect"
+    },
+    "state": "merged",
+    "title": "strip null bytes from log messages before db insert",
+    "updatedAt": "2026-02-13T22:29:45Z",
+    "url": "https://github.com/PrefectHQ/prefect/pull/20677"
+  },
+  {
+    "closedAt": "2026-03-10T21:12:17Z",
+    "createdAt": "2026-02-13T20:59:15Z",
+    "isDraft": false,
+    "number": 5377,
+    "repository": {
+      "name": "kedro",
+      "nameWithOwner": "kedro-org/kedro"
+    },
+    "state": "merged",
+    "title": "Fix for `CatalogConfigResolver` splitting sqlalchemy URL during pattern resolution.",
+    "updatedAt": "2026-03-10T21:12:17Z",
+    "url": "https://github.com/kedro-org/kedro/pull/5377"
+  },
+  {
+    "closedAt": "2026-03-12T05:56:02Z",
+    "createdAt": "2026-02-13T20:53:48Z",
+    "isDraft": false,
+    "number": 2792,
+    "repository": {
+      "name": "metaflow",
+      "nameWithOwner": "Netflix/metaflow"
+    },
+    "state": "closed",
+    "title": "fix tarfile filter compat for python < 3.12 in uv bootstrap",
+    "updatedAt": "2026-03-12T05:56:02Z",
+    "url": "https://github.com/Netflix/metaflow/pull/2792"
+  },
+  {
+    "closedAt": "2026-02-13T21:06:21Z",
+    "createdAt": "2026-02-13T20:42:30Z",
+    "isDraft": false,
+    "number": 11168,
+    "repository": {
+      "name": "xarray",
+      "nameWithOwner": "pydata/xarray"
+    },
+    "state": "merged",
+    "title": "raise error on slice-based selection of multi-index levels",
+    "updatedAt": "2026-02-13T21:06:24Z",
+    "url": "https://github.com/pydata/xarray/pull/11168"
+  },
+  {
+    "closedAt": "2026-02-25T12:21:07Z",
+    "createdAt": "2026-02-13T20:33:34Z",
+    "isDraft": false,
+    "number": 31155,
+    "repository": {
+      "name": "matplotlib",
+      "nameWithOwner": "matplotlib/matplotlib"
+    },
+    "state": "closed",
+    "title": "fix AxisLabel not picking up fontsize from set_ylabel in axisartist",
+    "updatedAt": "2026-02-25T12:21:16Z",
+    "url": "https://github.com/matplotlib/matplotlib/pull/31155"
+  },
+  {
+    "closedAt": "2026-02-19T22:01:18Z",
+    "createdAt": "2026-02-13T20:21:55Z",
+    "isDraft": false,
+    "number": 12890,
+    "repository": {
+      "name": "gradio",
+      "nameWithOwner": "gradio-app/gradio"
+    },
+    "state": "merged",
+    "title": "fix DataFrame NaN values becoming 0 after sorting",
+    "updatedAt": "2026-02-19T22:01:18Z",
+    "url": "https://github.com/gradio-app/gradio/pull/12890"
+  },
+  {
+    "closedAt": "2026-02-14T07:51:27Z",
+    "createdAt": "2026-02-13T19:41:11Z",
+    "isDraft": false,
+    "number": 10121,
+    "repository": {
+      "name": "celery",
+      "nameWithOwner": "celery/celery"
+    },
+    "state": "merged",
+    "title": "fix dusk_astronomical horizon sign (+18 -> -18)",
+    "updatedAt": "2026-05-15T08:14:11Z",
+    "url": "https://github.com/celery/celery/pull/10121"
+  },
+  {
+    "closedAt": "2026-03-12T06:48:37Z",
+    "createdAt": "2026-02-13T19:20:14Z",
+    "isDraft": false,
+    "number": 13944,
+    "repository": {
+      "name": "streamlit",
+      "nameWithOwner": "streamlit/streamlit"
+    },
+    "state": "closed",
+    "title": "Fix modified_sys_path to use script directory instead of file path",
+    "updatedAt": "2026-03-12T06:48:37Z",
+    "url": "https://github.com/streamlit/streamlit/pull/13944"
+  },
+  {
+    "closedAt": "2026-03-25T17:52:38Z",
+    "createdAt": "2026-02-13T14:23:57Z",
+    "isDraft": false,
+    "number": 8300,
+    "repository": {
+      "name": "marimo",
+      "nameWithOwner": "marimo-team/marimo"
+    },
+    "state": "closed",
+    "title": "Filter markdown metadata keys from app config to fix warnings",
+    "updatedAt": "2026-03-25T17:53:00Z",
+    "url": "https://github.com/marimo-team/marimo/pull/8300"
+  },
+  {
+    "closedAt": "2026-02-17T23:03:57Z",
+    "createdAt": "2026-02-13T13:42:55Z",
+    "isDraft": false,
+    "number": 14854,
+    "repository": {
+      "name": "bokeh",
+      "nameWithOwner": "bokeh/bokeh"
+    },
+    "state": "closed",
+    "title": "Convert raw datetime64 arrays at ColumnDataSource init to prevent DTypePromotionError",
+    "updatedAt": "2026-02-17T23:05:27Z",
+    "url": "https://github.com/bokeh/bokeh/pull/14854"
+  },
+  {
+    "closedAt": "2026-02-13T14:04:42Z",
+    "createdAt": "2026-02-13T13:38:06Z",
+    "isDraft": false,
+    "number": 29153,
+    "repository": {
+      "name": "sympy",
+      "nameWithOwner": "sympy/sympy"
+    },
+    "state": "closed",
+    "title": "Fix FCodePrinter converting integer function args to floats",
+    "updatedAt": "2026-02-13T14:04:43Z",
+    "url": "https://github.com/sympy/sympy/pull/29153"
+  },
+  {
+    "closedAt": "2026-03-30T13:37:33Z",
+    "createdAt": "2026-02-13T13:37:23Z",
+    "isDraft": false,
+    "number": 64133,
+    "repository": {
+      "name": "pandas",
+      "nameWithOwner": "pandas-dev/pandas"
+    },
+    "state": "merged",
+    "title": "BUG: str.find returns byte offset instead of character offset with str dtype",
+    "updatedAt": "2026-03-30T13:39:15Z",
+    "url": "https://github.com/pandas-dev/pandas/pull/64133"
+  },
+  {
+    "closedAt": "2026-03-07T06:21:02Z",
+    "createdAt": "2026-02-13T13:36:06Z",
+    "isDraft": false,
+    "number": 916,
+    "repository": {
+      "name": "poetry-core",
+      "nameWithOwner": "python-poetry/poetry-core"
+    },
+    "state": "closed",
+    "title": "Fix readme.text treated as file path instead of content",
+    "updatedAt": "2026-03-07T06:21:03Z",
+    "url": "https://github.com/python-poetry/poetry-core/pull/916"
+  },
+  {
+    "closedAt": "2026-02-13T14:08:52Z",
+    "createdAt": "2026-02-13T13:36:01Z",
+    "isDraft": false,
+    "number": 29152,
+    "repository": {
+      "name": "sympy",
+      "nameWithOwner": "sympy/sympy"
+    },
+    "state": "closed",
+    "title": "Fix TableForm LaTeX to use math-mode array instead of text-mode tabular",
+    "updatedAt": "2026-02-13T14:08:52Z",
+    "url": "https://github.com/sympy/sympy/pull/29152"
+  },
+  {
+    "closedAt": "2026-05-29T02:15:06Z",
+    "createdAt": "2026-02-13T13:35:56Z",
+    "isDraft": false,
+    "number": 64132,
+    "repository": {
+      "name": "pandas",
+      "nameWithOwner": "pandas-dev/pandas"
+    },
+    "state": "closed",
+    "title": "BUG: raise ValueError when unit passed to to_datetime with datetime-like input",
+    "updatedAt": "2026-05-29T02:15:07Z",
+    "url": "https://github.com/pandas-dev/pandas/pull/64132"
+  },
+  {
+    "closedAt": "2026-02-13T17:46:31Z",
+    "createdAt": "2026-02-13T13:35:30Z",
+    "isDraft": false,
+    "number": 24579,
+    "repository": {
+      "name": "scipy",
+      "nameWithOwner": "scipy/scipy"
+    },
+    "state": "closed",
+    "title": "BUG: ndimage.label: raise on boolean output dtype",
+    "updatedAt": "2026-02-13T17:46:31Z",
+    "url": "https://github.com/scipy/scipy/pull/24579"
+  },
+  {
+    "closedAt": "2026-02-13T17:54:12Z",
+    "createdAt": "2026-02-13T13:34:48Z",
+    "isDraft": false,
+    "number": 24578,
+    "repository": {
+      "name": "scipy",
+      "nameWithOwner": "scipy/scipy"
+    },
+    "state": "closed",
+    "title": "BUG: fix numerical instability in exponnorm for small K",
+    "updatedAt": "2026-02-14T08:26:42Z",
+    "url": "https://github.com/scipy/scipy/pull/24578"
+  },
+  {
+    "closedAt": "2026-02-13T13:04:35Z",
+    "createdAt": "2026-02-13T12:07:19Z",
+    "isDraft": false,
+    "number": 6365,
+    "repository": {
+      "name": "textual",
+      "nameWithOwner": "Textualize/textual"
+    },
+    "state": "closed",
+    "title": "Fix component class background blending against wrong colour",
+    "updatedAt": "2026-02-13T13:04:36Z",
+    "url": "https://github.com/Textualize/textual/pull/6365"
+  },
+  {
+    "closedAt": "2026-02-13T13:05:29Z",
+    "createdAt": "2026-02-13T11:48:34Z",
+    "isDraft": false,
+    "number": 3974,
+    "repository": {
+      "name": "rich",
+      "nameWithOwner": "Textualize/rich"
+    },
+    "state": "closed",
+    "title": "Fix _split_cells for non-unit cell widths",
+    "updatedAt": "2026-02-13T13:05:30Z",
+    "url": "https://github.com/Textualize/rich/pull/3974"
+  },
+  {
+    "closedAt": "2026-02-13T13:06:26Z",
+    "createdAt": "2026-02-13T11:44:09Z",
+    "isDraft": false,
+    "number": 6364,
+    "repository": {
+      "name": "textual",
+      "nameWithOwner": "Textualize/textual"
+    },
+    "state": "closed",
+    "title": "Fix DataTable auto-width columns not shrinking after row removal",
+    "updatedAt": "2026-02-13T13:06:26Z",
+    "url": "https://github.com/Textualize/textual/pull/6364"
+  },
+  {
+    "closedAt": "2026-04-06T21:02:24Z",
+    "createdAt": "2026-02-13T10:20:01Z",
+    "isDraft": true,
+    "number": 61852,
+    "repository": {
+      "name": "airflow",
+      "nameWithOwner": "apache/airflow"
+    },
+    "state": "closed",
+    "title": "Fix ExternalTaskSensor \"External DAG\" link using wrong run_id",
+    "updatedAt": "2026-04-26T03:10:30Z",
+    "url": "https://github.com/apache/airflow/pull/61852"
+  },
+  {
+    "closedAt": "2026-02-20T02:15:31Z",
+    "createdAt": "2026-02-13T10:12:21Z",
+    "isDraft": false,
+    "number": 6445,
+    "repository": {
+      "name": "optuna",
+      "nameWithOwner": "optuna/optuna"
+    },
+    "state": "closed",
+    "title": "Fix best_trials returning empty when all trials are infeasible",
+    "updatedAt": "2026-02-20T02:15:32Z",
+    "url": "https://github.com/optuna/optuna/pull/6445"
+  },
+  {
+    "closedAt": "2026-03-24T17:28:11Z",
+    "createdAt": "2026-02-13T10:12:09Z",
+    "isDraft": false,
+    "number": 11658,
+    "repository": {
+      "name": "great_expectations",
+      "nameWithOwner": "great-expectations/great_expectations"
+    },
+    "state": "closed",
+    "title": "Isolate bundled metric resolution failures by compute domain",
+    "updatedAt": "2026-03-25T01:27:15Z",
+    "url": "https://github.com/great-expectations/great_expectations/pull/11658"
+  },
+  {
+    "closedAt": "2026-03-12T20:57:41Z",
+    "createdAt": "2026-02-13T10:11:33Z",
+    "isDraft": false,
+    "number": 11657,
+    "repository": {
+      "name": "great_expectations",
+      "nameWithOwner": "great-expectations/great_expectations"
+    },
+    "state": "closed",
+    "title": "Fix incorrect exception_info structure when raised_exception is True",
+    "updatedAt": "2026-03-12T20:57:41Z",
+    "url": "https://github.com/great-expectations/great_expectations/pull/11657"
+  },
+  {
+    "closedAt": "2026-02-18T16:51:11Z",
+    "createdAt": "2026-02-13T10:10:04Z",
+    "isDraft": false,
+    "number": 61851,
+    "repository": {
+      "name": "airflow",
+      "nameWithOwner": "apache/airflow"
+    },
+    "state": "merged",
+    "title": "fix(ui): show active backfill in banner instead of first one",
+    "updatedAt": "2026-02-18T16:52:32Z",
+    "url": "https://github.com/apache/airflow/pull/61851"
+  },
+  {
+    "closedAt": "2026-04-09T12:10:15Z",
+    "createdAt": "2026-02-13T09:42:20Z",
+    "isDraft": false,
+    "number": 12224,
+    "repository": {
+      "name": "minds-platform",
+      "nameWithOwner": "mindsdb/minds-platform"
+    },
+    "state": "closed",
+    "title": "Fix NULL handling in WHERE clause and INSERT operations",
+    "updatedAt": "2026-04-09T12:10:26Z",
+    "url": "https://github.com/mindsdb/minds-platform/pull/12224"
+  },
+  {
+    "closedAt": "2026-02-13T10:57:06Z",
+    "createdAt": "2026-02-13T09:34:32Z",
+    "isDraft": false,
+    "number": 33276,
+    "repository": {
+      "name": "scikit-learn",
+      "nameWithOwner": "scikit-learn/scikit-learn"
+    },
+    "state": "closed",
+    "title": "FIX HDBSCAN crash with cluster_selection_epsilon on tied distances",
+    "updatedAt": "2026-02-13T10:57:06Z",
+    "url": "https://github.com/scikit-learn/scikit-learn/pull/33276"
+  },
+  {
+    "closedAt": "2026-02-18T03:54:38Z",
+    "createdAt": "2026-02-13T09:33:35Z",
+    "isDraft": false,
+    "number": 18773,
+    "repository": {
+      "name": "tvm",
+      "nameWithOwner": "apache/tvm"
+    },
+    "state": "merged",
+    "title": "[ONNX] Handle Gelu approximate attribute from Opset 20",
+    "updatedAt": "2026-02-18T03:54:38Z",
+    "url": "https://github.com/apache/tvm/pull/18773"
+  },
+  {
+    "closedAt": "2026-04-06T04:22:08Z",
+    "createdAt": "2026-02-13T02:09:27Z",
+    "isDraft": false,
+    "number": 20784,
+    "repository": {
+      "name": "mlflow",
+      "nameWithOwner": "mlflow/mlflow"
+    },
+    "state": "merged",
+    "title": "Fix online scoring failure when trace spans are stored in artifact repo",
+    "updatedAt": "2026-04-06T04:22:28Z",
+    "url": "https://github.com/mlflow/mlflow/pull/20784"
+  },
+  {
+    "closedAt": "2026-02-16T16:25:12Z",
+    "createdAt": "2026-02-13T02:04:28Z",
+    "isDraft": false,
+    "number": 1855,
+    "repository": {
+      "name": "presidio",
+      "nameWithOwner": "microsoft/presidio"
+    },
+    "state": "merged",
+    "title": "Fix _process_names unconditionally treating all metadata as PHI",
+    "updatedAt": "2026-02-16T16:25:13Z",
+    "url": "https://github.com/microsoft/presidio/pull/1855"
+  },
+  {
+    "closedAt": "2026-02-13T08:16:07Z",
+    "createdAt": "2026-02-13T02:04:03Z",
+    "isDraft": false,
+    "number": 13131,
+    "repository": {
+      "name": "diffusers",
+      "nameWithOwner": "huggingface/diffusers"
+    },
+    "state": "closed",
+    "title": "Fix broken attention masking for inner padding in ZImageTransformer2DModel",
+    "updatedAt": "2026-02-13T08:16:07Z",
+    "url": "https://github.com/huggingface/diffusers/pull/13131"
+  },
+  {
+    "closedAt": "2026-02-13T08:07:11Z",
+    "createdAt": "2026-02-13T02:00:37Z",
+    "isDraft": false,
+    "number": 12889,
+    "repository": {
+      "name": "gradio",
+      "nameWithOwner": "gradio-app/gradio"
+    },
+    "state": "closed",
+    "title": "Fix shared props read from wrong source (gradio.props vs gradio.shared)",
+    "updatedAt": "2026-02-13T08:07:11Z",
+    "url": "https://github.com/gradio-app/gradio/pull/12889"
+  },
+  {
+    "closedAt": "2026-02-17T00:30:25Z",
+    "createdAt": "2026-02-12T10:16:45Z",
+    "isDraft": false,
+    "number": 177,
+    "repository": {
+      "name": "ralph-claude-code",
+      "nameWithOwner": "frankbria/ralph-claude-code"
+    },
+    "state": "merged",
+    "title": "fix: auto-terminate tmux session when Ralph loop exits",
+    "updatedAt": "2026-02-17T00:30:25Z",
+    "url": "https://github.com/frankbria/ralph-claude-code/pull/177"
+  },
+  {
+    "closedAt": "2026-04-25T15:34:05Z",
+    "createdAt": "2026-02-11T18:45:08Z",
+    "isDraft": false,
+    "number": 4404,
+    "repository": {
+      "name": "TTS",
+      "nameWithOwner": "coqui-ai/TTS"
+    },
+    "state": "closed",
+    "title": "Fix boolean operator precedence bugs in GeneratorLoss",
+    "updatedAt": "2026-04-25T15:34:05Z",
+    "url": "https://github.com/coqui-ai/TTS/pull/4404"
+  },
+  {
+    "closedAt": "2026-02-11T21:13:53Z",
+    "createdAt": "2026-02-11T18:45:09Z",
+    "isDraft": false,
+    "number": 3034,
+    "repository": {
+      "name": "speechbrain",
+      "nameWithOwner": "speechbrain/speechbrain"
+    },
+    "state": "merged",
+    "title": "Fix mutable default arguments in function signatures",
+    "updatedAt": "2026-02-11T21:13:53Z",
+    "url": "https://github.com/speechbrain/speechbrain/pull/3034"
+  },
+  {
+    "closedAt": "2026-02-12T11:30:14Z",
+    "createdAt": "2026-02-11T18:44:51Z",
+    "isDraft": false,
+    "number": 2279,
+    "repository": {
+      "name": "recommenders",
+      "nameWithOwner": "recommenders-team/recommenders"
+    },
+    "state": "merged",
+    "title": "Fix mutable default argument in Keras callback methods",
+    "updatedAt": "2026-02-12T11:30:14Z",
+    "url": "https://github.com/recommenders-team/recommenders/pull/2279"
+  },
+  {
+    "closedAt": "2026-02-23T04:25:15Z",
+    "createdAt": "2026-02-11T18:38:57Z",
+    "isDraft": false,
+    "number": 8871,
+    "repository": {
+      "name": "InvokeAI",
+      "nameWithOwner": "invoke-ai/InvokeAI"
+    },
+    "state": "merged",
+    "title": "Fix bare except clauses and mutable default arguments",
+    "updatedAt": "2026-02-23T04:25:15Z",
+    "url": "https://github.com/invoke-ai/InvokeAI/pull/8871"
+  },
+  {
+    "closedAt": "2026-02-12T02:55:27Z",
+    "createdAt": "2026-02-11T18:38:18Z",
+    "isDraft": false,
+    "number": 23634,
+    "repository": {
+      "name": "ultralytics",
+      "nameWithOwner": "ultralytics/ultralytics"
+    },
+    "state": "merged",
+    "title": "Fix scipy matching in `match_predictions` to maximize IoU",
+    "updatedAt": "2026-02-12T02:55:27Z",
+    "url": "https://github.com/ultralytics/ultralytics/pull/23634"
+  },
+  {
+    "closedAt": "2026-02-16T12:20:20Z",
+    "createdAt": "2026-02-11T18:38:13Z",
+    "isDraft": false,
+    "number": 3038,
+    "repository": {
+      "name": "peft",
+      "nameWithOwner": "huggingface/peft"
+    },
+    "state": "closed",
+    "title": "Fix Embedding.get_delta_weight replacing nn.Parameter with plain tensor",
+    "updatedAt": "2026-02-16T12:20:20Z",
+    "url": "https://github.com/huggingface/peft/pull/3038"
+  },
+  {
+    "closedAt": "2026-02-11T19:49:31Z",
+    "createdAt": "2026-02-11T18:36:45Z",
+    "isDraft": false,
+    "number": 360,
+    "repository": {
+      "name": "vit-pytorch",
+      "nameWithOwner": "lucidrains/vit-pytorch"
+    },
+    "state": "merged",
+    "title": "Fix ViViT Transformer not passing use_flash_attn and duplicate mask reshape",
+    "updatedAt": "2026-02-11T19:49:32Z",
+    "url": "https://github.com/lucidrains/vit-pytorch/pull/360"
+  },
+  {
+    "closedAt": "2026-02-16T20:39:35Z",
+    "createdAt": "2026-02-11T18:35:55Z",
+    "isDraft": false,
+    "number": 5079,
+    "repository": {
+      "name": "trl",
+      "nameWithOwner": "huggingface/trl"
+    },
+    "state": "merged",
+    "title": "Fix SFT loss type rewards being overwritten in dpo_loss()",
+    "updatedAt": "2026-02-16T20:39:35Z",
+    "url": "https://github.com/huggingface/trl/pull/5079"
+  },
+  {
+    "closedAt": "2026-02-11T18:41:26Z",
+    "createdAt": "2026-02-11T18:34:38Z",
+    "isDraft": false,
+    "number": 2278,
+    "repository": {
+      "name": "recommenders",
+      "nameWithOwner": "recommenders-team/recommenders"
+    },
+    "state": "merged",
+    "title": "Fix ZeroDivisionError in item feature cosine similarity",
+    "updatedAt": "2026-02-11T18:41:26Z",
+    "url": "https://github.com/recommenders-team/recommenders/pull/2278"
+  },
+  {
+    "closedAt": "2026-02-11T18:34:14Z",
+    "createdAt": "2026-02-11T18:33:48Z",
+    "isDraft": false,
+    "number": 810,
+    "repository": {
+      "name": "CogVideo",
+      "nameWithOwner": "zai-org/CogVideo"
+    },
+    "state": "closed",
+    "title": "Fix loop variable shadowing in validation that corrupts sample iteration",
+    "updatedAt": "2026-02-11T18:34:14Z",
+    "url": "https://github.com/zai-org/CogVideo/pull/810"
+  },
+  {
+    "closedAt": "2026-04-27T14:17:02Z",
+    "createdAt": "2026-02-11T18:33:46Z",
+    "isDraft": false,
+    "number": 6362,
+    "repository": {
+      "name": "espnet",
+      "nameWithOwner": "espnet/espnet"
+    },
+    "state": "merged",
+    "title": "Fix division by zero in CTC builtin2 when all samples have NaN grad",
+    "updatedAt": "2026-04-27T14:17:10Z",
+    "url": "https://github.com/espnet/espnet/pull/6362"
+  },
+  {
+    "closedAt": "2026-02-11T19:55:28Z",
+    "createdAt": "2026-02-11T18:33:03Z",
+    "isDraft": false,
+    "number": 363,
+    "repository": {
+      "name": "denoising-diffusion-pytorch",
+      "nameWithOwner": "lucidrains/denoising-diffusion-pytorch"
+    },
+    "state": "merged",
+    "title": "Fix min-SNR loss weight clamp direction in continuous time diffusion",
+    "updatedAt": "2026-02-11T19:55:28Z",
+    "url": "https://github.com/lucidrains/denoising-diffusion-pytorch/pull/363"
+  },
+  {
+    "closedAt": "2026-02-12T18:38:38Z",
+    "createdAt": "2026-02-11T18:31:26Z",
+    "isDraft": false,
+    "number": 116,
+    "repository": {
+      "name": "k-diffusion",
+      "nameWithOwner": "crowsonkb/k-diffusion"
+    },
+    "state": "merged",
+    "title": "Fix Denoiser crash when passing callable weighting function",
+    "updatedAt": "2026-02-12T18:38:38Z",
+    "url": "https://github.com/crowsonkb/k-diffusion/pull/116"
+  },
+  {
+    "closedAt": "2026-02-12T09:40:41Z",
+    "createdAt": "2026-02-11T18:30:34Z",
+    "isDraft": false,
+    "number": 4403,
+    "repository": {
+      "name": "TTS",
+      "nameWithOwner": "coqui-ai/TTS"
+    },
+    "state": "closed",
+    "title": "fix: variable shadowing in _apply_D_loss loses accumulated values",
+    "updatedAt": "2026-02-12T09:40:42Z",
+    "url": "https://github.com/coqui-ai/TTS/pull/4403"
+  },
+  {
+    "closedAt": "2026-05-19T20:52:43Z",
+    "createdAt": "2026-02-11T18:21:43Z",
+    "isDraft": false,
+    "number": 1372,
+    "repository": {
+      "name": "gpt-neox",
+      "nameWithOwner": "EleutherAI/gpt-neox"
+    },
+    "state": "closed",
+    "title": "fix: undefined self.args in TopKTokenChoiceRouter.jitter",
+    "updatedAt": "2026-05-19T20:52:43Z",
+    "url": "https://github.com/EleutherAI/gpt-neox/pull/1372"
+  },
+  {
+    "closedAt": "2026-02-17T17:04:46Z",
+    "createdAt": "2026-02-11T18:21:10Z",
+    "isDraft": false,
+    "number": 2201,
+    "repository": {
+      "name": "litgpt",
+      "nameWithOwner": "Lightning-AI/litgpt"
+    },
+    "state": "merged",
+    "title": "fix: correct LoRA index computation uses wrong feature size",
+    "updatedAt": "2026-02-17T17:04:47Z",
+    "url": "https://github.com/Lightning-AI/litgpt/pull/2201"
+  },
+  {
+    "closedAt": "2026-05-19T20:41:25Z",
+    "createdAt": "2026-02-11T18:21:05Z",
+    "isDraft": false,
+    "number": 1371,
+    "repository": {
+      "name": "gpt-neox",
+      "nameWithOwner": "EleutherAI/gpt-neox"
+    },
+    "state": "merged",
+    "title": "fix: gMLP uses full bias instead of truncated bias",
+    "updatedAt": "2026-05-19T20:41:25Z",
+    "url": "https://github.com/EleutherAI/gpt-neox/pull/1371"
+  },
+  {
+    "closedAt": "2026-04-02T19:48:39Z",
+    "createdAt": "2026-02-11T18:18:37Z",
+    "isDraft": false,
+    "number": 1287,
+    "repository": {
+      "name": "tianshou",
+      "nameWithOwner": "thu-ml/tianshou"
+    },
+    "state": "merged",
+    "title": "fix: restore parameters on TRPO line search failure",
+    "updatedAt": "2026-04-02T19:48:40Z",
+    "url": "https://github.com/thu-ml/tianshou/pull/1287"
+  },
+  {
+    "closedAt": "2026-02-12T19:22:13Z",
+    "createdAt": "2026-02-11T18:18:13Z",
+    "isDraft": false,
+    "number": 2675,
+    "repository": {
+      "name": "TransformerEngine",
+      "nameWithOwner": "NVIDIA/TransformerEngine"
+    },
+    "state": "merged",
+    "title": "fix: correct FusedAdam copy-paste in FusedSGD error messages",
+    "updatedAt": "2026-02-12T19:22:25Z",
+    "url": "https://github.com/NVIDIA/TransformerEngine/pull/2675"
+  },
+  {
+    "closedAt": "2026-02-11T23:35:24Z",
+    "createdAt": "2026-02-11T18:17:36Z",
+    "isDraft": false,
+    "number": 7845,
+    "repository": {
+      "name": "DeepSpeed",
+      "nameWithOwner": "deepspeedai/DeepSpeed"
+    },
+    "state": "merged",
+    "title": "fix: replace deprecated fractions.gcd with math.gcd",
+    "updatedAt": "2026-02-11T23:35:24Z",
+    "url": "https://github.com/deepspeedai/DeepSpeed/pull/7845"
+  },
+  {
+    "closedAt": "2026-05-19T20:35:11Z",
+    "createdAt": "2026-02-11T18:17:18Z",
+    "isDraft": false,
+    "number": 1370,
+    "repository": {
+      "name": "gpt-neox",
+      "nameWithOwner": "EleutherAI/gpt-neox"
+    },
+    "state": "merged",
+    "title": "fix: correct inverted Sinkhorn early-stop condition",
+    "updatedAt": "2026-05-19T20:35:11Z",
+    "url": "https://github.com/EleutherAI/gpt-neox/pull/1370"
+  },
+  {
+    "closedAt": "2026-04-18T09:19:56Z",
+    "createdAt": "2026-02-11T18:15:58Z",
+    "isDraft": false,
+    "number": 2733,
+    "repository": {
+      "name": "GPT-SoVITS",
+      "nameWithOwner": "RVC-Boss/GPT-SoVITS"
+    },
+    "state": "merged",
+    "title": "fix: correct torch.randint exclusive upper bound",
+    "updatedAt": "2026-04-18T09:19:56Z",
+    "url": "https://github.com/RVC-Boss/GPT-SoVITS/pull/2733"
+  },
+  {
+    "closedAt": "2026-05-19T15:29:38Z",
+    "createdAt": "2026-02-11T18:15:50Z",
+    "isDraft": false,
+    "number": 281,
+    "repository": {
+      "name": "SenseVoice",
+      "nameWithOwner": "FunAudioLLM/SenseVoice"
+    },
+    "state": "merged",
+    "title": "fix: correct __int__ typo to __init__",
+    "updatedAt": "2026-05-19T15:29:38Z",
+    "url": "https://github.com/FunAudioLLM/SenseVoice/pull/281"
+  },
+  {
+    "closedAt": "2026-02-12T09:40:37Z",
+    "createdAt": "2026-02-11T14:36:48Z",
+    "isDraft": false,
+    "number": 4402,
+    "repository": {
+      "name": "TTS",
+      "nameWithOwner": "coqui-ai/TTS"
+    },
+    "state": "closed",
+    "title": "fix: initialize encoding variable before conditional in inference",
+    "updatedAt": "2026-02-12T09:40:37Z",
+    "url": "https://github.com/coqui-ai/TTS/pull/4402"
+  },
+  {
+    "closedAt": "2026-02-12T09:40:30Z",
+    "createdAt": "2026-02-11T14:36:24Z",
+    "isDraft": false,
+    "number": 4401,
+    "repository": {
+      "name": "TTS",
+      "nameWithOwner": "coqui-ai/TTS"
+    },
+    "state": "closed",
+    "title": "fix: use return value of torch.clamp for weight clamping",
+    "updatedAt": "2026-02-12T09:40:28Z",
+    "url": "https://github.com/coqui-ai/TTS/pull/4401"
+  },
+  {
+    "closedAt": "2026-03-23T08:16:31Z",
+    "createdAt": "2026-02-11T14:24:29Z",
+    "isDraft": false,
+    "number": 1151,
+    "repository": {
+      "name": "fish-speech",
+      "nameWithOwner": "fishaudio/fish-speech"
+    },
+    "state": "closed",
+    "title": "fix: use batch-safe indexing in top-p filtering to support batched logits",
+    "updatedAt": "2026-03-23T08:16:31Z",
+    "url": "https://github.com/fishaudio/fish-speech/pull/1151"
+  },
+  {
+    "closedAt": "2026-02-12T03:21:48Z",
+    "createdAt": "2026-02-11T14:21:57Z",
+    "isDraft": false,
+    "number": 4352,
+    "repository": {
+      "name": "lmdeploy",
+      "nameWithOwner": "InternLM/lmdeploy"
+    },
+    "state": "merged",
+    "title": "fix: move quantized norm to CPU instead of stale q_linear reference in smooth_quant",
+    "updatedAt": "2026-02-12T03:21:48Z",
+    "url": "https://github.com/InternLM/lmdeploy/pull/4352"
+  },
+  {
+    "closedAt": "2026-03-02T02:21:39Z",
+    "createdAt": "2026-02-11T14:21:47Z",
+    "isDraft": false,
+    "number": 1293,
+    "repository": {
+      "name": "DiffSynth-Studio",
+      "nameWithOwner": "modelscope/DiffSynth-Studio"
+    },
+    "state": "merged",
+    "title": "fix: prevent division by zero in TrajectoryImitationLoss at final denoising step",
+    "updatedAt": "2026-03-02T02:21:39Z",
+    "url": "https://github.com/modelscope/DiffSynth-Studio/pull/1293"
+  },
+  {
+    "closedAt": "2026-05-24T00:58:32Z",
+    "createdAt": "2026-02-11T14:18:09Z",
+    "isDraft": false,
+    "number": 1150,
+    "repository": {
+      "name": "fish-speech",
+      "nameWithOwner": "fishaudio/fish-speech"
+    },
+    "state": "closed",
+    "title": "fix: apply temperature scaling before top-p filtering in logits_to_probs",
+    "updatedAt": "2026-05-24T00:58:32Z",
+    "url": "https://github.com/fishaudio/fish-speech/pull/1150"
+  },
+  {
+    "closedAt": "2026-02-11T18:34:23Z",
+    "createdAt": "2026-02-11T14:06:14Z",
+    "isDraft": false,
+    "number": 809,
+    "repository": {
+      "name": "CogVideo",
+      "nameWithOwner": "zai-org/CogVideo"
+    },
+    "state": "closed",
+    "title": "Fix incorrect frame padding formula in lora trainers",
+    "updatedAt": "2026-02-11T18:34:23Z",
+    "url": "https://github.com/zai-org/CogVideo/pull/809"
+  },
+  {
+    "closedAt": "2026-05-19T17:35:55Z",
+    "createdAt": "2026-02-11T14:05:13Z",
+    "isDraft": false,
+    "number": 155,
+    "repository": {
+      "name": "FunClip",
+      "nameWithOwner": "modelscope/FunClip"
+    },
+    "state": "merged",
+    "title": "Fix double application of audio/video offset for concatenated segments",
+    "updatedAt": "2026-05-19T17:35:55Z",
+    "url": "https://github.com/modelscope/FunClip/pull/155"
+  },
+  {
+    "closedAt": "2026-02-11T18:34:23Z",
+    "createdAt": "2026-02-11T12:30:43Z",
+    "isDraft": false,
+    "number": 808,
+    "repository": {
+      "name": "CogVideo",
+      "nameWithOwner": "zai-org/CogVideo"
+    },
+    "state": "closed",
+    "title": "Fix min-SNR loss weighting: use torch.clamp() instead of min()",
+    "updatedAt": "2026-02-11T18:34:23Z",
+    "url": "https://github.com/zai-org/CogVideo/pull/808"
+  },
+  {
+    "closedAt": "2026-02-10T16:27:45Z",
+    "createdAt": "2026-02-10T16:27:33Z",
+    "isDraft": false,
+    "number": 55,
+    "repository": {
+      "name": "owly_short_ad",
+      "nameWithOwner": "adinarayanan2003/owly_short_ad"
+    },
+    "state": "merged",
+    "title": "feat: enhance avatar creation with optional category, custom prompt, \u2026",
+    "updatedAt": "2026-02-10T16:27:46Z",
+    "url": "https://github.com/adinarayanan2003/owly_short_ad/pull/55"
+  },
+  {
+    "closedAt": "2026-04-12T06:29:59Z",
+    "createdAt": "2026-02-10T12:49:58Z",
+    "isDraft": false,
+    "number": 12971,
+    "repository": {
+      "name": "opencode",
+      "nameWithOwner": "anomalyco/opencode"
+    },
+    "state": "closed",
+    "title": "fix: propagate abort signal to prevent TUI freeze during processing",
+    "updatedAt": "2026-04-12T06:29:59Z",
+    "url": "https://github.com/anomalyco/opencode/pull/12971"
+  },
+  {
+    "closedAt": "2026-04-12T06:29:55Z",
+    "createdAt": "2026-02-10T12:49:29Z",
+    "isDraft": false,
+    "number": 12970,
+    "repository": {
+      "name": "opencode",
+      "nameWithOwner": "anomalyco/opencode"
+    },
+    "state": "closed",
+    "title": "fix: auto-resume agent loop after context compaction",
+    "updatedAt": "2026-04-12T06:29:55Z",
+    "url": "https://github.com/anomalyco/opencode/pull/12970"
+  },
+  {
+    "closedAt": "2026-04-11T06:21:09Z",
+    "createdAt": "2026-02-10T05:30:47Z",
+    "isDraft": false,
+    "number": 12922,
+    "repository": {
+      "name": "opencode",
+      "nameWithOwner": "anomalyco/opencode"
+    },
+    "state": "closed",
+    "title": "fix(opencode): set session status before async operations",
+    "updatedAt": "2026-04-11T06:21:09Z",
+    "url": "https://github.com/anomalyco/opencode/pull/12922"
+  },
+  {
+    "closedAt": "2026-05-15T03:14:47Z",
+    "createdAt": "2026-02-10T05:30:00Z",
+    "isDraft": false,
+    "number": 12921,
+    "repository": {
+      "name": "opencode",
+      "nameWithOwner": "anomalyco/opencode"
+    },
+    "state": "closed",
+    "title": "fix(opencode): support dynamic bash timeout via OPENCODE_BASH_TIMEOUT env var",
+    "updatedAt": "2026-05-15T03:14:47Z",
+    "url": "https://github.com/anomalyco/opencode/pull/12921"
+  },
+  {
+    "closedAt": "2026-04-25T06:28:07Z",
+    "createdAt": "2026-02-10T05:29:06Z",
+    "isDraft": false,
+    "number": 12919,
+    "repository": {
+      "name": "opencode",
+      "nameWithOwner": "anomalyco/opencode"
+    },
+    "state": "closed",
+    "title": "fix(provider): add APAC cross-region prefixes for AWS Bedrock",
+    "updatedAt": "2026-04-25T06:28:07Z",
+    "url": "https://github.com/anomalyco/opencode/pull/12919"
+  },
+  {
+    "closedAt": "2026-02-10T12:48:53Z",
+    "createdAt": "2026-02-09T21:57:05Z",
+    "isDraft": false,
+    "number": 12873,
+    "repository": {
+      "name": "opencode",
+      "nameWithOwner": "anomalyco/opencode"
+    },
+    "state": "closed",
+    "title": "fix: prevent TUI freeze from abort signal not propagating in processor",
+    "updatedAt": "2026-02-10T12:48:53Z",
+    "url": "https://github.com/anomalyco/opencode/pull/12873"
+  },
+  {
+    "closedAt": "2026-02-10T12:49:13Z",
+    "createdAt": "2026-02-09T21:56:29Z",
+    "isDraft": false,
+    "number": 12872,
+    "repository": {
+      "name": "opencode",
+      "nameWithOwner": "anomalyco/opencode"
+    },
+    "state": "closed",
+    "title": "fix: auto-resume agent loop after context compaction",
+    "updatedAt": "2026-02-10T12:49:13Z",
+    "url": "https://github.com/anomalyco/opencode/pull/12872"
+  },
+  {
+    "closedAt": "2026-04-14T06:32:09Z",
+    "createdAt": "2026-02-09T21:52:54Z",
+    "isDraft": false,
+    "number": 12871,
+    "repository": {
+      "name": "opencode",
+      "nameWithOwner": "anomalyco/opencode"
+    },
+    "state": "closed",
+    "title": "fix: handle file stream event in session processor",
+    "updatedAt": "2026-04-14T06:32:09Z",
+    "url": "https://github.com/anomalyco/opencode/pull/12871"
+  },
+  {
+    "closedAt": "2026-02-10T05:28:22Z",
+    "createdAt": "2026-02-09T21:51:26Z",
+    "isDraft": false,
+    "number": 12870,
+    "repository": {
+      "name": "opencode",
+      "nameWithOwner": "anomalyco/opencode"
+    },
+    "state": "closed",
+    "title": "fix: track session status for prompt_async and guard against missing agent",
+    "updatedAt": "2026-02-10T05:28:22Z",
+    "url": "https://github.com/anomalyco/opencode/pull/12870"
+  },
+  {
+    "closedAt": "2026-02-10T05:28:20Z",
+    "createdAt": "2026-02-09T21:50:50Z",
+    "isDraft": false,
+    "number": 12869,
+    "repository": {
+      "name": "opencode",
+      "nameWithOwner": "anomalyco/opencode"
+    },
+    "state": "closed",
+    "title": "fix: OPENCODE_EXPERIMENTAL_BASH_DEFAULT_TIMEOUT_MS env var silently ignored",
+    "updatedAt": "2026-02-10T05:28:20Z",
+    "url": "https://github.com/anomalyco/opencode/pull/12869"
+  },
+  {
+    "closedAt": "2026-02-10T05:28:18Z",
+    "createdAt": "2026-02-09T21:49:35Z",
+    "isDraft": false,
+    "number": 12868,
+    "repository": {
+      "name": "opencode",
+      "nameWithOwner": "anomalyco/opencode"
+    },
+    "state": "closed",
+    "title": "fix(provider): add APAC cross-region prefixes for AWS Bedrock",
+    "updatedAt": "2026-02-10T05:28:18Z",
+    "url": "https://github.com/anomalyco/opencode/pull/12868"
+  },
+  {
+    "closedAt": "2026-05-15T03:14:44Z",
+    "createdAt": "2026-02-09T21:49:16Z",
+    "isDraft": false,
+    "number": 12867,
+    "repository": {
+      "name": "opencode",
+      "nameWithOwner": "anomalyco/opencode"
+    },
+    "state": "closed",
+    "title": "fix(server): exempt /global/health from auth middleware",
+    "updatedAt": "2026-05-15T03:14:44Z",
+    "url": "https://github.com/anomalyco/opencode/pull/12867"
+  },
+  {
+    "closedAt": "2026-02-10T05:07:22Z",
+    "createdAt": "2026-02-09T19:26:29Z",
+    "isDraft": false,
+    "number": 23604,
+    "repository": {
+      "name": "ultralytics",
+      "nameWithOwner": "ultralytics/ultralytics"
+    },
+    "state": "merged",
+    "title": "Clamp negative rle_loss to zero in Pose26 training",
+    "updatedAt": "2026-02-10T16:12:55Z",
+    "url": "https://github.com/ultralytics/ultralytics/pull/23604"
+  },
+  {
+    "closedAt": "2026-02-09T23:32:49Z",
+    "createdAt": "2026-02-09T19:26:19Z",
+    "isDraft": false,
+    "number": 23603,
+    "repository": {
+      "name": "ultralytics",
+      "nameWithOwner": "ultralytics/ultralytics"
+    },
+    "state": "merged",
+    "title": "Fix TypeError when fitness is None during hyperparameter tuning",
+    "updatedAt": "2026-02-09T23:32:49Z",
+    "url": "https://github.com/ultralytics/ultralytics/pull/23603"
+  },
+  {
+    "closedAt": "2026-02-10T05:11:21Z",
+    "createdAt": "2026-02-09T19:26:10Z",
+    "isDraft": false,
+    "number": 23602,
+    "repository": {
+      "name": "ultralytics",
+      "nameWithOwner": "ultralytics/ultralytics"
+    },
+    "state": "merged",
+    "title": "Fix `segment2box` boundary condition for edge-snapped segment points",
+    "updatedAt": "2026-02-10T07:56:42Z",
+    "url": "https://github.com/ultralytics/ultralytics/pull/23602"
+  },
+  {
+    "closedAt": "2026-02-16T12:17:44Z",
+    "createdAt": "2026-02-09T19:24:25Z",
+    "isDraft": false,
+    "number": 3031,
+    "repository": {
+      "name": "speechbrain",
+      "nameWithOwner": "speechbrain/speechbrain"
+    },
+    "state": "closed",
+    "title": "Fix inflated PER in G2P recipe by filtering eos tokens",
+    "updatedAt": "2026-02-16T12:17:44Z",
+    "url": "https://github.com/speechbrain/speechbrain/pull/3031"
+  },
+  {
+    "closedAt": "2026-03-02T03:39:58Z",
+    "createdAt": "2026-02-09T18:49:52Z",
+    "isDraft": false,
+    "number": 17687,
+    "repository": {
+      "name": "PaddleOCR",
+      "nameWithOwner": "PaddlePaddle/PaddleOCR"
+    },
+    "state": "merged",
+    "title": "Fix empty bounding box ValueError in PPStructureV3 with doc_unwarping",
+    "updatedAt": "2026-04-21T03:24:29Z",
+    "url": "https://github.com/PaddlePaddle/PaddleOCR/pull/17687"
+  },
+  {
+    "closedAt": "2026-02-16T12:17:37Z",
+    "createdAt": "2026-02-09T18:45:34Z",
+    "isDraft": false,
+    "number": 3030,
+    "repository": {
+      "name": "speechbrain",
+      "nameWithOwner": "speechbrain/speechbrain"
+    },
+    "state": "closed",
+    "title": "Fix inflated WER by filtering eos token before metric computation",
+    "updatedAt": "2026-02-16T12:17:37Z",
+    "url": "https://github.com/speechbrain/speechbrain/pull/3030"
+  },
+  {
+    "closedAt": "2026-03-02T15:53:04Z",
+    "createdAt": "2026-02-09T18:41:05Z",
+    "isDraft": false,
+    "number": 3924,
+    "repository": {
+      "name": "accelerate",
+      "nameWithOwner": "huggingface/accelerate"
+    },
+    "state": "merged",
+    "title": "Fix FSDP2 crash with ignored_params on torch < 2.7.0",
+    "updatedAt": "2026-03-02T15:53:34Z",
+    "url": "https://github.com/huggingface/accelerate/pull/3924"
+  },
+  {
+    "closedAt": "2026-02-28T03:25:55Z",
+    "createdAt": "2026-02-09T18:40:57Z",
+    "isDraft": false,
+    "number": 17686,
+    "repository": {
+      "name": "PaddleOCR",
+      "nameWithOwner": "PaddlePaddle/PaddleOCR"
+    },
+    "state": "merged",
+    "title": "Fix crop_margin crash with extreme aspect ratio images",
+    "updatedAt": "2026-05-07T06:12:25Z",
+    "url": "https://github.com/PaddlePaddle/PaddleOCR/pull/17686"
+  },
+  {
+    "closedAt": "2026-02-28T09:42:58Z",
+    "createdAt": "2026-02-09T18:35:54Z",
+    "isDraft": false,
+    "number": 17684,
+    "repository": {
+      "name": "PaddleOCR",
+      "nameWithOwner": "PaddlePaddle/PaddleOCR"
+    },
+    "state": "merged",
+    "title": "Use named logger instead of modifying root logger",
+    "updatedAt": "2026-02-28T09:42:58Z",
+    "url": "https://github.com/PaddlePaddle/PaddleOCR/pull/17684"
+  },
+  {
+    "closedAt": "2026-02-10T17:52:48Z",
+    "createdAt": "2026-02-09T18:31:30Z",
+    "isDraft": false,
+    "number": 3029,
+    "repository": {
+      "name": "speechbrain",
+      "nameWithOwner": "speechbrain/speechbrain"
+    },
+    "state": "merged",
+    "title": "Add missing mean_stat_per_model method to StatObject_SB",
+    "updatedAt": "2026-02-10T17:52:49Z",
+    "url": "https://github.com/speechbrain/speechbrain/pull/3029"
+  },
+  {
+    "closedAt": "2026-02-09T12:28:24Z",
+    "createdAt": "2026-02-08T12:58:27Z",
+    "isDraft": false,
+    "number": 43841,
+    "repository": {
+      "name": "transformers",
+      "nameWithOwner": "huggingface/transformers"
+    },
+    "state": "closed",
+    "title": "fix(switch_transformers): Fix sparse layer creation when num_sparse_*_layers=0",
+    "updatedAt": "2026-02-09T13:00:01Z",
+    "url": "https://github.com/huggingface/transformers/pull/43841"
+  },
+  {
+    "closedAt": "2026-02-09T08:56:07Z",
+    "createdAt": "2026-02-08T12:55:28Z",
+    "isDraft": false,
+    "number": 43840,
+    "repository": {
+      "name": "transformers",
+      "nameWithOwner": "huggingface/transformers"
+    },
+    "state": "closed",
+    "title": "fix(qwen3_vl): Use temporal_patch_size for timestamp calculation",
+    "updatedAt": "2026-02-09T08:56:08Z",
+    "url": "https://github.com/huggingface/transformers/pull/43840"
+  },
+  {
+    "closedAt": "2026-02-11T10:42:45Z",
+    "createdAt": "2026-02-08T12:21:19Z",
+    "isDraft": false,
+    "number": 43839,
+    "repository": {
+      "name": "transformers",
+      "nameWithOwner": "huggingface/transformers"
+    },
+    "state": "merged",
+    "title": "fix(moe): Handle dtype mismatch in torch._grouped_mm with autocast",
+    "updatedAt": "2026-02-11T14:58:48Z",
+    "url": "https://github.com/huggingface/transformers/pull/43839"
+  },
+  {
+    "closedAt": "2026-02-09T12:32:43Z",
+    "createdAt": "2026-02-08T06:39:23Z",
+    "isDraft": false,
+    "number": 43831,
+    "repository": {
+      "name": "transformers",
+      "nameWithOwner": "huggingface/transformers"
+    },
+    "state": "merged",
+    "title": "[docs] Remove pipeline() examples from summarization/translation tasks",
+    "updatedAt": "2026-02-09T12:33:04Z",
+    "url": "https://github.com/huggingface/transformers/pull/43831"
+  },
+  {
+    "closedAt": "2026-02-13T04:47:46Z",
+    "createdAt": "2026-02-08T06:35:14Z",
+    "isDraft": false,
+    "number": 20694,
+    "repository": {
+      "name": "litellm",
+      "nameWithOwner": "BerriAI/litellm"
+    },
+    "state": "closed",
+    "title": "fix(gemini): Add role=\"user\" to function_response content",
+    "updatedAt": "2026-02-13T04:48:03Z",
+    "url": "https://github.com/BerriAI/litellm/pull/20694"
+  },
+  {
+    "closedAt": "2026-02-10T15:16:41Z",
+    "createdAt": "2026-02-08T06:31:49Z",
+    "isDraft": false,
+    "number": 9271,
+    "repository": {
+      "name": "dspy",
+      "nameWithOwner": "stanfordnlp/dspy"
+    },
+    "state": "closed",
+    "title": "fix(tests): Skip Deno-dependent tests in test_rlm.py when Deno is missing",
+    "updatedAt": "2026-02-10T15:16:44Z",
+    "url": "https://github.com/stanfordnlp/dspy/pull/9271"
+  },
+  {
+    "closedAt": "2026-02-14T19:02:51Z",
+    "createdAt": "2026-02-08T06:30:00Z",
+    "isDraft": false,
+    "number": 233,
+    "repository": {
+      "name": "stable-audio-tools",
+      "nameWithOwner": "Stability-AI/stable-audio-tools"
+    },
+    "state": "merged",
+    "title": "Fix operator precedence bug in condition unwrapping",
+    "updatedAt": "2026-02-14T19:03:08Z",
+    "url": "https://github.com/Stability-AI/stable-audio-tools/pull/233"
+  },
+  {
+    "closedAt": "2026-02-08T08:04:25Z",
+    "createdAt": "2026-02-08T06:26:36Z",
+    "isDraft": false,
+    "number": 4759,
+    "repository": {
+      "name": "agents",
+      "nameWithOwner": "livekit/agents"
+    },
+    "state": "merged",
+    "title": "feat: add missing OpenTelemetry GenAI attributes (gen_ai.provider.name, gen_ai.operation.name)",
+    "updatedAt": "2026-02-08T08:04:25Z",
+    "url": "https://github.com/livekit/agents/pull/4759"
+  },
+  {
+    "closedAt": "2026-05-26T16:18:46Z",
+    "createdAt": "2026-02-07T19:56:27Z",
+    "isDraft": false,
+    "number": 3028,
+    "repository": {
+      "name": "peft",
+      "nameWithOwner": "huggingface/peft"
+    },
+    "state": "closed",
+    "title": "fix: layers_to_transform now correctly matches layer index on MoE models",
+    "updatedAt": "2026-05-26T16:18:46Z",
+    "url": "https://github.com/huggingface/peft/pull/3028"
+  },
+  {
+    "closedAt": "2026-02-09T07:17:51Z",
+    "createdAt": "2026-02-07T08:14:27Z",
+    "isDraft": false,
+    "number": 1264,
+    "repository": {
+      "name": "F5-TTS",
+      "nameWithOwner": "SWivid/F5-TTS"
+    },
+    "state": "closed",
+    "title": "fix: clip reference text proportionally when audio is truncated",
+    "updatedAt": "2026-02-09T07:17:51Z",
+    "url": "https://github.com/SWivid/F5-TTS/pull/1264"
+  },
+  {
+    "closedAt": "2026-03-23T08:13:07Z",
+    "createdAt": "2026-02-07T08:10:51Z",
+    "isDraft": false,
+    "number": 1148,
+    "repository": {
+      "name": "fish-speech",
+      "nameWithOwner": "fishaudio/fish-speech"
+    },
+    "state": "merged",
+    "title": "fix: add torchaudio 2.9 compatibility for list_audio_backends removal",
+    "updatedAt": "2026-03-23T08:13:07Z",
+    "url": "https://github.com/fishaudio/fish-speech/pull/1148"
+  },
+  {
+    "closedAt": "2026-02-08T18:21:33Z",
+    "createdAt": "2026-02-07T07:25:57Z",
+    "isDraft": false,
+    "number": 1338,
+    "repository": {
+      "name": "whisperX",
+      "nameWithOwner": "m-bain/whisperX"
+    },
+    "state": "merged",
+    "title": "Optimize assign_word_speakers with interval tree for 228x speedup",
+    "updatedAt": "2026-02-08T18:21:33Z",
+    "url": "https://github.com/m-bain/whisperX/pull/1338"
+  },
+  {
+    "closedAt": "2026-02-09T07:13:01Z",
+    "createdAt": "2026-02-07T07:24:13Z",
+    "isDraft": false,
+    "number": 4397,
+    "repository": {
+      "name": "TTS",
+      "nameWithOwner": "coqui-ai/TTS"
+    },
+    "state": "closed",
+    "title": "Fix compatibility with transformers >= 5.0.0",
+    "updatedAt": "2026-04-13T00:38:51Z",
+    "url": "https://github.com/coqui-ai/TTS/pull/4397"
+  },
+  {
+    "closedAt": "2026-02-11T20:31:43Z",
+    "createdAt": "2026-02-07T07:23:01Z",
+    "isDraft": false,
+    "number": 1130,
+    "repository": {
+      "name": "open_clip",
+      "nameWithOwner": "mlfoundations/open_clip"
+    },
+    "state": "merged",
+    "title": "Fix BeamSearchScorer import for transformers >= 4.56",
+    "updatedAt": "2026-02-11T20:31:43Z",
+    "url": "https://github.com/mlfoundations/open_clip/pull/1130"
+  },
+  {
+    "closedAt": "2026-03-02T02:25:12Z",
+    "createdAt": "2026-02-06T23:53:34Z",
+    "isDraft": false,
+    "number": 1275,
+    "repository": {
+      "name": "DiffSynth-Studio",
+      "nameWithOwner": "modelscope/DiffSynth-Studio"
+    },
+    "state": "merged",
+    "title": "Fix AttributeError when pipe.dit is None during split training",
+    "updatedAt": "2026-03-02T02:25:12Z",
+    "url": "https://github.com/modelscope/DiffSynth-Studio/pull/1275"
+  },
+  {
+    "closedAt": "2026-02-11T18:34:22Z",
+    "createdAt": "2026-02-06T23:46:55Z",
+    "isDraft": false,
+    "number": 807,
+    "repository": {
+      "name": "CogVideo",
+      "nameWithOwner": "zai-org/CogVideo"
+    },
+    "state": "closed",
+    "title": "Fix patch_size_t padding calculation for frame count alignment",
+    "updatedAt": "2026-02-11T18:34:22Z",
+    "url": "https://github.com/zai-org/CogVideo/pull/807"
+  },
+  {
+    "closedAt": "2026-02-06T23:46:32Z",
+    "createdAt": "2026-02-06T23:46:10Z",
+    "isDraft": false,
+    "number": 806,
+    "repository": {
+      "name": "CogVideo",
+      "nameWithOwner": "zai-org/CogVideo"
+    },
+    "state": "closed",
+    "title": "Fix patch_size_t padding calculation for frame count alignment",
+    "updatedAt": "2026-02-06T23:46:32Z",
+    "url": "https://github.com/zai-org/CogVideo/pull/806"
+  },
+  {
+    "closedAt": "2026-02-20T19:34:03Z",
+    "createdAt": "2026-02-06T18:27:59Z",
+    "isDraft": false,
+    "number": 1855,
+    "repository": {
+      "name": "bitsandbytes",
+      "nameWithOwner": "bitsandbytes-foundation/bitsandbytes"
+    },
+    "state": "merged",
+    "title": "Add LARS to str2optimizer32bit dictionary",
+    "updatedAt": "2026-02-20T19:34:03Z",
+    "url": "https://github.com/bitsandbytes-foundation/bitsandbytes/pull/1855"
+  },
+  {
+    "closedAt": "2026-02-11T11:43:46Z",
+    "createdAt": "2026-02-06T18:24:35Z",
+    "isDraft": false,
+    "number": 3567,
+    "repository": {
+      "name": "lm-evaluation-harness",
+      "nameWithOwner": "EleutherAI/lm-evaluation-harness"
+    },
+    "state": "merged",
+    "title": "fix: replace non-existent 'headline_text' with 'headline' in MasakhaNEWS tasks",
+    "updatedAt": "2026-02-11T11:47:56Z",
+    "url": "https://github.com/EleutherAI/lm-evaluation-harness/pull/3567"
+  },
+  {
+    "closedAt": "2026-02-09T07:12:34Z",
+    "createdAt": "2026-02-06T18:10:41Z",
+    "isDraft": false,
+    "number": 1062,
+    "repository": {
+      "name": "MiniCPM-V",
+      "nameWithOwner": "OpenBMB/MiniCPM-V"
+    },
+    "state": "closed",
+    "title": "fix: rename evaluation_strategy to eval_strategy in finetune script",
+    "updatedAt": "2026-02-09T07:12:34Z",
+    "url": "https://github.com/OpenBMB/MiniCPM-V/pull/1062"
+  },
+  {
+    "closedAt": "2026-03-04T23:53:22Z",
+    "createdAt": "2026-02-06T18:04:03Z",
+    "isDraft": false,
+    "number": 68,
+    "repository": {
+      "name": "shannon",
+      "nameWithOwner": "KeygraphHQ/shannon"
+    },
+    "state": "closed",
+    "title": "fix: improve error messaging for agent output validation failures",
+    "updatedAt": "2026-03-05T02:19:55Z",
+    "url": "https://github.com/KeygraphHQ/shannon/pull/68"
+  },
+  {
+    "closedAt": "2026-02-10T02:17:54Z",
+    "createdAt": "2026-02-06T18:02:38Z",
+    "isDraft": false,
+    "number": 67,
+    "repository": {
+      "name": "shannon",
+      "nameWithOwner": "KeygraphHQ/shannon"
+    },
+    "state": "closed",
+    "title": "feat: add report language support for i18n output",
+    "updatedAt": "2026-02-10T05:21:19Z",
+    "url": "https://github.com/KeygraphHQ/shannon/pull/67"
+  },
+  {
+    "closedAt": "2026-02-10T02:12:27Z",
+    "createdAt": "2026-02-06T17:59:59Z",
+    "isDraft": false,
+    "number": 66,
+    "repository": {
+      "name": "shannon",
+      "nameWithOwner": "KeygraphHQ/shannon"
+    },
+    "state": "closed",
+    "title": "feat: add Ollama support for local model usage",
+    "updatedAt": "2026-02-10T05:21:16Z",
+    "url": "https://github.com/KeygraphHQ/shannon/pull/66"
+  },
+  {
+    "closedAt": "2026-02-07T04:17:32Z",
+    "createdAt": "2026-02-06T16:30:51Z",
+    "isDraft": false,
+    "number": 8002,
+    "repository": {
+      "name": "ms-swift",
+      "nameWithOwner": "modelscope/ms-swift"
+    },
+    "state": "merged",
+    "title": "fix: handle None padding_to in get_padding_to() for fused attention",
+    "updatedAt": "2026-02-07T04:17:32Z",
+    "url": "https://github.com/modelscope/ms-swift/pull/8002"
+  },
+  {
+    "closedAt": "2026-02-11T16:02:17Z",
+    "createdAt": "2026-02-06T16:20:33Z",
+    "isDraft": false,
+    "number": 716,
+    "repository": {
+      "name": "mlx-vlm",
+      "nameWithOwner": "Blaizzy/mlx-vlm"
+    },
+    "state": "merged",
+    "title": "docs: clarify that some models need [torch] extra for torchvision",
+    "updatedAt": "2026-02-11T16:02:17Z",
+    "url": "https://github.com/Blaizzy/mlx-vlm/pull/716"
+  },
+  {
+    "closedAt": "2026-02-16T12:17:29Z",
+    "createdAt": "2026-02-06T15:21:28Z",
+    "isDraft": false,
+    "number": 30794,
+    "repository": {
+      "name": "numpy",
+      "nameWithOwner": "numpy/numpy"
+    },
+    "state": "closed",
+    "title": "BUG: Handle empty x array in np.interp",
+    "updatedAt": "2026-02-16T12:53:11Z",
+    "url": "https://github.com/numpy/numpy/pull/30794"
+  },
+  {
+    "closedAt": "2026-02-06T15:50:25Z",
+    "createdAt": "2026-02-06T15:17:11Z",
+    "isDraft": false,
+    "number": 7243,
+    "repository": {
+      "name": "scrapy",
+      "nameWithOwner": "scrapy/scrapy"
+    },
+    "state": "closed",
+    "title": "Fix DeprecationWarning from pyOpenSSL 25.1.0 when mutating Context",
+    "updatedAt": "2026-03-13T18:34:44Z",
+    "url": "https://github.com/scrapy/scrapy/pull/7243"
+  },
+  {
+    "closedAt": "2026-02-22T00:13:36Z",
+    "createdAt": "2026-02-06T15:12:20Z",
+    "isDraft": false,
+    "number": 1436,
+    "repository": {
+      "name": "loguru",
+      "nameWithOwner": "Delgan/loguru"
+    },
+    "state": "closed",
+    "title": "Fix crash when traceback frame has tb_lineno=None",
+    "updatedAt": "2026-02-22T00:13:36Z",
+    "url": "https://github.com/Delgan/loguru/pull/1436"
+  },
+  {
+    "closedAt": "2026-02-06T15:18:23Z",
+    "createdAt": "2026-02-06T15:10:36Z",
+    "isDraft": false,
+    "number": 8503,
+    "repository": {
+      "name": "networkx",
+      "nameWithOwner": "networkx/networkx"
+    },
+    "state": "closed",
+    "title": "Fix ZeroDivisionError in normalized rich_club_coefficient",
+    "updatedAt": "2026-02-06T15:18:23Z",
+    "url": "https://github.com/networkx/networkx/pull/8503"
+  },
+  {
+    "closedAt": "2026-03-18T00:29:18Z",
+    "createdAt": "2026-02-05T22:50:41Z",
+    "isDraft": false,
+    "number": 5483,
+    "repository": {
+      "name": "plotly.py",
+      "nameWithOwner": "plotly/plotly.py"
+    },
+    "state": "merged",
+    "title": "Fix numpy 2.4.0 compatibility in create_violin()",
+    "updatedAt": "2026-03-18T00:29:18Z",
+    "url": "https://github.com/plotly/plotly.py/pull/5483"
+  },
+  {
+    "closedAt": "2026-02-06T18:48:54Z",
+    "createdAt": "2026-02-05T22:47:13Z",
+    "isDraft": false,
+    "number": 7648,
+    "repository": {
+      "name": "onnx",
+      "nameWithOwner": "onnx/onnx"
+    },
+    "state": "closed",
+    "title": "Fix ReduceLogSumExp reference implementation for integer input",
+    "updatedAt": "2026-02-06T19:08:27Z",
+    "url": "https://github.com/onnx/onnx/pull/7648"
+  },
+  {
+    "closedAt": "2026-02-06T15:30:51Z",
+    "createdAt": "2026-02-05T22:44:52Z",
+    "isDraft": false,
+    "number": 31094,
+    "repository": {
+      "name": "matplotlib",
+      "nameWithOwner": "matplotlib/matplotlib"
+    },
+    "state": "closed",
+    "title": "Fix SimpleLineShadow: Replace get_foreground() with get_rgb()",
+    "updatedAt": "2026-02-06T15:31:22Z",
+    "url": "https://github.com/matplotlib/matplotlib/pull/31094"
+  },
+  {
+    "closedAt": "2026-02-08T16:02:35Z",
+    "createdAt": "2026-02-05T17:25:12Z",
+    "isDraft": false,
+    "number": 35031,
+    "repository": {
+      "name": "langchain",
+      "nameWithOwner": "langchain-ai/langchain"
+    },
+    "state": "closed",
+    "title": "fix(core): handle None content in ToolMessageChunk merge",
+    "updatedAt": "2026-02-08T16:02:35Z",
+    "url": "https://github.com/langchain-ai/langchain/pull/35031"
+  },
+  {
+    "closedAt": "2026-03-02T16:01:12Z",
+    "createdAt": "2026-02-05T17:24:49Z",
+    "isDraft": false,
+    "number": 9259,
+    "repository": {
+      "name": "dspy",
+      "nameWithOwner": "stanfordnlp/dspy"
+    },
+    "state": "closed",
+    "title": "fix: simplify _parse_code to prevent code corruption",
+    "updatedAt": "2026-03-02T16:01:12Z",
+    "url": "https://github.com/stanfordnlp/dspy/pull/9259"
+  },
+  {
+    "closedAt": "2026-02-06T11:55:13Z",
+    "createdAt": "2026-02-05T17:24:34Z",
+    "isDraft": false,
+    "number": 20634,
+    "repository": {
+      "name": "llama_index",
+      "nameWithOwner": "run-llama/llama_index"
+    },
+    "state": "closed",
+    "title": "fix: pass reasoning param for any model with reasoning_options",
+    "updatedAt": "2026-02-06T11:55:13Z",
+    "url": "https://github.com/run-llama/llama_index/pull/20634"
+  },
+  {
+    "closedAt": "2026-02-06T22:34:21Z",
+    "createdAt": "2026-02-05T15:06:49Z",
+    "isDraft": false,
+    "number": 4208,
+    "repository": {
+      "name": "pydantic-ai",
+      "nameWithOwner": "pydantic/pydantic-ai"
+    },
+    "state": "merged",
+    "title": "Update `UsageLimits` to preserve explicit 0 token limits instead of falling back on deprecated fields",
+    "updatedAt": "2026-02-06T22:34:21Z",
+    "url": "https://github.com/pydantic/pydantic-ai/pull/4208"
+  },
+  {
+    "closedAt": "2026-02-10T14:24:54Z",
+    "createdAt": "2026-02-05T15:03:49Z",
+    "isDraft": false,
+    "number": 2844,
+    "repository": {
+      "name": "openai-python",
+      "nameWithOwner": "openai/openai-python"
+    },
+    "state": "closed",
+    "title": "fix(streaming): remove unreachable sse.event == error check",
+    "updatedAt": "2026-02-10T14:24:55Z",
+    "url": "https://github.com/openai/openai-python/pull/2844"
+  },
+  {
+    "closedAt": "2026-03-28T18:13:58Z",
+    "createdAt": "2026-02-05T15:01:34Z",
+    "isDraft": false,
+    "number": 2058,
+    "repository": {
+      "name": "instructor",
+      "nameWithOwner": "567-labs/instructor"
+    },
+    "state": "closed",
+    "title": "fix(process_response): use issubclass instead of isinstance for ParallelBase check",
+    "updatedAt": "2026-03-28T18:14:13Z",
+    "url": "https://github.com/567-labs/instructor/pull/2058"
+  },
+  {
+    "closedAt": "2026-03-28T18:13:34Z",
+    "createdAt": "2026-02-05T15:00:06Z",
+    "isDraft": false,
+    "number": 2057,
+    "repository": {
+      "name": "instructor",
+      "nameWithOwner": "567-labs/instructor"
+    },
+    "state": "closed",
+    "title": "fix(security): add token budget limiting and LLM validator sanitization",
+    "updatedAt": "2026-03-28T18:13:44Z",
+    "url": "https://github.com/567-labs/instructor/pull/2057"
+  },
+  {
+    "closedAt": "2026-02-16T07:40:07Z",
+    "createdAt": "2026-02-05T11:31:29Z",
+    "isDraft": false,
+    "number": 1501,
+    "repository": {
+      "name": "holmesgpt",
+      "nameWithOwner": "HolmesGPT/holmesgpt"
+    },
+    "state": "merged",
+    "title": "fix(mcp): Support nullable types in ToolParameter validation",
+    "updatedAt": "2026-02-16T07:40:41Z",
+    "url": "https://github.com/HolmesGPT/holmesgpt/pull/1501"
+  },
+  {
+    "closedAt": "2026-02-10T16:24:28Z",
+    "createdAt": "2026-02-05T10:33:39Z",
+    "isDraft": false,
+    "number": 10514,
+    "repository": {
+      "name": "haystack",
+      "nameWithOwner": "deepset-ai/haystack"
+    },
+    "state": "closed",
+    "title": "fix(security): Add SSRF protection to LinkContentFetcher",
+    "updatedAt": "2026-02-10T17:04:32Z",
+    "url": "https://github.com/deepset-ai/haystack/pull/10514"
+  },
+  {
+    "closedAt": "2026-02-09T07:12:51Z",
+    "createdAt": "2026-02-04T20:02:26Z",
+    "isDraft": false,
+    "number": 12288,
+    "repository": {
+      "name": "ComfyUI",
+      "nameWithOwner": "Comfy-Org/ComfyUI"
+    },
+    "state": "closed",
+    "title": "security: implement allowlist-based pickle restrictions to prevent RCE",
+    "updatedAt": "2026-02-09T07:12:51Z",
+    "url": "https://github.com/Comfy-Org/ComfyUI/pull/12288"
+  },
+  {
+    "closedAt": "2026-01-31T16:54:25Z",
+    "createdAt": "2026-01-31T16:54:16Z",
+    "isDraft": false,
+    "number": 53,
+    "repository": {
+      "name": "owly_short_ad",
+      "nameWithOwner": "adinarayanan2003/owly_short_ad"
+    },
+    "state": "merged",
+    "title": "Fix regenerated image storage path in image_generation_service.py",
+    "updatedAt": "2026-01-31T16:54:25Z",
+    "url": "https://github.com/adinarayanan2003/owly_short_ad/pull/53"
+  },
+  {
+    "closedAt": "2026-01-02T07:35:50Z",
+    "createdAt": "2025-12-23T20:41:52Z",
+    "isDraft": false,
+    "number": 221,
+    "repository": {
+      "name": "Fantasy-Premier-League",
+      "nameWithOwner": "vaastav/Fantasy-Premier-League"
+    },
+    "state": "merged",
+    "title": "fix: Handle schema drift in merged_gw.csv when API adds new columns",
+    "updatedAt": "2026-01-02T07:35:50Z",
+    "url": "https://github.com/vaastav/Fantasy-Premier-League/pull/221"
+  },
+  {
+    "closedAt": "2026-01-02T07:35:18Z",
+    "createdAt": "2025-12-23T20:24:12Z",
+    "isDraft": false,
+    "number": 220,
+    "repository": {
+      "name": "Fantasy-Premier-League",
+      "nameWithOwner": "vaastav/Fantasy-Premier-League"
+    },
+    "state": "merged",
+    "title": "docs: Add comprehensive data dictionary for all dataset variables",
+    "updatedAt": "2026-01-02T07:35:19Z",
+    "url": "https://github.com/vaastav/Fantasy-Premier-League/pull/220"
+  },
+  {
+    "closedAt": "2025-12-26T03:41:46Z",
+    "createdAt": "2025-12-23T19:28:40Z",
+    "isDraft": false,
+    "number": 34466,
+    "repository": {
+      "name": "langchain",
+      "nameWithOwner": "langchain-ai/langchain"
+    },
+    "state": "merged",
+    "title": "test(core): URL-encode bgColor parameter in mermaid.ink API calls",
+    "updatedAt": "2026-01-22T21:20:58Z",
+    "url": "https://github.com/langchain-ai/langchain/pull/34466"
+  },
+  {
+    "closedAt": "2026-03-01T15:32:54Z",
+    "createdAt": "2025-12-22T11:40:03Z",
+    "isDraft": false,
+    "number": 3802,
+    "repository": {
+      "name": "browser-use",
+      "nameWithOwner": "browser-use/browser-use"
+    },
+    "state": "closed",
+    "title": "docs: fix browser state format documentation in system_prompt.md",
+    "updatedAt": "2026-03-01T15:32:54Z",
+    "url": "https://github.com/browser-use/browser-use/pull/3802"
+  },
+  {
+    "closedAt": "2026-01-27T23:33:36Z",
+    "createdAt": "2025-12-22T11:31:41Z",
+    "isDraft": false,
+    "number": 3801,
+    "repository": {
+      "name": "browser-use",
+      "nameWithOwner": "browser-use/browser-use"
+    },
+    "state": "closed",
+    "title": "fix: respect use_vision=False in judge to prevent screenshot leakage",
+    "updatedAt": "2026-01-27T23:33:36Z",
+    "url": "https://github.com/browser-use/browser-use/pull/3801"
+  },
+  {
+    "closedAt": "2025-12-22T16:40:28Z",
+    "createdAt": "2025-12-20T21:19:30Z",
+    "isDraft": false,
+    "number": 97,
+    "repository": {
+      "name": "server-survival",
+      "nameWithOwner": "pshenok/server-survival"
+    },
+    "state": "merged",
+    "title": "fix: resolve 11 critical and high severity bugs in v2.1",
+    "updatedAt": "2025-12-22T16:40:28Z",
+    "url": "https://github.com/pshenok/server-survival/pull/97"
+  },
+  {
+    "closedAt": "2025-12-14T20:34:39Z",
+    "createdAt": "2025-12-13T23:33:34Z",
+    "isDraft": false,
+    "number": 5,
+    "repository": {
+      "name": "owly_short_ad",
+      "nameWithOwner": "adinarayanan2003/owly_short_ad"
+    },
+    "state": "merged",
+    "title": "Feature/subtitles and video optimizations",
+    "updatedAt": "2025-12-14T20:34:39Z",
+    "url": "https://github.com/adinarayanan2003/owly_short_ad/pull/5"
+  },
+  {
+    "closedAt": "2025-10-08T19:29:15Z",
+    "createdAt": "2025-10-08T19:23:04Z",
+    "isDraft": false,
+    "number": 2,
+    "repository": {
+      "name": "owly_studio",
+      "nameWithOwner": "adinarayanan2003/owly_studio"
+    },
+    "state": "merged",
+    "title": "adding 3word templates",
+    "updatedAt": "2025-10-08T19:29:15Z",
+    "url": "https://github.com/adinarayanan2003/owly_studio/pull/2"
+  },
+  {
+    "closedAt": "2025-10-08T18:37:15Z",
+    "createdAt": "2025-10-08T18:32:42Z",
+    "isDraft": false,
+    "number": 1,
+    "repository": {
+      "name": "owly_studio",
+      "nameWithOwner": "adinarayanan2003/owly_studio"
+    },
+    "state": "merged",
+    "title": "timestamp to frame.",
+    "updatedAt": "2025-10-08T18:37:15Z",
+    "url": "https://github.com/adinarayanan2003/owly_studio/pull/1"
+  },
+  {
+    "closedAt": "2026-02-05T10:15:58Z",
+    "createdAt": "2022-12-04T07:01:36Z",
+    "isDraft": false,
+    "number": 323,
+    "repository": {
+      "name": "water.css",
+      "nameWithOwner": "kognise/water.css"
+    },
+    "state": "closed",
+    "title": "feat: Added a sticky header",
+    "updatedAt": "2026-02-05T10:15:58Z",
+    "url": "https://github.com/kognise/water.css/pull/323"
+  }
+]

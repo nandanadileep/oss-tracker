@@ -1,0 +1,7572 @@
+{
+  "prs": {
+    "pytorch/vision#9384": {
+      "number": 9384,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "CONFLICTING",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-23T18:04:49Z",
+      "lastEditedAt": null,
+      "additions": 14,
+      "deletions": 3,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 3
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "cla signed"
+          }
+        ]
+      },
+      "headRefName": "fix-mask-nearest-exact-interpolation",
+      "baseRefName": "main"
+    },
+    "facebookresearch/hydra#3133": {
+      "number": 3133,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-05-16T02:13:19Z",
+      "lastEditedAt": null,
+      "additions": 69,
+      "deletions": 3,
+      "changedFiles": 3,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "CLA Signed"
+          },
+          {
+            "name": "triage"
+          }
+        ]
+      },
+      "headRefName": "fix-multirun-override-ordering",
+      "baseRefName": "main"
+    },
+    "determined-ai/determined#10265": {
+      "number": 10265,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-15T15:35:26Z",
+      "lastEditedAt": null,
+      "additions": 22,
+      "deletions": 2,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-json-encode-bytes-keys",
+      "baseRefName": "main"
+    },
+    "Lightning-AI/pytorch-lightning#21539": {
+      "number": 21539,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-20T07:17:23Z",
+      "lastEditedAt": "2026-02-15T15:26:27Z",
+      "additions": 1,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 1,
+        "nodes": [
+          {
+            "author": {
+              "login": "Borda"
+            },
+            "state": "APPROVED",
+            "createdAt": "2026-02-20T07:02:45Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "pl"
+          }
+        ]
+      },
+      "headRefName": "fix/tqdm-update-instead-of-refresh",
+      "baseRefName": "master"
+    },
+    "PyGithub/PyGithub#3450": {
+      "number": 3450,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "CONFLICTING",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-15T11:01:42Z",
+      "lastEditedAt": null,
+      "additions": 31,
+      "deletions": 10,
+      "changedFiles": 3,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 1
+      },
+      "reviews": {
+        "totalCount": 2,
+        "nodes": [
+          {
+            "author": {
+              "login": "EnricoMi"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-15T10:49:44Z"
+          },
+          {
+            "author": {
+              "login": "EnricoMi"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-15T11:01:42Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-totalcount-keyerror",
+      "baseRefName": "main"
+    },
+    "sphinx-doc/sphinx#14303": {
+      "number": 14303,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-04-14T11:10:47Z",
+      "lastEditedAt": null,
+      "additions": 23,
+      "deletions": 0,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 3
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-mock-union-operator",
+      "baseRefName": "master"
+    },
+    "Zulko/moviepy#2554": {
+      "number": 2554,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-14T00:07:52Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-composite-precomputed-attr",
+      "baseRefName": "master"
+    },
+    "onnx/onnx#7665": {
+      "number": 7665,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-14T00:58:00Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 1,
+        "nodes": [
+          {
+            "author": {
+              "login": "copilot-pull-request-reviewer"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-14T00:26:55Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-pytorch-half-pixel-resize",
+      "baseRefName": "main"
+    },
+    "arrow-py/arrow#1243": {
+      "number": 1243,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-13T23:18:22Z",
+      "lastEditedAt": null,
+      "additions": 24,
+      "deletions": 6,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/parser-indexerror-malformed-fmt",
+      "baseRefName": "master"
+    },
+    "huggingface/datasets#8004": {
+      "number": 8004,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-13T23:03:55Z",
+      "lastEditedAt": null,
+      "additions": 11,
+      "deletions": 0,
+      "changedFiles": 3,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-pathlike-save-load-disk",
+      "baseRefName": "main"
+    },
+    "lancedb/lancedb#3028": {
+      "number": 3028,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "CONFLICTING",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-13T22:40:48Z",
+      "lastEditedAt": null,
+      "additions": 33,
+      "deletions": 1,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 1
+      },
+      "reviews": {
+        "totalCount": 1,
+        "nodes": [
+          {
+            "author": {
+              "login": "wjones127"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-13T22:40:47Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "bug"
+          },
+          {
+            "name": "Python"
+          }
+        ]
+      },
+      "headRefName": "fix/nullable-struct-align-field-types",
+      "baseRefName": "main"
+    },
+    "langgenius/dify#32317": {
+      "number": 32317,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "CONFLICTING",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-18T08:52:48Z",
+      "lastEditedAt": null,
+      "additions": 145,
+      "deletions": 6,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 2
+      },
+      "reviews": {
+        "totalCount": 1,
+        "nodes": [
+          {
+            "author": {
+              "login": "gemini-code-assist"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-13T21:51:08Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "size:L"
+          }
+        ]
+      },
+      "headRefName": "fix/http-request-json-body-variable-escaping",
+      "baseRefName": "main"
+    },
+    "wandb/wandb#11344": {
+      "number": 11344,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-13T20:50:07Z",
+      "lastEditedAt": null,
+      "additions": 25,
+      "deletions": 1,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-new-file-offline-sync",
+      "baseRefName": "main"
+    },
+    "chroma-core/chroma#6437": {
+      "number": 6437,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-13T20:06:42Z",
+      "lastEditedAt": null,
+      "additions": 13,
+      "deletions": 28,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 1
+      },
+      "reviews": {
+        "totalCount": 1,
+        "nodes": [
+          {
+            "author": {
+              "login": "propel-code-bot"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-13T20:06:42Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-config-roundtrip-test",
+      "baseRefName": "main"
+    },
+    "encode/httpx#3764": {
+      "number": 3764,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-13T19:36:09Z",
+      "lastEditedAt": null,
+      "additions": 18,
+      "deletions": 2,
+      "changedFiles": 3,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-pipe-encoding-in-path",
+      "baseRefName": "master"
+    },
+    "mwaskom/seaborn#3912": {
+      "number": 3912,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-13T14:29:43Z",
+      "lastEditedAt": null,
+      "additions": 13,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/pseudo-axis-shared-locator-3585",
+      "baseRefName": "master"
+    },
+    "mwaskom/seaborn#3911": {
+      "number": 3911,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-13T14:23:16Z",
+      "lastEditedAt": null,
+      "additions": 24,
+      "deletions": 3,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-hist-common-norm-density",
+      "baseRefName": "master"
+    },
+    "pydata/xarray#11164": {
+      "number": 11164,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-13T18:13:51Z",
+      "lastEditedAt": null,
+      "additions": 44,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "topic-plotting"
+          }
+        ]
+      },
+      "headRefName": "fix/line-hue-color-grouping",
+      "baseRefName": "main"
+    },
+    "mage-ai/mage-ai#6024": {
+      "number": 6024,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-13T18:51:49Z",
+      "lastEditedAt": null,
+      "additions": 50,
+      "deletions": 1,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 1
+      },
+      "reviews": {
+        "totalCount": 1,
+        "nodes": [
+          {
+            "author": {
+              "login": "copilot-pull-request-reviewer"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-13T18:51:49Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/preserve-object-dtype-between-blocks",
+      "baseRefName": "master"
+    },
+    "python-poetry/poetry#10736": {
+      "number": 10736,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-13T13:55:24Z",
+      "lastEditedAt": "2026-02-13T13:39:43Z",
+      "additions": 232,
+      "deletions": 0,
+      "changedFiles": 11,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 2
+      },
+      "reviews": {
+        "totalCount": 3,
+        "nodes": [
+          {
+            "author": {
+              "login": "sourcery-ai"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-13T13:41:02Z"
+          },
+          {
+            "author": {
+              "login": "Mr-Neutr0n"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-13T13:55:20Z"
+          },
+          {
+            "author": {
+              "login": "Mr-Neutr0n"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-13T13:55:24Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/file-scripts-install",
+      "baseRefName": "main"
+    },
+    "bentoml/BentoML#5549": {
+      "number": 5549,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-13T11:42:55Z",
+      "lastEditedAt": null,
+      "additions": 100,
+      "deletions": 12,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/spark-batch-apimethod-compat",
+      "baseRefName": "main"
+    },
+    "rapidsai/cudf#21444": {
+      "number": 21444,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "CHANGES_REQUESTED",
+      "mergeable": "CONFLICTING",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-25T22:59:20Z",
+      "lastEditedAt": null,
+      "additions": 79,
+      "deletions": 20,
+      "changedFiles": 3,
+      "comments": {
+        "totalCount": 7
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 1,
+        "nodes": [
+          {
+            "author": {
+              "login": "mroeschke"
+            },
+            "state": "CHANGES_REQUESTED",
+            "createdAt": "2026-02-13T20:12:37Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "bug"
+          },
+          {
+            "name": "Python"
+          },
+          {
+            "name": "non-breaking"
+          }
+        ]
+      },
+      "headRefName": "fix-datetimeindex-freq-invalidation",
+      "baseRefName": "main"
+    },
+    "apache/tvm#18774": {
+      "number": 18774,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-03-15T21:00:47Z",
+      "lastEditedAt": null,
+      "additions": 41,
+      "deletions": 2,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 3
+      },
+      "reviewThreads": {
+        "totalCount": 2
+      },
+      "reviews": {
+        "totalCount": 1,
+        "nodes": [
+          {
+            "author": {
+              "login": "gemini-code-assist"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-13T09:42:18Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/onnx-split-uneven-num-outputs",
+      "baseRefName": "main"
+    },
+    "dask/dask#12293": {
+      "number": 12293,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-13T10:14:40Z",
+      "lastEditedAt": null,
+      "additions": 3,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-masked-array-dtype-mismatch",
+      "baseRefName": "main"
+    },
+    "OpenGVLab/InternVL#1260": {
+      "number": 1260,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:45:49Z",
+      "lastEditedAt": null,
+      "additions": 15,
+      "deletions": 5,
+      "changedFiles": 3,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/mutable-default-arguments",
+      "baseRefName": "main"
+    },
+    "salesforce/Merlion#186": {
+      "number": 186,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:45:26Z",
+      "lastEditedAt": null,
+      "additions": 21,
+      "deletions": 7,
+      "changedFiles": 6,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "cla:signed"
+          }
+        ]
+      },
+      "headRefName": "fix/deepcopy-mutable-default",
+      "baseRefName": "main"
+    },
+    "Vchitect/Latte#140": {
+      "number": 140,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:45:14Z",
+      "lastEditedAt": null,
+      "additions": 9,
+      "deletions": 3,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/notimplemented-and-attention-bugs",
+      "baseRefName": "main"
+    },
+    "mozilla/TTS#797": {
+      "number": 797,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:45:07Z",
+      "lastEditedAt": null,
+      "additions": 6,
+      "deletions": 6,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/vocoder-loss-bugs",
+      "baseRefName": "master"
+    },
+    "espnet/espnet#6363": {
+      "number": 6363,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-04-27T14:20:33Z",
+      "lastEditedAt": null,
+      "additions": 17,
+      "deletions": 9,
+      "changedFiles": 9,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 4
+      },
+      "reviews": {
+        "totalCount": 1,
+        "nodes": [
+          {
+            "author": {
+              "login": "gemini-code-assist"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-11T18:48:30Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "Bugfix"
+          },
+          {
+            "name": "ESPnet2"
+          },
+          {
+            "name": "size:S"
+          }
+        ]
+      },
+      "headRefName": "fix/return-notimplemented-and-mutable-defaults",
+      "baseRefName": "master"
+    },
+    "nutonomy/nuscenes-devkit#1191": {
+      "number": 1191,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "APPROVED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T23:59:55Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 1,
+        "nodes": [
+          {
+            "author": {
+              "login": "whyekit-motional"
+            },
+            "state": "APPROVED",
+            "createdAt": "2026-02-11T23:59:55Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/assertion-error-messages",
+      "baseRefName": "master"
+    },
+    "AILab-CVC/VideoCrafter#108": {
+      "number": 108,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:44:01Z",
+      "lastEditedAt": null,
+      "additions": 11,
+      "deletions": 5,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/operator-precedence-and-mutable-defaults",
+      "baseRefName": "main"
+    },
+    "zai-org/CogVLM#554": {
+      "number": 554,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:43:45Z",
+      "lastEditedAt": null,
+      "additions": 6,
+      "deletions": 2,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/mutable-default-arguments",
+      "baseRefName": "main"
+    },
+    "lm-sys/FastChat#3775": {
+      "number": 3775,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:43:38Z",
+      "lastEditedAt": null,
+      "additions": 6,
+      "deletions": 4,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/mutable-default-and-exception-order",
+      "baseRefName": "main"
+    },
+    "dmlc/dgl#7915": {
+      "number": 7915,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:43:37Z",
+      "lastEditedAt": null,
+      "additions": 11,
+      "deletions": 5,
+      "changedFiles": 5,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/return-vs-raise-and-mutable-defaults",
+      "baseRefName": "master"
+    },
+    "RUCAIBox/RecBole#2208": {
+      "number": 2208,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:43:13Z",
+      "lastEditedAt": null,
+      "additions": 4,
+      "deletions": 2,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/return-vs-raise-and-mutable-default",
+      "baseRefName": "master"
+    },
+    "zai-org/CogVideo#812": {
+      "number": 812,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:43:07Z",
+      "lastEditedAt": null,
+      "additions": 6,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/mutable-default-arguments",
+      "baseRefName": "main"
+    },
+    "zai-org/CogVideo#811": {
+      "number": 811,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:36:11Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/validation-loop-variable-shadowing",
+      "baseRefName": "main"
+    },
+    "facebookresearch/xformers#1377": {
+      "number": 1377,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "CONFLICTING",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:38:51Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 2,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "CLA Signed"
+          }
+        ]
+      },
+      "headRefName": "fix/attention-input-validation-bugs",
+      "baseRefName": "main"
+    },
+    "huggingface/diffusers#13125": {
+      "number": 13125,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:38:44Z",
+      "lastEditedAt": null,
+      "additions": 40,
+      "deletions": 2,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-cogvideox-scheduler-prev-timestep",
+      "baseRefName": "main"
+    },
+    "LAION-AI/Open-Assistant#3779": {
+      "number": 3779,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:38:43Z",
+      "lastEditedAt": null,
+      "additions": 27,
+      "deletions": 4,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/reward-metrics-division-by-zero",
+      "baseRefName": "main"
+    },
+    "microsoft/unilm#1740": {
+      "number": 1740,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:38:23Z",
+      "lastEditedAt": null,
+      "additions": 8,
+      "deletions": 4,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/trocr-scoring-zero-division",
+      "baseRefName": "master"
+    },
+    "karpathy/nanoGPT#683": {
+      "number": 683,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:37:58Z",
+      "lastEditedAt": null,
+      "additions": 4,
+      "deletions": 4,
+      "changedFiles": 3,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/mps-device-type-and-gradscaler",
+      "baseRefName": "master"
+    },
+    "meta-llama/llama#1412": {
+      "number": 1412,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:37:37Z",
+      "lastEditedAt": null,
+      "additions": 5,
+      "deletions": 2,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "CLA Signed"
+          }
+        ]
+      },
+      "headRefName": "fix/resource-leaks",
+      "baseRefName": "main"
+    },
+    "google-research/vision_transformer#320": {
+      "number": 320,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:37:18Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/checkpoint-interval-bug",
+      "baseRefName": "main"
+    },
+    "tatsu-lab/stanford_alpaca#324": {
+      "number": 324,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:36:41Z",
+      "lastEditedAt": null,
+      "additions": 6,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/tokenize-fn-aliasing-bug",
+      "baseRefName": "main"
+    },
+    "Vchitect/LaVie#73": {
+      "number": 73,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:35:51Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 2,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/numpy-deprecated-int-alias",
+      "baseRefName": "main"
+    },
+    "Project-MONAI/MONAI#8739": {
+      "number": 8739,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-03-01T00:58:37Z",
+      "lastEditedAt": null,
+      "additions": 27,
+      "deletions": 2,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/cldice-division-by-zero",
+      "baseRefName": "dev"
+    },
+    "open-mmlab/mmsegmentation#3869": {
+      "number": 3869,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T09:40:55Z",
+      "lastEditedAt": null,
+      "additions": 3,
+      "deletions": 3,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/hausdorff-loss-indentation-bug",
+      "baseRefName": "main"
+    },
+    "pyg-team/pytorch_geometric#10600": {
+      "number": 10600,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-05-18T18:21:41Z",
+      "lastEditedAt": null,
+      "additions": 34,
+      "deletions": 0,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/hypergraph-conv-missing-weight",
+      "baseRefName": "master"
+    },
+    "facebookresearch/dinov2#583": {
+      "number": 583,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:34:45Z",
+      "lastEditedAt": null,
+      "additions": 12,
+      "deletions": 2,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "CLA Signed"
+          }
+        ]
+      },
+      "headRefName": "fix/sinkhorn-knopp-numerical-stability",
+      "baseRefName": "main"
+    },
+    "openai/shap-e#182": {
+      "number": 182,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:34:20Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/ray-collision-backward-saved-tensors",
+      "baseRefName": "main"
+    },
+    "CompVis/taming-transformers#267": {
+      "number": 267,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:34:18Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/ema-vectorquantizer-init-params",
+      "baseRefName": "master"
+    },
+    "openai/point-e#120": {
+      "number": 120,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T19:28:14Z",
+      "lastEditedAt": null,
+      "additions": 4,
+      "deletions": 4,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 3
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/pc-to-mesh-loop-variable-shadowing",
+      "baseRefName": "main"
+    },
+    "CompVis/latent-diffusion#404": {
+      "number": 404,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:33:52Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/lvlb-weights-nan-check",
+      "baseRefName": "main"
+    },
+    "salesforce/Merlion#185": {
+      "number": 185,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:33:52Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "cla:signed"
+          }
+        ]
+      },
+      "headRefName": "fix/boxcox-inverse-negative-lambda",
+      "baseRefName": "main"
+    },
+    "KaiyangZhou/CoOp#91": {
+      "number": 91,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:33:43Z",
+      "lastEditedAt": null,
+      "additions": 5,
+      "deletions": 3,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/feat-extractor-device-handling",
+      "baseRefName": "main"
+    },
+    "microsoft/Swin-Transformer#388": {
+      "number": 388,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:33:32Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/absolute-pos-embed-dim-check",
+      "baseRefName": "main"
+    },
+    "facebookresearch/segment-anything#853": {
+      "number": 853,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:33:32Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "CLA Signed"
+          }
+        ]
+      },
+      "headRefName": "fix/stability-score-division-by-zero",
+      "baseRefName": "main"
+    },
+    "facebookresearch/detectron2#5512": {
+      "number": 5512,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:33:28Z",
+      "lastEditedAt": null,
+      "additions": 11,
+      "deletions": 11,
+      "changedFiles": 5,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "CLA Signed"
+          }
+        ]
+      },
+      "headRefName": "fix/replace-deprecated-logger-warn",
+      "baseRefName": "main"
+    },
+    "RUCAIBox/RecBole#2207": {
+      "number": 2207,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:33:07Z",
+      "lastEditedAt": null,
+      "additions": 26,
+      "deletions": 26,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/url-makedirs-error-handling",
+      "baseRefName": "master"
+    },
+    "speechbrain/speechbrain#3033": {
+      "number": 3033,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-16T23:14:39Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/classification-error-closure-bug",
+      "baseRefName": "develop"
+    },
+    "OpenGVLab/InternVL#1259": {
+      "number": 1259,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:32:35Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/raise-not-implemented-error",
+      "baseRefName": "main"
+    },
+    "openai/CLIP#530": {
+      "number": 530,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:32:29Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 0,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/clamp-logit-scale",
+      "baseRefName": "main"
+    },
+    "AILab-CVC/VideoCrafter#107": {
+      "number": 107,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:32:28Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/lvlb-weights-operator-precedence",
+      "baseRefName": "main"
+    },
+    "dmlc/dgl#7914": {
+      "number": 7914,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:32:15Z",
+      "lastEditedAt": null,
+      "additions": 16,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/linkx-homophily-zero-division",
+      "baseRefName": "master"
+    },
+    "hpcaitech/Open-Sora#911": {
+      "number": 911,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:31:33Z",
+      "lastEditedAt": null,
+      "additions": 5,
+      "deletions": 5,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/swap-height-width-in-denoiser",
+      "baseRefName": "main"
+    },
+    "open-mmlab/mmdetection3d#3140": {
+      "number": 3140,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T09:40:52Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/hardcoded-cuda-device-in-voxelization",
+      "baseRefName": "main"
+    },
+    "Vchitect/Latte#139": {
+      "number": 139,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:30:48Z",
+      "lastEditedAt": null,
+      "additions": 4,
+      "deletions": 4,
+      "changedFiles": 4,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/bare-except-clauses",
+      "baseRefName": "main"
+    },
+    "zai-org/CogVLM#553": {
+      "number": 553,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:30:32Z",
+      "lastEditedAt": null,
+      "additions": 26,
+      "deletions": 7,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/hardcoded-cuda-device",
+      "baseRefName": "main"
+    },
+    "lm-sys/FastChat#3773": {
+      "number": 3773,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:30:21Z",
+      "lastEditedAt": null,
+      "additions": 4,
+      "deletions": 4,
+      "changedFiles": 4,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/bare-except-clauses",
+      "baseRefName": "main"
+    },
+    "zai-org/ChatGLM-6B#1516": {
+      "number": 1516,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:30:02Z",
+      "lastEditedAt": null,
+      "additions": 7,
+      "deletions": 5,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/device-handling-api",
+      "baseRefName": "main"
+    },
+    "haotian-liu/LLaVA#1921": {
+      "number": 1921,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:29:47Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/hardcoded-cuda-device",
+      "baseRefName": "main"
+    },
+    "state-spaces/mamba#845": {
+      "number": 845,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-03-27T22:01:28Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 4
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/mamba2-double-softplus-dt",
+      "baseRefName": "main"
+    },
+    "lllyasviel/ControlNet#751": {
+      "number": 751,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:21:34Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 2,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/undefined-variable-cbs-warning",
+      "baseRefName": "main"
+    },
+    "graphdeco-inria/gaussian-splatting#1316": {
+      "number": 1316,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:21:17Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/visibility-filter-mask-type",
+      "baseRefName": "main"
+    },
+    "WongKinYiu/yolov7#2147": {
+      "number": 2147,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:21:11Z",
+      "lastEditedAt": null,
+      "additions": 4,
+      "deletions": 4,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/ota-target-scaling-dimensions",
+      "baseRefName": "main"
+    },
+    "WongKinYiu/yolov7#2146": {
+      "number": 2146,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:18:33Z",
+      "lastEditedAt": null,
+      "additions": 39,
+      "deletions": 39,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/ota-loss-multi-gpu-device",
+      "baseRefName": "main"
+    },
+    "WongKinYiu/yolov7#2145": {
+      "number": 2145,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:16:38Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/sigmoidbin-missing-sigmoid-inference",
+      "baseRefName": "main"
+    },
+    "apchenstu/TensoRF#89": {
+      "number": 89,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:20:40Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/cross-product-handedness",
+      "baseRefName": "main"
+    },
+    "apchenstu/TensoRF#88": {
+      "number": 88,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:19:05Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/compute-stepsize-method-name",
+      "baseRefName": "main"
+    },
+    "CompVis/stable-diffusion#908": {
+      "number": 908,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:20:36Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/nan-assertion-any-vs-all",
+      "baseRefName": "main"
+    },
+    "CompVis/stable-diffusion#907": {
+      "number": 907,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:16:24Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/lvlb-weights-operator-precedence",
+      "baseRefName": "main"
+    },
+    "mosaicml/composer#3932": {
+      "number": 3932,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:20:34Z",
+      "lastEditedAt": null,
+      "additions": 4,
+      "deletions": 4,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/cutmix-bbox-dimension-swap",
+      "baseRefName": "main"
+    },
+    "mosaicml/composer#3931": {
+      "number": 3931,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:19:27Z",
+      "lastEditedAt": null,
+      "additions": 3,
+      "deletions": 3,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/progressive-resize-log-width",
+      "baseRefName": "main"
+    },
+    "hpcaitech/ColossalAI#6407": {
+      "number": 6407,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:20:20Z",
+      "lastEditedAt": null,
+      "additions": 7,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/orpo-log-odds-numerical-stability",
+      "baseRefName": "main"
+    },
+    "hpcaitech/ColossalAI#6406": {
+      "number": 6406,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:18:32Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/orpo-loss-hardcoded-dtype",
+      "baseRefName": "main"
+    },
+    "hpcaitech/ColossalAI#6405": {
+      "number": 6405,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:17:12Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/kto-eval-uses-train-dataloader",
+      "baseRefName": "main"
+    },
+    "IDEA-Research/Grounded-SAM-2#130": {
+      "number": 130,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:20:17Z",
+      "lastEditedAt": null,
+      "additions": 3,
+      "deletions": 3,
+      "changedFiles": 3,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/iou-division-by-zero-empty-masks",
+      "baseRefName": "main"
+    },
+    "Stability-AI/StableCascade#146": {
+      "number": 146,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:19:30Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/clip-txt-pooled-variable-typo",
+      "baseRefName": "master"
+    },
+    "ikostrikov/jaxrl#31": {
+      "number": 31,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:19:17Z",
+      "lastEditedAt": null,
+      "additions": 3,
+      "deletions": 3,
+      "changedFiles": 3,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/sac-target-entropy-formula",
+      "baseRefName": "main"
+    },
+    "ikostrikov/jaxrl#30": {
+      "number": 30,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:18:02Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/awac-wrong-kwarg-name",
+      "baseRefName": "main"
+    },
+    "vwxyzjn/cleanrl#538": {
+      "number": 538,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:18:42Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/ddpg-single-action-space",
+      "baseRefName": "master"
+    },
+    "WongKinYiu/yolov9#662": {
+      "number": 662,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:17:55Z",
+      "lastEditedAt": null,
+      "additions": 24,
+      "deletions": 17,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/loss-division-by-zero",
+      "baseRefName": "main"
+    },
+    "DepthAnything/Depth-Anything-V2#318": {
+      "number": 318,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:17:17Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 4,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/image2tensor-device-handling",
+      "baseRefName": "main"
+    },
+    "dreamgaussian/dreamgaussian#183": {
+      "number": 183,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:17:10Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/camera-center-sign",
+      "baseRefName": "main"
+    },
+    "facebookresearch/audiocraft#598": {
+      "number": 598,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:17:11Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "CLA Signed"
+          }
+        ]
+      },
+      "headRefName": "fix/prefix-removal-wrong-dimension",
+      "baseRefName": "main"
+    },
+    "ashawkey/stable-dreamfusion#377": {
+      "number": 377,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:16:17Z",
+      "lastEditedAt": null,
+      "additions": 4,
+      "deletions": 4,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/swap-cx-cy-principal-point",
+      "baseRefName": "main"
+    },
+    "openai/whisper#2730": {
+      "number": 2730,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T18:15:52Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/raise-typeerror-instead-of-return",
+      "baseRefName": "main"
+    },
+    "Tencent-Hunyuan/HunyuanDiT#247": {
+      "number": 247,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T09:40:46Z",
+      "lastEditedAt": null,
+      "additions": 6,
+      "deletions": 6,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 3
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/hardcoded-half-dtype",
+      "baseRefName": "main"
+    },
+    "instantX-research/InstantID#299": {
+      "number": 299,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:37:32Z",
+      "lastEditedAt": null,
+      "additions": 57,
+      "deletions": 53,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/ip-hidden-states-undefined",
+      "baseRefName": "main"
+    },
+    "threestudio-project/threestudio#530": {
+      "number": 530,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:37:09Z",
+      "lastEditedAt": null,
+      "additions": 5,
+      "deletions": 5,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/cfg-formula-base-term",
+      "baseRefName": "main"
+    },
+    "NVlabs/imaginaire#190": {
+      "number": 190,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:37:08Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/tautological-dtype-check",
+      "baseRefName": "master"
+    },
+    "suno-ai/bark#662": {
+      "number": 662,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:36:44Z",
+      "lastEditedAt": null,
+      "additions": 4,
+      "deletions": 2,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/inference-dropout",
+      "baseRefName": "main"
+    },
+    "PixArt-alpha/PixArt-sigma#164": {
+      "number": 164,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:36:00Z",
+      "lastEditedAt": null,
+      "additions": 3,
+      "deletions": 3,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/forward-with-cfg-channel-split",
+      "baseRefName": "master"
+    },
+    "RVC-Project/Retrieval-based-Voice-Conversion-WebUI#2756": {
+      "number": 2756,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:35:54Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/resblocks-hook-iteration",
+      "baseRefName": "main"
+    },
+    "guoyww/AnimateDiff#436": {
+      "number": 436,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:35:54Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/zero-rank-print-logic",
+      "baseRefName": "main"
+    },
+    "Doubiiu/DynamiCrafter#168": {
+      "number": 168,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:35:48Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/lvlb-weights-operator-precedence",
+      "baseRefName": "main"
+    },
+    "BAAI-Agents/Cradle#107": {
+      "number": 107,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:24:59Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 5,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/vector-memory-load-method",
+      "baseRefName": "main"
+    },
+    "FunAudioLLM/CosyVoice#1827": {
+      "number": 1827,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:24:47Z",
+      "lastEditedAt": null,
+      "additions": 14,
+      "deletions": 11,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/solve-euler-batch-size",
+      "baseRefName": "main"
+    },
+    "FunAudioLLM/CosyVoice#1826": {
+      "number": 1826,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:21:43Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/compute-loss-variable-shadowing",
+      "baseRefName": "main"
+    },
+    "OpenGVLab/InternVL#1258": {
+      "number": 1258,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:24:47Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/torch-int32-typo",
+      "baseRefName": "main"
+    },
+    "black-forest-labs/flux#507": {
+      "number": 507,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:24:33Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/hfembedder-pass-attention-mask",
+      "baseRefName": "main"
+    },
+    "deepseek-ai/Janus#234": {
+      "number": 234,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:24:23Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/entropy-loss-consistent-softmax",
+      "baseRefName": "main"
+    },
+    "deepseek-ai/Janus#233": {
+      "number": 233,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:12:47Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/upsample-preserve-dtype",
+      "baseRefName": "main"
+    },
+    "deepseek-ai/Janus#232": {
+      "number": 232,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:11:46Z",
+      "lastEditedAt": null,
+      "additions": 3,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/vq-codebook-buffer-size",
+      "baseRefName": "main"
+    },
+    "baichuan-inc/Baichuan2#428": {
+      "number": 428,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:21:53Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/finetune-human-turn-label",
+      "baseRefName": "main"
+    },
+    "Stability-AI/generative-models#474": {
+      "number": 474,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:21:52Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/checkpoint-pass-all-args",
+      "baseRefName": "main"
+    },
+    "Stability-AI/generative-models#473": {
+      "number": 473,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:19:35Z",
+      "lastEditedAt": null,
+      "additions": 3,
+      "deletions": 3,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/memory-efficient-crossframe-attn-repeat",
+      "baseRefName": "main"
+    },
+    "Stability-AI/generative-models#472": {
+      "number": 472,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:18:24Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/trapezoid-guider-plateau-scale",
+      "baseRefName": "main"
+    },
+    "Stability-AI/generative-models#471": {
+      "number": 471,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:18:09Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 0,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/standard-diffusion-loss-n-frames",
+      "baseRefName": "main"
+    },
+    "netease-youdao/EmotiVoice#185": {
+      "number": 185,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:21:46Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/load-state-dict-bare-except",
+      "baseRefName": "main"
+    },
+    "AIGC-Audio/AudioGPT#107": {
+      "number": 107,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:17:57Z",
+      "lastEditedAt": null,
+      "additions": 7,
+      "deletions": 5,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/merge-audio-sample-rate",
+      "baseRefName": "main"
+    },
+    "PKU-YuanGroup/Open-Sora-Plan#596": {
+      "number": 596,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:17:51Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/attention-mask-padding",
+      "baseRefName": "main"
+    },
+    "deepseek-ai/DeepSeek-VL2#150": {
+      "number": 150,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:10:11Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/reset-classifier-map-trailing-space",
+      "baseRefName": "main"
+    },
+    "TMElyralab/MuseV#179": {
+      "number": 179,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:06:22Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/undefined-mask-variable",
+      "baseRefName": "main"
+    },
+    "bytedance/1d-tokenizer#120": {
+      "number": 120,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:05:55Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/vq-loss-commitment-cost",
+      "baseRefName": "main"
+    },
+    "bytedance/1d-tokenizer#119": {
+      "number": 119,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T12:30:39Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/resnet-block-shortcut",
+      "baseRefName": "main"
+    },
+    "Vchitect/SEINE#32": {
+      "number": 32,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:05:55Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 3,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/content-motion-separation-indexing",
+      "baseRefName": "main"
+    },
+    "BAAI-DCAI/Bunny#153": {
+      "number": 153,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:05:46Z",
+      "lastEditedAt": null,
+      "additions": 3,
+      "deletions": 3,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/peft-state-dict-iteration",
+      "baseRefName": "main"
+    },
+    "TMElyralab/MuseTalk#406": {
+      "number": 406,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:05:39Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/syncnet-method-name",
+      "baseRefName": "main"
+    },
+    "modelscope/facechain#650": {
+      "number": 650,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:06:57Z",
+      "lastEditedAt": null,
+      "additions": 3,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 1,
+        "nodes": [
+          {
+            "author": {
+              "login": "gemini-code-assist"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-11T14:06:57Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/lora-memory-leak",
+      "baseRefName": "main"
+    },
+    "OpenGVLab/Ask-Anything#264": {
+      "number": 264,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:05:01Z",
+      "lastEditedAt": null,
+      "additions": 22,
+      "deletions": 4,
+      "changedFiles": 4,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/bos-token-embedding",
+      "baseRefName": "main"
+    },
+    "ali-vilab/VGen#162": {
+      "number": 162,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T15:58:52Z",
+      "lastEditedAt": null,
+      "additions": 5,
+      "deletions": 5,
+      "changedFiles": 3,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/multiple-bug-fixes",
+      "baseRefName": "main"
+    },
+    "KlingAIResearch/LivePortrait#557": {
+      "number": 557,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-03-02T18:21:26Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/identity-vs-equality-comparison",
+      "baseRefName": "main"
+    },
+    "TencentARC/GFPGAN#640": {
+      "number": 640,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T14:04:40Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/optimizer-beta-type",
+      "baseRefName": "master"
+    },
+    "Tencent-Hunyuan/HunyuanVideo#310": {
+      "number": 310,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T09:40:49Z",
+      "lastEditedAt": null,
+      "additions": 53,
+      "deletions": 17,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/attention-cu-seqlens-handling",
+      "baseRefName": "main"
+    },
+    "zai-org/GLM-4#803": {
+      "number": 803,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T12:31:00Z",
+      "lastEditedAt": null,
+      "additions": 9,
+      "deletions": 3,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/combine-mode-multi-turn-labels",
+      "baseRefName": "main"
+    },
+    "hpcaitech/Open-Sora#910": {
+      "number": 910,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T12:30:38Z",
+      "lastEditedAt": null,
+      "additions": 4,
+      "deletions": 4,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/dataset-utils-bugs",
+      "baseRefName": "main"
+    },
+    "EleutherAI/lm-evaluation-harness#3580": {
+      "number": 3580,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-11T12:02:59Z",
+      "lastEditedAt": null,
+      "additions": 937,
+      "deletions": 422,
+      "changedFiles": 74,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/masakhanews-prompt-whitespace",
+      "baseRefName": "main"
+    },
+    "microsoft/agent-lightning#486": {
+      "number": 486,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-28T02:51:30Z",
+      "lastEditedAt": null,
+      "additions": 140,
+      "deletions": 8,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 1
+      },
+      "reviews": {
+        "totalCount": 1,
+        "nodes": [
+          {
+            "author": {
+              "login": "ultmaster"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-28T02:51:30Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/trace-to-messages-multi-turn",
+      "baseRefName": "main"
+    },
+    "microsoft/agent-lightning#485": {
+      "number": 485,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-28T02:55:43Z",
+      "lastEditedAt": null,
+      "additions": 140,
+      "deletions": 8,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 1
+      },
+      "reviews": {
+        "totalCount": 1,
+        "nodes": [
+          {
+            "author": {
+              "login": "ultmaster"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-28T02:55:43Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/messages-keyerror-defensive",
+      "baseRefName": "main"
+    },
+    "microsoft/agent-lightning#484": {
+      "number": 484,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-28T02:52:18Z",
+      "lastEditedAt": null,
+      "additions": 55,
+      "deletions": 2,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 1
+      },
+      "reviews": {
+        "totalCount": 1,
+        "nodes": [
+          {
+            "author": {
+              "login": "ultmaster"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-28T02:52:17Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/tracer-structured-output-spans",
+      "baseRefName": "main"
+    },
+    "microsoft/agent-lightning#483": {
+      "number": 483,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-28T02:54:36Z",
+      "lastEditedAt": null,
+      "additions": 143,
+      "deletions": 4,
+      "changedFiles": 4,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 1
+      },
+      "reviews": {
+        "totalCount": 1,
+        "nodes": [
+          {
+            "author": {
+              "login": "ultmaster"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-28T02:54:28Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "not ready"
+          }
+        ]
+      },
+      "headRefName": "fix/rl-training-memory-leak",
+      "baseRefName": "main"
+    },
+    "microsoft/agent-lightning#482": {
+      "number": 482,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-03-03T14:52:21Z",
+      "lastEditedAt": null,
+      "additions": 48,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 1
+      },
+      "reviews": {
+        "totalCount": 2,
+        "nodes": [
+          {
+            "author": {
+              "login": "ultmaster"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-28T02:53:47Z"
+          },
+          {
+            "author": {
+              "login": "totoluo"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-03-03T14:52:21Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/qwen-vl-mrope-truncation",
+      "baseRefName": "main"
+    },
+    "microsoft/agent-lightning#481": {
+      "number": 481,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-28T02:53:26Z",
+      "lastEditedAt": null,
+      "additions": 81,
+      "deletions": 15,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 1
+      },
+      "reviews": {
+        "totalCount": 1,
+        "nodes": [
+          {
+            "author": {
+              "login": "ultmaster"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-28T02:53:26Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/aiohttp-session-cleanup",
+      "baseRefName": "main"
+    },
+    "microsoft/agent-lightning#480": {
+      "number": 480,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-28T02:56:32Z",
+      "lastEditedAt": null,
+      "additions": 32,
+      "deletions": 6,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 1
+      },
+      "reviews": {
+        "totalCount": 1,
+        "nodes": [
+          {
+            "author": {
+              "login": "ultmaster"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-28T02:56:32Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/rollout-count-failed-tasks",
+      "baseRefName": "main"
+    },
+    "anthropics/skills#363": {
+      "number": 363,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:11:36Z",
+      "lastEditedAt": null,
+      "additions": 556,
+      "deletions": 0,
+      "changedFiles": 7,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/feature-dev-phase-overwrite",
+      "baseRefName": "main"
+    },
+    "anthropics/skills#362": {
+      "number": 362,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:11:34Z",
+      "lastEditedAt": null,
+      "additions": 63,
+      "deletions": 8,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/skill-creator-utf8-panic",
+      "baseRefName": "main"
+    },
+    "anthropics/skills#361": {
+      "number": 361,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:11:32Z",
+      "lastEditedAt": null,
+      "additions": 26,
+      "deletions": 0,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/yaml-description-quoting-warning",
+      "baseRefName": "main"
+    },
+    "OpenGVLab/InternVL#1256": {
+      "number": 1256,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:11:14Z",
+      "lastEditedAt": null,
+      "additions": 66,
+      "deletions": 0,
+      "changedFiles": 3,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/dynamic-preprocess-oom-extreme-aspect-ratios",
+      "baseRefName": "main"
+    },
+    "huggingface/diffusers#13111": {
+      "number": 13111,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:11:24Z",
+      "lastEditedAt": null,
+      "additions": 37,
+      "deletions": 9,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-audioldm2-gpt2model-compat",
+      "baseRefName": "main"
+    },
+    "huggingface/diffusers#13110": {
+      "number": 13110,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:11:22Z",
+      "lastEditedAt": null,
+      "additions": 6,
+      "deletions": 0,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-auraflow-pe-bounds",
+      "baseRefName": "main"
+    },
+    "huggingface/diffusers#13109": {
+      "number": 13109,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:11:20Z",
+      "lastEditedAt": null,
+      "additions": 5,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-sana-guidance-embeddings",
+      "baseRefName": "main"
+    },
+    "huggingface/diffusers#13108": {
+      "number": 13108,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:11:18Z",
+      "lastEditedAt": null,
+      "additions": 9,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-torchao-logger",
+      "baseRefName": "main"
+    },
+    "huggingface/diffusers#13103": {
+      "number": 13103,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:11:08Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/from-pipe-preserve-dtype",
+      "baseRefName": "main"
+    },
+    "huggingface/diffusers#13102": {
+      "number": 13102,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-08T12:49:55Z",
+      "lastEditedAt": null,
+      "additions": 12,
+      "deletions": 8,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 1,
+        "nodes": [
+          {
+            "author": {
+              "login": "Pediboi666"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-08T12:49:55Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/zimage-controlnet-deep-copy",
+      "baseRefName": "main"
+    },
+    "huggingface/diffusers#13094": {
+      "number": 13094,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-13T20:39:47Z",
+      "lastEditedAt": null,
+      "additions": 4,
+      "deletions": 5,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/z-image-guidance-scale-threshold",
+      "baseRefName": "main"
+    },
+    "huggingface/diffusers#13093": {
+      "number": 13093,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-13T13:44:17Z",
+      "lastEditedAt": null,
+      "additions": 6,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 1
+      },
+      "reviews": {
+        "totalCount": 1,
+        "nodes": [
+          {
+            "author": {
+              "login": "DN6"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-13T13:44:15Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/pytorch-version-accelerator-check",
+      "baseRefName": "main"
+    },
+    "vllm-project/vllm#34163": {
+      "number": 34163,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "APPROVED",
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-05-07T12:52:10Z",
+      "lastEditedAt": null,
+      "additions": 8,
+      "deletions": 20,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 3
+      },
+      "reviewThreads": {
+        "totalCount": 2
+      },
+      "reviews": {
+        "totalCount": 4,
+        "nodes": [
+          {
+            "author": {
+              "login": "gemini-code-assist"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-09T18:41:50Z"
+          },
+          {
+            "author": {
+              "login": "Mr-Neutr0n"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-02-12T01:36:49Z"
+          },
+          {
+            "author": {
+              "login": "rahul-tuli"
+            },
+            "state": "APPROVED",
+            "createdAt": "2026-03-30T15:15:07Z"
+          },
+          {
+            "author": {
+              "login": "benchislett"
+            },
+            "state": "APPROVED",
+            "createdAt": "2026-03-30T15:30:00Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "bug"
+          },
+          {
+            "name": "ready"
+          },
+          {
+            "name": "needs-rebase"
+          }
+        ]
+      },
+      "headRefName": "fix/mlp-speculator-num-attention-heads",
+      "baseRefName": "main"
+    },
+    "huggingface/optimum#2407": {
+      "number": 2407,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-05-14T02:23:28Z",
+      "lastEditedAt": null,
+      "additions": 5,
+      "deletions": 3,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "Stale"
+          }
+        ]
+      },
+      "headRefName": "fix/get-wikitext2-tokenization-bug",
+      "baseRefName": "main"
+    },
+    "huggingface/optimum#2406": {
+      "number": 2406,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-05-14T02:23:29Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 0,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "Stale"
+          }
+        ]
+      },
+      "headRefName": "fix-version-attribute",
+      "baseRefName": "main"
+    },
+    "pytorch/audio#4175": {
+      "number": 4175,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T18:38:28Z",
+      "lastEditedAt": null,
+      "additions": 17,
+      "deletions": 12,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "CLA Signed"
+          }
+        ]
+      },
+      "headRefName": "fix-load-error-messages",
+      "baseRefName": "main"
+    },
+    "pytorch/audio#4174": {
+      "number": 4174,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T18:37:29Z",
+      "lastEditedAt": null,
+      "additions": 14,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "CLA Signed"
+          }
+        ]
+      },
+      "headRefName": "fix-opus-metadata-decode",
+      "baseRefName": "main"
+    },
+    "PaddlePaddle/PaddleOCR#17685": {
+      "number": 17685,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-03-02T04:18:28Z",
+      "lastEditedAt": null,
+      "additions": 6,
+      "deletions": 0,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 4
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "contributor"
+          }
+        ]
+      },
+      "headRefName": "fix-nms-1d-array",
+      "baseRefName": "main"
+    },
+    "OpenGVLab/InternVL#1255": {
+      "number": 1255,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:11:12Z",
+      "lastEditedAt": null,
+      "additions": 9,
+      "deletions": 7,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-unsupported-architecture",
+      "baseRefName": "main"
+    },
+    "facebookresearch/seamless_communication#572": {
+      "number": 572,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:11:10Z",
+      "lastEditedAt": null,
+      "additions": 8,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "CLA Signed"
+          }
+        ]
+      },
+      "headRefName": "fix/cli-missing-task-choices",
+      "baseRefName": "main"
+    },
+    "huggingface/transformers#43842": {
+      "number": 43842,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-08T16:08:04Z",
+      "lastEditedAt": null,
+      "additions": 3,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 0
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 1,
+        "nodes": [
+          {
+            "author": {
+              "login": "mamoonali1"
+            },
+            "state": "APPROVED",
+            "createdAt": "2026-02-08T16:08:04Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/serve-typeadapter-import",
+      "baseRefName": "main"
+    },
+    "meta-llama/llama-cookbook#1021": {
+      "number": 1021,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:11:56Z",
+      "lastEditedAt": null,
+      "additions": 27,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "cla signed"
+          }
+        ]
+      },
+      "headRefName": "fix/fsdp-sharding-strategy-enum-conversion",
+      "baseRefName": "main"
+    },
+    "QwenLM/Qwen3-VL#2027": {
+      "number": 2027,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:11:58Z",
+      "lastEditedAt": null,
+      "additions": 13,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/label-masking-assistant-token",
+      "baseRefName": "main"
+    },
+    "suno-ai/bark#661": {
+      "number": 661,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:12:00Z",
+      "lastEditedAt": null,
+      "additions": 3,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/pytorch-26-weights-only",
+      "baseRefName": "main"
+    },
+    "zai-org/CogVLM2#220": {
+      "number": 220,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:10:58Z",
+      "lastEditedAt": null,
+      "additions": 105,
+      "deletions": 0,
+      "changedFiles": 3,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/transformers-compatibility",
+      "baseRefName": "main"
+    },
+    "sgl-project/sglang#18397": {
+      "number": 18397,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-07T06:51:02Z",
+      "lastEditedAt": null,
+      "additions": 90,
+      "deletions": 10,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "security/fix-redos-pythonic-detector",
+      "baseRefName": "main"
+    },
+    "guoyww/AnimateDiff#435": {
+      "number": 435,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T08:32:58Z",
+      "lastEditedAt": null,
+      "additions": 30,
+      "deletions": 7,
+      "changedFiles": 5,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/diffusers-import-compatibility",
+      "baseRefName": "main"
+    },
+    "Vchitect/LaVie#72": {
+      "number": 72,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T08:31:52Z",
+      "lastEditedAt": null,
+      "additions": 4,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/diffusers-pipeline-utils-import",
+      "baseRefName": "main"
+    },
+    "deforum/deforum-stable-diffusion#387": {
+      "number": 387,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T08:33:04Z",
+      "lastEditedAt": null,
+      "additions": 3,
+      "deletions": 3,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/skimage-multichannel-deprecation",
+      "baseRefName": "main"
+    },
+    "PKU-YuanGroup/Open-Sora-Plan#595": {
+      "number": 595,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T08:31:54Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 4,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/prompt-file-newlines",
+      "baseRefName": "main"
+    },
+    "showlab/Show-o#113": {
+      "number": 113,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T08:34:39Z",
+      "lastEditedAt": null,
+      "additions": 4,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/safety-checker-image-type",
+      "baseRefName": "main"
+    },
+    "sczhou/CodeFormer#441": {
+      "number": 441,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T08:31:47Z",
+      "lastEditedAt": null,
+      "additions": 7,
+      "deletions": 3,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/lazy-load-latent-gt",
+      "baseRefName": "master"
+    },
+    "Wan-Video/Wan2.1#574": {
+      "number": 574,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T08:31:55Z",
+      "lastEditedAt": null,
+      "additions": 16,
+      "deletions": 14,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/encode-return-value",
+      "baseRefName": "main"
+    },
+    "PixArt-alpha/PixArt-sigma#163": {
+      "number": 163,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T08:32:16Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/windows-devnull-path",
+      "baseRefName": "master"
+    },
+    "junyanz/pytorch-CycleGAN-and-pix2pix#1715": {
+      "number": 1715,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T08:32:22Z",
+      "lastEditedAt": null,
+      "additions": 3,
+      "deletions": 3,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-ddp-norm-check",
+      "baseRefName": "master"
+    },
+    "natanielruiz/deep-head-pose#132": {
+      "number": 132,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T08:33:02Z",
+      "lastEditedAt": null,
+      "additions": 9,
+      "deletions": 9,
+      "changedFiles": 9,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-transforms-scale-deprecated",
+      "baseRefName": "master"
+    },
+    "facebookresearch/encodec#98": {
+      "number": 98,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:10:55Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "CLA Signed"
+          }
+        ]
+      },
+      "headRefName": "fix-msstftd-channel-mismatch",
+      "baseRefName": "main"
+    },
+    "facebookresearch/encodec#97": {
+      "number": 97,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:10:53Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "CLA Signed"
+          }
+        ]
+      },
+      "headRefName": "fix-torchaudio-path-compat",
+      "baseRefName": "main"
+    },
+    "OpenTalker/video-retalking#286": {
+      "number": 286,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T08:32:25Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 0,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-mask-sharp-undefined",
+      "baseRefName": "main"
+    },
+    "SysCV/sam-hq#165": {
+      "number": 165,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T08:32:24Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-local-rank-arg",
+      "baseRefName": "main"
+    },
+    "Stability-AI/generative-models#470": {
+      "number": 470,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:10:51Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/video-sample-variable-name",
+      "baseRefName": "main"
+    },
+    "microsoft/Swin-Transformer#387": {
+      "number": 387,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T08:32:19Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/local-rank-env-fallback",
+      "baseRefName": "main"
+    },
+    "facebookresearch/detectron2#5510": {
+      "number": 5510,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:10:49Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 5,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "CLA Signed"
+          }
+        ]
+      },
+      "headRefName": "fix/replace-pkg-resources-with-importlib",
+      "baseRefName": "main"
+    },
+    "facebookresearch/detectron2#5509": {
+      "number": 5509,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T18:41:06Z",
+      "lastEditedAt": "2026-02-09T18:41:06Z",
+      "additions": 6,
+      "deletions": 3,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "CLA Signed"
+          }
+        ]
+      },
+      "headRefName": "fix-mask-holes-issue-1771",
+      "baseRefName": "main"
+    },
+    "LLaVA-VL/LLaVA-NeXT#505": {
+      "number": 505,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:10:47Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 0,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/missing-math-sys-imports",
+      "baseRefName": "main"
+    },
+    "fixie-ai/ultravox#330": {
+      "number": 330,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:10:45Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 0,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/gradio-audio-clear-after-processing",
+      "baseRefName": "main"
+    },
+    "salesforce/LAVIS#810": {
+      "number": 810,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:10:43Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "cla:signed"
+          }
+        ]
+      },
+      "headRefName": "fix/transformers-security-cve-2023-7018",
+      "baseRefName": "main"
+    },
+    "artidoro/qlora#303": {
+      "number": 303,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T08:33:05Z",
+      "lastEditedAt": null,
+      "additions": 10,
+      "deletions": 9,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/update-requirements",
+      "baseRefName": "main"
+    },
+    "m87-labs/moondream#326": {
+      "number": 326,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:10:40Z",
+      "lastEditedAt": null,
+      "additions": 6,
+      "deletions": 4,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/flex-decoding-param",
+      "baseRefName": "main"
+    },
+    "deepseek-ai/Janus#231": {
+      "number": 231,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:10:35Z",
+      "lastEditedAt": null,
+      "additions": 6,
+      "deletions": 5,
+      "changedFiles": 4,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-cpu-half-precision-conv",
+      "baseRefName": "main"
+    },
+    "deepseek-ai/Janus#230": {
+      "number": 230,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:10:33Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix-requirements-pytorch-version",
+      "baseRefName": "main"
+    },
+    "Lightning-AI/pytorch-lightning#21529": {
+      "number": 21529,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-03-19T14:04:49Z",
+      "lastEditedAt": "2026-02-05T22:46:22Z",
+      "additions": 4,
+      "deletions": 0,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 4
+      },
+      "reviewThreads": {
+        "totalCount": 1
+      },
+      "reviews": {
+        "totalCount": 3,
+        "nodes": [
+          {
+            "author": {
+              "login": "deependujha"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-03-19T12:26:44Z"
+          },
+          {
+            "author": {
+              "login": "Borda"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-03-19T14:04:00Z"
+          },
+          {
+            "author": {
+              "login": "Borda"
+            },
+            "state": "COMMENTED",
+            "createdAt": "2026-03-19T14:04:49Z"
+          }
+        ]
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "fabric"
+          }
+        ]
+      },
+      "headRefName": "fix-numpy-scalar-issue-21503",
+      "baseRefName": "master"
+    },
+    "eyurtsev/FlowCytometryTools#47": {
+      "number": 47,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T08:33:09Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/collections-iterable-deprecation",
+      "baseRefName": "master"
+    },
+    "facebookresearch/fairseq#5645": {
+      "number": 5645,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T08:22:35Z",
+      "lastEditedAt": null,
+      "additions": 2,
+      "deletions": 2,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "CLA Signed"
+          }
+        ]
+      },
+      "headRefName": "fix/numpy-deprecation",
+      "baseRefName": "main"
+    },
+    "MVIG-SJTU/AlphaPose#1241": {
+      "number": 1241,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T08:32:57Z",
+      "lastEditedAt": null,
+      "additions": 15,
+      "deletions": 15,
+      "changedFiles": 6,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/numpy-deprecation",
+      "baseRefName": "master"
+    },
+    "StanfordASL/Trajectron-plus-plus#106": {
+      "number": 106,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T08:33:00Z",
+      "lastEditedAt": null,
+      "additions": 4,
+      "deletions": 3,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/python-numpy-deprecations",
+      "baseRefName": "master"
+    },
+    "salesforce/LAVIS#809": {
+      "number": 809,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-05T20:35:30Z",
+      "lastEditedAt": null,
+      "additions": 4,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": [
+          {
+            "name": "cla:signed"
+          }
+        ]
+      },
+      "headRefName": "fix/gradcam-relu-placement",
+      "baseRefName": "main"
+    },
+    "IDEA-Research/GroundingDINO#443": {
+      "number": 443,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:10:30Z",
+      "lastEditedAt": null,
+      "additions": 5,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 2
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/supervision-api-update",
+      "baseRefName": "main"
+    },
+    "OpenTalker/SadTalker#1031": {
+      "number": 1031,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T08:33:07Z",
+      "lastEditedAt": null,
+      "additions": 3,
+      "deletions": 3,
+      "changedFiles": 3,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/numpy-compatibility",
+      "baseRefName": "main"
+    },
+    "Rudrabha/Wav2Lip#774": {
+      "number": 774,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-09T08:32:21Z",
+      "lastEditedAt": null,
+      "additions": 7,
+      "deletions": 2,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/librosa-keyword-args",
+      "baseRefName": "master"
+    },
+    "huggingface/transformers#43775": {
+      "number": 43775,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-05T18:14:28Z",
+      "lastEditedAt": null,
+      "additions": 154,
+      "deletions": 66,
+      "changedFiles": 22,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/moe-aux-loss-normalization",
+      "baseRefName": "main"
+    },
+    "microsoft/autogen#7211": {
+      "number": 7211,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-12T18:10:26Z",
+      "lastEditedAt": null,
+      "additions": 163,
+      "deletions": 6,
+      "changedFiles": 2,
+      "comments": {
+        "totalCount": 3
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "fix/schema-defs-array-type",
+      "baseRefName": "main"
+    },
+    "Comfy-Org/ComfyUI#12287": {
+      "number": 12287,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-16T12:19:36Z",
+      "lastEditedAt": null,
+      "additions": 4,
+      "deletions": 1,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 6
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "security/fix-symlink-path-traversal",
+      "baseRefName": "master"
+    },
+    "usestrix/strix#204": {
+      "number": 204,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "MERGEABLE",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-05-21T20:53:05Z",
+      "lastEditedAt": null,
+      "additions": 1788,
+      "deletions": 0,
+      "changedFiles": 6,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "feature/add-vulnerability-prompt-modules",
+      "baseRefName": "main"
+    },
+    "usestrix/strix#203": {
+      "number": 203,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED",
+      "mergeable": "CONFLICTING",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-05-21T20:53:04Z",
+      "lastEditedAt": null,
+      "additions": 368,
+      "deletions": 20,
+      "changedFiles": 5,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "security/fix-token-exposure-and-info-disclosure",
+      "baseRefName": "main"
+    },
+    "public-apis/public-apis#5088": {
+      "number": 5088,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-21T20:24:06Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 0,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "add-fantasy-premier-league",
+      "baseRefName": "master"
+    },
+    "public-apis/public-apis#5087": {
+      "number": 5087,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-21T20:24:09Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 0,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "add-flagcdn",
+      "baseRefName": "master"
+    },
+    "public-apis/public-apis#5086": {
+      "number": 5086,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-21T20:24:12Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 0,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "add-tenor",
+      "baseRefName": "master"
+    },
+    "public-apis/public-apis#5085": {
+      "number": 5085,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-21T20:24:15Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 0,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "add-pravatar",
+      "baseRefName": "master"
+    },
+    "public-apis/public-apis#5084": {
+      "number": 5084,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-21T20:24:19Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 0,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "add-multiavatar",
+      "baseRefName": "master"
+    },
+    "public-apis/public-apis#5083": {
+      "number": 5083,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-21T20:24:22Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 0,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "add-ui-avatars",
+      "baseRefName": "master"
+    },
+    "public-apis/public-apis#5082": {
+      "number": 5082,
+      "state": "OPEN",
+      "isDraft": false,
+      "reviewDecision": null,
+      "mergeable": "UNKNOWN",
+      "maintainerCanModify": true,
+      "updatedAt": "2026-02-21T20:24:25Z",
+      "lastEditedAt": null,
+      "additions": 1,
+      "deletions": 0,
+      "changedFiles": 1,
+      "comments": {
+        "totalCount": 1
+      },
+      "reviewThreads": {
+        "totalCount": 0
+      },
+      "reviews": {
+        "totalCount": 0,
+        "nodes": []
+      },
+      "labels": {
+        "nodes": []
+      },
+      "headRefName": "add-dummyjson",
+      "baseRefName": "master"
+    }
+  },
+  "repos": {
+    "pytorch/vision": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 17706,
+      "pushedAt": "2026-06-01T13:21:39Z",
+      "language": "Python"
+    },
+    "facebookresearch/hydra": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 10410,
+      "pushedAt": "2026-06-01T08:55:14Z",
+      "language": "Python"
+    },
+    "determined-ai/determined": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 3225,
+      "pushedAt": "2025-03-20T19:09:46Z",
+      "language": "Go"
+    },
+    "Lightning-AI/pytorch-lightning": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 31168,
+      "pushedAt": "2026-06-01T13:12:46Z",
+      "language": "Python"
+    },
+    "PyGithub/PyGithub": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 7726,
+      "pushedAt": "2026-05-29T16:33:41Z",
+      "language": "Python"
+    },
+    "sphinx-doc/sphinx": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 7862,
+      "pushedAt": "2026-05-31T23:40:03Z",
+      "language": "Python"
+    },
+    "Zulko/moviepy": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 14656,
+      "pushedAt": "2026-03-07T02:47:15Z",
+      "language": "Python"
+    },
+    "onnx/onnx": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 20922,
+      "pushedAt": "2026-06-01T06:48:37Z",
+      "language": "Python"
+    },
+    "arrow-py/arrow": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 9047,
+      "pushedAt": "2026-04-30T08:13:11Z",
+      "language": "Python"
+    },
+    "huggingface/datasets": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 21559,
+      "pushedAt": "2026-06-01T10:15:56Z",
+      "language": "Python"
+    },
+    "lancedb/lancedb": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 10469,
+      "pushedAt": "2026-06-01T12:41:47Z",
+      "language": "HTML"
+    },
+    "langgenius/dify": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 143399,
+      "pushedAt": "2026-06-01T12:28:24Z",
+      "language": "TypeScript"
+    },
+    "wandb/wandb": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 11097,
+      "pushedAt": "2026-06-01T02:38:55Z",
+      "language": "Python"
+    },
+    "chroma-core/chroma": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 28171,
+      "pushedAt": "2026-05-31T14:01:05Z",
+      "language": "Rust"
+    },
+    "encode/httpx": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 15280,
+      "pushedAt": "2026-03-29T00:19:16Z",
+      "language": "Python"
+    },
+    "mwaskom/seaborn": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 13898,
+      "pushedAt": "2026-01-22T13:03:07Z",
+      "language": "Python"
+    },
+    "pydata/xarray": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 4153,
+      "pushedAt": "2026-05-31T11:19:38Z",
+      "language": "Python"
+    },
+    "mage-ai/mage-ai": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 8739,
+      "pushedAt": "2026-05-29T18:27:29Z",
+      "language": "Python"
+    },
+    "python-poetry/poetry": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 34272,
+      "pushedAt": "2026-05-31T16:07:01Z",
+      "language": "Python"
+    },
+    "bentoml/BentoML": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 8662,
+      "pushedAt": "2026-05-29T19:05:52Z",
+      "language": "Python"
+    },
+    "rapidsai/cudf": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 9647,
+      "pushedAt": "2026-06-01T12:44:52Z",
+      "language": "C++"
+    },
+    "apache/tvm": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 13404,
+      "pushedAt": "2026-06-01T12:21:07Z",
+      "language": "Python"
+    },
+    "dask/dask": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 13848,
+      "pushedAt": "2026-06-01T09:30:01Z",
+      "language": "Python"
+    },
+    "OpenGVLab/InternVL": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 10050,
+      "pushedAt": "2025-09-22T01:36:48Z",
+      "language": "Python"
+    },
+    "salesforce/Merlion": {
+      "isArchived": true,
+      "isPrivate": false,
+      "stars": 4474,
+      "pushedAt": "2026-03-11T12:52:32Z",
+      "language": "Python"
+    },
+    "Vchitect/Latte": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 1939,
+      "pushedAt": "2025-10-30T23:04:14Z",
+      "language": "Python"
+    },
+    "mozilla/TTS": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 10143,
+      "pushedAt": "2023-11-09T15:37:59Z",
+      "language": "Jupyter Notebook"
+    },
+    "espnet/espnet": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 9849,
+      "pushedAt": "2026-06-01T11:46:38Z",
+      "language": "Python"
+    },
+    "nutonomy/nuscenes-devkit": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 2752,
+      "pushedAt": "2025-08-28T05:18:29Z",
+      "language": "Python"
+    },
+    "AILab-CVC/VideoCrafter": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 5062,
+      "pushedAt": "2026-01-09T15:01:22Z",
+      "language": "Python"
+    },
+    "zai-org/CogVLM": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 6741,
+      "pushedAt": "2024-05-29T10:01:33Z",
+      "language": "Python"
+    },
+    "lm-sys/FastChat": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 39480,
+      "pushedAt": "2026-05-01T00:25:53Z",
+      "language": "Python"
+    },
+    "dmlc/dgl": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 14274,
+      "pushedAt": "2025-07-31T23:53:10Z",
+      "language": "Python"
+    },
+    "RUCAIBox/RecBole": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 4455,
+      "pushedAt": "2025-02-24T07:16:41Z",
+      "language": "Python"
+    },
+    "zai-org/CogVideo": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 12755,
+      "pushedAt": "2025-11-04T11:19:04Z",
+      "language": "Python"
+    },
+    "facebookresearch/xformers": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 10479,
+      "pushedAt": "2026-05-21T15:42:08Z",
+      "language": "Python"
+    },
+    "huggingface/diffusers": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 33748,
+      "pushedAt": "2026-06-01T13:06:16Z",
+      "language": "Python"
+    },
+    "LAION-AI/Open-Assistant": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 37409,
+      "pushedAt": "2024-08-17T01:55:35Z",
+      "language": "Python"
+    },
+    "microsoft/unilm": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 22138,
+      "pushedAt": "2026-01-23T04:09:35Z",
+      "language": "Python"
+    },
+    "karpathy/nanoGPT": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 59068,
+      "pushedAt": "2025-11-12T19:52:34Z",
+      "language": "Python"
+    },
+    "meta-llama/llama": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 59435,
+      "pushedAt": "2025-01-26T21:42:26Z",
+      "language": "Python"
+    },
+    "google-research/vision_transformer": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 12555,
+      "pushedAt": "2026-03-03T08:31:08Z",
+      "language": "Jupyter Notebook"
+    },
+    "tatsu-lab/stanford_alpaca": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 30251,
+      "pushedAt": "2024-07-17T09:43:05Z",
+      "language": "Python"
+    },
+    "Vchitect/LaVie": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 950,
+      "pushedAt": "2024-11-13T03:02:48Z",
+      "language": "Python"
+    },
+    "Project-MONAI/MONAI": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 8229,
+      "pushedAt": "2026-06-01T08:25:01Z",
+      "language": "Python"
+    },
+    "open-mmlab/mmsegmentation": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 9824,
+      "pushedAt": "2024-08-13T08:53:34Z",
+      "language": "Python"
+    },
+    "pyg-team/pytorch_geometric": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 23787,
+      "pushedAt": "2026-05-18T18:21:38Z",
+      "language": "Python"
+    },
+    "facebookresearch/dinov2": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 12917,
+      "pushedAt": "2026-04-08T15:11:48Z",
+      "language": "Jupyter Notebook"
+    },
+    "openai/shap-e": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 12243,
+      "pushedAt": "2024-06-22T19:19:14Z",
+      "language": "Python"
+    },
+    "CompVis/taming-transformers": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 6503,
+      "pushedAt": "2024-07-30T18:27:31Z",
+      "language": "Jupyter Notebook"
+    },
+    "openai/point-e": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 6885,
+      "pushedAt": "2024-07-04T19:05:34Z",
+      "language": "Python"
+    },
+    "CompVis/latent-diffusion": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 14053,
+      "pushedAt": "2024-02-29T05:29:47Z",
+      "language": "Jupyter Notebook"
+    },
+    "KaiyangZhou/CoOp": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 2211,
+      "pushedAt": "2024-05-20T16:58:40Z",
+      "language": "Python"
+    },
+    "microsoft/Swin-Transformer": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 15942,
+      "pushedAt": "2024-07-24T17:09:57Z",
+      "language": "Python"
+    },
+    "facebookresearch/segment-anything": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 54274,
+      "pushedAt": "2024-09-18T17:46:55Z",
+      "language": "Jupyter Notebook"
+    },
+    "facebookresearch/detectron2": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 34518,
+      "pushedAt": "2026-05-15T03:30:03Z",
+      "language": "Python"
+    },
+    "speechbrain/speechbrain": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 11579,
+      "pushedAt": "2026-05-27T11:38:10Z",
+      "language": "Python"
+    },
+    "openai/CLIP": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 33650,
+      "pushedAt": "2026-03-25T18:46:40Z",
+      "language": "Jupyter Notebook"
+    },
+    "hpcaitech/Open-Sora": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 29050,
+      "pushedAt": "2026-04-09T01:52:40Z",
+      "language": "Python"
+    },
+    "open-mmlab/mmdetection3d": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 6432,
+      "pushedAt": "2024-07-10T15:19:34Z",
+      "language": "Python"
+    },
+    "zai-org/ChatGLM-6B": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 41069,
+      "pushedAt": "2024-06-27T04:05:25Z",
+      "language": "Python"
+    },
+    "haotian-liu/LLaVA": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 24845,
+      "pushedAt": "2024-08-12T09:52:38Z",
+      "language": "Python"
+    },
+    "state-spaces/mamba": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 18346,
+      "pushedAt": "2026-06-01T03:45:49Z",
+      "language": "Python"
+    },
+    "lllyasviel/ControlNet": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 33909,
+      "pushedAt": "2024-02-25T09:49:39Z",
+      "language": "Python"
+    },
+    "graphdeco-inria/gaussian-splatting": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 22196,
+      "pushedAt": "2025-10-17T14:28:15Z",
+      "language": "Python"
+    },
+    "WongKinYiu/yolov7": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 14096,
+      "pushedAt": "2024-08-19T12:57:04Z",
+      "language": "Jupyter Notebook"
+    },
+    "apchenstu/TensoRF": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 1237,
+      "pushedAt": "2025-06-19T20:12:47Z",
+      "language": "Python"
+    },
+    "CompVis/stable-diffusion": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 73064,
+      "pushedAt": "2024-06-18T01:53:49Z",
+      "language": "Jupyter Notebook"
+    },
+    "mosaicml/composer": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 5483,
+      "pushedAt": "2026-04-29T18:58:33Z",
+      "language": "Python"
+    },
+    "hpcaitech/ColossalAI": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 41383,
+      "pushedAt": "2026-05-25T17:39:11Z",
+      "language": "Python"
+    },
+    "IDEA-Research/Grounded-SAM-2": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 3553,
+      "pushedAt": "2025-11-11T12:16:57Z",
+      "language": "Jupyter Notebook"
+    },
+    "Stability-AI/StableCascade": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 6554,
+      "pushedAt": "2024-07-25T11:54:13Z",
+      "language": "Jupyter Notebook"
+    },
+    "ikostrikov/jaxrl": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 757,
+      "pushedAt": "2022-10-26T04:30:25Z",
+      "language": "Jupyter Notebook"
+    },
+    "vwxyzjn/cleanrl": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 9879,
+      "pushedAt": "2026-04-20T10:57:15Z",
+      "language": "Python"
+    },
+    "WongKinYiu/yolov9": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 9526,
+      "pushedAt": "2024-08-09T13:48:20Z",
+      "language": "Python"
+    },
+    "DepthAnything/Depth-Anything-V2": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 8205,
+      "pushedAt": "2026-03-24T10:59:06Z",
+      "language": "Python"
+    },
+    "dreamgaussian/dreamgaussian": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 4328,
+      "pushedAt": "2024-01-02T04:12:09Z",
+      "language": "Python"
+    },
+    "facebookresearch/audiocraft": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 23331,
+      "pushedAt": "2026-03-03T21:50:32Z",
+      "language": "Jupyter Notebook"
+    },
+    "ashawkey/stable-dreamfusion": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 8836,
+      "pushedAt": "2023-12-10T23:17:27Z",
+      "language": "Python"
+    },
+    "openai/whisper": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 101133,
+      "pushedAt": "2026-04-15T16:32:15Z",
+      "language": "Python"
+    },
+    "Tencent-Hunyuan/HunyuanDiT": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 4292,
+      "pushedAt": "2025-11-27T06:37:00Z",
+      "language": "Jupyter Notebook"
+    },
+    "instantX-research/InstantID": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 11956,
+      "pushedAt": "2024-07-18T04:12:48Z",
+      "language": "Python"
+    },
+    "threestudio-project/threestudio": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 7017,
+      "pushedAt": "2024-12-16T06:11:15Z",
+      "language": "Jupyter Notebook"
+    },
+    "NVlabs/imaginaire": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 4073,
+      "pushedAt": "2022-11-29T10:24:50Z",
+      "language": "Python"
+    },
+    "suno-ai/bark": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 39141,
+      "pushedAt": "2024-08-19T07:45:36Z",
+      "language": "Jupyter Notebook"
+    },
+    "PixArt-alpha/PixArt-sigma": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 1924,
+      "pushedAt": "2024-10-31T01:20:19Z",
+      "language": "Python"
+    },
+    "RVC-Project/Retrieval-based-Voice-Conversion-WebUI": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 35817,
+      "pushedAt": "2024-11-24T15:09:44Z",
+      "language": "Python"
+    },
+    "guoyww/AnimateDiff": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 12130,
+      "pushedAt": "2024-07-31T01:14:15Z",
+      "language": "Python"
+    },
+    "Doubiiu/DynamiCrafter": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 2999,
+      "pushedAt": "2024-09-08T23:43:53Z",
+      "language": "Python"
+    },
+    "BAAI-Agents/Cradle": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 2529,
+      "pushedAt": "2024-11-07T04:58:20Z",
+      "language": "Python"
+    },
+    "FunAudioLLM/CosyVoice": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 21372,
+      "pushedAt": "2026-05-25T18:15:40Z",
+      "language": "Python"
+    },
+    "black-forest-labs/flux": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 25591,
+      "pushedAt": "2025-07-31T13:58:55Z",
+      "language": "Python"
+    },
+    "deepseek-ai/Janus": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 17736,
+      "pushedAt": "2025-02-01T07:58:29Z",
+      "language": "Python"
+    },
+    "baichuan-inc/Baichuan2": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 4103,
+      "pushedAt": "2024-11-08T08:31:29Z",
+      "language": "Python"
+    },
+    "Stability-AI/generative-models": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 27173,
+      "pushedAt": "2025-12-16T08:36:18Z",
+      "language": "Python"
+    },
+    "netease-youdao/EmotiVoice": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 8469,
+      "pushedAt": "2024-08-13T10:23:52Z",
+      "language": "Python"
+    },
+    "AIGC-Audio/AudioGPT": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 10178,
+      "pushedAt": "2024-07-06T21:35:18Z",
+      "language": "Python"
+    },
+    "PKU-YuanGroup/Open-Sora-Plan": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 12159,
+      "pushedAt": "2026-03-08T12:48:46Z",
+      "language": "Python"
+    },
+    "deepseek-ai/DeepSeek-VL2": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 5299,
+      "pushedAt": "2025-02-26T05:03:42Z",
+      "language": "Python"
+    },
+    "TMElyralab/MuseV": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 2841,
+      "pushedAt": "2024-06-28T04:21:48Z",
+      "language": "Python"
+    },
+    "bytedance/1d-tokenizer": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 1155,
+      "pushedAt": "2025-03-20T17:30:54Z",
+      "language": "Jupyter Notebook"
+    },
+    "Vchitect/SEINE": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 968,
+      "pushedAt": "2024-11-13T03:01:30Z",
+      "language": "Python"
+    },
+    "BAAI-DCAI/Bunny": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 1054,
+      "pushedAt": "2024-11-18T12:18:33Z",
+      "language": "Python"
+    },
+    "TMElyralab/MuseTalk": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 5887,
+      "pushedAt": "2025-09-26T05:44:17Z",
+      "language": "Python"
+    },
+    "modelscope/facechain": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 9496,
+      "pushedAt": "2025-06-06T09:32:00Z",
+      "language": "Jupyter Notebook"
+    },
+    "OpenGVLab/Ask-Anything": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 3340,
+      "pushedAt": "2025-01-18T12:11:48Z",
+      "language": "Python"
+    },
+    "ali-vilab/VGen": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 3154,
+      "pushedAt": "2025-01-10T09:09:13Z",
+      "language": "Python"
+    },
+    "KlingAIResearch/LivePortrait": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 18454,
+      "pushedAt": "2026-03-02T18:21:25Z",
+      "language": "Python"
+    },
+    "TencentARC/GFPGAN": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 37458,
+      "pushedAt": "2024-07-26T18:44:02Z",
+      "language": "Python"
+    },
+    "Tencent-Hunyuan/HunyuanVideo": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 12160,
+      "pushedAt": "2025-11-21T06:36:57Z",
+      "language": "Python"
+    },
+    "zai-org/GLM-4": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 7066,
+      "pushedAt": "2025-07-04T04:16:36Z",
+      "language": "Python"
+    },
+    "EleutherAI/lm-evaluation-harness": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 12769,
+      "pushedAt": "2026-05-11T14:24:53Z",
+      "language": "Python"
+    },
+    "microsoft/agent-lightning": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 17261,
+      "pushedAt": "2026-04-29T06:32:24Z",
+      "language": "Python"
+    },
+    "anthropics/skills": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 145028,
+      "pushedAt": "2026-05-29T02:02:28Z",
+      "language": "Python"
+    },
+    "vllm-project/vllm": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 81577,
+      "pushedAt": "2026-06-01T13:05:24Z",
+      "language": "Python"
+    },
+    "huggingface/optimum": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 3404,
+      "pushedAt": "2026-05-29T15:34:17Z",
+      "language": "Python"
+    },
+    "pytorch/audio": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 2878,
+      "pushedAt": "2026-06-01T13:21:32Z",
+      "language": "Python"
+    },
+    "PaddlePaddle/PaddleOCR": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 79197,
+      "pushedAt": "2026-05-29T08:02:25Z",
+      "language": "Python"
+    },
+    "facebookresearch/seamless_communication": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 11786,
+      "pushedAt": "2026-04-08T04:29:06Z",
+      "language": "Jupyter Notebook"
+    },
+    "huggingface/transformers": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 161151,
+      "pushedAt": "2026-06-01T13:50:19Z",
+      "language": "Python"
+    },
+    "meta-llama/llama-cookbook": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 18341,
+      "pushedAt": "2026-05-19T18:42:31Z",
+      "language": "Jupyter Notebook"
+    },
+    "QwenLM/Qwen3-VL": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 19274,
+      "pushedAt": "2026-01-30T04:47:30Z",
+      "language": "Jupyter Notebook"
+    },
+    "zai-org/CogVLM2": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 2439,
+      "pushedAt": "2025-03-03T03:01:31Z",
+      "language": "Python"
+    },
+    "sgl-project/sglang": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 28874,
+      "pushedAt": "2026-06-01T13:44:25Z",
+      "language": "Python"
+    },
+    "deforum/deforum-stable-diffusion": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 2286,
+      "pushedAt": "2024-08-30T18:10:54Z",
+      "language": "Python"
+    },
+    "showlab/Show-o": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 1941,
+      "pushedAt": "2026-01-08T16:30:37Z",
+      "language": "Python"
+    },
+    "sczhou/CodeFormer": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 17996,
+      "pushedAt": "2025-11-18T12:03:30Z",
+      "language": "Python"
+    },
+    "Wan-Video/Wan2.1": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 16144,
+      "pushedAt": "2026-03-05T09:38:07Z",
+      "language": "Python"
+    },
+    "junyanz/pytorch-CycleGAN-and-pix2pix": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 25135,
+      "pushedAt": "2025-08-06T17:58:38Z",
+      "language": "Python"
+    },
+    "natanielruiz/deep-head-pose": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 1663,
+      "pushedAt": "2023-05-23T08:43:50Z",
+      "language": "Python"
+    },
+    "facebookresearch/encodec": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 3966,
+      "pushedAt": "2024-01-04T01:58:44Z",
+      "language": "Python"
+    },
+    "OpenTalker/video-retalking": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 7247,
+      "pushedAt": "2024-08-05T05:59:59Z",
+      "language": "Python"
+    },
+    "SysCV/sam-hq": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 4227,
+      "pushedAt": "2025-09-12T00:00:27Z",
+      "language": "Jupyter Notebook"
+    },
+    "LLaVA-VL/LLaVA-NeXT": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 4682,
+      "pushedAt": "2026-04-15T06:38:26Z",
+      "language": "Python"
+    },
+    "fixie-ai/ultravox": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 4435,
+      "pushedAt": "2025-12-12T18:09:40Z",
+      "language": "Python"
+    },
+    "salesforce/LAVIS": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 11228,
+      "pushedAt": "2024-11-18T19:51:42Z",
+      "language": "Jupyter Notebook"
+    },
+    "artidoro/qlora": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 10917,
+      "pushedAt": "2024-06-10T19:20:16Z",
+      "language": "Jupyter Notebook"
+    },
+    "m87-labs/moondream": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 9726,
+      "pushedAt": "2026-04-20T06:52:50Z",
+      "language": "Python"
+    },
+    "eyurtsev/FlowCytometryTools": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 127,
+      "pushedAt": "2023-07-27T03:21:40Z",
+      "language": "Jupyter Notebook"
+    },
+    "facebookresearch/fairseq": {
+      "isArchived": true,
+      "isPrivate": false,
+      "stars": 32229,
+      "pushedAt": "2025-09-30T11:16:06Z",
+      "language": "Python"
+    },
+    "MVIG-SJTU/AlphaPose": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 8566,
+      "pushedAt": "2024-05-13T14:33:34Z",
+      "language": "Python"
+    },
+    "StanfordASL/Trajectron-plus-plus": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 813,
+      "pushedAt": "2023-08-17T06:09:35Z",
+      "language": "Jupyter Notebook"
+    },
+    "IDEA-Research/GroundingDINO": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 10196,
+      "pushedAt": "2024-08-12T08:52:02Z",
+      "language": "Python"
+    },
+    "OpenTalker/SadTalker": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 13863,
+      "pushedAt": "2024-06-26T12:51:53Z",
+      "language": "Python"
+    },
+    "Rudrabha/Wav2Lip": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 13019,
+      "pushedAt": "2025-06-22T02:41:21Z",
+      "language": "Python"
+    },
+    "microsoft/autogen": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 58602,
+      "pushedAt": "2026-04-15T11:59:09Z",
+      "language": "Python"
+    },
+    "Comfy-Org/ComfyUI": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 115252,
+      "pushedAt": "2026-06-01T06:18:40Z",
+      "language": "Python"
+    },
+    "usestrix/strix": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 25708,
+      "pushedAt": "2026-05-28T18:55:51Z",
+      "language": "Python"
+    },
+    "public-apis/public-apis": {
+      "isArchived": false,
+      "isPrivate": false,
+      "stars": 438371,
+      "pushedAt": "2026-06-01T13:37:54Z",
+      "language": "Python"
+    }
+  }
+}

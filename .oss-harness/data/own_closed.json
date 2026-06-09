@@ -1,0 +1,156 @@
+[
+  {
+    "closedAt": "2026-04-06T08:12:23Z",
+    "createdAt": "2026-04-06T08:09:35Z",
+    "isDraft": false,
+    "number": 60,
+    "repository": {
+      "name": "owly_studio_backend",
+      "nameWithOwner": "Mr-Neutr0n/owly_studio_backend"
+    },
+    "state": "merged",
+    "title": "feat: brand strategy enrichment pipeline",
+    "updatedAt": "2026-04-06T08:12:27Z",
+    "url": "https://github.com/Mr-Neutr0n/owly_studio_backend/pull/60"
+  },
+  {
+    "closedAt": "2026-04-05T06:51:08Z",
+    "createdAt": "2026-04-05T06:41:04Z",
+    "isDraft": false,
+    "number": 59,
+    "repository": {
+      "name": "owly_studio_backend",
+      "nameWithOwner": "Mr-Neutr0n/owly_studio_backend"
+    },
+    "state": "merged",
+    "title": "feat: Brand + Product domain model (migrations, schemas, routes, dual-write)",
+    "updatedAt": "2026-04-05T06:51:08Z",
+    "url": "https://github.com/Mr-Neutr0n/owly_studio_backend/pull/59"
+  },
+  {
+    "closedAt": "2026-04-02T01:35:33Z",
+    "createdAt": "2026-04-02T01:29:19Z",
+    "isDraft": false,
+    "number": 1,
+    "repository": {
+      "name": "owly_domain_model",
+      "nameWithOwner": "Mr-Neutr0n/owly_domain_model"
+    },
+    "state": "merged",
+    "title": "feat: marketing fundamentals enrichment \u2014 Schwartz, Hopkins, Cialdini, Byron Sharp",
+    "updatedAt": "2026-04-02T01:35:34Z",
+    "url": "https://github.com/Mr-Neutr0n/owly_domain_model/pull/1"
+  },
+  {
+    "closedAt": "2026-03-31T17:32:17Z",
+    "createdAt": "2026-03-31T17:32:03Z",
+    "isDraft": false,
+    "number": 51,
+    "repository": {
+      "name": "owly_studio_backend",
+      "nameWithOwner": "Mr-Neutr0n/owly_studio_backend"
+    },
+    "state": "merged",
+    "title": "Cgi pipeline",
+    "updatedAt": "2026-03-31T17:32:17Z",
+    "url": "https://github.com/Mr-Neutr0n/owly_studio_backend/pull/51"
+  },
+  {
+    "closedAt": "2026-03-25T15:17:03Z",
+    "createdAt": "2026-03-25T15:16:48Z",
+    "isDraft": false,
+    "number": 36,
+    "repository": {
+      "name": "owly_studio_backend",
+      "nameWithOwner": "Mr-Neutr0n/owly_studio_backend"
+    },
+    "state": "merged",
+    "title": "Cgi pipeline",
+    "updatedAt": "2026-03-25T15:17:03Z",
+    "url": "https://github.com/Mr-Neutr0n/owly_studio_backend/pull/36"
+  },
+  {
+    "closedAt": "2026-03-22T11:52:57Z",
+    "createdAt": "2026-03-22T11:52:47Z",
+    "isDraft": false,
+    "number": 31,
+    "repository": {
+      "name": "owly_studio_frontend",
+      "nameWithOwner": "Mr-Neutr0n/owly_studio_frontend"
+    },
+    "state": "merged",
+    "title": "feat: add kling_v3 video provider support and UI enhancements",
+    "updatedAt": "2026-03-22T16:29:38Z",
+    "url": "https://github.com/Mr-Neutr0n/owly_studio_frontend/pull/31"
+  },
+  {
+    "closedAt": "2026-03-09T17:38:04Z",
+    "createdAt": "2026-03-09T17:37:53Z",
+    "isDraft": false,
+    "number": 18,
+    "repository": {
+      "name": "owly_studio_frontend",
+      "nameWithOwner": "Mr-Neutr0n/owly_studio_frontend"
+    },
+    "state": "merged",
+    "title": "Feat/shadcn UI wave1 refresh",
+    "updatedAt": "2026-03-09T17:55:59Z",
+    "url": "https://github.com/Mr-Neutr0n/owly_studio_frontend/pull/18"
+  },
+  {
+    "closedAt": "2026-01-31T17:57:50Z",
+    "createdAt": "2026-01-31T17:57:37Z",
+    "isDraft": false,
+    "number": 10,
+    "repository": {
+      "name": "owly_studio_frontend",
+      "nameWithOwner": "Mr-Neutr0n/owly_studio_frontend"
+    },
+    "state": "merged",
+    "title": "Feature/video editor",
+    "updatedAt": "2026-01-31T17:57:50Z",
+    "url": "https://github.com/Mr-Neutr0n/owly_studio_frontend/pull/10"
+  },
+  {
+    "closedAt": "2026-01-22T19:41:01Z",
+    "createdAt": "2026-01-22T19:40:53Z",
+    "isDraft": false,
+    "number": 2,
+    "repository": {
+      "name": "owly_studio_backend",
+      "nameWithOwner": "Mr-Neutr0n/owly_studio_backend"
+    },
+    "state": "merged",
+    "title": "fix(jobs): calculate duration from shots to prevent black screen tail",
+    "updatedAt": "2026-01-22T19:41:01Z",
+    "url": "https://github.com/Mr-Neutr0n/owly_studio_backend/pull/2"
+  },
+  {
+    "closedAt": "2025-05-15T22:40:38Z",
+    "createdAt": "2025-05-15T22:40:26Z",
+    "isDraft": false,
+    "number": 2,
+    "repository": {
+      "name": "owly_studio_website",
+      "nameWithOwner": "Mr-Neutr0n/owly_studio_website"
+    },
+    "state": "merged",
+    "title": "commit 3",
+    "updatedAt": "2025-05-15T22:40:38Z",
+    "url": "https://github.com/Mr-Neutr0n/owly_studio_website/pull/2"
+  },
+  {
+    "closedAt": "2025-05-15T22:05:00Z",
+    "createdAt": "2025-05-15T21:32:18Z",
+    "isDraft": false,
+    "number": 1,
+    "repository": {
+      "name": "owly_studio_website",
+      "nameWithOwner": "Mr-Neutr0n/owly_studio_website"
+    },
+    "state": "merged",
+    "title": "New site",
+    "updatedAt": "2025-05-15T22:05:00Z",
+    "url": "https://github.com/Mr-Neutr0n/owly_studio_website/pull/1"
+  }
+]

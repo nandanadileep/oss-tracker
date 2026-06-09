@@ -1,0 +1,542 @@
+{
+  "_comment": "Sequential work queue, ordered by tier then stars. Each item is 'owner/repo#number'. Pop one, do it, advance.",
+  "_version": "0.2.3",
+  "_generated": "2026-06-01",
+  "_order": "A (CI green) \u2192 A (CI pending) \u2192 B+ (threads) \u2192 B- (CI green) \u2192 B- (pending) \u2192 B-nothing (long tail). F-tier (archived) and C-tier (CONFLICTING, needs rebase) are listed under deferred \u2014 neither can be actioned without manual intervention.",
+  "queue": [
+    "anthropics/skills#362",
+    "anthropics/skills#361",
+    "Lightning-AI/pytorch-lightning#21539",
+    "Stability-AI/generative-models#470",
+    "pyg-team/pytorch_geometric#10600",
+    "onnx/onnx#7665",
+    "OpenTalker/SadTalker#1031",
+    "LLaVA-VL/LLaVA-NeXT#505",
+    "fixie-ai/ultravox#330",
+    "SysCV/sam-hq#165",
+    "nutonomy/nuscenes-devkit#1191",
+    "Vchitect/LaVie#72",
+    "huggingface/transformers#43842",
+    "Comfy-Org/ComfyUI#12287",
+    "huggingface/diffusers#13102",
+    "huggingface/diffusers#13125",
+    "huggingface/diffusers#13111",
+    "huggingface/diffusers#13110",
+    "huggingface/diffusers#13109",
+    "huggingface/diffusers#13108",
+    "huggingface/diffusers#13103",
+    "huggingface/diffusers#13094",
+    "speechbrain/speechbrain#3033",
+    "huggingface/optimum#2407",
+    "huggingface/optimum#2406",
+    "openai/whisper#2730",
+    "CompVis/stable-diffusion#908",
+    "CompVis/stable-diffusion#907",
+    "meta-llama/llama#1412",
+    "karpathy/nanoGPT#683",
+    "facebookresearch/segment-anything#853",
+    "hpcaitech/ColossalAI#6407",
+    "hpcaitech/ColossalAI#6406",
+    "hpcaitech/ColossalAI#6405",
+    "zai-org/ChatGLM-6B#1516",
+    "lm-sys/FastChat#3775",
+    "lm-sys/FastChat#3773",
+    "suno-ai/bark#662",
+    "suno-ai/bark#661",
+    "TencentARC/GFPGAN#640",
+    "LAION-AI/Open-Assistant#3779",
+    "RVC-Project/Retrieval-based-Voice-Conversion-WebUI#2756",
+    "facebookresearch/detectron2#5509",
+    "facebookresearch/detectron2#5512",
+    "facebookresearch/detectron2#5510",
+    "lllyasviel/ControlNet#751",
+    "openai/CLIP#530",
+    "tatsu-lab/stanford_alpaca#324",
+    "hpcaitech/Open-Sora#911",
+    "hpcaitech/Open-Sora#910",
+    "Stability-AI/generative-models#474",
+    "Stability-AI/generative-models#473",
+    "Stability-AI/generative-models#472",
+    "Stability-AI/generative-models#471",
+    "black-forest-labs/flux#507",
+    "junyanz/pytorch-CycleGAN-and-pix2pix#1715",
+    "haotian-liu/LLaVA#1921",
+    "facebookresearch/audiocraft#598",
+    "graphdeco-inria/gaussian-splatting#1316",
+    "microsoft/unilm#1740",
+    "huggingface/datasets#8004",
+    "FunAudioLLM/CosyVoice#1827",
+    "FunAudioLLM/CosyVoice#1826",
+    "QwenLM/Qwen3-VL#2027",
+    "KlingAIResearch/LivePortrait#557",
+    "state-spaces/mamba#845",
+    "sczhou/CodeFormer#441",
+    "deepseek-ai/Janus#234",
+    "deepseek-ai/Janus#233",
+    "deepseek-ai/Janus#232",
+    "deepseek-ai/Janus#231",
+    "deepseek-ai/Janus#230",
+    "microsoft/Swin-Transformer#387",
+    "microsoft/Swin-Transformer#388",
+    "encode/httpx#3764",
+    "Zulko/moviepy#2554",
+    "dmlc/dgl#7915",
+    "dmlc/dgl#7914",
+    "WongKinYiu/yolov7#2147",
+    "WongKinYiu/yolov7#2146",
+    "WongKinYiu/yolov7#2145",
+    "CompVis/latent-diffusion#404",
+    "mwaskom/seaborn#3912",
+    "mwaskom/seaborn#3911",
+    "dask/dask#12293",
+    "Rudrabha/Wav2Lip#774",
+    "facebookresearch/dinov2#583",
+    "zai-org/CogVideo#812",
+    "zai-org/CogVideo#811",
+    "openai/shap-e#182",
+    "Tencent-Hunyuan/HunyuanVideo#310",
+    "PKU-YuanGroup/Open-Sora-Plan#595",
+    "PKU-YuanGroup/Open-Sora-Plan#596",
+    "guoyww/AnimateDiff#435",
+    "guoyww/AnimateDiff#436",
+    "instantX-research/InstantID#299",
+    "salesforce/LAVIS#809",
+    "salesforce/LAVIS#810",
+    "wandb/wandb#11344",
+    "artidoro/qlora#303",
+    "IDEA-Research/GroundingDINO#443",
+    "AIGC-Audio/AudioGPT#107",
+    "mozilla/TTS#797",
+    "OpenGVLab/InternVL#1260",
+    "OpenGVLab/InternVL#1259",
+    "OpenGVLab/InternVL#1258",
+    "OpenGVLab/InternVL#1256",
+    "OpenGVLab/InternVL#1255",
+    "vwxyzjn/cleanrl#538",
+    "m87-labs/moondream#326",
+    "WongKinYiu/yolov9#662",
+    "ashawkey/stable-dreamfusion#377",
+    "bentoml/BentoML#5549",
+    "MVIG-SJTU/AlphaPose#1241",
+    "netease-youdao/EmotiVoice#185",
+    "DepthAnything/Depth-Anything-V2#318",
+    "sphinx-doc/sphinx#14303",
+    "OpenTalker/video-retalking#286",
+    "zai-org/GLM-4#803",
+    "threestudio-project/threestudio#530",
+    "openai/point-e#120",
+    "zai-org/CogVLM#554",
+    "zai-org/CogVLM#553",
+    "Stability-AI/StableCascade#146",
+    "CompVis/taming-transformers#267",
+    "TMElyralab/MuseTalk#406",
+    "mosaicml/composer#3932",
+    "mosaicml/composer#3931",
+    "deepseek-ai/DeepSeek-VL2#150",
+    "AILab-CVC/VideoCrafter#108",
+    "AILab-CVC/VideoCrafter#107",
+    "RUCAIBox/RecBole#2208",
+    "RUCAIBox/RecBole#2207",
+    "dreamgaussian/dreamgaussian#183",
+    "Tencent-Hunyuan/HunyuanDiT#247",
+    "pydata/xarray#11164",
+    "baichuan-inc/Baichuan2#428",
+    "NVlabs/imaginaire#190",
+    "facebookresearch/encodec#98",
+    "facebookresearch/encodec#97",
+    "IDEA-Research/Grounded-SAM-2#130",
+    "OpenGVLab/Ask-Anything#264",
+    "ali-vilab/VGen#162",
+    "Doubiiu/DynamiCrafter#168",
+    "pytorch/audio#4175",
+    "pytorch/audio#4174",
+    "TMElyralab/MuseV#179",
+    "BAAI-Agents/Cradle#107",
+    "zai-org/CogVLM2#220",
+    "deforum/deforum-stable-diffusion#387",
+    "KaiyangZhou/CoOp#91",
+    "showlab/Show-o#113",
+    "Vchitect/Latte#140",
+    "Vchitect/Latte#139",
+    "PixArt-alpha/PixArt-sigma#163",
+    "PixArt-alpha/PixArt-sigma#164",
+    "natanielruiz/deep-head-pose#132",
+    "apchenstu/TensoRF#89",
+    "apchenstu/TensoRF#88",
+    "bytedance/1d-tokenizer#120",
+    "bytedance/1d-tokenizer#119",
+    "BAAI-DCAI/Bunny#153",
+    "Vchitect/SEINE#32",
+    "Vchitect/LaVie#73",
+    "StanfordASL/Trajectron-plus-plus#106",
+    "ikostrikov/jaxrl#31",
+    "ikostrikov/jaxrl#30",
+    "eyurtsev/FlowCytometryTools#47",
+    "open-mmlab/mmsegmentation#3869",
+    "open-mmlab/mmdetection3d#3140",
+    "determined-ai/determined#10265"
+  ],
+  "deferred": {
+    "_comment": "F (archived, will be auto-closed) and C (CONFLICTING, needs git rebase). Listed separately so they can be picked up later if the user wants to do the rebase work.",
+    "items": [
+      "langgenius/dify#32317",
+      "usestrix/strix#203",
+      "pytorch/vision#9384",
+      "facebookresearch/xformers#1377",
+      "lancedb/lancedb#3028",
+      "rapidsai/cudf#21444",
+      "facebookresearch/fairseq#5645",
+      "salesforce/Merlion#186",
+      "salesforce/Merlion#185"
+    ]
+  },
+  "done": [
+    {
+      "key": "rapidsai/cudf#21444",
+      "action": "commented",
+      "comment_id": 4595837727
+    },
+    {
+      "key": "mage-ai/mage-ai#6024",
+      "action": "pushed-fix",
+      "comment_id": 4595904801
+    },
+    {
+      "key": "chroma-core/chroma#6437",
+      "action": "commented-or-pushed",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "lancedb/lancedb#3028",
+      "action": "commented-or-pushed",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "huggingface/diffusers#13093",
+      "action": "commented-or-pushed",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "vllm-project/vllm#34163",
+      "action": "commented-or-pushed",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "PyGithub/PyGithub#3450",
+      "action": "commented-or-pushed",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "microsoft/agent-lightning#480",
+      "action": "commented-or-pushed",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "microsoft/agent-lightning#481",
+      "action": "commented-or-pushed",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "microsoft/agent-lightning#482",
+      "action": "commented-or-pushed",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "microsoft/agent-lightning#483",
+      "action": "commented-or-pushed",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "microsoft/agent-lightning#484",
+      "action": "commented-or-pushed",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "microsoft/agent-lightning#485",
+      "action": "commented-or-pushed",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "microsoft/agent-lightning#486",
+      "action": "commented-or-pushed",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "lancedb/lancedb#3483",
+      "action": "test-only-regression-for-#2654-on-current-main",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "Lightning-AI/pytorch-lightning#21529",
+      "action": "moved-numpy-to-local-import-+-regression-test",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "PaddlePaddle/PaddleOCR#17685",
+      "action": "closed-superseded-by-upstream-#17687",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "espnet/espnet#6363",
+      "action": "lsp-fix-base-class-others-optional",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "apache/tvm#18774",
+      "action": "gemini-cleanup-+-awaiting-maintainer-confirm",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "python-poetry/poetry#10736",
+      "action": "fixed-2-test-bugs-causing-CI-failures",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "public-apis/public-apis#5082",
+      "action": "closed-repo-no-longer-active",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "public-apis/public-apis#5083",
+      "action": "closed-repo-no-longer-active",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "public-apis/public-apis#5084",
+      "action": "closed-repo-no-longer-active",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "public-apis/public-apis#5085",
+      "action": "closed-repo-no-longer-active",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "public-apis/public-apis#5086",
+      "action": "closed-repo-no-longer-active",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "public-apis/public-apis#5087",
+      "action": "closed-repo-no-longer-active",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "public-apis/public-apis#5088",
+      "action": "closed-repo-no-longer-active",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "huggingface/transformers#43775",
+      "action": "fixed-5-test-expected-values-after-topk-normalization",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "google-research/vision_transformer#320",
+      "action": "cla-blocker-cannot-fix-in-code",
+      "date": "2026-06-02"
+    },
+    {
+      "key": "sgl-project/sglang#18397",
+      "action": "ci-gate-blocker-cannot-fix-in-code",
+      "date": "2026-06-02"
+    },
+    {
+      "item": "Project-MONAI/MONAI#8739",
+      "status": "done",
+      "action": "fixed-smooth-dr-pattern",
+      "commit": "746afac",
+      "comment": 4606234535
+    },
+    {
+      "key": "Project-MONAI/MONAI#8739",
+      "action": "fixed-smooth-dr-pattern",
+      "commit": "746afac",
+      "comment_id": 4606234535
+    },
+    {
+      "key": "vwxyzjn/cleanrl#538",
+      "action": "diagnosed-pre-existing-ci",
+      "comment_id": 4606268707
+    },
+    {
+      "key": "sphinx-doc/sphinx#14303",
+      "action": "fixed-types-union-type",
+      "commit": "7a09d9a",
+      "comment_id": 4606371756
+    },
+    {
+      "key": "lm-sys/FastChat#3775",
+      "action": "fixed-black-formatting",
+      "commit": "3475c71",
+      "comment_id": 4606392716
+    },
+    {
+      "key": "dask/dask#12293",
+      "action": "rebased-onto-main",
+      "commit": "59c48ad",
+      "comment_id": 4606444228
+    },
+    {
+      "key": "determined-ai/determined#10265",
+      "action": "fixed-isort-import-location",
+      "commit": "891960c",
+      "comment_id": 4608115223
+    },
+    {
+      "key": "open-mmlab/mmsegmentation#3869",
+      "action": "diagnosed-pre-existing-flake",
+      "comment_id": 4608137224
+    },
+    {
+      "key": "open-mmlab/mmdetection3d#3140",
+      "action": "diagnosed-pre-existing-flake",
+      "comment_id": 4608144008
+    },
+    "EleutherAI/lm-evaluation-harness#3580",
+    {
+      "key": "anthropics/skills#363",
+      "action": "commented",
+      "comment_id": 4610592909,
+      "date": "2026-06-03"
+    },
+    {
+      "key": "microsoft/autogen#7211",
+      "action": "commented",
+      "comment_id": 4610593043,
+      "date": "2026-06-03"
+    },
+    {
+      "key": "meta-llama/llama-cookbook#1021",
+      "action": "commented",
+      "comment_id": 4610593202,
+      "date": "2026-06-03"
+    },
+    {
+      "key": "usestrix/strix#204",
+      "action": "commented",
+      "comment_id": 4614207176,
+      "date": "2026-06-03"
+    },
+    {
+      "key": "Wan-Video/Wan2.1#574",
+      "action": "commented",
+      "comment_id": 4614211930,
+      "date": "2026-06-03"
+    },
+    {
+      "key": "facebookresearch/hydra#3133",
+      "action": "commented",
+      "comment_id": 4614216312,
+      "date": "2026-06-03"
+    },
+    {
+      "key": "facebookresearch/seamless_communication#572",
+      "action": "commented",
+      "comment_id": 4621264977,
+      "date": "2026-06-04"
+    },
+    {
+      "key": "modelscope/facechain#650",
+      "action": "commented",
+      "comment_id": 4621265118,
+      "date": "2026-06-04"
+    },
+    {
+      "key": "arrow-py/arrow#1243",
+      "action": "commented",
+      "comment_id": 4621265257,
+      "date": "2026-06-04"
+    },
+    {
+      "key": "PyGithub/PyGithub#3450",
+      "action": "closed",
+      "comment_id": 4625140956,
+      "date": "2026-06-04"
+    },
+    {
+      "key": "determined-ai/determined#10265",
+      "action": "retitled-and-reran-ci",
+      "comment_id": 4625180555,
+      "date": "2026-06-04"
+    },
+    {
+      "key": "lm-sys/FastChat#3775",
+      "action": "commented",
+      "comment_id": 4625191246,
+      "date": "2026-06-04"
+    },
+    {
+      "key": "sphinx-doc/sphinx#14303",
+      "action": "pushed-fix",
+      "comment_id": 4625213560,
+      "date": "2026-06-04"
+    },
+    {
+      "key": "dask/dask#12293",
+      "action": "commented",
+      "comment_id": 4625229954,
+      "date": "2026-06-04"
+    },
+    {
+      "key": "open-mmlab/mmdetection3d#3140",
+      "action": "pushed-noop-rerun",
+      "comment_id": 4625234085,
+      "date": "2026-06-04"
+    },
+    {
+      "key": "open-mmlab/mmsegmentation#3869",
+      "action": "pushed-noop-rerun",
+      "comment_id": 4625234191,
+      "date": "2026-06-04"
+    },
+    {
+      "key": "vwxyzjn/cleanrl#538",
+      "action": "linked-followup-pr",
+      "comment_id": 4625311662,
+      "date": "2026-06-04"
+    },
+    {
+      "key": "vwxyzjn/cleanrl#554",
+      "action": "opened-followup-pr",
+      "date": "2026-06-04"
+    },
+    {
+      "key": "sphinx-doc/sphinx#14303",
+      "action": "pushed-fix-v2",
+      "comment_id": 4629974184,
+      "date": "2026-06-05"
+    },
+    {
+      "key": "vwxyzjn/cleanrl#554",
+      "action": "pushed-fix-v2",
+      "comment_id": 4629974322,
+      "date": "2026-06-05"
+    },
+    {
+      "key": "vwxyzjn/cleanrl#554",
+      "action": "pushed-fix-v3",
+      "comment_id": 4633530452,
+      "date": "2026-06-05"
+    },
+    {
+      "key": "sphinx-doc/sphinx#14303",
+      "action": "commented-status",
+      "comment_id": 4633532068,
+      "date": "2026-06-05"
+    },
+    {
+      "key": "vwxyzjn/cleanrl#554",
+      "action": "pushed-fix-v4",
+      "comment_id": 4636643347,
+      "date": "2026-06-06"
+    },
+    {
+      "key": "vwxyzjn/cleanrl#554",
+      "action": "pushed-fix-v5",
+      "comment_id": 4636811158,
+      "date": "2026-06-06"
+    }
+  ],
+  "_updated": "2026-06-06T01:25:05.146153+00:00"
+}

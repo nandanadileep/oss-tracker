@@ -1,0 +1,80 @@
+[
+  {
+    "createdAt": "2026-02-11T18:35:00Z",
+    "isDraft": false,
+    "number": 1,
+    "repository": {
+      "name": "mae",
+      "nameWithOwner": "Mr-Neutr0n/mae"
+    },
+    "state": "open",
+    "title": "Fix ModuleNotFoundError: replace removed torch._six with math.inf",
+    "updatedAt": "2026-02-11T18:35:00Z",
+    "url": "https://github.com/Mr-Neutr0n/mae/pull/1"
+  },
+  {
+    "createdAt": "2026-02-11T18:34:09Z",
+    "isDraft": false,
+    "number": 1,
+    "repository": {
+      "name": "dino",
+      "nameWithOwner": "Mr-Neutr0n/dino"
+    },
+    "state": "open",
+    "title": "Fix per-sample normalization in multi_scale feature extraction",
+    "updatedAt": "2026-02-11T18:34:09Z",
+    "url": "https://github.com/Mr-Neutr0n/dino/pull/1"
+  },
+  {
+    "createdAt": "2026-02-11T18:19:26Z",
+    "isDraft": false,
+    "number": 2,
+    "repository": {
+      "name": "DiT",
+      "nameWithOwner": "Mr-Neutr0n/DiT"
+    },
+    "state": "open",
+    "title": "fix: remove hardcoded channel count in forward_with_cfg",
+    "updatedAt": "2026-02-11T18:19:26Z",
+    "url": "https://github.com/Mr-Neutr0n/DiT/pull/2"
+  },
+  {
+    "createdAt": "2026-02-11T18:18:57Z",
+    "isDraft": false,
+    "number": 1,
+    "repository": {
+      "name": "FlexLLMGen",
+      "nameWithOwner": "Mr-Neutr0n/FlexLLMGen"
+    },
+    "state": "open",
+    "title": "fix: attention mask value too small, causes softmax leakage",
+    "updatedAt": "2026-02-11T18:18:57Z",
+    "url": "https://github.com/Mr-Neutr0n/FlexLLMGen/pull/1"
+  },
+  {
+    "createdAt": "2026-02-11T18:18:38Z",
+    "isDraft": false,
+    "number": 1,
+    "repository": {
+      "name": "VALL-E-X",
+      "nameWithOwner": "Mr-Neutr0n/VALL-E-X"
+    },
+    "state": "open",
+    "title": "fix: correct prenet/positional encoding order in continual inference",
+    "updatedAt": "2026-02-11T18:18:38Z",
+    "url": "https://github.com/Mr-Neutr0n/VALL-E-X/pull/1"
+  },
+  {
+    "createdAt": "2026-02-11T18:16:02Z",
+    "isDraft": false,
+    "number": 1,
+    "repository": {
+      "name": "DiT",
+      "nameWithOwner": "Mr-Neutr0n/DiT"
+    },
+    "state": "open",
+    "title": "fix: correct unpatchify reshape for non-square inputs",
+    "updatedAt": "2026-02-11T18:16:02Z",
+    "url": "https://github.com/Mr-Neutr0n/DiT/pull/1"
+  }
+]
