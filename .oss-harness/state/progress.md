@@ -640,3 +640,17 @@ Checked the fresh rerun on `vwxyzjn/cleanrl#554` before returning to colder back
 - Comment 4636811158 posted on `#554` documenting the rationale.
 
 **Outcome:** `cleanrl#554` now has the most explicit and least ambiguous envpool/JAX workflow possible from the PR side. Next step is to let CI rerun before spending any more time on that branch.
+
+## 2026-06-09 — Automation Test with Zen Free Tier
+
+- Verified OpenCode Zen free tier works WITHOUT API key
+- Tested `opencode run --model zen/big-pickle` - works perfectly
+- Fixed JSON parsing for opencode streaming output format
+- Tested with `anthropics/skills#362` → decision: skip (already nudged)
+- Tested with `Lightning-AI/pytorch-lightning#21539` → decision: skip (already nudged)
+- Zen free tier models available: big-pickle, deepseek-v4-flash-free, gpt-5-nano, mimo-v2.5-free, qwen3.6-plus-free
+- Next: Run the setup script and trigger first real batch
+- Tested with  → decision: skip (already nudged)
+- Zen free tier models available: big-pickle, deepseek-v4-flash-free, gpt-5-nano, mimo-v2.5-free, qwen3.6-plus-free
+- Next: Run the setup script and trigger first real batch
+
