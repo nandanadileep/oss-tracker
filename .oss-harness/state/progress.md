@@ -748,3 +748,12 @@ PRs touched:
   - cooldown: 5 items (up from 0)
   - cursor: 5 (advanced from 0)
   - Items properly moved to cooldown instead of rotating back
+
+## 2026-06-10 - Candidate Discovery
+
+- Repos added: 0
+- Issues added: 0
+- Deduped: 0
+- Dry run: False
+
+New candidates:

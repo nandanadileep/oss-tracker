@@ -21,7 +21,7 @@
       "type": "issue",
       "repo": "openclaw/openclaw",
       "issue_number": 91816,
-      "title": "[Bug]: openclaw update 2026.6.5-beta.5 → 2026.6.5 fails with TypeError: resolveAllAgentSessionStoreTargetsSync is not a function; Feishu channel stops replying",
+      "title": "[Bug]: openclaw update 2026.6.5-beta.5 \u2192 2026.6.5 fails with TypeError: resolveAllAgentSessionStoreTargetsSync is not a function; Feishu channel stops replying",
       "labels": [
         "bug",
         "regression",
@@ -425,7 +425,7 @@
       "type": "issue",
       "repo": "MoonshotAI/Kimi-K2",
       "issue_number": 121,
-      "title": "你们程序员拿 Kimi 写过哪怕一行代码吗？",
+      "title": "\u4f60\u4eec\u7a0b\u5e8f\u5458\u62ff Kimi \u5199\u8fc7\u54ea\u6015\u4e00\u884c\u4ee3\u7801\u5417\uff1f",
       "labels": [],
       "body_summary": "User complaint about Kimi agent capabilities and skill/tool calling issues.",
       "confidence": 6,
@@ -545,7 +545,7 @@
       "type": "issue",
       "repo": "MiniMax-AI/MiniMax-M2.1",
       "issue_number": 10,
-      "title": "MiniMax M2.1 在上下文中丢失标签",
+      "title": "MiniMax M2.1 \u5728\u4e0a\u4e0b\u6587\u4e2d\u4e22\u5931\u6807\u7b7e",
       "labels": [],
       "body_summary": "MiniMax M2.1 loses tags in context, causing vllm deployment to fail parsing tool calls when thinking chain is abnormal.",
       "confidence": 7,
@@ -1113,7 +1113,7 @@
       "type": "issue",
       "repo": "apache/airflow",
       "issue_number": 68240,
-      "title": "StackdriverRemoteLogIO: three bugs in AF3 supervisor context — empty labels, broken read filter, unguarded send crash",
+      "title": "StackdriverRemoteLogIO: three bugs in AF3 supervisor context \u2014 empty labels, broken read filter, unguarded send crash",
       "labels": [
         "kind:bug",
         "provider:google",
@@ -1668,5 +1668,19 @@
       "issue_comment_policy": "comment_or_claim_then_open_pr",
       "discovered_at": "2026-06-10T03:17:13.143680Z"
     }
-  ]
+  ],
+  "discovery_sources": [
+    {
+      "type": "github_search",
+      "query": "stars:>1000 language:python pushed:>2026-05-01; stars:>500 language:typescript pushed:>2026-05-01; stars:>300 language:go pushed:>2026-05-01",
+      "schedule": "weekly",
+      "last_run_at": "2026-06-10T03:35:34.828215Z",
+      "repos_found": 0,
+      "repos_added": 0,
+      "issues_added": 0,
+      "deduped_count": 0,
+      "blocked_count": 0
+    }
+  ],
+  "_updated": "2026-06-10T03:35:34.828250Z"
 }
