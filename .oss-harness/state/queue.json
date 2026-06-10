@@ -4,11 +4,6 @@
   "_generated": "2026-06-01",
   "_order": "A (CI green) \u2192 A (CI pending) \u2192 B+ (threads) \u2192 B- (CI green) \u2192 B- (pending) \u2192 B-nothing (long tail). F-tier (archived) and C-tier (CONFLICTING, needs rebase) are listed under deferred \u2014 neither can be actioned without manual intervention.",
   "queue": [
-    "Stability-AI/generative-models#470",
-    "pyg-team/pytorch_geometric#10600",
-    "onnx/onnx#7665",
-    "OpenTalker/SadTalker#1031",
-    "LLaVA-VL/LLaVA-NeXT#505",
     "fixie-ai/ultravox#330",
     "SysCV/sam-hq#165",
     "nutonomy/nuscenes-devkit#1191",
@@ -538,12 +533,53 @@
       "date": "2026-06-06"
     }
   ],
-  "_updated": "2026-06-10T03:24:18.173034Z",
-  "cooldown": [],
+  "_updated": "2026-06-10T03:32:17.469993Z",
+  "cooldown": [
+    {
+      "key": "Stability-AI/generative-models#470",
+      "reason": "latest comment is Hari's but still in cooldown",
+      "last_action_at": "2026-06-10T03:31:54.947854Z",
+      "next_review_at": "2026-06-17T03:31:54.947815Z"
+    },
+    {
+      "key": "pyg-team/pytorch_geometric#10600",
+      "reason": "latest comment is Hari's but still in cooldown",
+      "last_action_at": "2026-06-10T03:32:00.599432Z",
+      "next_review_at": "2026-06-17T03:32:00.599396Z"
+    },
+    {
+      "key": "onnx/onnx#7665",
+      "reason": "latest comment is Hari's but still in cooldown",
+      "last_action_at": "2026-06-10T03:32:06.249532Z",
+      "next_review_at": "2026-06-17T03:32:06.249496Z"
+    },
+    {
+      "key": "OpenTalker/SadTalker#1031",
+      "reason": "latest comment is Hari's but still in cooldown",
+      "last_action_at": "2026-06-10T03:32:11.912665Z",
+      "next_review_at": "2026-06-17T03:32:11.912630Z"
+    },
+    {
+      "key": "LLaVA-VL/LLaVA-NeXT#505",
+      "reason": "latest comment is Hari's but still in cooldown",
+      "last_action_at": "2026-06-10T03:32:17.469776Z",
+      "next_review_at": "2026-06-17T03:32:17.469740Z"
+    }
+  ],
   "needs_attention": [],
   "_last_rotation_reason": {
     "key": "Lightning-AI/pytorch-lightning#21539",
     "reason": "latest comment is Hari's but still in cooldown",
     "at": "2026-06-10T03:24:18.172740Z"
-  }
+  },
+  "_cursor": 5,
+  "_last_selected": [
+    [
+      "Stability-AI/generative-models#470",
+      "pyg-team/pytorch_geometric#10600",
+      "onnx/onnx#7665",
+      "OpenTalker/SadTalker#1031",
+      "LLaVA-VL/LLaVA-NeXT#505"
+    ]
+  ]
 }
