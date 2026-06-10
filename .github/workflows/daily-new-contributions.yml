@@ -115,6 +115,12 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "automation: daily new contributions $(date -u +%Y-%m-%d)"
+            git fetch origin main
+            git rebase origin/main || {
+              echo "Rebase failed; aborting and keeping local changes"
+              git rebase --abort
+              exit 1
+            }
             git push origin main
           fi
 
