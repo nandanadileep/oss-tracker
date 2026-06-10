@@ -15,7 +15,8 @@
     "max_open_per_repo": 2,
     "cooldown_after_close_days": 30,
     "burst_window_max_prs": 3,
-    "burst_window_hours": 24
+    "burst_window_hours": 24,
+    "max_daily_fixes": 5
   },
   "tone": {
     "default_style": "status_update",

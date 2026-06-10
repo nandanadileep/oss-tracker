@@ -41,6 +41,7 @@ MAX_MODEL_ATTEMPTS = 3
 NUDGE_AFTER_DAYS = 7
 DEFAULT_TRACKER_REPO = "Mr-Neutr0n/oss-tracker"
 HEALTH_CHECK_WINDOW = 3  # number of consecutive runs to check for stuck queue
+MAX_DAILY_FIXES = 5  # limit expensive fix operations per run
 
 MAINTAINER_ASSOCIATIONS = {"OWNER", "MEMBER", "COLLABORATOR"}
 BOT_LOGINS = {"github-actions[bot]", "dependabot[bot]", "codecov[bot]"}
@@ -1109,7 +1110,7 @@ def execute_decision(
     return ActionRecord("skip", key, decision.reason, decision.confidence, iso_now(), workflow_run_id, state="skipped", dry_run=dry_run)
 
 
-def process_one(key: str, state: dict[str, Any], config: dict[str, Any], dry_run: bool) -> ActionRecord:
+def process_one(key: str, state: dict[str, Any], config: dict[str, Any], dry_run: bool, fixes_done: int = 0, max_fixes: int = MAX_DAILY_FIXES) -> tuple[ActionRecord, bool]:
     repo, number = parse_pr_key(key)
     print(f"Processing {key}")
     pr_data = fetch_pr(repo, number)
@@ -1129,8 +1130,16 @@ def process_one(key: str, state: dict[str, Any], config: dict[str, Any], dry_run
             decision = Decision("reply", draft.reason, draft.confidence, draft.body)
         else:
             decision = model_decision(key, pr_data, activity, ci_status)
+    
+    # Check if we've hit the daily fix limit
+    is_fix = decision.action == "fix"
+    if is_fix and fixes_done >= max_fixes:
+        print(f"  fix limit reached ({fixes_done}/{max_fixes}) — deferring fix")
+        decision = Decision("defer", f"daily fix limit reached ({max_fixes}) — {decision.reason}", decision.confidence, requires_human=True)
+    
     print(f"  decision: {decision.action} ({decision.confidence}/10) - {decision.reason}")
-    return execute_decision(key, repo, number, decision, pr_data, activity, ci_status, failed_checks, config, state, dry_run)
+    record = execute_decision(key, repo, number, decision, pr_data, activity, ci_status, failed_checks, config, state, dry_run)
+    return record, is_fix and record.type == "fix"
 
 
 def health_check(state: dict[str, Any], selected: list[str]) -> bool:
@@ -1177,12 +1186,16 @@ def run(batch_size: int, dry_run: bool) -> int:
 
     records: list[ActionRecord] = []
     failures = 0
+    fixes_done = 0
     for key in selected:
         try:
-            record = process_one(key, state, config, dry_run)
+            record, was_fix = process_one(key, state, config, dry_run, fixes_done, MAX_DAILY_FIXES)
             records.append(record)
             if not dry_run:
                 append_action(record)
+            if was_fix:
+                fixes_done += 1
+                print(f"  fixes done: {fixes_done}/{MAX_DAILY_FIXES}")
         except Exception as exc:
             failures += 1
             record = ActionRecord("failed", key, str(exc), 0, iso_now(), os.environ.get("GITHUB_RUN_ID"), dry_run=dry_run)

@@ -12,10 +12,11 @@ Three GitHub Actions workflows run on a schedule:
 
 ### Backlog Steward
 - Processes existing PRs from `queue.json`
-- Default batch size: 10 PRs per run
+- Default batch size: 25 PRs per run
 - Actions: nudge (polite follow-up), reply (to maintainer), fix (apply code changes), close, skip
 - When CI is failing, it attempts to generate a fix patch, apply it, verify with tests, and push to the PR branch
 - When a maintainer asks for changes, it replies with the requested updates
+- **Fix limit:** Maximum 5 fix operations per run (expensive: clone + patch + test + push). After 5 fixes, remaining fix items are deferred to the next run.
 - Stops processing when batch size is reached or no more actionable items
 
 ### New Contributor
