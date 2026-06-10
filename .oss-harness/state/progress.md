@@ -712,3 +712,39 @@ PRs touched:
   - onnx/onnx#7665: skip - latest comment is Hari's but still in cooldown
   - OpenTalker/SadTalker#1031: skip - latest comment is Hari's but still in cooldown
   - LLaVA-VL/LLaVA-NeXT#505: skip - latest comment is Hari's but still in cooldown
+
+## 2026-06-10 - Backlog Steward Rewrite
+
+- **Audit identified 5 critical bugs in `backlog_steward.py`:**
+  1. Skipped items rotated to back of queue instead of going to cooldown
+  2. Cooldown items never promoted back to queue (permanent removal)
+  3. `select_batch` cooldown check was dead code (cooldown items not in queue)
+  4. Cooldown list was empty but should have ~40 items from previous nudges
+  5. Queue was a treadmill — same items looped forever
+
+- **Rewrote `backlog_steward.py` with fixes:**
+  - FIFO cursor-based queue advancement (`_cursor` index)
+  - `promote_expired_cooldown()` moves expired items back to queue at start of run
+  - Items skipped due to cooldown go to `cooldown` list, removed from queue
+  - `health_check()` detects stuck queue (same items selected for 3 consecutive runs)
+  - Removed dead `cooldown_until` check in `select_batch`
+
+- **Fixed cursor bug:** Using same variable for base cursor and next cursor caused wrong items to be selected. Now uses separate `base_cursor` and `next_cursor` variables.
+
+- **Tests updated:** 22 tests passing, 1 subtest passing. Added tests for:
+  - `promote_expired_cooldown_moves_items_to_queue`
+  - `cursor_advances_after_select`
+  - `cursor_wraps_around`
+  - `cooldown_skip_puts_item_in_cooldown`
+  - `health_check_detects_stuck_queue`
+  - `non_cooldown_skip_removes_from_queue`
+
+- **Committed:** `fccee67` — `fix: rewrite backlog_steward with FIFO cursor, cooldown promotion, and health checks`
+
+- **Tests:** All 60 tests passing (22 backlog + 38 new workflows)
+
+- **Workflow verification:** First real run after rewrite shows queue advancing correctly:
+  - queue: 166 items (down from 171)
+  - cooldown: 5 items (up from 0)
+  - cursor: 5 (advanced from 0)
+  - Items properly moved to cooldown instead of rotating back
