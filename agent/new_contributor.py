@@ -36,6 +36,21 @@ MIN_CONFIDENCE = 5
 MAX_DAILY_PRS = 5
 MIN_DAILY_PRS = 1
 
+# LLM timeouts
+OPENCODE_TIMEOUT = 100  # seconds
+PATCH_TIMEOUT = 300     # seconds for patch application
+
+# Deletion guardrails
+DELETION_HARD_CAP = 150
+DELETION_SOFT_THRESHOLD = 100
+LARGE_FILE_LINE_THRESHOLD = 300
+LARGE_FILE_MIN_RETAIN_RATIO = 0.90
+TRUNCATION_SHRINK_RATIO = 0.50
+FULL_FILE_MAX_LINES = 250
+MAX_FILE_CHARS = 8000
+MAX_CONTEXT_CHARS = 70000
+COMPACT_CONTEXT_CHARS = 35000
+
 
 @dataclass
 class PatchEdit:
@@ -131,12 +146,12 @@ def run_preflight(repo: str) -> tuple[bool, str]:
     return True, result.stdout.strip() or result.stderr.strip() or "preflight ok"
 
 
-def run_opencode(prompt: str) -> str:
+def run_opencode(prompt: str, timeout: int = OPENCODE_TIMEOUT) -> str:
     result = subprocess.run(
         ["opencode", "run", "--format", "json", "--model", OPENCODE_MODEL, prompt],
         capture_output=True,
         text=True,
-        timeout=300,
+        timeout=timeout,
     )
     if result.returncode != 0:
         raise RuntimeError(result.stderr.strip() or "opencode failed")
@@ -267,7 +282,7 @@ def fetch_issue(repo: str, issue_number: int) -> dict[str, Any]:
     return gh_json(["issue", "view", str(issue_number), "-R", repo, "--json", "title,body,labels,comments"])
 
 
-def collect_repo_context(repo_path: Path, max_chars: int = 50000) -> str:
+def collect_repo_context(repo_path: Path, max_chars: int = MAX_CONTEXT_CHARS) -> str:
     """Collect relevant repo files for context."""
     sections: list[str] = []
     used = 0
@@ -287,6 +302,43 @@ def collect_repo_context(repo_path: Path, max_chars: int = 50000) -> str:
             except Exception:
                 continue
     
+    # Collect source files for context
+    source_extensions = {
+        ".py", ".js", ".ts", ".tsx", ".jsx", ".go", ".rs", ".rb", ".java",
+        ".c", ".cpp", ".h", ".cs", ".swift", ".kt", ".md", ".json", ".yaml",
+        ".yml", ".toml", ".css", ".html", ".vue", ".svelte", ".sh",
+    }
+    skip_dirs = {
+        ".git", "node_modules", "dist", "build", "vendor", "__pycache__",
+        ".next", "coverage", ".venv", "venv", "target",
+    }
+    
+    for root, dirs, files in os.walk(repo_path):
+        # Skip hidden and build directories
+        dirs[:] = [d for d in dirs if d not in skip_dirs and not d.startswith(".")]
+        for fname in files:
+            if used >= max_chars:
+                break
+            if not any(fname.endswith(ext) for ext in source_extensions):
+                continue
+            fpath = Path(root) / fname
+            rel = fpath.relative_to(repo_path)
+            try:
+                content = fpath.read_text(encoding="utf-8", errors="replace")
+                lines = content.splitlines()
+                if len(lines) > FULL_FILE_MAX_LINES:
+                    # For large files, just show first 50 lines + indicator
+                    preview = "\n".join(lines[:50]) + f"\n... ({len(lines)} lines total)"
+                else:
+                    preview = content
+                block = f"--- {rel} ---\n{preview[:MAX_FILE_CHARS]}"
+                if used + len(block) > max_chars:
+                    break
+                sections.append(block)
+                used += len(block)
+            except Exception:
+                continue
+    
     return "\n\n".join(sections) if sections else "(no context available)"
 
 
@@ -295,18 +347,53 @@ def build_implementation_prompt(
     issue_number: int,
     issue_data: dict[str, Any],
     repo_context: str,
+    error_context: str = "",
+    previous_raw: str = "",
+    compact: bool = False,
 ) -> str:
     title = issue_data.get("title", "")
     body = (issue_data.get("body", "") or "")[:3000]
+    
+    retry_section = ""
+    if error_context:
+        retry_section = f"""
+## Previous attempt failed
+Error: {error_context}
+
+Your previous response (first 2000 chars):
+{previous_raw[:2000]}
+
+Please fix the format and try again.
+"""
+    
     return f"""Implement a minimal fix for this GitHub issue.
 
 Rules:
-- Return JSON only.
-- Make the smallest targeted change.
-- Use exact search/replace edits. The search text must appear exactly once.
-- Do not remove unrelated code.
-- Commit message must be professional and specific.
-- Test commands should be commands worth running locally.
+1. Output ONLY modified files — no explanations, no summaries, no markdown outside file blocks.
+2. Files with at most {FULL_FILE_MAX_LINES} lines: MUST use the full-file format below (do NOT use SEARCH/REPLACE).
+3. Files over {FULL_FILE_MAX_LINES} lines: MUST use SEARCH/REPLACE only (full-file output truncates and is rejected).
+4. SEARCH/REPLACE format (files over {FULL_FILE_MAX_LINES} lines):
+
+PATH: relative/path/from/repo/root.ext
+<<<<<<< SEARCH
+exact consecutive lines copied from the file shown below
+=======
+replacement lines (can be empty to delete the SEARCH block)
+>>>>>>> REPLACE
+
+5. Full-file format (required only for files with at most {FULL_FILE_MAX_LINES} lines):
+
+PATH: relative/path/from/repo/root.ext
+```
+entire new file content goes here
+```
+
+6. Paths must match files shown below exactly. Only modify files that exist.
+7. Make the smallest change that fixes the issue. Do not refactor unrelated code.
+8. Never delete unrelated code, helpers, prompts, or tests.
+9. Deletion guardrail: reject more than {DELETION_HARD_CAP} net deletions per file.
+   Between {DELETION_SOFT_THRESHOLD}–{DELETION_HARD_CAP} deletions require: DELETION INTENT: <why> in the file.
+{retry_section}
 
 Repository: {repo}
 Issue #{issue_number}: {title}
@@ -366,6 +453,42 @@ def validate_patch_plan(plan: PatchPlan) -> None:
             raise RuntimeError("patch edit missing path or search text")
 
 
+def _net_lines_deleted(old_content: str, new_content: str) -> int:
+    return max(0, len(old_content.splitlines()) - len(new_content.splitlines()))
+
+
+def _deletion_guardrail(path: str, old_content: str, new_content: str) -> str | None:
+    """Multi-layered deletion guardrail. Returns error string or None if ok."""
+    old_count = len(old_content.splitlines())
+    new_count = len(new_content.splitlines())
+    deleted = _net_lines_deleted(old_content, new_content)
+    
+    # Hard cap
+    if deleted > DELETION_HARD_CAP:
+        return (
+            f"{path}: removed {deleted} lines (hard cap {DELETION_HARD_CAP}) — "
+            "likely truncated output or unrelated mass deletion; make a minimal targeted fix only"
+        )
+    
+    # Large file retention ratio
+    if old_count >= LARGE_FILE_LINE_THRESHOLD:
+        retain = new_count / old_count if old_count > 0 else 1.0
+        if retain < LARGE_FILE_MIN_RETAIN_RATIO:
+            return f"{path}: large file shrank {old_count} -> {new_count} lines ({retain:.0%} retained) — output must include the full file, not a stub"
+    
+    # Medium file truncation guard
+    if old_count >= 100 and new_count < old_count * TRUNCATION_SHRINK_RATIO:
+        return f"{path}: new version keeps <{TRUNCATION_SHRINK_RATIO:.0%} of {old_count} original lines — forbidden"
+    
+    # Soft threshold with intent comment
+    if deleted > DELETION_SOFT_THRESHOLD:
+        intent_pattern = re.compile(r"(?m)^\s*(?:#|//|/\*|<!--|--)\s*DELETION INTENT:\s*\S.{10,}")
+        if not intent_pattern.search(new_content):
+            return f"{path}: removed {deleted} lines (>{DELETION_SOFT_THRESHOLD}) without DELETION INTENT comment — add DELETION INTENT: <reason> or reduce deletions"
+    
+    return None
+
+
 def apply_patch_plan(repo_path: Path, plan: PatchPlan) -> list[str]:
     touched: list[str] = []
     for edit in plan.edits:
@@ -377,9 +500,12 @@ def apply_patch_plan(repo_path: Path, plan: PatchPlan) -> list[str]:
         if count != 1:
             raise RuntimeError(f"{edit.path}: search block matched {count} times")
         new = old.replace(edit.search, edit.replace, 1)
-        deleted = max(0, len(old.splitlines()) - len(new.splitlines()))
-        if deleted > 150:
-            raise RuntimeError(f"{edit.path}: patch deletes too many lines ({deleted})")
+        
+        # Multi-layered deletion guardrail
+        err = _deletion_guardrail(edit.path, old, new)
+        if err:
+            raise RuntimeError(err)
+        
         path.write_text(new, encoding="utf-8")
         touched.append(edit.path)
     return sorted(set(touched))
@@ -397,10 +523,34 @@ def default_test_commands(repo_path: Path) -> list[list[str]]:
     return []
 
 
+def _install_dependencies(repo_path: Path) -> None:
+    """Auto-install dependencies based on lock file markers."""
+    if (repo_path / "package-lock.json").exists():
+        run_cmd(["npm", "install"], repo_path, timeout=120)
+    elif (repo_path / "yarn.lock").exists():
+        run_cmd(["yarn", "install"], repo_path, timeout=120)
+    elif (repo_path / "pnpm-lock.yaml").exists():
+        run_cmd(["pnpm", "install"], repo_path, timeout=120)
+    elif (repo_path / "bun.lockb").exists():
+        run_cmd(["bun", "install"], repo_path, timeout=120)
+    elif (repo_path / "requirements.txt").exists():
+        run_cmd(["pip", "install", "-r", "requirements.txt"], repo_path, timeout=120)
+    elif (repo_path / "poetry.lock").exists():
+        run_cmd(["poetry", "install"], repo_path, timeout=120)
+    elif (repo_path / "uv.lock").exists():
+        run_cmd(["uv", "sync"], repo_path, timeout=120)
+    elif (repo_path / "Gemfile.lock").exists():
+        run_cmd(["bundle", "install"], repo_path, timeout=120)
+
+
 def run_verification(repo_path: Path, commands: list[list[str]]) -> tuple[bool, str]:
     commands = commands or default_test_commands(repo_path)
     if not commands:
         return True, "no local test command detected"
+    
+    # Auto-install dependencies before running tests
+    _install_dependencies(repo_path)
+    
     messages: list[str] = []
     for cmd in commands[:3]:
         result = run_cmd(cmd, repo_path, timeout=600)
@@ -418,16 +568,31 @@ def generate_patch(
     issue_data: dict[str, Any],
     repo_path: Path,
 ) -> PatchPlan:
-    repo_context = collect_repo_context(repo_path)
+    # Try compact mode on retries to reduce context and avoid timeouts
+    max_chars = MAX_CONTEXT_CHARS
+    previous_raw = ""
     error_context = ""
+    
     for attempt in range(1, MAX_MODEL_ATTEMPTS + 1):
-        prompt = build_implementation_prompt(repo, issue_number, issue_data, repo_context)
+        compact = attempt > 1
+        if compact:
+            max_chars = COMPACT_CONTEXT_CHARS
+        
+        repo_context = collect_repo_context(repo_path, max_chars=max_chars)
+        prompt = build_implementation_prompt(
+            repo, issue_number, issue_data, repo_context,
+            error_context=error_context,
+            previous_raw=previous_raw,
+            compact=compact,
+        )
         try:
-            plan = parse_patch_plan(run_opencode(prompt))
+            raw = run_opencode(prompt)
+            plan = parse_patch_plan(raw)
             validate_patch_plan(plan)
             return plan
         except Exception as exc:
             error_context = str(exc)
+            previous_raw = raw if 'raw' in dir() else ""
             print(f"  patch attempt {attempt}/{MAX_MODEL_ATTEMPTS} failed: {exc}")
     raise RuntimeError(f"patch generation failed: {error_context}")
 
@@ -746,7 +911,11 @@ def process_candidate(
 
 
 def run_new_contributor(max_prs: int, dry_run: bool) -> int:
-    """Run the new contributor workflow."""
+    """Run the new contributor workflow.
+    
+    Processes candidates sequentially and stops after first successful PR.
+    This prevents hanging on multiple large repos and matches Nandana's approach.
+    """
     config = load_json(CONFIG_FILE, {})
     hari_login = config.get("user", {}).get("login", "Mr-Neutr0n")
     
@@ -772,6 +941,9 @@ def run_new_contributor(max_prs: int, dry_run: bool) -> int:
                     append_action(record)
                 if record.type == "open_pr":
                     success_count += 1
+                    # Stop after first successful PR (like Nandana's approach)
+                    print(f"  Successfully opened PR, stopping after first success")
+                    break
         except Exception as exc:
             print(f"  unexpected error: {exc}")
             record = ActionRecord(

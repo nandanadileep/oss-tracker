@@ -267,7 +267,7 @@ class TestNewContributor(unittest.TestCase):
             )
             with self.assertRaises(RuntimeError) as ctx:
                 new_contributor.apply_patch_plan(repo_path, plan)
-            self.assertIn("deletes too many lines", str(ctx.exception))
+            self.assertIn("hard cap 150", str(ctx.exception))
     
     def test_default_test_commands_python(self):
         with tempfile.TemporaryDirectory() as tmp:
