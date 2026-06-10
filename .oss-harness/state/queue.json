@@ -4,9 +4,6 @@
   "_generated": "2026-06-01",
   "_order": "A (CI green) \u2192 A (CI pending) \u2192 B+ (threads) \u2192 B- (CI green) \u2192 B- (pending) \u2192 B-nothing (long tail). F-tier (archived) and C-tier (CONFLICTING, needs rebase) are listed under deferred \u2014 neither can be actioned without manual intervention.",
   "queue": [
-    "anthropics/skills#362",
-    "anthropics/skills#361",
-    "Lightning-AI/pytorch-lightning#21539",
     "Stability-AI/generative-models#470",
     "pyg-team/pytorch_geometric#10600",
     "onnx/onnx#7665",
@@ -174,7 +171,10 @@
     "eyurtsev/FlowCytometryTools#47",
     "open-mmlab/mmsegmentation#3869",
     "open-mmlab/mmdetection3d#3140",
-    "determined-ai/determined#10265"
+    "determined-ai/determined#10265",
+    "anthropics/skills#362",
+    "anthropics/skills#361",
+    "Lightning-AI/pytorch-lightning#21539"
   ],
   "deferred": {
     "_comment": "F (archived, will be auto-closed) and C (CONFLICTING, needs git rebase). Listed separately so they can be picked up later if the user wants to do the rebase work.",
@@ -538,5 +538,12 @@
       "date": "2026-06-06"
     }
   ],
-  "_updated": "2026-06-06T01:25:05.146153+00:00"
+  "_updated": "2026-06-10T03:24:18.173034Z",
+  "cooldown": [],
+  "needs_attention": [],
+  "_last_rotation_reason": {
+    "key": "Lightning-AI/pytorch-lightning#21539",
+    "reason": "latest comment is Hari's but still in cooldown",
+    "at": "2026-06-10T03:24:18.172740Z"
+  }
 }

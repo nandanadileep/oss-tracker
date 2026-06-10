@@ -688,3 +688,14 @@ New candidates:
 - All issue numbers are real (fetched via gh API)
 - Total candidates: 77 entries (21 repos + 56 issues)
 - All tests pass: 54/54
+
+## 2026-06-10 - Daily Automation Batch
+
+- Batch size: 3
+- Processed: 3
+- skip: 3
+
+PRs touched:
+  - anthropics/skills#362: skip - latest comment is Hari's but still in cooldown
+  - anthropics/skills#361: skip - latest comment is Hari's but still in cooldown
+  - Lightning-AI/pytorch-lightning#21539: skip - latest comment is Hari's but still in cooldown
