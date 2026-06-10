@@ -671,3 +671,12 @@ PRs touched:
   - Lightning-AI/pytorch-lightning#21539
   - Stability-AI/generative-models#470
   - pyg-team/pytorch_geometric#10600
+
+## 2026-06-10 - Candidate Discovery
+
+- Repos added: 0
+- Issues added: 0
+- Deduped: 0
+- Dry run: False
+
+New candidates:

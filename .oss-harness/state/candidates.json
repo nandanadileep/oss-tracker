@@ -1,0 +1,18 @@
+{
+  "_version": "0.1.0",
+  "candidates": [],
+  "discovery_sources": [
+    {
+      "type": "github_search",
+      "query": "stars:>1000 language:python pushed:>2026-05-01; stars:>500 language:typescript pushed:>2026-05-01; stars:>300 language:go pushed:>2026-05-01",
+      "schedule": "weekly",
+      "last_run_at": "2026-06-10T03:06:23.091315Z",
+      "repos_found": 0,
+      "repos_added": 0,
+      "issues_added": 0,
+      "deduped_count": 0,
+      "blocked_count": 0
+    }
+  ],
+  "_updated": "2026-06-10T03:06:23.091347Z"
+}
