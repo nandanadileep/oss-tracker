@@ -140,7 +140,7 @@ jobs:
 
       - name: Run daily batch
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
           BATCH_SIZE: ${{ github.event.inputs.batch_size || '5' }}
           DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
         run: |
@@ -150,25 +150,32 @@ jobs:
       - name: Commit and push updates
         if: github.event.inputs.dry_run != 'true'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git config user.email "64578610+Mr-Neutr0n@users.noreply.github.com"
           git config user.name "Mr-Neutr0n"
           
-          # Set remote URL with token for push
-          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
+          # Set remote URL with PAT for push
+          git remote set-url origin "https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}.git"
           
           # Add any updated state files
           git add -A .oss-harness/state/
           git add -A .oss-harness/reports/
-          git add -A progress.md
+          git add -A .oss-harness/state/progress.md
+          
+          # Check what changed
+          echo "=== Git status ==="
+          git status --short
           
           # Only commit if there are changes
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
+            echo "→ Committing changes..."
             git commit -m "automation: daily batch $(date -u +%Y-%m-%d)"
+            echo "→ Pushing to main..."
             git push origin main
+            echo "✓ Changes pushed"
           fi
 
       - name: Create summary issue (if failures)
