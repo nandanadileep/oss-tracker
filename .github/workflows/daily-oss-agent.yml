@@ -143,6 +143,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
           BATCH_SIZE: ${{ github.event.inputs.batch_size || '5' }}
           DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+          PYTHONUNBUFFERED: "1"
         run: |
           chmod +x scripts/daily-batch.sh
           ./scripts/daily-batch.sh "$BATCH_SIZE" "$DRY_RUN"

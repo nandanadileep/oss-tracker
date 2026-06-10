@@ -52,4 +52,5 @@ if [[ "$DRY_RUN" == "true" ]]; then
     ARGS+=("--dry-run")
 fi
 
-python3 "$REPO_DIR/agent/backlog_steward.py" "${ARGS[@]}"
+export PYTHONUNBUFFERED=1
+python3 -u "$REPO_DIR/agent/backlog_steward.py" "${ARGS[@]}"

@@ -97,6 +97,7 @@ jobs:
       - name: Run candidate discovery
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          PYTHONUNBUFFERED: "1"
         run: |
           chmod +x agent/candidate_discovery.py
           python3 agent/candidate_discovery.py \
