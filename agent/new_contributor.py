@@ -825,7 +825,14 @@ def process_candidate(
     with tempfile.TemporaryDirectory() as tmp:
         try:
             repo_path = clone_repo(repo, Path(tmp), hari_login)
-            base_branch = candidate.get("default_branch", "main")
+            # Fetch actual default branch from API (candidates may be stale)
+            try:
+                base_branch = gh_text(["api", f"repos/{repo}", "--jq", ".default_branch"]).strip()
+            except Exception:
+                base_branch = candidate.get("default_branch", "main")
+            if not base_branch:
+                base_branch = "main"
+            print(f"  base branch: {base_branch}")
             branch = create_branch(repo_path, repo, base_branch, issue_number)
         except Exception as exc:
             print(f"  clone/branch failed: {exc}")
