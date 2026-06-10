@@ -151,7 +151,7 @@ def search_repos(query: str, limit: int = 20) -> list[dict[str, Any]]:
     """Search GitHub for repositories using gh search repos."""
     try:
         results = gh_json(
-            ["search", "repos", query, "--limit", str(limit), "--sort", "updated", "--json", "fullName,defaultBranch,stargazersCount,language,pushedAt,openIssuesCount,licenseInfo"]
+            ["search", "repos", query, "--limit", str(limit), "--sort", "updated", "--json", "fullName,defaultBranch,stargazersCount,language,pushedAt,openIssuesCount,license"]
         )
     except Exception as exc:
         print(f"  repo search failed: {exc}")
@@ -412,7 +412,7 @@ def discover_repos(query: str, limit: int, hari_login: str) -> list[RepoCandidat
             language=repo_data.get("language", "") or "",
             last_pushed_at=repo_data.get("pushedAt", "") or "",
             open_issues_count=repo_data.get("openIssuesCount", 0) or 0,
-            license=repo_data.get("licenseInfo", {}).get("name", "") or "",
+            license=repo_data.get("license", "") or "",
             archived=False,
             ai_policy_status="unknown",
             existing_open_prs_by_hari=hari_prs,

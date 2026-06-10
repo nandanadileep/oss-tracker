@@ -115,19 +115,34 @@ jobs:
           git config user.email "64578610+Mr-Neutr0n@users.noreply.github.com"
           git config user.name "Mr-Neutr0n"
           git remote set-url origin "https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}.git"
+          
+          # Fetch latest first to check for remote changes
+          echo "→ Fetching latest origin/main..."
+          git fetch origin main
+          
+          # For progress.md (append-only), merge remote changes by taking both versions
+          if [ -f .oss-harness/state/progress.md ]; then
+            echo "→ Merging progress.md changes..."
+            cp .oss-harness/state/progress.md /tmp/our_progress.md
+            git show origin/main:.oss-harness/state/progress.md > .oss-harness/state/progress.md 2>/dev/null || true
+            # Append lines from our version that don't exist in remote
+            while IFS= read -r line; do
+              if ! grep -Fxq "$line" .oss-harness/state/progress.md 2>/dev/null; then
+                echo "$line" >> .oss-harness/state/progress.md
+              fi
+            done < /tmp/our_progress.md
+            rm -f /tmp/our_progress.md
+          fi
+          
           git add -A .oss-harness/state/
           git add -A .oss-harness/reports/
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
             git commit -m "automation: weekly candidate discovery $(date -u +%Y-%m-%d)"
-            git fetch origin main
-            git rebase origin/main || {
-              echo "Rebase failed; aborting and keeping local changes"
-              git rebase --abort
-              exit 1
-            }
+            echo "→ Pushing to main..."
             git push origin main
+            echo "✓ Changes pushed"
           fi
 
       - name: Create summary issue (if failures)

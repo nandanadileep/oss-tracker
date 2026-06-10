@@ -159,10 +159,27 @@ jobs:
           # Set remote URL with PAT for push
           git remote set-url origin "https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}.git"
           
+          # Fetch latest first to check for remote changes
+          echo "→ Fetching latest origin/main..."
+          git fetch origin main
+          
+          # For progress.md (append-only), merge remote changes by taking both versions
+          if [ -f .oss-harness/state/progress.md ]; then
+            echo "→ Merging progress.md changes..."
+            cp .oss-harness/state/progress.md /tmp/our_progress.md
+            git show origin/main:.oss-harness/state/progress.md > .oss-harness/state/progress.md 2>/dev/null || true
+            # Append lines from our version that don't exist in remote
+            while IFS= read -r line; do
+              if ! grep -Fxq "$line" .oss-harness/state/progress.md 2>/dev/null; then
+                echo "$line" >> .oss-harness/state/progress.md
+              fi
+            done < /tmp/our_progress.md
+            rm -f /tmp/our_progress.md
+          fi
+          
           # Add any updated state files
           git add -A .oss-harness/state/
           git add -A .oss-harness/reports/
-          git add -A .oss-harness/state/progress.md
           
           # Check what changed
           echo "=== Git status ==="
@@ -174,14 +191,6 @@ jobs:
           else
             echo "→ Committing changes..."
             git commit -m "automation: daily batch $(date -u +%Y-%m-%d)"
-            echo "→ Fetching latest origin/main..."
-            git fetch origin main
-            echo "→ Rebasing onto origin/main..."
-            git rebase origin/main || {
-              echo "Rebase failed; aborting and keeping local changes"
-              git rebase --abort
-              exit 1
-            }
             echo "→ Pushing to main..."
             git push origin main
             echo "✓ Changes pushed"
