@@ -4,6 +4,12 @@
 Owns the existing PR queue: deterministic gates first, model second, state updates
 last. This is intentionally conservative about writes: comments are allowed, close
 is blocked in code, and fix actions are logged for the next phase.
+
+Queue mechanics:
+- queue is a FIFO list with a cursor index (not a rotating list)
+- items are removed from queue when they go to cooldown or needs_attention
+- expired cooldown items are promoted back to queue at the start of each run
+- the cursor advances as items are processed
 """
 
 from __future__ import annotations
@@ -34,6 +40,7 @@ OPENCODE_MODEL = "zen/big-pickle"
 MAX_MODEL_ATTEMPTS = 3
 NUDGE_AFTER_DAYS = 7
 DEFAULT_TRACKER_REPO = "Mr-Neutr0n/oss-tracker"
+HEALTH_CHECK_WINDOW = 3  # number of consecutive runs to check for stuck queue
 
 MAINTAINER_ASSOCIATIONS = {"OWNER", "MEMBER", "COLLABORATOR"}
 BOT_LOGINS = {"github-actions[bot]", "dependabot[bot]", "codecov[bot]"}
@@ -176,13 +183,14 @@ def parse_pr_key(key: str) -> tuple[str, int]:
 
 def normalize_queue_state(raw: Any) -> dict[str, Any]:
     if isinstance(raw, list):
-        return {"_version": "0.3.0", "queue": raw, "cooldown": [], "needs_attention": []}
+        return {"_version": "0.4.0", "queue": raw, "cooldown": [], "needs_attention": [], "done": [], "_cursor": 0}
     if not isinstance(raw, dict):
-        return {"_version": "0.3.0", "queue": [], "cooldown": [], "needs_attention": []}
+        return {"_version": "0.4.0", "queue": [], "cooldown": [], "needs_attention": [], "done": [], "_cursor": 0}
     raw.setdefault("queue", [])
     raw.setdefault("cooldown", [])
     raw.setdefault("needs_attention", [])
     raw.setdefault("done", [])
+    raw.setdefault("_cursor", 0)
     return raw
 
 
@@ -221,37 +229,52 @@ def set_needs_attention(state: dict[str, Any], key: str, reason: str, kind: str)
     )
 
 
-def rotate_to_back(state: dict[str, Any], key: str, reason: str) -> None:
-    found = None
-    new_queue = []
-    for item in state.get("queue", []):
-        if item_key(item) == key:
-            found = item
+def promote_expired_cooldown(state: dict[str, Any], now: datetime) -> int:
+    """Move expired cooldown items back to queue. Returns count promoted."""
+    promoted = 0
+    remaining_cooldown = []
+    for item in state.get("cooldown", []):
+        if not isinstance(item, dict):
+            continue
+        key = item.get("key")
+        next_review = parse_dt(item.get("next_review_at"))
+        if key and next_review and next_review <= now:
+            state["queue"].append(key)
+            promoted += 1
+            print(f"  promoted from cooldown: {key}")
         else:
-            new_queue.append(item)
-    if found is not None:
-        new_queue.append(found)
-        state["queue"] = new_queue
-    state["_last_rotation_reason"] = {"key": key, "reason": reason, "at": iso_now()}
+            remaining_cooldown.append(item)
+    state["cooldown"] = remaining_cooldown
+    return promoted
 
 
 def select_batch(state: dict[str, Any], batch_size: int, now: datetime) -> list[str]:
+    """Select next batch starting from cursor, advancing cursor as we go."""
     selected: list[str] = []
     blocked = {item_key(item) for item in state.get("needs_attention", [])}
-    cooldown_until = {
-        item_key(item): parse_dt(item.get("next_review_at")) if isinstance(item, dict) else None
-        for item in state.get("cooldown", [])
-    }
-    for item in state.get("queue", []):
+    queue = state.get("queue", [])
+    base_cursor = state.get("_cursor", 0)
+    total = len(queue)
+    if total == 0:
+        return selected
+    
+    # Ensure cursor is valid
+    base_cursor = base_cursor % total
+    
+    # Wrap around at most once
+    checked = 0
+    next_cursor = base_cursor
+    while checked < total and len(selected) < batch_size:
+        idx = (base_cursor + checked) % total
+        item = queue[idx]
         key = item_key(item)
+        checked += 1
         if not key or key in blocked:
             continue
-        next_review = cooldown_until.get(key)
-        if next_review and next_review > now:
-            continue
         selected.append(key)
-        if len(selected) >= batch_size:
-            break
+        next_cursor = (idx + 1) % total
+    
+    state["_cursor"] = next_cursor
     return selected
 
 
@@ -1060,7 +1083,7 @@ def execute_decision(
                 next_review = (utcnow() + timedelta(days=NUDGE_AFTER_DAYS)).isoformat().replace("+00:00", "Z")
                 set_cooldown(state, key, "fix", next_review)
             elif dry_run:
-                rotate_to_back(state, key, record.reason)
+                remove_from_queue(state, key)
             return record
         except Exception as exc:
             set_needs_attention(state, key, str(exc), "fix_failed")
@@ -1075,8 +1098,15 @@ def execute_decision(
         set_needs_attention(state, key, decision.reason, "deferred")
         return ActionRecord("defer", key, decision.reason, decision.confidence, iso_now(), workflow_run_id, state="needs_attention", dry_run=dry_run)
 
-    rotate_to_back(state, key, decision.reason)
-    return ActionRecord("skip", key, decision.reason, decision.confidence, iso_now(), workflow_run_id, state="rotated", dry_run=dry_run)
+    # For "skip" actions: if the reason is cooldown-related, put it in cooldown instead of leaving it in queue
+    if "cooldown" in decision.reason.lower():
+        next_review = (utcnow() + timedelta(days=NUDGE_AFTER_DAYS)).isoformat().replace("+00:00", "Z")
+        set_cooldown(state, key, decision.reason, next_review)
+        return ActionRecord("skip", key, decision.reason, decision.confidence, iso_now(), workflow_run_id, state="cooldown", dry_run=dry_run)
+    
+    # Remove from queue for other skip reasons (closed PR, etc.)
+    remove_from_queue(state, key)
+    return ActionRecord("skip", key, decision.reason, decision.confidence, iso_now(), workflow_run_id, state="skipped", dry_run=dry_run)
 
 
 def process_one(key: str, state: dict[str, Any], config: dict[str, Any], dry_run: bool) -> ActionRecord:
@@ -1103,13 +1133,47 @@ def process_one(key: str, state: dict[str, Any], config: dict[str, Any], dry_run
     return execute_decision(key, repo, number, decision, pr_data, activity, ci_status, failed_checks, config, state, dry_run)
 
 
+def health_check(state: dict[str, Any], selected: list[str]) -> bool:
+    """Check if the queue is stuck processing the same items repeatedly."""
+    history = state.get("_last_selected", [])
+    history.append(selected)
+    history = history[-HEALTH_CHECK_WINDOW:]
+    state["_last_selected"] = history
+    
+    if len(history) < HEALTH_CHECK_WINDOW:
+        return True
+    
+    # Check if all recent runs selected the same items
+    first = set(history[0])
+    for batch in history[1:]:
+        if set(batch) != first:
+            return True
+    
+    print(f"  HEALTH CHECK FAILED: same items selected for {HEALTH_CHECK_WINDOW} consecutive runs")
+    print(f"  Stuck items: {sorted(first)}")
+    return False
+
+
 def run(batch_size: int, dry_run: bool) -> int:
     config = load_config()
     state = normalize_queue_state(load_json(QUEUE_FILE, {}))
-    selected = select_batch(state, batch_size, utcnow())
+    now = utcnow()
+    
+    # Promote expired cooldown items back to queue
+    promoted = promote_expired_cooldown(state, now)
+    if promoted:
+        print(f"Promoted {promoted} expired cooldown items back to queue")
+    
+    selected = select_batch(state, batch_size, now)
     if not selected:
         print("No actionable queue items found")
         return 0
+    
+    # Health check
+    healthy = health_check(state, selected)
+    if not healthy:
+        print("Queue health check failed — items are stuck. Halting batch.")
+        return 1
 
     records: list[ActionRecord] = []
     failures = 0

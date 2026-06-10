@@ -11,8 +11,9 @@ class BacklogStewardTests(unittest.TestCase):
         self.now = datetime(2026, 6, 10, 9, 0, tzinfo=timezone.utc)
 
     def test_select_batch_skips_future_cooldown_and_attention(self):
+        # In the new design, items in cooldown/needs_attention are NOT in queue
         state = {
-            "queue": ["a/repo#1", "b/repo#2", "c/repo#3"],
+            "queue": ["c/repo#3"],
             "cooldown": [
                 {"key": "a/repo#1", "next_review_at": "2026-06-11T09:00:00Z"}
             ],
@@ -196,6 +197,80 @@ class BacklogStewardTests(unittest.TestCase):
         )
         self.assertEqual(record.type, "fix")
         self.assertIsNone(draft)
+
+    def test_promote_expired_cooldown_moves_items_to_queue(self):
+        state = {
+            "queue": ["c/repo#3"],
+            "cooldown": [
+                {"key": "a/repo#1", "next_review_at": "2026-06-09T09:00:00Z"},  # expired
+                {"key": "b/repo#2", "next_review_at": "2026-06-11T09:00:00Z"},  # not expired
+            ],
+        }
+        promoted = steward.promote_expired_cooldown(state, self.now)
+        self.assertEqual(promoted, 1)
+        self.assertIn("a/repo#1", state["queue"])
+        self.assertNotIn("b/repo#2", state["queue"])
+        self.assertEqual(len(state["cooldown"]), 1)
+        self.assertEqual(state["cooldown"][0]["key"], "b/repo#2")
+
+    def test_cursor_advances_after_select(self):
+        state = {"queue": ["a/repo#1", "b/repo#2", "c/repo#3"], "_cursor": 0}
+        batch = steward.select_batch(state, 2, self.now)
+        self.assertEqual(batch, ["a/repo#1", "b/repo#2"])
+        self.assertEqual(state["_cursor"], 2)
+
+    def test_cursor_wraps_around(self):
+        state = {"queue": ["a/repo#1", "b/repo#2", "c/repo#3"], "_cursor": 2}
+        batch = steward.select_batch(state, 2, self.now)
+        self.assertEqual(batch, ["c/repo#3", "a/repo#1"])
+        self.assertEqual(state["_cursor"], 1)
+
+    def test_cooldown_skip_puts_item_in_cooldown(self):
+        state = {"queue": ["a/repo#1"], "cooldown": [], "needs_attention": []}
+        decision = steward.Decision("skip", "latest comment is Hari's but still in cooldown", 9)
+        record = steward.execute_decision(
+            "a/repo#1",
+            "a/repo",
+            1,
+            decision,
+            {"state": "OPEN"},
+            self._activity(),
+            "no checks",
+            [],
+            {"user": {"login": "Mr-Neutr0n"}},
+            state,
+            True,
+        )
+        self.assertEqual(record.state, "cooldown")
+        self.assertNotIn("a/repo#1", state["queue"])
+        self.assertEqual(state["cooldown"][0]["key"], "a/repo#1")
+
+    def test_health_check_detects_stuck_queue(self):
+        state = {"queue": ["a/repo#1"], "_last_selected": [["a/repo#1"]]}
+        healthy = steward.health_check(state, ["a/repo#1"])
+        self.assertTrue(healthy)  # only 2 runs, not 3
+        healthy = steward.health_check(state, ["a/repo#1"])
+        self.assertFalse(healthy)  # 3 consecutive same selections
+
+    def test_non_cooldown_skip_removes_from_queue(self):
+        state = {"queue": ["a/repo#1"], "cooldown": [], "needs_attention": []}
+        decision = steward.Decision("skip", "PR state is MERGED", 10)
+        record = steward.execute_decision(
+            "a/repo#1",
+            "a/repo",
+            1,
+            decision,
+            {"state": "MERGED"},
+            self._activity(),
+            "no checks",
+            [],
+            {"user": {"login": "Mr-Neutr0n"}},
+            state,
+            True,
+        )
+        self.assertEqual(record.state, "skipped")
+        self.assertNotIn("a/repo#1", state["queue"])
+        self.assertEqual(len(state["cooldown"]), 0)
 
 
 if __name__ == "__main__":
