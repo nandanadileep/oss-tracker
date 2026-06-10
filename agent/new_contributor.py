@@ -242,12 +242,12 @@ def clone_repo(repo: str, workdir: Path, hari_login: str) -> Path:
     return repo_path
 
 
-def create_branch(repo_path: Path, base_branch: str, issue_number: int) -> str:
+def create_branch(repo_path: Path, repo: str, base_branch: str, issue_number: int) -> str:
     """Create a branch for the fix."""
     branch_name = f"fix-issue-{issue_number}"
     
     # Fetch upstream
-    upstream_url = f"https://github.com/{repo_path.name}.git"
+    upstream_url = f"https://github.com/{repo}.git"
     run_cmd(["git", "remote", "add", "upstream", upstream_url], repo_path)
     run_cmd(["git", "fetch", "upstream", base_branch], repo_path, timeout=300)
     
@@ -633,7 +633,7 @@ def process_candidate(
         try:
             repo_path = clone_repo(repo, Path(tmp), hari_login)
             base_branch = candidate.get("default_branch", "main")
-            branch = create_branch(repo_path, base_branch, issue_number)
+            branch = create_branch(repo_path, repo, base_branch, issue_number)
         except Exception as exc:
             print(f"  clone/branch failed: {exc}")
             update_candidate_status(candidates_data, dedupe_key, "failed")
