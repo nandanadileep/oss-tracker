@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
     inputs:
       batch_size:
-        description: "Number of PRs to process (default: 10)"
+        description: "Number of PRs to process (default: 25)"
         required: false
-        default: "10"
+        default: "25"
       dry_run:
         description: "Dry run (no writes)"
         required: false
