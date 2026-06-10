@@ -14,11 +14,6 @@
     "huggingface/diffusers#13103",
     "huggingface/diffusers#13094",
     "speechbrain/speechbrain#3033",
-    "huggingface/optimum#2407",
-    "huggingface/optimum#2406",
-    "openai/whisper#2730",
-    "CompVis/stable-diffusion#908",
-    "CompVis/stable-diffusion#907",
     "meta-llama/llama#1412",
     "karpathy/nanoGPT#683",
     "facebookresearch/segment-anything#853",
@@ -528,7 +523,7 @@
       "date": "2026-06-06"
     }
   ],
-  "_updated": "2026-06-10T04:01:00.907540Z",
+  "_updated": "2026-06-10T12:17:07.322959Z",
   "cooldown": [
     {
       "key": "Stability-AI/generative-models#470",
@@ -589,6 +584,24 @@
       "reason": "latest comment is Hari's but still in cooldown",
       "last_action_at": "2026-06-10T04:01:00.907291Z",
       "next_review_at": "2026-06-17T04:01:00.907256Z"
+    },
+    {
+      "key": "openai/whisper#2730",
+      "reason": "nudge",
+      "last_action_at": "2026-06-10T12:15:30.276261Z",
+      "next_review_at": "2026-06-17T12:15:30.276211Z"
+    },
+    {
+      "key": "CompVis/stable-diffusion#908",
+      "reason": "nudge",
+      "last_action_at": "2026-06-10T12:16:21.610700Z",
+      "next_review_at": "2026-06-17T12:16:21.610654Z"
+    },
+    {
+      "key": "CompVis/stable-diffusion#907",
+      "reason": "nudge",
+      "last_action_at": "2026-06-10T12:17:07.322767Z",
+      "next_review_at": "2026-06-17T12:17:07.322724Z"
     }
   ],
   "needs_attention": [],
@@ -597,7 +610,7 @@
     "reason": "latest comment is Hari's but still in cooldown",
     "at": "2026-06-10T03:24:18.172740Z"
   },
-  "_cursor": 10,
+  "_cursor": 15,
   "_last_selected": [
     [
       "Stability-AI/generative-models#470",
@@ -612,6 +625,13 @@
       "huggingface/diffusers#13125",
       "huggingface/diffusers#13111",
       "huggingface/diffusers#13110"
+    ],
+    [
+      "huggingface/optimum#2407",
+      "huggingface/optimum#2406",
+      "openai/whisper#2730",
+      "CompVis/stable-diffusion#908",
+      "CompVis/stable-diffusion#907"
     ]
   ]
 }
