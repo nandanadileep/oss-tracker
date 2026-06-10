@@ -99,7 +99,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
           PYTHONUNBUFFERED: "1"
         run: |
-          chmod +x agent/candidate_discovery.py
           python3 agent/candidate_discovery.py \
             --repo-limit ${{ github.event.inputs.repo_limit || '10' }} \
             --issues-per-repo ${{ github.event.inputs.issues_per_repo || '5' }} \
