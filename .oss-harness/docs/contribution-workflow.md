@@ -1,5 +1,37 @@
 # Contribution Workflow
 
+## Automated Workflows
+
+Three GitHub Actions workflows run on a schedule:
+
+| Workflow | File | Purpose | Schedule |
+|----------|------|---------|----------|
+| **Backlog Steward** | `.github/workflows/daily-oss-agent.yml` | Maintains existing PRs: nudge, reply, fix, close | Daily at 9 AM UTC |
+| **New Contributor** | `.github/workflows/daily-new-contributions.yml` | Opens new PRs on discovered issues | Daily at 5:30 AM UTC |
+| **Candidate Discovery** | `.github/workflows/discover-candidates.yml` | Discovers new repos and issues | Weekly on Sunday at 8 AM UTC |
+
+### Backlog Steward
+- Processes existing PRs from `queue.json`
+- Default batch size: 10 PRs per run
+- Actions: nudge (polite follow-up), reply (to maintainer), fix (apply code changes), close, skip
+- When CI is failing, it attempts to generate a fix patch, apply it, verify with tests, and push to the PR branch
+- When a maintainer asks for changes, it replies with the requested updates
+- Stops processing when batch size is reached or no more actionable items
+
+### New Contributor
+- Consumes `candidates.json` (populated by Candidate Discovery)
+- Selects high-confidence candidates (score > 7, not recently tried)
+- For each candidate: forks repo, creates branch, generates fix with LLM, applies patch, verifies tests, pushes, opens PR
+- Stops after first successful PR (not all candidates)
+- Max 5 PRs per day, min 1
+
+### Candidate Discovery
+- Searches GitHub for active repos (stars > 1000, recently pushed)
+- Finds open issues with labels like "good first issue", "help wanted", "bug"
+- Scores candidates by: repo stars, issue activity, language match, recency
+- Deduplicates against existing candidates and recent contributions
+- Writes to `candidates.json` for New Contributor to consume
+
 ## Daily loop
 
 The harness assumes the user opens the folder, looks at the report, picks the next PR from the queue, and acts. The loop is:

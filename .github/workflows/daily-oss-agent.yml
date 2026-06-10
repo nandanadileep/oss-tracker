@@ -1,4 +1,4 @@
-name: Daily OSS Agent
+name: Backlog Steward
 
 on:
   schedule:
@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
     inputs:
       batch_size:
-        description: "Number of PRs to process (default: 5)"
+        description: "Number of PRs to process (default: 10)"
         required: false
-        default: "5"
+        default: "10"
       dry_run:
         description: "Dry run (no writes)"
         required: false

@@ -12,6 +12,10 @@ It is not a product. It is a **harness for working on OSS contributions**, delib
 4. **Scan** — pre-flights any new repo / file we read for archived status, leaked secrets, missing license.
 5. **Queue** — keeps a single sequential work queue for the next PR to engage with. No scripts that touch PRs without per-PR human-or-agent review.
 6. **Progress log** — every action the harness takes is appended to a `progress.md` file, so future sessions can pick up without losing context (Anthropic "claude-progress.txt" pattern).
+7. **Automated workflows** — three GitHub Actions workflows run on a schedule:
+   - **Backlog Steward** — maintains existing PRs (nudge, reply, fix, close)
+   - **New Contributor** — opens new PRs on discovered issues
+   - **Candidate Discovery** — finds new repos and issues to contribute to
 
 ## Top-level layout
 

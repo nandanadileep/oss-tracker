@@ -1,4 +1,4 @@
-name: Discover Candidates
+name: Candidate Discovery
 
 on:
   schedule:

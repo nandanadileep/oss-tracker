@@ -7,7 +7,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 
-BATCH_SIZE="${1:-5}"
+BATCH_SIZE="${1:-10}"
 DRY_RUN="${2:-false}"
 
 # Colors

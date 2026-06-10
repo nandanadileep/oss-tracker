@@ -1206,7 +1206,7 @@ def run(batch_size: int, dry_run: bool) -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Backlog Steward")
-    parser.add_argument("--batch-size", type=int, default=5)
+    parser.add_argument("--batch-size", type=int, default=10)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
     return run(args.batch_size, args.dry_run)

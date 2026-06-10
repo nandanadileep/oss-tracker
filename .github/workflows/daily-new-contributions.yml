@@ -1,4 +1,4 @@
-name: Daily New Contributions
+name: New Contributor
 
 on:
   schedule:
