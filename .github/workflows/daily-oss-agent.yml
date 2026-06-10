@@ -192,7 +192,17 @@ jobs:
             echo "→ Committing changes..."
             git commit -m "automation: daily batch $(date -u +%Y-%m-%d)"
             echo "→ Pushing to main..."
-            git push origin main
+            # Retry with rebase if push fails due to concurrent updates
+            git push origin main || {
+              echo "Push failed, retrying with rebase..."
+              git fetch origin main
+              git rebase origin/main || {
+                echo "Rebase failed; aborting"
+                git rebase --abort
+                exit 1
+              }
+              git push origin main
+            }
             echo "✓ Changes pushed"
           fi
 
