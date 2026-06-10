@@ -35,6 +35,7 @@ MAX_MODEL_ATTEMPTS = 3
 MIN_CONFIDENCE = 5
 MAX_DAILY_PRS = 5
 MIN_DAILY_PRS = 1
+REPO_MAX_STARS = 80000  # skip repos above this (fork + clone too slow for CI)
 
 # LLM timeouts
 OPENCODE_TIMEOUT = 100  # seconds
@@ -235,14 +236,34 @@ def check_existing_prs(repo: str, issue_number: int, hari_login: str) -> bool:
     return False
 
 
-def fork_repo(repo: str) -> str:
-    """Fork repo to Hari's account."""
+def fork_repo(repo: str, timeout: int = 180) -> str:
+    """Fork repo to Hari's account via API (fast, like Nandana's approach)."""
+    hari_login = load_json(CONFIG_FILE, {}).get("user", {}).get("login", "Mr-Neutr0n")
     print(f"  forking {repo}")
+    
+    token = os.environ.get("GITHUB_TOKEN", "")
+    owner, repo_name = repo.split("/", 1)
+    
+    # Try direct API fork (POST /repos/:owner/:repo/forks)
+    result = subprocess.run(
+        ["gh", "api", f"/repos/{owner}/{repo_name}/forks", "-X", "POST", "-f", "name={repo_name}", "--jq", ".owner.login"],
+        capture_output=True, text=True, timeout=timeout,
+    )
+    if result.returncode == 0 and result.stdout.strip():
+        return f"{result.stdout.strip()}/{repo_name}"
+    
+    # Fork already exists (422) — find our fork
     try:
-        gh_text(["repo", "fork", repo, "--clone=false"])
-    except Exception as exc:
-        print(f"  fork may already exist: {exc}")
-    return f"{load_json(CONFIG_FILE, {}).get('user', {}).get('login', 'Mr-Neutr0n')}/{repo.split('/', 1)[1]}"
+        forks = gh_json(["api", f"/repos/{owner}/{repo_name}/forks", "--jq", ".[].owner.login"])
+        for f_owner in (forks or []):
+            test_url = f"https://x-access-token:{token}@github.com/{f_owner}/{repo_name}.git"
+            check = subprocess.run(["git", "ls-remote", test_url], capture_output=True, text=True, timeout=15)
+            if check.returncode == 0:
+                return f"{f_owner}/{repo_name}"
+    except Exception:
+        pass
+    
+    raise RuntimeError(f"Could not find or create fork for {repo}")
 
 
 def clone_repo(repo: str, workdir: Path, hari_login: str) -> Path:
@@ -776,6 +797,13 @@ def process_candidate(
         print(f"  already has PR for this issue")
         update_candidate_status(candidates_data, dedupe_key, "skipped")
         return ActionRecord("skip", dedupe_key, "duplicate PR exists", 0, iso_now(), workflow_run_id, dry_run=dry_run)
+    
+    # Skip repos too large for CI (fork + clone too slow)
+    repo_stars = candidate.get("stars", 0) or 0
+    if repo_stars > REPO_MAX_STARS:
+        print(f"  repo too large ({repo_stars} stars > {REPO_MAX_STARS}) — skipping")
+        update_candidate_status(candidates_data, dedupe_key, "skipped")
+        return ActionRecord("skip", dedupe_key, f"repo too large ({repo_stars} stars)", 0, iso_now(), workflow_run_id, dry_run=dry_run)
     
     # Fetch issue details
     try:
