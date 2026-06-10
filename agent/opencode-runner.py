@@ -194,15 +194,24 @@ def build_prompt(ctx: PRContext) -> str:
 - "skip": Do nothing. Use when recently nudged, waiting for maintainer reply, or ambiguous.
 - "defer": Defer to human. Use when needs rebase, needs CLA, or you're unsure.
 
+## Language Style (CRITICAL)
+When writing comments or issue text, you MUST follow these rules:
+1. Use natural, human-sounding language — avoid AI-sounding phrasing
+2. NEVER use em dashes (—) or en dashes (–); use hyphens (-) or commas instead
+3. Avoid overly formal or robotic tone; be polite but casual
+4. Avoid bullet-point lists in comments; use short paragraphs instead
+5. Never use phrases like "furthermore," "moreover," "in conclusion," "it's worth noting"
+6. Write like a developer talking to another developer, not like a chatbot
+
 ## Output Format
 Return ONLY a JSON object with this exact schema:
-{{
+{{{
   "action": "nudge|fix|close|skip|defer",
   "reason": "string explaining why",
   "confidence": 1-10,
   "comment_body": "string (for nudge/close actions)",
   "requires_human": true|false
-}}
+}}}
 
 Analyze now and return the JSON.
 """
