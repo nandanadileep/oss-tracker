@@ -315,6 +315,7 @@ Public text ownership rule:
 
 ### Phase 3: Add New Contributor Workflow
 
+- Status: implemented.
 - Build candidate scoring and candidate consumption.
 - Preflight repos.
 - Support larger issues, but require explicit plan, confidence score, and local verification before opening PRs.
@@ -324,6 +325,7 @@ Public text ownership rule:
 
 ### Phase 3.5: Add Candidate Discovery
 
+- Status: implemented.
 - Query GitHub for high-activity repos.
 - Optionally use web search for weekly trending repos.
 - Add top 10 weekly repos after dedupe and preflight.

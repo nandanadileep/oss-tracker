@@ -1,0 +1,135 @@
+name: Discover Candidates
+
+on:
+  schedule:
+    - cron: "0 8 * * 0"  # Weekly on Sunday at 8 AM UTC
+  workflow_dispatch:
+    inputs:
+      repo_limit:
+        description: "Max repos to discover (default: 10)"
+        required: false
+        default: "10"
+      issues_per_repo:
+        description: "Max issues per repo (default: 5)"
+        required: false
+        default: "5"
+      dry_run:
+        description: "Dry run (no writes)"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout oss-tracker
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Install opencode
+        run: |
+          echo "Installing opencode..."
+          curl -fsSL https://opencode.ai/install | bash
+          export PATH="$HOME/.opencode/bin:$PATH"
+          echo "$HOME/.opencode/bin" >> $GITHUB_PATH
+          opencode --version
+
+      - name: Configure opencode for Zen
+        run: |
+          mkdir -p "$HOME/.config/opencode"
+          cat > "$HOME/.config/opencode/opencode.json" << 'EOF'
+          {
+            "$schema": "https://opencode.ai/config.json",
+            "model": "zen/big-pickle",
+            "small_model": "zen/gpt-5-nano",
+            "provider": {
+              "zen": {
+                "npm": "@ai-sdk/openai-compatible",
+                "name": "OpenCode Zen",
+                "options": {
+                  "baseURL": "https://opencode.ai/zen/v1"
+                },
+                "models": {
+                  "big-pickle": {
+                    "name": "Big Pickle",
+                    "id": "big-pickle",
+                    "modalities": {
+                      "input": ["text"],
+                      "output": ["text"]
+                    },
+                    "limit": {
+                      "context": 200000,
+                      "output": 65536
+                    }
+                  },
+                  "gpt-5-nano": {
+                    "name": "GPT 5 Nano",
+                    "id": "gpt-5-nano",
+                    "modalities": {
+                      "input": ["text"],
+                      "output": ["text"]
+                    },
+                    "limit": {
+                      "context": 128000,
+                      "output": 32768
+                    }
+                  }
+                }
+              }
+            }
+          }
+          EOF
+
+      - name: Verify tooling
+        run: |
+          echo "=== Tooling Check ==="
+          which gh && gh --version | head -1
+          which opencode && opencode --version | head -1
+          which python3 && python3 --version
+
+      - name: Run candidate discovery
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          chmod +x agent/candidate_discovery.py
+          python3 agent/candidate_discovery.py \
+            --repo-limit ${{ github.event.inputs.repo_limit || '10' }} \
+            --issues-per-repo ${{ github.event.inputs.issues_per_repo || '5' }} \
+            ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }} \
+            --queries "stars:>1000 language:python pushed:>2026-05-01" \
+                      "stars:>500 language:typescript pushed:>2026-05-01" \
+                      "stars:>300 language:go pushed:>2026-05-01"
+
+      - name: Commit and push updates
+        if: github.event.inputs.dry_run != 'true'
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          git config user.email "64578610+Mr-Neutr0n@users.noreply.github.com"
+          git config user.name "Mr-Neutr0n"
+          git remote set-url origin "https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}.git"
+          git add -A .oss-harness/state/
+          git add -A .oss-harness/reports/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "automation: weekly candidate discovery $(date -u +%Y-%m-%d)"
+            git push origin main
+          fi
+
+      - name: Create summary issue (if failures)
+        if: failure()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            -R "${{ github.repository }}" \
+            -t "Candidate discovery failed: $(date -u +%Y-%m-%d)" \
+            -b "The candidate discovery workflow failed. Check the Actions logs for details."

@@ -144,9 +144,11 @@ Implemented deterministic gates:
 | **Repo profiles** | Remember what's been said before, who maintainers are |
 | **OSS-specific safety** | Never force-push upstream, never bulk-act, never forge CLA |
 
-## Planned Workflow 2: New Contributor
+## Workflow 2: New Contributor
 
-The second workflow should run separately from backlog stewardship.
+The second workflow runs separately from backlog stewardship.
+
+File: `.github/workflows/daily-new-contributions.yml`
 
 Target behavior:
 
@@ -184,9 +186,11 @@ Changes for this harness:
 - Allow up to 30 open PRs per upstream repo across both workflows.
 - Feed every opened PR into the existing tracking queue.
 
-## Planned Workflow 3: Candidate Discovery
+## Workflow 3: Candidate Discovery
 
-The candidate pool should not depend on manual updates forever.
+The candidate pool no longer depends on manual updates.
+
+File: `.github/workflows/discover-candidates.yml`
 
 Target behavior:
 
