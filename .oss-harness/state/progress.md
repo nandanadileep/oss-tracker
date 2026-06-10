@@ -680,3 +680,11 @@ PRs touched:
 - Dry run: False
 
 New candidates:
+
+## 2026-06-10 - Regenerated candidates.json with top-tier repos
+
+- Replaced basic 100+ repo seed with 21 Hari-quality repos + 56 real issues
+- Repos included: openclaw/openclaw (378K stars), NousResearch/hermes-agent (189K), anomalyco/opencode (172K), earendil-works/pi (61K), MoonshotAI/Kimi-K2 (10.8K), MoonshotAI/Kimi-K2.5 (2K), MiniMax-AI/MiniMax-M2.1/M2.5, zai-org/GLM-4 (7K), zai-org/GLM-5 (3.4K), huggingface/peft, pandas-dev/pandas, fishaudio/fish-speech, plotly/plotly.py, apache/airflow, kedro-org/kedro, nltk/nltk, scikit-learn/scikit-learn, mlflow/mlflow, thu-ml/tianshou, great-expectations/great_expectations
+- All issue numbers are real (fetched via gh API)
+- Total candidates: 77 entries (21 repos + 56 issues)
+- All tests pass: 54/54
