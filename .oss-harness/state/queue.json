@@ -9,11 +9,6 @@
     "nutonomy/nuscenes-devkit#1191",
     "Vchitect/LaVie#72",
     "huggingface/transformers#43842",
-    "Comfy-Org/ComfyUI#12287",
-    "huggingface/diffusers#13102",
-    "huggingface/diffusers#13125",
-    "huggingface/diffusers#13111",
-    "huggingface/diffusers#13110",
     "huggingface/diffusers#13109",
     "huggingface/diffusers#13108",
     "huggingface/diffusers#13103",
@@ -533,7 +528,7 @@
       "date": "2026-06-06"
     }
   ],
-  "_updated": "2026-06-10T03:32:17.469993Z",
+  "_updated": "2026-06-10T04:01:00.907540Z",
   "cooldown": [
     {
       "key": "Stability-AI/generative-models#470",
@@ -564,6 +559,36 @@
       "reason": "latest comment is Hari's but still in cooldown",
       "last_action_at": "2026-06-10T03:32:17.469776Z",
       "next_review_at": "2026-06-17T03:32:17.469740Z"
+    },
+    {
+      "key": "Comfy-Org/ComfyUI#12287",
+      "reason": "latest comment is Hari's but still in cooldown",
+      "last_action_at": "2026-06-10T04:00:36.728919Z",
+      "next_review_at": "2026-06-17T04:00:36.728878Z"
+    },
+    {
+      "key": "huggingface/diffusers#13102",
+      "reason": "latest comment is Hari's but still in cooldown",
+      "last_action_at": "2026-06-10T04:00:42.745411Z",
+      "next_review_at": "2026-06-17T04:00:42.745377Z"
+    },
+    {
+      "key": "huggingface/diffusers#13125",
+      "reason": "latest comment is Hari's but still in cooldown",
+      "last_action_at": "2026-06-10T04:00:48.729459Z",
+      "next_review_at": "2026-06-17T04:00:48.729427Z"
+    },
+    {
+      "key": "huggingface/diffusers#13111",
+      "reason": "latest comment is Hari's but still in cooldown",
+      "last_action_at": "2026-06-10T04:00:54.778231Z",
+      "next_review_at": "2026-06-17T04:00:54.778184Z"
+    },
+    {
+      "key": "huggingface/diffusers#13110",
+      "reason": "latest comment is Hari's but still in cooldown",
+      "last_action_at": "2026-06-10T04:01:00.907291Z",
+      "next_review_at": "2026-06-17T04:01:00.907256Z"
     }
   ],
   "needs_attention": [],
@@ -572,7 +597,7 @@
     "reason": "latest comment is Hari's but still in cooldown",
     "at": "2026-06-10T03:24:18.172740Z"
   },
-  "_cursor": 5,
+  "_cursor": 10,
   "_last_selected": [
     [
       "Stability-AI/generative-models#470",
@@ -580,6 +605,13 @@
       "onnx/onnx#7665",
       "OpenTalker/SadTalker#1031",
       "LLaVA-VL/LLaVA-NeXT#505"
+    ],
+    [
+      "Comfy-Org/ComfyUI#12287",
+      "huggingface/diffusers#13102",
+      "huggingface/diffusers#13125",
+      "huggingface/diffusers#13111",
+      "huggingface/diffusers#13110"
     ]
   ]
 }
