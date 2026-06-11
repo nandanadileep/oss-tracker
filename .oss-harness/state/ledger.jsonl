@@ -580,3 +580,31 @@
 {"id":"ev_1n2man6q2j4vp7cfq","at":"2026-06-11T03:25:26.826440Z","run_id":"gha_27321705534","event":"candidate_discovered","subject":"Abhigyan-Shekhar/Waggle-mcp#311","data":{"source":"help wanted","title":"release(vscode-extension): add a smoke test that contributed commands remain registered in package.json"}}
 {"id":"ev_1n2man6hdekg0njqc","at":"2026-06-11T03:25:26.826507Z","run_id":"gha_27321705534","event":"candidate_rejected","subject":"Abhigyan-Shekhar/Waggle-mcp#311","data":{"reason":"too fresh (racing humans)"}}
 {"id":"ev_1n2man68mzcgexntn","at":"2026-06-11T03:25:26.831677Z","run_id":"gha_27321705534","event":"run_finished","subject":"discover","data":{"outcome":"ok"}}
+{"id":"ev_1n2mankse5fe7k02q","at":"2026-06-11T03:25:39.460293Z","run_id":"gha_27321710401","event":"run_started","subject":"contribute","data":{"dry_run":true}}
+{"id":"ev_1n2mankma0yy2wc2e","at":"2026-06-11T03:25:39.837646Z","run_id":"gha_27321710401","event":"candidate_claimed","subject":"canonical/charm-logrotated#80","data":{}}
+{"id":"ev_1n2manmn6rcm2f8zy","at":"2026-06-11T03:25:40.683251Z","run_id":"gha_27321710401","event":"preflight_passed","subject":"canonical/charm-logrotated","data":{"reasons":[]}}
+{"id":"ev_1n2manmvsz631s7vw","at":"2026-06-11T03:25:40.934870Z","run_id":"gha_27321710401","event":"contribution_started","subject":"canonical/charm-logrotated#80","data":{}}
+{"id":"ev_1n2mann7jpskjae6d","at":"2026-06-11T03:25:41.098864Z","run_id":"gha_27321710401","event":"candidate_claimed","subject":"fixie-ai/ultravox#330","data":{}}
+{"id":"ev_1n2mannf6g6ewaqz7","at":"2026-06-11T03:25:41.854639Z","run_id":"gha_27321710401","event":"preflight_passed","subject":"fixie-ai/ultravox","data":{"reasons":[]}}
+{"id":"ev_1n2manp68fjdj5hae","at":"2026-06-11T03:25:42.340701Z","run_id":"gha_27321710401","event":"contribution_started","subject":"fixie-ai/ultravox#330","data":{}}
+{"id":"ev_1n2manpdgyc9nqa8v","at":"2026-06-11T03:25:42.505529Z","run_id":"gha_27321710401","event":"candidate_claimed","subject":"SysCV/sam-hq#165","data":{}}
+{"id":"ev_1n2manqwc9e25srjc","at":"2026-06-11T03:25:43.239503Z","run_id":"gha_27321710401","event":"preflight_passed","subject":"SysCV/sam-hq","data":{"reasons":[]}}
+{"id":"ev_1n2manqb4w8kgwcb1","at":"2026-06-11T03:25:43.585865Z","run_id":"gha_27321710401","event":"contribution_started","subject":"SysCV/sam-hq#165","data":{}}
+{"id":"ev_1n2manqtydar16rfr","at":"2026-06-11T03:25:43.745609Z","run_id":"gha_27321710401","event":"candidate_claimed","subject":"nutonomy/nuscenes-devkit#1191","data":{}}
+{"id":"ev_1n2manq5d6jhgjgnt","at":"2026-06-11T03:25:43.992294Z","run_id":"gha_27321710401","event":"candidate_rejected","subject":"nutonomy/nuscenes-devkit#1191","data":{"reason":"claimed_elsewhere"}}
+{"id":"ev_1n2manryj856tbn4n","at":"2026-06-11T03:25:44.167994Z","run_id":"gha_27321710401","event":"candidate_claimed","subject":"Vchitect/LaVie#72","data":{}}
+{"id":"ev_1n2manrqbxexqqzf2","at":"2026-06-11T03:25:44.865323Z","run_id":"gha_27321710401","event":"preflight_passed","subject":"Vchitect/LaVie","data":{"reasons":[]}}
+{"id":"ev_1n2mansfafh58vnez","at":"2026-06-11T03:25:45.270507Z","run_id":"gha_27321710401","event":"contribution_started","subject":"Vchitect/LaVie#72","data":{}}
+{"id":"ev_1n2mans4z46ne5q5f","at":"2026-06-11T03:25:45.458925Z","run_id":"gha_27321710401","event":"candidate_claimed","subject":"huggingface/transformers#43842","data":{}}
+{"id":"ev_1n2mantngemj3k3f0","at":"2026-06-11T03:25:46.540619Z","run_id":"gha_27321710401","event":"preflight_passed","subject":"huggingface/transformers","data":{"reasons":[]}}
+{"id":"ev_1n2manvcv4sa64br5","at":"2026-06-11T03:25:47.642384Z","run_id":"gha_27321710401","event":"contribution_started","subject":"huggingface/transformers#43842","data":{}}
+{"id":"ev_1n2manv62n1fktwd8","at":"2026-06-11T03:25:47.813112Z","run_id":"gha_27321710401","event":"candidate_claimed","subject":"huggingface/diffusers#13109","data":{}}
+{"id":"ev_1n2manwwmev07eczd","at":"2026-06-11T03:25:48.706946Z","run_id":"gha_27321710401","event":"preflight_passed","subject":"huggingface/diffusers","data":{"reasons":[]}}
+{"id":"ev_1n2many1dy7dgeaa0","at":"2026-06-11T03:25:50.093033Z","run_id":"gha_27321710401","event":"contribution_started","subject":"huggingface/diffusers#13109","data":{}}
+{"id":"ev_1n2manycfge79gzaa","at":"2026-06-11T03:25:50.279547Z","run_id":"gha_27321710401","event":"candidate_claimed","subject":"huggingface/diffusers#13108","data":{}}
+{"id":"ev_1n2manz85ma8vrwff","at":"2026-06-11T03:25:51.139560Z","run_id":"gha_27321710401","event":"preflight_passed","subject":"huggingface/diffusers","data":{"reasons":[]}}
+{"id":"ev_1n2map0wcy6q4857q","at":"2026-06-11T03:25:52.822469Z","run_id":"gha_27321710401","event":"contribution_started","subject":"huggingface/diffusers#13108","data":{}}
+{"id":"ev_1n2map19ekc8gvt4k","at":"2026-06-11T03:25:53.011712Z","run_id":"gha_27321710401","event":"candidate_claimed","subject":"huggingface/diffusers#13103","data":{}}
+{"id":"ev_1n2map1920g42z9en","at":"2026-06-11T03:25:53.894420Z","run_id":"gha_27321710401","event":"preflight_passed","subject":"huggingface/diffusers","data":{"reasons":[]}}
+{"id":"ev_1n2map3f03wbejm3k","at":"2026-06-11T03:25:55.143394Z","run_id":"gha_27321710401","event":"contribution_started","subject":"huggingface/diffusers#13103","data":{}}
+{"id":"ev_1n2map3s7xvsdtt24","at":"2026-06-11T03:25:55.143833Z","run_id":"gha_27321710401","event":"run_finished","subject":"contribute","data":{"outcome":"ok"}}
