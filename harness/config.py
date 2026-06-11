@@ -53,14 +53,17 @@ class Config:
     )
     limits: Limits = field(default_factory=Limits)
     # Anonymous Zen free tier (verified 2026-06-11; no key required).
-    # big-pickle is opencode's curated alias — they re-point it when free
-    # promotions rotate, so it self-heals. The rest are explicit fallbacks;
-    # a rotated-away model 401s and the chain advances (DOMAIN_MODEL.md §7).
+    # Order set by patch-task bench (parse/apply/tests + latency):
+    #   big-pickle 19s pass · north-mini-code 6s pass · deepseek-flash 49s pass
+    #   · nemotron 52s pass · mimo FAILED format (dropped).
+    # big-pickle stays primary: it is opencode's curated alias, re-pointed when
+    # free promotions rotate, so it self-heals. Rotated-away models 401 and the
+    # chain advances (DOMAIN_MODEL.md §7).
     endpoints: tuple[ModelEndpoint, ...] = (
         ModelEndpoint("zen-pickle", "https://opencode.ai/zen/v1", "big-pickle"),
+        ModelEndpoint("zen-north", "https://opencode.ai/zen/v1", "north-mini-code-free"),
         ModelEndpoint("zen-deepseek", "https://opencode.ai/zen/v1", "deepseek-v4-flash-free"),
         ModelEndpoint("zen-nemotron", "https://opencode.ai/zen/v1", "nemotron-3-ultra-free"),
-        ModelEndpoint("zen-mimo", "https://opencode.ai/zen/v1", "mimo-v2.5-free"),
     )
     secret_patterns_file: str = f"{HARNESS_DIR}/lint/secret-patterns.txt"
     exclude_owners: tuple[str, ...] = ("Mr-Neutr0n", "baby-ai-stealth")
