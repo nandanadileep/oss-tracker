@@ -165,3 +165,36 @@ def test_changed_files_filters_test_artifacts(tmp_path):
     assert sandbox.changed_files(repo) == ["app.py"]
     sandbox.clean_noise(repo)
     assert not pc.exists()
+
+
+def test_agent_cli_argv_and_usability(monkeypatch):
+    assert sandbox.OPENCODE.argv("fix it") == \
+        ["opencode", "run", "--model", "opencode/big-pickle", "fix it"]
+    argv = sandbox.CURSOR.argv("fix it")
+    assert argv[0] == "agent" and "fix it" in argv
+    assert "--force" in argv  # print mode doesn't write files without it
+    assert argv[argv.index("--model") + 1] == "composer-2.5"  # never -fast (6x price)
+    monkeypatch.delenv("CURSOR_API_KEY", raising=False)
+    monkeypatch.setattr("shutil.which", lambda b: "/bin/" + b)
+    assert sandbox.OPENCODE.usable()
+    assert not sandbox.CURSOR.usable()  # binary present but no key
+    monkeypatch.setenv("CURSOR_API_KEY", "crsr_x")
+    assert sandbox.CURSOR.usable()
+    assert [c.name for c in sandbox.usable_agents()] == ["opencode", "cursor"]
+
+
+def test_cursor_key_survives_scrub_for_cursor_only(tmp_path, monkeypatch):
+    monkeypatch.setenv("CURSOR_API_KEY", "crsr_x")
+    monkeypatch.setenv("GH_PAT", "ghp_x")
+    repo = _git_repo(tmp_path)
+    runner, cap = _fake_runner(
+        make_changes=lambda cwd: (cwd / "app.py").write_text("x = 7\n"))
+    sandbox.run_agent(repo, "o/r", ISSUE, cli=sandbox.CURSOR, runner=runner,
+                      say=lambda *a, **k: None)
+    assert cap["env"]["CURSOR_API_KEY"] == "crsr_x"  # the CLI's own key: kept
+    assert "GH_PAT" not in cap["env"]                # everything else: scrubbed
+    runner2, cap2 = _fake_runner(
+        make_changes=lambda cwd: (cwd / "app.py").write_text("x = 8\n"))
+    sandbox.run_agent(repo, "o/r", ISSUE, cli=sandbox.OPENCODE, runner=runner2,
+                      say=lambda *a, **k: None)
+    assert "CURSOR_API_KEY" not in cap2["env"]  # opencode session never sees it

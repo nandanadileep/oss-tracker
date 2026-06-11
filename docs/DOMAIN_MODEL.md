@@ -199,16 +199,37 @@ Edge cases the model must own (all hit in practice):
 **Patch engines.** Two engines produce the change; both funnel through the
 same deterministic gates before anything is committed:
 
-1. **`SandboxSession` (primary)** — a real coding agent (opencode CLI with
-   read/edit/bash tools) runs *inside* the cloned fork, exactly like running
-   Claude Code in a local checkout. The agent reads the actual files it needs,
-   edits in place, runs tests, iterates — a closed loop with ground truth, which
-   is why it beats one-shot generation. Containment:
-   - **scrubbed environment** (no PAT, no API keys — §2) and an isolated CLI
-     config via `OPENCODE_CONFIG` (anonymous Zen; never the operator's own config);
+1. **`SandboxSession` (primary)** — a real coding agent runs *inside* the
+   cloned fork, exactly like running Claude Code in a local checkout. The agent
+   reads the actual files it needs, edits in place, runs tests, iterates — a
+   closed loop with ground truth, which is why it beats one-shot generation.
+
+   **`AgentCli` chain.** More than one CLI can serve as the agent; they are
+   tried in order, free before paid:
+   | agent | binary | model | cost | when it runs |
+   |---|---|---|---|---|
+   | opencode | `opencode` | `opencode/big-pickle` (built-in Zen, anonymous) | free | always first |
+   | cursor | `agent` | `composer-2.5` ($0.50/$2.50 per Mtok) | paid | when the free agent is unusable or its session fails (e.g. runner IP can't reach the free gateway) |
+   A session *failure* advances the chain; a *gate rejection* of the produced
+   diff does not (the diff is the problem, not the agent). If the free gateway
+   becomes usable again, opencode simply starts winning again — no config change.
+   Never `composer-2.5-fast`: same weights at ~6× the price, and the CLI must
+   always pin `--model` (known bug defaults subagents to `-fast`).
+
+   Containment — identical for every AgentCli:
+   - **scrubbed environment** (no PAT, no API keys — §2), with ONE audited
+     exception: the CLI's *own* credential (`keep_env`, e.g. `CURSOR_API_KEY`)
+     passes through to that CLI's sessions only. Accepted residual risk: code
+     the agent executes could read that one key; it is rate-limited, spends
+     only model budget, and is rotatable — unlike the PAT, which never enters.
+   - isolated config (e.g. `OPENCODE_CONFIG` temp file; never the operator's
+     own config) and `$PWD` pinned to the worktree (agent CLIs resolve their
+     workspace from `$PWD`, not the process cwd);
    - **no GitHub access** — the agent can only mutate the local worktree;
    - hard wall-clock cap (default 15 min); timeout or nonzero exit → full
      `git checkout . && git clean -fd` rollback;
+   - test/build droppings from the agent's own runs (`__pycache__`,
+     `node_modules`, …) are filtered from the diff and cleaned pre-commit;
    - its `git diff` is then validated by `validate_worktree()` — the same
      forbidden-path / deletion / truncation / secret / size gates as the
      one-shot engine, plus a deleted-large-file check. Rejection → rollback.
@@ -468,7 +489,7 @@ Each is handled in the section noted; this is the checklist for tests.
 
 **Model layer**: CLI as completion transport banned; CLI as sandboxed agent is the primary engine (§5, §7) · socket-inactivity ≠ wall-clock — hard deadline wrapper on every transport call (§7) · Cloudflare blocks default urllib UA → honest custom UA (§7) · gateway probe step quantifies runner→gateway latency at the top of every run · 524/429/timeout retry matrix (§7) · free-model rotation → chain advance (§7) · truncation → deletion guardrails + compact retry (§5, §7) · prose-instead-of-patch → parse-error feedback loop (§7) · ambiguous search-block match (§5) · hallucinated paths — one-shot only; the sandbox agent reads real files (§5) · model-emitted secrets (§5) · prompt injection via issue/comment/code/CI-log content (§8) · per-contribution call/cost/time budgets (§7).
 
-**Sandbox engine**: agent session timeout → rollback (§5) · nonzero exit → rollback (§5) · zero-change session → error, fall back to one-shot (§5) · agent deletes a large file → diff gate rejects (§5) · isolated CLI config via env, operator config untouched (§5) · scrubbed env: agent and any code it runs never see credentials (§2, §5).
+**Sandbox engine**: agent session timeout → rollback (§5) · nonzero exit → rollback (§5) · zero-change session → error, next agent in chain, then one-shot (§5) · agent deletes a large file → diff gate rejects (§5) · isolated CLI config via env, operator config untouched (§5) · `$PWD` must be pinned — agent CLIs ignore process cwd (§5) · custom provider stanzas hang downloading npm SDKs — use built-in providers (§5) · agent test-run droppings filtered + cleaned (§5) · scrubbed env: agent and any code it runs never see credentials, except the CLI's own `keep_env` key (§2, §5) · session failure advances the AgentCli chain; gate rejection does not (§5) · paid agent only when free agent unusable/failed (§5).
 
 **Verification**: infra-failure ≠ test-failure (§5) · pre-existing baseline failures (§5) · no-tests = pass-with-disclosure (§5) · flaky CI classification (§5) · env-scrubbed subprocesses for untrusted code (§2) · global verification time budget (§5).
 

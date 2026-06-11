@@ -30,8 +30,11 @@ INFRA_MARKERS = (
 )
 
 
-def scrubbed_env() -> dict[str, str]:
-    env = {k: v for k, v in os.environ.items() if not SECRET_ENV_RE.search(k)}
+def scrubbed_env(keep: tuple[str, ...] = ()) -> dict[str, str]:
+    """Drop credential-shaped vars. `keep` is a deliberate, audited exception —
+    e.g. a sandbox agent CLI's own API key (see DOMAIN_MODEL.md §5)."""
+    env = {k: v for k, v in os.environ.items()
+           if k in keep or not SECRET_ENV_RE.search(k)}
     env.setdefault("CI", "true")
     return env
 

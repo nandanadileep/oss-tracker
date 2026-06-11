@@ -2,6 +2,21 @@
 
 All notable changes to this harness are documented here. Format: semver-ish, date-stamped.
 
+## 0.5.0 — 2026-06-11
+
+Multi-agent sandbox: Cursor CLI as paid fallback behind free opencode.
+
+- **AgentCli chain** in the sandbox engine: opencode (free, anonymous Zen)
+  first; Cursor CLI (`agent --model composer-2.5`, `CURSOR_API_KEY`) when the
+  free agent is unusable or its session fails — built for runners whose IPs
+  can't reach the free gateway. Session failure advances the chain; a gate
+  rejection of the diff does not. Identical containment for every agent; the
+  only env-scrub exception is the CLI's own key, scoped to its own sessions.
+- composer-2.5 pinned explicitly (the `-fast` tier is the same weights at ~6x
+  the price, and the CLI has a known default-to-fast bug).
+- Live-verified: cursor session fixed the bench bug in 51s, gates passed.
+- 109 unit tests.
+
 ## 0.4.0 — 2026-06-11
 
 The sandbox patch engine: a real coding agent instead of one-shot patches.

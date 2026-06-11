@@ -46,11 +46,19 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Install opencode (sandbox engine)
+      - name: Install opencode (sandbox engine, free)
         run: |
           curl -fsSL https://opencode.ai/install | bash
           echo "$HOME/.opencode/bin" >> $GITHUB_PATH
           "$HOME/.opencode/bin/opencode" --version
+
+      - name: Install Cursor CLI (sandbox engine, paid fallback)
+        run: |
+          curl https://cursor.com/install -fsS | bash
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+          echo "$HOME/.cursor/bin" >> $GITHUB_PATH
+          agent --version 2>/dev/null || "$HOME/.local/bin/agent" --version \
+            || "$HOME/.cursor/bin/agent" --version || echo "cursor CLI install failed (non-fatal)"
 
       - name: Gateway probe
         run: |
@@ -71,6 +79,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_PAT }}
           GH_PAT: ${{ secrets.GH_PAT }}
           OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
           PYTHONUNBUFFERED: "1"
         run: |
           python3 -m harness.apps.contribute \

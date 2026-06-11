@@ -6,15 +6,24 @@ scripts were replaced in 0.3.0; 0.4.0 added the sandbox patch engine.
 
 ## How a fix gets made (patch engines)
 
-**Sandbox (primary).** The contribute workflow installs the opencode CLI and
-runs it *agentically* inside the cloned fork — the same architecture as
+**Sandbox (primary).** The contribute workflow installs coding-agent CLIs and
+runs them *agentically* inside the cloned fork — the same architecture as
 running Claude Code in a local checkout: the agent reads the real files,
-edits in place, runs tests, iterates. It runs with a scrubbed environment
-(no PAT, no keys), an isolated config (`OPENCODE_CONFIG`, anonymous Zen),
-a 15-minute cap, and zero GitHub access. Its `git diff` then passes the same
-deterministic gates as everything else (`patch.validate_worktree`: forbidden
-paths, deletion/truncation caps, secret scan, size caps) before the harness
-commits, pushes to the fork, and opens the PR.
+edits in place, runs tests, iterates. Agents are tried in order, free first:
+
+1. **opencode** (`opencode/big-pickle`, anonymous Zen — free)
+2. **cursor** (`agent --model composer-2.5` — paid, needs `CURSOR_API_KEY`;
+   used when the free agent is unusable or its session fails, e.g. the
+   runner's IP can't reach the free gateway)
+
+Every agent gets identical containment: scrubbed environment (no PAT; only
+the CLI's own key passes through), isolated config, `$PWD` pinned to the
+worktree, a 15-minute cap, and zero GitHub access. The session's `git diff`
+then passes the same deterministic gates as everything else
+(`patch.validate_worktree`: forbidden paths, deletion/truncation caps, secret
+scan, size caps) before the harness commits, pushes to the fork, and opens
+the PR. Pricing note: `composer-2.5` is the cheap tier ($0.50/M in, $2.50/M
+out); `composer-2.5-fast` is the same model ~6× pricier — never use it.
 
 **One-shot (fallback).** If the CLI is missing or the session fails, the
 old pipeline runs: context pack → strict PATH/SEARCH-REPLACE contract →
@@ -39,6 +48,7 @@ runs queue instead of racing pushes to main.
 | Secret | Used for |
 |---|---|
 | `GH_PAT` | Classic PAT (`repo` + `workflow`): all cross-repo operations and state pushes. `GITHUB_TOKEN` cannot write cross-repo. **Required.** |
+| `CURSOR_API_KEY` | Cursor CLI agent (paid sandbox fallback). Reaches cursor sessions only — scrubbed from everything else, including opencode sessions and target-repo test runs. |
 | `OPENCODE_API_KEY` | **Optional.** The default model chain uses the Zen free tier *anonymously* (no key — verified live 2026-06-11). Set this only if you add paid endpoints to `config.json:models.chain` as fallbacks. |
 
 The model chain (`harness/model.py`) calls the Zen gateway over plain HTTPS

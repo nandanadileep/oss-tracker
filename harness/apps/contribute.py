@@ -111,19 +111,36 @@ def _say(subject: str, msg: str) -> None:
 
 def _engine_sandbox(ctx, subject: str, cand, repo_path: Path, issue: dict,
                     patterns) -> tuple[str, set[str]]:
-    """Primary engine: real agent session in the worktree, then diff gates."""
-    res = sandbox.run_agent(repo_path, cand.repo, issue, say=_say_raw)
-    try:
-        flags = patching.validate_worktree(
-            repo_path, res.files, patterns,
-            max_files=ctx.cfg.limits.max_files_changed,
-            max_lines=ctx.cfg.limits.max_lines_changed)
-    except patching.PatchError:
-        sandbox.rollback(repo_path)
-        raise
-    ctx.ledger.append(Ev.PATCH_APPLIED, subject, engine="sandbox", files=res.files)
-    _say(subject, f"sandbox diff accepted ({', '.join(res.files)})")
-    return res.summary, flags
+    """Primary engine: real agent session in the worktree, then diff gates.
+
+    Tries each usable agent CLI in order (free opencode first, paid cursor as
+    fallback — e.g. when the runner's IP can't reach the free gateway)."""
+    agents = sandbox.usable_agents()
+    if not agents:
+        raise sandbox.SandboxError("no agent CLI installed/configured")
+    last_err: Exception = sandbox.SandboxError("unreachable")
+    for cli in agents:
+        try:
+            res = sandbox.run_agent(repo_path, cand.repo, issue, cli=cli, say=_say_raw)
+        except sandbox.SandboxError as e:
+            _say(subject, f"{cli.name} agent failed: {e}")
+            ctx.ledger.append(Ev.PATCH_REJECTED, subject, engine=f"sandbox/{cli.name}",
+                              error=str(e)[:200])
+            last_err = e
+            continue
+        try:
+            flags = patching.validate_worktree(
+                repo_path, res.files, patterns,
+                max_files=ctx.cfg.limits.max_files_changed,
+                max_lines=ctx.cfg.limits.max_lines_changed)
+        except patching.PatchError:
+            sandbox.rollback(repo_path)
+            raise  # gate rejection is about the diff, not the agent — no retry
+        ctx.ledger.append(Ev.PATCH_APPLIED, subject, engine=f"sandbox/{res.agent}",
+                          files=res.files)
+        _say(subject, f"sandbox diff accepted via {res.agent} ({', '.join(res.files)})")
+        return res.summary, flags
+    raise last_err
 
 
 def _say_raw(msg, **kwargs):
