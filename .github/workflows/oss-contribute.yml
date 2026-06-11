@@ -11,6 +11,9 @@ on:
       dry_run:
         description: "Dry run (no writes)"
         default: "false"
+      force:
+        description: "Ignore same-day re-run guard"
+        default: "false"
 
 permissions:
   contents: write
@@ -46,7 +49,8 @@ jobs:
         run: |
           python3 -m harness.apps.contribute \
             --max-prs "${{ github.event.inputs.max_prs || '5' }}" \
-            $([ "${{ github.event.inputs.dry_run }}" = "true" ] && echo --dry-run)
+            $([ "${{ github.event.inputs.dry_run }}" = "true" ] && echo --dry-run) \
+            $([ "${{ github.event.inputs.force }}" = "true" ] && echo --force)
 
       - name: Commit state
         if: always()

@@ -43,3 +43,13 @@ def test_recent_texts_for_uniformity(ledger):
 
 def test_missing_file_yields_nothing(tmp_path):
     assert list(Ledger(tmp_path / "absent.jsonl").events()) == []
+
+
+def test_same_day_guard_ignores_dry_runs(ledger):
+    from harness.apps import already_succeeded_today
+    ledger.append(Ev.RUN_FINISHED, "contribute", outcome="ok", dry_run=True)
+    assert not already_succeeded_today(ledger, "contribute")
+    ledger.append(Ev.RUN_FINISHED, "contribute", outcome="ok")  # legacy, no flag
+    assert not already_succeeded_today(ledger, "contribute")
+    ledger.append(Ev.RUN_FINISHED, "contribute", outcome="ok", dry_run=False)
+    assert already_succeeded_today(ledger, "contribute")

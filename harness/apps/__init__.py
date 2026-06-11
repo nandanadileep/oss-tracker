@@ -45,16 +45,22 @@ def harness_run(app: str, *, dry_run: bool):
     try:
         yield ctx
     except Exception:
-        ledger.append(Ev.RUN_FINISHED, app, outcome="crashed",
+        ledger.append(Ev.RUN_FINISHED, app, outcome="crashed", dry_run=dry_run,
                       error=traceback.format_exc()[-1500:])
         raise
-    ledger.append(Ev.RUN_FINISHED, app, outcome="ok")
+    ledger.append(Ev.RUN_FINISHED, app, outcome="ok", dry_run=dry_run)
 
 
 def already_succeeded_today(ledger: Ledger, app: str) -> bool:
-    """Same-day re-run guard: a delayed cron + manual dispatch double is a no-op."""
+    """Same-day re-run guard: a delayed cron + manual dispatch double is a no-op.
+
+    Only REAL runs count — a dry-run rehearsal must never block the live run
+    (events without the dry_run flag predate it and are treated as dry).
+    """
     for ev in ledger.events():
         if ev.event == Ev.RUN_FINISHED and ev.subject == app \
-                and ev.data.get("outcome") == "ok" and ev.at.startswith(today()):
+                and ev.data.get("outcome") == "ok" \
+                and ev.data.get("dry_run") is False \
+                and ev.at.startswith(today()):
             return True
     return False
