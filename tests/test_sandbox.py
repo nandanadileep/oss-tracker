@@ -198,3 +198,26 @@ def test_cursor_key_survives_scrub_for_cursor_only(tmp_path, monkeypatch):
     sandbox.run_agent(repo, "o/r", ISSUE, cli=sandbox.OPENCODE, runner=runner2,
                       say=lambda *a, **k: None)
     assert "CURSOR_API_KEY" not in cap2["env"]  # opencode session never sees it
+
+
+def test_changed_files_sees_files_inside_untracked_dirs(tmp_path):
+    # porcelain collapses untracked dirs to "dir/" — the bug that let a real
+    # agent fix be misread as "no changes" (charm-logrotated#81 post-mortem)
+    repo = _git_repo(tmp_path)
+    hooks = repo / "hooks"
+    hooks.mkdir()
+    (hooks / "install").write_text("#!/usr/bin/env python3\n")
+    assert sandbox.changed_files(repo) == ["hooks/install"]
+
+
+def test_no_changes_error_rolls_back_leftovers(tmp_path):
+    repo = _git_repo(tmp_path)
+
+    def runner(cmd, cwd=None, env=None, **kwargs):
+        # agent leaves an artifact-only mess that filters to nothing
+        (cwd / "__pycache__").mkdir()
+        (cwd / "__pycache__" / "x.pyc").write_bytes(b"\x00")
+        return subprocess.CompletedProcess(cmd, 0, "", "")
+    with pytest.raises(sandbox.SandboxError, match="no changes"):
+        sandbox.run_agent(repo, "o/r", ISSUE, runner=runner, say=lambda *a, **k: None)
+    assert not (repo / "__pycache__").exists()  # nothing left for later engines

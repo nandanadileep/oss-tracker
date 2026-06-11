@@ -157,7 +157,10 @@ def _is_noise(rel: str) -> bool:
 
 
 def changed_files(repo_path: Path) -> list[str]:
-    out = _git(repo_path, "status", "--porcelain").stdout
+    # --untracked-files=all: plain porcelain collapses an untracked directory
+    # to "dir/", hiding the files inside — a session that only created new
+    # files looked like "no changes" (bug found via canonical/charm-logrotated#81)
+    out = _git(repo_path, "status", "--porcelain", "--untracked-files=all").stdout
     files = []
     for line in out.splitlines():
         if len(line) <= 3:
@@ -217,7 +220,8 @@ def run_agent(repo_path: Path, repo: str, issue: dict, *,
     clean_noise(repo_path)
     files = changed_files(repo_path)
     if not files:
-        raise SandboxError("agent session made no changes")
+        rollback(repo_path)  # leave NOTHING behind for a later engine to inherit
+        raise SandboxError(f"agent session made no changes; output tail: {tail[-200:]}")
 
     summary = ""
     for line in (r.stdout or "").splitlines():

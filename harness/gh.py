@@ -160,10 +160,13 @@ def create_branch(repo_path: Path, branch: str, default_branch: str) -> str:
 
 
 def commit_and_push(repo_path: Path, branch: str, message: str, *,
-                    login: str, email: str, signoff: bool) -> None:
+                    login: str, email: str, signoff: bool,
+                    files: list[str]) -> None:
+    """Commit ONLY the gate-validated files — `git add -A` once swept an
+    unvalidated leftover into a PR (charm-logrotated#81 post-mortem)."""
     for cmd in (["git", "config", "user.name", login],
                 ["git", "config", "user.email", email],
-                ["git", "add", "-A"]):
+                ["git", "add", "--"] + list(files)):
         _run(cmd, cwd=repo_path, timeout=30)
     commit = ["git", "commit", "-m", message] + (["-s"] if signoff else [])
     r = _run(commit, cwd=repo_path, timeout=60)

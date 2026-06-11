@@ -110,7 +110,7 @@ def _say(subject: str, msg: str) -> None:
 
 
 def _engine_sandbox(ctx, subject: str, cand, repo_path: Path, issue: dict,
-                    patterns) -> tuple[str, set[str]]:
+                    patterns) -> tuple[str, set[str], list[str]]:
     """Primary engine: real agent session in the worktree, then diff gates.
 
     Tries each usable agent CLI in order (free opencode first, paid cursor as
@@ -139,7 +139,7 @@ def _engine_sandbox(ctx, subject: str, cand, repo_path: Path, issue: dict,
         ctx.ledger.append(Ev.PATCH_APPLIED, subject, engine=f"sandbox/{res.agent}",
                           files=res.files)
         _say(subject, f"sandbox diff accepted via {res.agent} ({', '.join(res.files)})")
-        return res.summary, flags
+        return res.summary, flags, res.files
     raise last_err
 
 
@@ -214,11 +214,13 @@ def process_candidate(ctx, cand, chain: ProviderChain, patterns, workdir: Path,
 
     # ── patch engines: sandbox (primary) → one-shot (fallback) ──────────────
     summary, commit_message, flags, test_commands = "", "", set(), []
+    files_to_commit: list[str] = []
     engine_used = ""
 
     if engine in ("auto", "sandbox") and (sandbox.available() or engine == "sandbox"):
         try:
-            summary, flags = _engine_sandbox(ctx, subject, cand, repo_path, issue, patterns)
+            summary, flags, files_to_commit = _engine_sandbox(
+                ctx, subject, cand, repo_path, issue, patterns)
             engine_used = "sandbox"
             commit_message = f"Fix #{cand.issue_number}: {(issue.get('title') or '')[:60]}"
         except (sandbox.SandboxError, patching.PatchError) as e:
@@ -263,6 +265,7 @@ def process_candidate(ctx, cand, chain: ProviderChain, patterns, workdir: Path,
         summary, flags = plan.summary, plan.flags
         commit_message = plan.commit_message
         test_commands = plan.test_commands
+        files_to_commit = applied
 
     if "touches_manifest" in flags:
         ex.escalate(Escalation(EscalationReason.NEW_DEPENDENCY, subject,
@@ -282,7 +285,8 @@ def process_candidate(ctx, cand, chain: ProviderChain, patterns, workdir: Path,
 
     github.commit_and_push(repo_path, branch,
                            commit_message or f"Fix #{cand.issue_number}: {issue.get('title', '')[:60]}",
-                           login=cfg.login, email=cfg.git_email, signoff=cfg.dco_authorized)
+                           login=cfg.login, email=cfg.git_email,
+                           signoff=cfg.dco_authorized, files=files_to_commit)
 
     verification_note = {"passed": "Local tests pass.",
                          "no_tests": "No local test suite detected.",
