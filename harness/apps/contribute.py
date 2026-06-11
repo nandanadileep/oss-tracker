@@ -103,11 +103,17 @@ def collect_context(repo_path: Path, issue: dict, cap: int) -> str:
     return "\n\n".join(out)
 
 
+def _say(subject: str, msg: str) -> None:
+    """Streamed progress line — the Actions UI tails stdout live."""
+    print(f"[contribute]   {subject}: {msg}", flush=True)
+
+
 def process_candidate(ctx, cand, chain: ProviderChain, patterns, workdir: Path) -> str:
     """Returns a short outcome string for the report."""
     cfg, ledger, ex = ctx.cfg, ctx.ledger, ctx.executor
     contrib = Contribution(repo=cand.repo, issue_number=cand.issue_number)
     subject = contrib.subject
+    _say(subject, "claiming")
     ledger.append(Ev.CANDIDATE_CLAIMED, subject)
 
     # live claim-check (§4): the issue may have moved since discovery
@@ -146,10 +152,12 @@ def process_candidate(ctx, cand, chain: ProviderChain, patterns, workdir: Path) 
     if ctx.dry_run:
         return "dry-run: would fork/patch/PR"
 
+    _say(subject, "forking")
     fork = github.ensure_fork(cand.repo, cfg.login)
     contrib = contrib.advance(ContributionState.FORKED, fork=fork)
     ledger.append(Ev.FORK_READY, subject, fork=fork)
 
+    _say(subject, f"cloning {fork} ({facts.size_kb // 1024}MB)")
     repo_path = github.clone(fork, cand.repo, workdir,
                              default_branch=facts.default_branch, size_kb=facts.size_kb)
     slug = "".join(c for c in (issue.get("title") or "fix").lower()[:24]
@@ -160,7 +168,9 @@ def process_candidate(ctx, cand, chain: ProviderChain, patterns, workdir: Path) 
                               base_branch=facts.default_branch, base_sha=base_sha)
     ledger.append(Ev.BRANCH_CREATED, subject, branch=branch, base_sha=base_sha)
 
+    _say(subject, "baseline test run")
     baseline = run_tests(repo_path)  # §5 baseline rule
+    _say(subject, f"baseline: {baseline.outcome}")
 
     # patch loop
     feedback, plan, applied = "", None, []
@@ -170,6 +180,8 @@ def process_candidate(ctx, cand, chain: ProviderChain, patterns, workdir: Path) 
         prompt = build_prompt(issue, context, feedback)
         compact = build_prompt(issue, context[:COMPACT_CHARS], feedback)
         try:
+            _say(subject, f"model patch attempt {attempt + 1}/{MAX_PATCH_ATTEMPTS} "
+                          f"({len(prompt)} chars)")
             output = chain.complete(prompt, purpose="patch", subject=subject,
                                     budget=budget, compact_prompt=compact)
         except BudgetExceeded as e:
@@ -184,6 +196,7 @@ def process_candidate(ctx, cand, chain: ProviderChain, patterns, workdir: Path) 
             ledger.append(Ev.PATCH_APPLIED, subject, files=applied)
             break
         except patching.PatchError as e:
+            _say(subject, f"patch rejected: {e}")
             feedback = f"Error: {e}\n\nYour previous response (first 2000 chars):\n{output[:2000]}"
             ledger.append(Ev.PATCH_REJECTED, subject, attempt=attempt, error=str(e)[:200])
             plan = None
@@ -198,7 +211,9 @@ def process_candidate(ctx, cand, chain: ProviderChain, patterns, workdir: Path) 
         return "escalated: new dependency"
 
     contrib = contrib.advance(ContributionState.PATCHED)
+    _say(subject, f"patch applied ({', '.join(applied)}); verifying")
     result = delta(baseline, run_tests(repo_path, plan.test_commands or detect_commands(repo_path)))
+    _say(subject, f"verification: {result.outcome}")
     ledger.append(Ev.VERIFICATION_RAN, subject, outcome=result.outcome, detail=result.detail[:300])
     if result.outcome == "failed":
         ledger.append(Ev.CONTRIBUTION_ABANDONED, subject, reason="verification_failed")
@@ -234,10 +249,13 @@ def main(argv=None) -> int:
     ap.add_argument("--max-prs", type=int, default=None)
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--force", action="store_true", help="ignore same-day re-run guard")
+    ap.add_argument("--only", default="", metavar="OWNER/REPO#N",
+                    help="process exactly this candidate (testing); implies --force")
     args = ap.parse_args(argv)
 
     with harness_run("contribute", dry_run=args.dry_run) as ctx:
-        if not args.force and not args.dry_run and already_succeeded_today(ctx.ledger, "contribute"):
+        if not (args.force or args.only) and not args.dry_run \
+                and already_succeeded_today(ctx.ledger, "contribute"):
             print("[contribute] already succeeded today; no-op (use --force to override)")
             return 0
         cap = args.max_prs or ctx.cfg.limits.daily_new_pr_cap
@@ -251,7 +269,12 @@ def main(argv=None) -> int:
         patterns = load_secret_patterns(ctx.cfg.secret_patterns_file)
         blocked_keys = ctx.executor.open_escalation_keys()
 
-        queue = _queued(ctx)
+        if args.only:
+            repo, _, num = args.only.partition("#")
+            queue = [type("C", (), {"repo": repo, "issue_number": int(num),
+                                    "subject": args.only})()]
+        else:
+            queue = _queued(ctx)
         opened, attempted = 0, 0
         with tempfile.TemporaryDirectory(prefix="oss-contrib-") as tmp:
             for cand in queue:

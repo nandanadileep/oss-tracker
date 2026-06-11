@@ -159,19 +159,28 @@ class ProviderChain:
             if status in (400, 404) and ("model" in raw.lower() or status == 404):
                 raise ModelUnavailable(f"model gone ({status})")
             if status == 524:
+                self._note(ep, "524 origin timeout; backing off 125s")
                 self.sleep(125)
             elif status == 429:
-                self.sleep(_retry_after(raw, default=30 * (attempt + 1)))
+                wait = _retry_after(raw, default=30 * (attempt + 1))
+                self._note(ep, f"429 rate limited; waiting {wait:.0f}s")
+                self.sleep(wait)
             elif status == 0:  # timeout: shrink context once, then bail to next endpoint
+                self._note(ep, f"request timeout after {ep.timeout_s}s")
                 if compact_prompt and body != compact_prompt:
                     body = compact_prompt
                 elif attempt + 1 >= max_attempts:
                     raise ModelUnavailable("repeated timeouts")
             elif status >= 500 or status == -1:
+                self._note(ep, f"transient {status}; retrying")
                 self.sleep(10 * (attempt + 1))
             else:
                 raise ModelUnavailable(f"unexpected status {status}")
         raise ModelUnavailable("attempts exhausted")
+
+    @staticmethod
+    def _note(ep: ModelEndpoint, msg: str) -> None:
+        print(f"[model]   {ep.name}/{ep.model}: {msg}", flush=True)
 
 
 def _retry_after(raw: str, default: float) -> float:
