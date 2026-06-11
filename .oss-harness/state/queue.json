@@ -1,70 +1,35 @@
 {
  "_version": 2,
- "_generated": "2026-06-11T03:09:18.557672Z",
+ "_generated": "2026-06-11T03:25:26.830560Z",
  "_comment": "Materialized view \u2014 rebuilt from ledger.jsonl every run. Do not hand-edit.",
  "queue": [
   {
-   "subject": "yarsa/nepal-compliance#265",
-   "tier": "A",
-   "score": 9.964383561643835,
-   "title": "Help wanted: fix \"Label Large PR\" workflow failed for forked PRs",
-   "discovered_at": "2026-06-11T03:09:16.672846Z"
-  },
-  {
-   "subject": "razbuild/raztint#9",
-   "tier": "A",
-   "score": 9.926027397260274,
-   "title": "Expand docs with examples, tutorial, and README enhancements",
-   "discovered_at": "2026-06-11T03:09:16.667225Z"
-  },
-  {
-   "subject": "doronz88/pymobiledevice3#1669",
-   "tier": "A",
-   "score": 9.882191780821918,
-   "title": "Bluetooth packet logger",
-   "discovered_at": "2026-06-11T03:09:16.673051Z"
-  },
-  {
-   "subject": "SimplexLab/TorchJD#667",
+   "subject": "Tracer-Cloud/opensre#2572",
    "tier": "B",
-   "score": 7.901369863013699,
-   "title": "Scalarizer Tracker",
-   "discovered_at": "2026-06-11T03:09:16.672454Z"
+   "score": 7.958904109589041,
+   "title": "feat: add Temporal workflow orchestration integration",
+   "discovered_at": "2026-06-11T03:25:25.687743Z"
   },
   {
-   "subject": "Scottcjn/rustchain-bounties#728",
+   "subject": "OpenQuantumDesign/oqd-trical#44",
+   "tier": "B",
+   "score": 7.9150684931506845,
+   "title": "unitaryHACK 2026: Update `oqd-trical` Qutip backend to return a datastore",
+   "discovered_at": "2026-06-11T03:25:25.687908Z"
+  },
+  {
+   "subject": "Scottcjn/rustchain-bounties#1618",
+   "tier": "B",
+   "score": 7.747945205479452,
+   "title": "[EASY BOUNTY: 1 RTC] Report any accessibility issue in BoTTube UI",
+   "discovered_at": "2026-06-11T03:25:25.687404Z"
+  },
+  {
+   "subject": "Scottcjn/rustchain-bounties#697",
    "tier": "B",
    "score": 7.736986301369863,
-   "title": "[BOUNTY: 1 RTC] Answer Questions in GitHub Discussions (Up to 10 RTC)",
-   "discovered_at": "2026-06-11T03:09:16.667662Z"
-  },
-  {
-   "subject": "OpenHands/OpenHands#11938",
-   "tier": "B",
-   "score": 7.493150684931507,
-   "title": "Frontmatter field for multiple repos",
-   "discovered_at": "2026-06-11T03:09:16.673232Z"
-  },
-  {
-   "subject": "agentscope-ai/agentscope#1680",
-   "tier": "B",
-   "score": 6.958904109589041,
-   "title": "feat(tts): implement Gemini TTS API",
-   "discovered_at": "2026-06-11T03:09:18.553230Z"
-  },
-  {
-   "subject": "agentscope-ai/agentscope#1679",
-   "tier": "B",
-   "score": 6.958904109589041,
-   "title": "feat(tts): implement OpenAI TTS API",
-   "discovered_at": "2026-06-11T03:09:18.553573Z"
-  },
-  {
-   "subject": "agentscope-ai/agentscope#1685",
-   "tier": "B",
-   "score": 6.958904109589041,
-   "title": "feat(tts): implement DashScope CosyVoice TTS API",
-   "discovered_at": "2026-06-11T03:09:18.553832Z"
+   "title": "Chicken in Every Pot: Fork the Big 5 and Earn RTC",
+   "discovered_at": "2026-06-11T03:25:25.687580Z"
   },
   {
    "subject": "canonical/charm-logrotated#80",
