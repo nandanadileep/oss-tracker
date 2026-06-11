@@ -1,0 +1,46 @@
+name: Discover
+
+on:
+  schedule:
+    - cron: "23 2 * * 1"  # weekly, Monday
+  workflow_dispatch:
+    inputs:
+      max_new:
+        description: "Max new candidates to queue"
+        default: "40"
+      dry_run:
+        description: "Dry run (no writes)"
+        default: "false"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: oss-harness
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run discovery
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+          PYTHONUNBUFFERED: "1"
+        run: |
+          python3 -m harness.apps.discover \
+            --max-new "${{ github.event.inputs.max_new || '40' }}" \
+            $([ "${{ github.event.inputs.dry_run }}" = "true" ] && echo --dry-run)
+
+      - name: Commit state
+        if: always()
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: bash scripts/commit-state.sh discover

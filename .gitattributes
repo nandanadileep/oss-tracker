@@ -1,0 +1,3 @@
+# Append-only state merges by union — concurrent runs can never conflict here.
+.oss-harness/state/ledger.jsonl merge=union
+.oss-harness/state/progress.md merge=union

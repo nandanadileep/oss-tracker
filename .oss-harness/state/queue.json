@@ -1,617 +1,1204 @@
 {
-  "_comment": "Sequential work queue, ordered by tier then stars. Each item is 'owner/repo#number'. Pop one, do it, advance.",
-  "_version": "0.2.3",
-  "_generated": "2026-06-01",
-  "_order": "A (CI green) \u2192 A (CI pending) \u2192 B+ (threads) \u2192 B- (CI green) \u2192 B- (pending) \u2192 B-nothing (long tail). F-tier (archived) and C-tier (CONFLICTING, needs rebase) are listed under deferred \u2014 neither can be actioned without manual intervention.",
-  "queue": [
-    "fixie-ai/ultravox#330",
-    "SysCV/sam-hq#165",
-    "nutonomy/nuscenes-devkit#1191",
-    "Vchitect/LaVie#72",
-    "huggingface/transformers#43842",
-    "huggingface/diffusers#13109",
-    "huggingface/diffusers#13108",
-    "huggingface/diffusers#13103",
-    "huggingface/diffusers#13094",
-    "speechbrain/speechbrain#3033",
-    "huggingface/optimum#2407",
-    "huggingface/optimum#2406",
-    "openai/whisper#2730",
-    "CompVis/stable-diffusion#908",
-    "CompVis/stable-diffusion#907",
-    "meta-llama/llama#1412",
-    "karpathy/nanoGPT#683",
-    "facebookresearch/segment-anything#853",
-    "hpcaitech/ColossalAI#6407",
-    "hpcaitech/ColossalAI#6406",
-    "hpcaitech/ColossalAI#6405",
-    "zai-org/ChatGLM-6B#1516",
-    "lm-sys/FastChat#3775",
-    "lm-sys/FastChat#3773",
-    "suno-ai/bark#662",
-    "suno-ai/bark#661",
-    "TencentARC/GFPGAN#640",
-    "LAION-AI/Open-Assistant#3779",
-    "RVC-Project/Retrieval-based-Voice-Conversion-WebUI#2756",
-    "facebookresearch/detectron2#5509",
-    "facebookresearch/detectron2#5512",
-    "facebookresearch/detectron2#5510",
-    "lllyasviel/ControlNet#751",
-    "openai/CLIP#530",
-    "tatsu-lab/stanford_alpaca#324",
-    "hpcaitech/Open-Sora#911",
-    "hpcaitech/Open-Sora#910",
-    "Stability-AI/generative-models#474",
-    "Stability-AI/generative-models#473",
-    "Stability-AI/generative-models#472",
-    "Stability-AI/generative-models#471",
-    "black-forest-labs/flux#507",
-    "junyanz/pytorch-CycleGAN-and-pix2pix#1715",
-    "haotian-liu/LLaVA#1921",
-    "facebookresearch/audiocraft#598",
-    "graphdeco-inria/gaussian-splatting#1316",
-    "microsoft/unilm#1740",
-    "huggingface/datasets#8004",
-    "FunAudioLLM/CosyVoice#1827",
-    "FunAudioLLM/CosyVoice#1826",
-    "QwenLM/Qwen3-VL#2027",
-    "KlingAIResearch/LivePortrait#557",
-    "state-spaces/mamba#845",
-    "sczhou/CodeFormer#441",
-    "deepseek-ai/Janus#234",
-    "deepseek-ai/Janus#233",
-    "deepseek-ai/Janus#232",
-    "deepseek-ai/Janus#231",
-    "deepseek-ai/Janus#230",
-    "microsoft/Swin-Transformer#387",
-    "microsoft/Swin-Transformer#388",
-    "encode/httpx#3764",
-    "Zulko/moviepy#2554",
-    "dmlc/dgl#7915",
-    "dmlc/dgl#7914",
-    "WongKinYiu/yolov7#2147",
-    "WongKinYiu/yolov7#2146",
-    "WongKinYiu/yolov7#2145",
-    "CompVis/latent-diffusion#404",
-    "mwaskom/seaborn#3912",
-    "mwaskom/seaborn#3911",
-    "dask/dask#12293",
-    "Rudrabha/Wav2Lip#774",
-    "facebookresearch/dinov2#583",
-    "zai-org/CogVideo#812",
-    "zai-org/CogVideo#811",
-    "openai/shap-e#182",
-    "Tencent-Hunyuan/HunyuanVideo#310",
-    "PKU-YuanGroup/Open-Sora-Plan#595",
-    "PKU-YuanGroup/Open-Sora-Plan#596",
-    "guoyww/AnimateDiff#435",
-    "guoyww/AnimateDiff#436",
-    "instantX-research/InstantID#299",
-    "salesforce/LAVIS#809",
-    "salesforce/LAVIS#810",
-    "wandb/wandb#11344",
-    "artidoro/qlora#303",
-    "IDEA-Research/GroundingDINO#443",
-    "AIGC-Audio/AudioGPT#107",
-    "mozilla/TTS#797",
-    "OpenGVLab/InternVL#1260",
-    "OpenGVLab/InternVL#1259",
-    "OpenGVLab/InternVL#1258",
-    "OpenGVLab/InternVL#1256",
-    "OpenGVLab/InternVL#1255",
-    "vwxyzjn/cleanrl#538",
-    "m87-labs/moondream#326",
-    "WongKinYiu/yolov9#662",
-    "ashawkey/stable-dreamfusion#377",
-    "bentoml/BentoML#5549",
-    "MVIG-SJTU/AlphaPose#1241",
-    "netease-youdao/EmotiVoice#185",
-    "DepthAnything/Depth-Anything-V2#318",
-    "sphinx-doc/sphinx#14303",
-    "OpenTalker/video-retalking#286",
-    "zai-org/GLM-4#803",
-    "threestudio-project/threestudio#530",
-    "openai/point-e#120",
-    "zai-org/CogVLM#554",
-    "zai-org/CogVLM#553",
-    "Stability-AI/StableCascade#146",
-    "CompVis/taming-transformers#267",
-    "TMElyralab/MuseTalk#406",
-    "mosaicml/composer#3932",
-    "mosaicml/composer#3931",
-    "deepseek-ai/DeepSeek-VL2#150",
-    "AILab-CVC/VideoCrafter#108",
-    "AILab-CVC/VideoCrafter#107",
-    "RUCAIBox/RecBole#2208",
-    "RUCAIBox/RecBole#2207",
-    "dreamgaussian/dreamgaussian#183",
-    "Tencent-Hunyuan/HunyuanDiT#247",
-    "pydata/xarray#11164",
-    "baichuan-inc/Baichuan2#428",
-    "NVlabs/imaginaire#190",
-    "facebookresearch/encodec#98",
-    "facebookresearch/encodec#97",
-    "IDEA-Research/Grounded-SAM-2#130",
-    "OpenGVLab/Ask-Anything#264",
-    "ali-vilab/VGen#162",
-    "Doubiiu/DynamiCrafter#168",
-    "pytorch/audio#4175",
-    "pytorch/audio#4174",
-    "TMElyralab/MuseV#179",
-    "BAAI-Agents/Cradle#107",
-    "zai-org/CogVLM2#220",
-    "deforum/deforum-stable-diffusion#387",
-    "KaiyangZhou/CoOp#91",
-    "showlab/Show-o#113",
-    "Vchitect/Latte#140",
-    "Vchitect/Latte#139",
-    "PixArt-alpha/PixArt-sigma#163",
-    "PixArt-alpha/PixArt-sigma#164",
-    "natanielruiz/deep-head-pose#132",
-    "apchenstu/TensoRF#89",
-    "apchenstu/TensoRF#88",
-    "bytedance/1d-tokenizer#120",
-    "bytedance/1d-tokenizer#119",
-    "BAAI-DCAI/Bunny#153",
-    "Vchitect/SEINE#32",
-    "Vchitect/LaVie#73",
-    "StanfordASL/Trajectron-plus-plus#106",
-    "ikostrikov/jaxrl#31",
-    "ikostrikov/jaxrl#30",
-    "eyurtsev/FlowCytometryTools#47",
-    "open-mmlab/mmsegmentation#3869",
-    "open-mmlab/mmdetection3d#3140",
-    "determined-ai/determined#10265",
-    "anthropics/skills#362",
-    "anthropics/skills#361",
-    "Lightning-AI/pytorch-lightning#21539"
-  ],
-  "deferred": {
-    "_comment": "F (archived, will be auto-closed) and C (CONFLICTING, needs git rebase). Listed separately so they can be picked up later if the user wants to do the rebase work.",
-    "items": [
-      "langgenius/dify#32317",
-      "usestrix/strix#203",
-      "pytorch/vision#9384",
-      "facebookresearch/xformers#1377",
-      "lancedb/lancedb#3028",
-      "rapidsai/cudf#21444",
-      "facebookresearch/fairseq#5645",
-      "salesforce/Merlion#186",
-      "salesforce/Merlion#185"
-    ]
+ "_version": 2,
+ "_generated": "2026-06-11T03:09:18.557672Z",
+ "_comment": "Materialized view \u2014 rebuilt from ledger.jsonl every run. Do not hand-edit.",
+ "queue": [
+  {
+   "subject": "yarsa/nepal-compliance#265",
+   "tier": "A",
+   "score": 9.964383561643835,
+   "title": "Help wanted: fix \"Label Large PR\" workflow failed for forked PRs",
+   "discovered_at": "2026-06-11T03:09:16.672846Z"
   },
-  "done": [
-    {
-      "key": "rapidsai/cudf#21444",
-      "action": "commented",
-      "comment_id": 4595837727
-    },
-    {
-      "key": "mage-ai/mage-ai#6024",
-      "action": "pushed-fix",
-      "comment_id": 4595904801
-    },
-    {
-      "key": "chroma-core/chroma#6437",
-      "action": "commented-or-pushed",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "lancedb/lancedb#3028",
-      "action": "commented-or-pushed",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "huggingface/diffusers#13093",
-      "action": "commented-or-pushed",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "vllm-project/vllm#34163",
-      "action": "commented-or-pushed",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "PyGithub/PyGithub#3450",
-      "action": "commented-or-pushed",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "microsoft/agent-lightning#480",
-      "action": "commented-or-pushed",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "microsoft/agent-lightning#481",
-      "action": "commented-or-pushed",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "microsoft/agent-lightning#482",
-      "action": "commented-or-pushed",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "microsoft/agent-lightning#483",
-      "action": "commented-or-pushed",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "microsoft/agent-lightning#484",
-      "action": "commented-or-pushed",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "microsoft/agent-lightning#485",
-      "action": "commented-or-pushed",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "microsoft/agent-lightning#486",
-      "action": "commented-or-pushed",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "lancedb/lancedb#3483",
-      "action": "test-only-regression-for-#2654-on-current-main",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "Lightning-AI/pytorch-lightning#21529",
-      "action": "moved-numpy-to-local-import-+-regression-test",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "PaddlePaddle/PaddleOCR#17685",
-      "action": "closed-superseded-by-upstream-#17687",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "espnet/espnet#6363",
-      "action": "lsp-fix-base-class-others-optional",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "apache/tvm#18774",
-      "action": "gemini-cleanup-+-awaiting-maintainer-confirm",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "python-poetry/poetry#10736",
-      "action": "fixed-2-test-bugs-causing-CI-failures",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "public-apis/public-apis#5082",
-      "action": "closed-repo-no-longer-active",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "public-apis/public-apis#5083",
-      "action": "closed-repo-no-longer-active",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "public-apis/public-apis#5084",
-      "action": "closed-repo-no-longer-active",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "public-apis/public-apis#5085",
-      "action": "closed-repo-no-longer-active",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "public-apis/public-apis#5086",
-      "action": "closed-repo-no-longer-active",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "public-apis/public-apis#5087",
-      "action": "closed-repo-no-longer-active",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "public-apis/public-apis#5088",
-      "action": "closed-repo-no-longer-active",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "huggingface/transformers#43775",
-      "action": "fixed-5-test-expected-values-after-topk-normalization",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "google-research/vision_transformer#320",
-      "action": "cla-blocker-cannot-fix-in-code",
-      "date": "2026-06-02"
-    },
-    {
-      "key": "sgl-project/sglang#18397",
-      "action": "ci-gate-blocker-cannot-fix-in-code",
-      "date": "2026-06-02"
-    },
-    {
-      "item": "Project-MONAI/MONAI#8739",
-      "status": "done",
-      "action": "fixed-smooth-dr-pattern",
-      "commit": "746afac",
-      "comment": 4606234535
-    },
-    {
-      "key": "Project-MONAI/MONAI#8739",
-      "action": "fixed-smooth-dr-pattern",
-      "commit": "746afac",
-      "comment_id": 4606234535
-    },
-    {
-      "key": "vwxyzjn/cleanrl#538",
-      "action": "diagnosed-pre-existing-ci",
-      "comment_id": 4606268707
-    },
-    {
-      "key": "sphinx-doc/sphinx#14303",
-      "action": "fixed-types-union-type",
-      "commit": "7a09d9a",
-      "comment_id": 4606371756
-    },
-    {
-      "key": "lm-sys/FastChat#3775",
-      "action": "fixed-black-formatting",
-      "commit": "3475c71",
-      "comment_id": 4606392716
-    },
-    {
-      "key": "dask/dask#12293",
-      "action": "rebased-onto-main",
-      "commit": "59c48ad",
-      "comment_id": 4606444228
-    },
-    {
-      "key": "determined-ai/determined#10265",
-      "action": "fixed-isort-import-location",
-      "commit": "891960c",
-      "comment_id": 4608115223
-    },
-    {
-      "key": "open-mmlab/mmsegmentation#3869",
-      "action": "diagnosed-pre-existing-flake",
-      "comment_id": 4608137224
-    },
-    {
-      "key": "open-mmlab/mmdetection3d#3140",
-      "action": "diagnosed-pre-existing-flake",
-      "comment_id": 4608144008
-    },
-    "EleutherAI/lm-evaluation-harness#3580",
-    {
-      "key": "anthropics/skills#363",
-      "action": "commented",
-      "comment_id": 4610592909,
-      "date": "2026-06-03"
-    },
-    {
-      "key": "microsoft/autogen#7211",
-      "action": "commented",
-      "comment_id": 4610593043,
-      "date": "2026-06-03"
-    },
-    {
-      "key": "meta-llama/llama-cookbook#1021",
-      "action": "commented",
-      "comment_id": 4610593202,
-      "date": "2026-06-03"
-    },
-    {
-      "key": "usestrix/strix#204",
-      "action": "commented",
-      "comment_id": 4614207176,
-      "date": "2026-06-03"
-    },
-    {
-      "key": "Wan-Video/Wan2.1#574",
-      "action": "commented",
-      "comment_id": 4614211930,
-      "date": "2026-06-03"
-    },
-    {
-      "key": "facebookresearch/hydra#3133",
-      "action": "commented",
-      "comment_id": 4614216312,
-      "date": "2026-06-03"
-    },
-    {
-      "key": "facebookresearch/seamless_communication#572",
-      "action": "commented",
-      "comment_id": 4621264977,
-      "date": "2026-06-04"
-    },
-    {
-      "key": "modelscope/facechain#650",
-      "action": "commented",
-      "comment_id": 4621265118,
-      "date": "2026-06-04"
-    },
-    {
-      "key": "arrow-py/arrow#1243",
-      "action": "commented",
-      "comment_id": 4621265257,
-      "date": "2026-06-04"
-    },
-    {
-      "key": "PyGithub/PyGithub#3450",
-      "action": "closed",
-      "comment_id": 4625140956,
-      "date": "2026-06-04"
-    },
-    {
-      "key": "determined-ai/determined#10265",
-      "action": "retitled-and-reran-ci",
-      "comment_id": 4625180555,
-      "date": "2026-06-04"
-    },
-    {
-      "key": "lm-sys/FastChat#3775",
-      "action": "commented",
-      "comment_id": 4625191246,
-      "date": "2026-06-04"
-    },
-    {
-      "key": "sphinx-doc/sphinx#14303",
-      "action": "pushed-fix",
-      "comment_id": 4625213560,
-      "date": "2026-06-04"
-    },
-    {
-      "key": "dask/dask#12293",
-      "action": "commented",
-      "comment_id": 4625229954,
-      "date": "2026-06-04"
-    },
-    {
-      "key": "open-mmlab/mmdetection3d#3140",
-      "action": "pushed-noop-rerun",
-      "comment_id": 4625234085,
-      "date": "2026-06-04"
-    },
-    {
-      "key": "open-mmlab/mmsegmentation#3869",
-      "action": "pushed-noop-rerun",
-      "comment_id": 4625234191,
-      "date": "2026-06-04"
-    },
-    {
-      "key": "vwxyzjn/cleanrl#538",
-      "action": "linked-followup-pr",
-      "comment_id": 4625311662,
-      "date": "2026-06-04"
-    },
-    {
-      "key": "vwxyzjn/cleanrl#554",
-      "action": "opened-followup-pr",
-      "date": "2026-06-04"
-    },
-    {
-      "key": "sphinx-doc/sphinx#14303",
-      "action": "pushed-fix-v2",
-      "comment_id": 4629974184,
-      "date": "2026-06-05"
-    },
-    {
-      "key": "vwxyzjn/cleanrl#554",
-      "action": "pushed-fix-v2",
-      "comment_id": 4629974322,
-      "date": "2026-06-05"
-    },
-    {
-      "key": "vwxyzjn/cleanrl#554",
-      "action": "pushed-fix-v3",
-      "comment_id": 4633530452,
-      "date": "2026-06-05"
-    },
-    {
-      "key": "sphinx-doc/sphinx#14303",
-      "action": "commented-status",
-      "comment_id": 4633532068,
-      "date": "2026-06-05"
-    },
-    {
-      "key": "vwxyzjn/cleanrl#554",
-      "action": "pushed-fix-v4",
-      "comment_id": 4636643347,
-      "date": "2026-06-06"
-    },
-    {
-      "key": "vwxyzjn/cleanrl#554",
-      "action": "pushed-fix-v5",
-      "comment_id": 4636811158,
-      "date": "2026-06-06"
-    }
-  ],
-  "_updated": "2026-06-10T04:01:00.907540Z",
-  "cooldown": [
-    {
-      "key": "Stability-AI/generative-models#470",
-      "reason": "latest comment is Hari's but still in cooldown",
-      "last_action_at": "2026-06-10T03:31:54.947854Z",
-      "next_review_at": "2026-06-17T03:31:54.947815Z"
-    },
-    {
-      "key": "pyg-team/pytorch_geometric#10600",
-      "reason": "latest comment is Hari's but still in cooldown",
-      "last_action_at": "2026-06-10T03:32:00.599432Z",
-      "next_review_at": "2026-06-17T03:32:00.599396Z"
-    },
-    {
-      "key": "onnx/onnx#7665",
-      "reason": "latest comment is Hari's but still in cooldown",
-      "last_action_at": "2026-06-10T03:32:06.249532Z",
-      "next_review_at": "2026-06-17T03:32:06.249496Z"
-    },
-    {
-      "key": "OpenTalker/SadTalker#1031",
-      "reason": "latest comment is Hari's but still in cooldown",
-      "last_action_at": "2026-06-10T03:32:11.912665Z",
-      "next_review_at": "2026-06-17T03:32:11.912630Z"
-    },
-    {
-      "key": "LLaVA-VL/LLaVA-NeXT#505",
-      "reason": "latest comment is Hari's but still in cooldown",
-      "last_action_at": "2026-06-10T03:32:17.469776Z",
-      "next_review_at": "2026-06-17T03:32:17.469740Z"
-    },
-    {
-      "key": "Comfy-Org/ComfyUI#12287",
-      "reason": "latest comment is Hari's but still in cooldown",
-      "last_action_at": "2026-06-10T04:00:36.728919Z",
-      "next_review_at": "2026-06-17T04:00:36.728878Z"
-    },
-    {
-      "key": "huggingface/diffusers#13102",
-      "reason": "latest comment is Hari's but still in cooldown",
-      "last_action_at": "2026-06-10T04:00:42.745411Z",
-      "next_review_at": "2026-06-17T04:00:42.745377Z"
-    },
-    {
-      "key": "huggingface/diffusers#13125",
-      "reason": "latest comment is Hari's but still in cooldown",
-      "last_action_at": "2026-06-10T04:00:48.729459Z",
-      "next_review_at": "2026-06-17T04:00:48.729427Z"
-    },
-    {
-      "key": "huggingface/diffusers#13111",
-      "reason": "latest comment is Hari's but still in cooldown",
-      "last_action_at": "2026-06-10T04:00:54.778231Z",
-      "next_review_at": "2026-06-17T04:00:54.778184Z"
-    },
-    {
-      "key": "huggingface/diffusers#13110",
-      "reason": "latest comment is Hari's but still in cooldown",
-      "last_action_at": "2026-06-10T04:01:00.907291Z",
-      "next_review_at": "2026-06-17T04:01:00.907256Z"
-    }
-  ],
-  "needs_attention": [],
-  "_last_rotation_reason": {
-    "key": "Lightning-AI/pytorch-lightning#21539",
-    "reason": "latest comment is Hari's but still in cooldown",
-    "at": "2026-06-10T03:24:18.172740Z"
+  {
+   "subject": "razbuild/raztint#9",
+   "tier": "A",
+   "score": 9.926027397260274,
+   "title": "Expand docs with examples, tutorial, and README enhancements",
+   "discovered_at": "2026-06-11T03:09:16.667225Z"
   },
-  "_cursor": 10,
-  "_last_selected": [
-    [
-      "Stability-AI/generative-models#470",
-      "pyg-team/pytorch_geometric#10600",
-      "onnx/onnx#7665",
-      "OpenTalker/SadTalker#1031",
-      "LLaVA-VL/LLaVA-NeXT#505"
-    ],
-    [
-      "Comfy-Org/ComfyUI#12287",
-      "huggingface/diffusers#13102",
-      "huggingface/diffusers#13125",
-      "huggingface/diffusers#13111",
-      "huggingface/diffusers#13110"
-    ]
-  ]
+  {
+   "subject": "doronz88/pymobiledevice3#1669",
+   "tier": "A",
+   "score": 9.882191780821918,
+   "title": "Bluetooth packet logger",
+   "discovered_at": "2026-06-11T03:09:16.673051Z"
+  },
+  {
+   "subject": "SimplexLab/TorchJD#667",
+   "tier": "B",
+   "score": 7.901369863013699,
+   "title": "Scalarizer Tracker",
+   "discovered_at": "2026-06-11T03:09:16.672454Z"
+  },
+  {
+   "subject": "Scottcjn/rustchain-bounties#728",
+   "tier": "B",
+   "score": 7.736986301369863,
+   "title": "[BOUNTY: 1 RTC] Answer Questions in GitHub Discussions (Up to 10 RTC)",
+   "discovered_at": "2026-06-11T03:09:16.667662Z"
+  },
+  {
+   "subject": "OpenHands/OpenHands#11938",
+   "tier": "B",
+   "score": 7.493150684931507,
+   "title": "Frontmatter field for multiple repos",
+   "discovered_at": "2026-06-11T03:09:16.673232Z"
+  },
+  {
+   "subject": "agentscope-ai/agentscope#1680",
+   "tier": "B",
+   "score": 6.958904109589041,
+   "title": "feat(tts): implement Gemini TTS API",
+   "discovered_at": "2026-06-11T03:09:18.553230Z"
+  },
+  {
+   "subject": "agentscope-ai/agentscope#1679",
+   "tier": "B",
+   "score": 6.958904109589041,
+   "title": "feat(tts): implement OpenAI TTS API",
+   "discovered_at": "2026-06-11T03:09:18.553573Z"
+  },
+  {
+   "subject": "agentscope-ai/agentscope#1685",
+   "tier": "B",
+   "score": 6.958904109589041,
+   "title": "feat(tts): implement DashScope CosyVoice TTS API",
+   "discovered_at": "2026-06-11T03:09:18.553832Z"
+  },
+  {
+   "subject": "canonical/charm-logrotated#80",
+   "tier": "B",
+   "score": 6.909589041095891,
+   "title": "The charm fails to install when /tmp is mounted with \"noexec\"",
+   "discovered_at": "2026-06-11T03:09:18.552248Z"
+  },
+  {
+   "subject": "fixie-ai/ultravox#330",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.346911Z"
+  },
+  {
+   "subject": "SysCV/sam-hq#165",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.347323Z"
+  },
+  {
+   "subject": "nutonomy/nuscenes-devkit#1191",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.347406Z"
+  },
+  {
+   "subject": "Vchitect/LaVie#72",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.347490Z"
+  },
+  {
+   "subject": "huggingface/transformers#43842",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.347560Z"
+  },
+  {
+   "subject": "huggingface/diffusers#13109",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.347641Z"
+  },
+  {
+   "subject": "huggingface/diffusers#13108",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.347712Z"
+  },
+  {
+   "subject": "huggingface/diffusers#13103",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.347787Z"
+  },
+  {
+   "subject": "huggingface/diffusers#13094",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.347855Z"
+  },
+  {
+   "subject": "speechbrain/speechbrain#3033",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.347928Z"
+  },
+  {
+   "subject": "huggingface/optimum#2407",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.348006Z"
+  },
+  {
+   "subject": "huggingface/optimum#2406",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.348111Z"
+  },
+  {
+   "subject": "openai/whisper#2730",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.348194Z"
+  },
+  {
+   "subject": "CompVis/stable-diffusion#908",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.348274Z"
+  },
+  {
+   "subject": "CompVis/stable-diffusion#907",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.348351Z"
+  },
+  {
+   "subject": "meta-llama/llama#1412",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.348440Z"
+  },
+  {
+   "subject": "karpathy/nanoGPT#683",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.348518Z"
+  },
+  {
+   "subject": "facebookresearch/segment-anything#853",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.348609Z"
+  },
+  {
+   "subject": "hpcaitech/ColossalAI#6407",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.348691Z"
+  },
+  {
+   "subject": "hpcaitech/ColossalAI#6406",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.348755Z"
+  },
+  {
+   "subject": "hpcaitech/ColossalAI#6405",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.348823Z"
+  },
+  {
+   "subject": "zai-org/ChatGLM-6B#1516",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.348890Z"
+  },
+  {
+   "subject": "lm-sys/FastChat#3775",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.348967Z"
+  },
+  {
+   "subject": "lm-sys/FastChat#3773",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.349043Z"
+  },
+  {
+   "subject": "suno-ai/bark#662",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.349114Z"
+  },
+  {
+   "subject": "suno-ai/bark#661",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.349180Z"
+  },
+  {
+   "subject": "TencentARC/GFPGAN#640",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.349254Z"
+  },
+  {
+   "subject": "LAION-AI/Open-Assistant#3779",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.349324Z"
+  },
+  {
+   "subject": "RVC-Project/Retrieval-based-Voice-Conversion-WebUI#2756",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.349390Z"
+  },
+  {
+   "subject": "facebookresearch/detectron2#5509",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.349469Z"
+  },
+  {
+   "subject": "facebookresearch/detectron2#5512",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.349545Z"
+  },
+  {
+   "subject": "facebookresearch/detectron2#5510",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.349614Z"
+  },
+  {
+   "subject": "lllyasviel/ControlNet#751",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.349687Z"
+  },
+  {
+   "subject": "openai/CLIP#530",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.349786Z"
+  },
+  {
+   "subject": "tatsu-lab/stanford_alpaca#324",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.349859Z"
+  },
+  {
+   "subject": "hpcaitech/Open-Sora#911",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.349935Z"
+  },
+  {
+   "subject": "hpcaitech/Open-Sora#910",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.350018Z"
+  },
+  {
+   "subject": "Stability-AI/generative-models#474",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.350121Z"
+  },
+  {
+   "subject": "Stability-AI/generative-models#473",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.350198Z"
+  },
+  {
+   "subject": "Stability-AI/generative-models#472",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.350276Z"
+  },
+  {
+   "subject": "Stability-AI/generative-models#471",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.350364Z"
+  },
+  {
+   "subject": "black-forest-labs/flux#507",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.350447Z"
+  },
+  {
+   "subject": "junyanz/pytorch-CycleGAN-and-pix2pix#1715",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.350530Z"
+  },
+  {
+   "subject": "haotian-liu/LLaVA#1921",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.350614Z"
+  },
+  {
+   "subject": "facebookresearch/audiocraft#598",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.350710Z"
+  },
+  {
+   "subject": "graphdeco-inria/gaussian-splatting#1316",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.350779Z"
+  },
+  {
+   "subject": "microsoft/unilm#1740",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.350855Z"
+  },
+  {
+   "subject": "huggingface/datasets#8004",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.350929Z"
+  },
+  {
+   "subject": "FunAudioLLM/CosyVoice#1827",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.351002Z"
+  },
+  {
+   "subject": "FunAudioLLM/CosyVoice#1826",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.351081Z"
+  },
+  {
+   "subject": "QwenLM/Qwen3-VL#2027",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.351159Z"
+  },
+  {
+   "subject": "KlingAIResearch/LivePortrait#557",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.351232Z"
+  },
+  {
+   "subject": "state-spaces/mamba#845",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.351299Z"
+  },
+  {
+   "subject": "sczhou/CodeFormer#441",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.351382Z"
+  },
+  {
+   "subject": "deepseek-ai/Janus#234",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.351459Z"
+  },
+  {
+   "subject": "deepseek-ai/Janus#233",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.351546Z"
+  },
+  {
+   "subject": "deepseek-ai/Janus#232",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.351625Z"
+  },
+  {
+   "subject": "deepseek-ai/Janus#231",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.351700Z"
+  },
+  {
+   "subject": "deepseek-ai/Janus#230",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.351770Z"
+  },
+  {
+   "subject": "microsoft/Swin-Transformer#387",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.351841Z"
+  },
+  {
+   "subject": "microsoft/Swin-Transformer#388",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.351917Z"
+  },
+  {
+   "subject": "encode/httpx#3764",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.351994Z"
+  },
+  {
+   "subject": "Zulko/moviepy#2554",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.352064Z"
+  },
+  {
+   "subject": "dmlc/dgl#7915",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.352138Z"
+  },
+  {
+   "subject": "dmlc/dgl#7914",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.352207Z"
+  },
+  {
+   "subject": "WongKinYiu/yolov7#2147",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.352282Z"
+  },
+  {
+   "subject": "WongKinYiu/yolov7#2146",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.352354Z"
+  },
+  {
+   "subject": "WongKinYiu/yolov7#2145",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.352434Z"
+  },
+  {
+   "subject": "CompVis/latent-diffusion#404",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.352500Z"
+  },
+  {
+   "subject": "mwaskom/seaborn#3912",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.352573Z"
+  },
+  {
+   "subject": "mwaskom/seaborn#3911",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.352646Z"
+  },
+  {
+   "subject": "dask/dask#12293",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.352718Z"
+  },
+  {
+   "subject": "Rudrabha/Wav2Lip#774",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.352797Z"
+  },
+  {
+   "subject": "facebookresearch/dinov2#583",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.352885Z"
+  },
+  {
+   "subject": "zai-org/CogVideo#812",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.352959Z"
+  },
+  {
+   "subject": "zai-org/CogVideo#811",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.353032Z"
+  },
+  {
+   "subject": "openai/shap-e#182",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.353100Z"
+  },
+  {
+   "subject": "Tencent-Hunyuan/HunyuanVideo#310",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.353198Z"
+  },
+  {
+   "subject": "PKU-YuanGroup/Open-Sora-Plan#595",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.353273Z"
+  },
+  {
+   "subject": "PKU-YuanGroup/Open-Sora-Plan#596",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.353347Z"
+  },
+  {
+   "subject": "guoyww/AnimateDiff#435",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.353421Z"
+  },
+  {
+   "subject": "guoyww/AnimateDiff#436",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.353490Z"
+  },
+  {
+   "subject": "instantX-research/InstantID#299",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.353559Z"
+  },
+  {
+   "subject": "salesforce/LAVIS#809",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.353633Z"
+  },
+  {
+   "subject": "salesforce/LAVIS#810",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.353703Z"
+  },
+  {
+   "subject": "wandb/wandb#11344",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.353768Z"
+  },
+  {
+   "subject": "artidoro/qlora#303",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.353840Z"
+  },
+  {
+   "subject": "IDEA-Research/GroundingDINO#443",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.353911Z"
+  },
+  {
+   "subject": "AIGC-Audio/AudioGPT#107",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.353996Z"
+  },
+  {
+   "subject": "mozilla/TTS#797",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.354063Z"
+  },
+  {
+   "subject": "OpenGVLab/InternVL#1260",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.354129Z"
+  },
+  {
+   "subject": "OpenGVLab/InternVL#1259",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.354197Z"
+  },
+  {
+   "subject": "OpenGVLab/InternVL#1258",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.354265Z"
+  },
+  {
+   "subject": "OpenGVLab/InternVL#1256",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.354334Z"
+  },
+  {
+   "subject": "OpenGVLab/InternVL#1255",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.354405Z"
+  },
+  {
+   "subject": "vwxyzjn/cleanrl#538",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.354475Z"
+  },
+  {
+   "subject": "m87-labs/moondream#326",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.354539Z"
+  },
+  {
+   "subject": "WongKinYiu/yolov9#662",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.354608Z"
+  },
+  {
+   "subject": "ashawkey/stable-dreamfusion#377",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.354678Z"
+  },
+  {
+   "subject": "bentoml/BentoML#5549",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.354753Z"
+  },
+  {
+   "subject": "MVIG-SJTU/AlphaPose#1241",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.354834Z"
+  },
+  {
+   "subject": "netease-youdao/EmotiVoice#185",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.354917Z"
+  },
+  {
+   "subject": "DepthAnything/Depth-Anything-V2#318",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.354994Z"
+  },
+  {
+   "subject": "sphinx-doc/sphinx#14303",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.355069Z"
+  },
+  {
+   "subject": "OpenTalker/video-retalking#286",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.355138Z"
+  },
+  {
+   "subject": "zai-org/GLM-4#803",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.355209Z"
+  },
+  {
+   "subject": "threestudio-project/threestudio#530",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.355283Z"
+  },
+  {
+   "subject": "openai/point-e#120",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.355357Z"
+  },
+  {
+   "subject": "zai-org/CogVLM#554",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.355429Z"
+  },
+  {
+   "subject": "zai-org/CogVLM#553",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.355506Z"
+  },
+  {
+   "subject": "Stability-AI/StableCascade#146",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.355577Z"
+  },
+  {
+   "subject": "CompVis/taming-transformers#267",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.355658Z"
+  },
+  {
+   "subject": "TMElyralab/MuseTalk#406",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.355727Z"
+  },
+  {
+   "subject": "mosaicml/composer#3932",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.355801Z"
+  },
+  {
+   "subject": "mosaicml/composer#3931",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.355869Z"
+  },
+  {
+   "subject": "deepseek-ai/DeepSeek-VL2#150",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.355946Z"
+  },
+  {
+   "subject": "AILab-CVC/VideoCrafter#108",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.356022Z"
+  },
+  {
+   "subject": "AILab-CVC/VideoCrafter#107",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.356095Z"
+  },
+  {
+   "subject": "RUCAIBox/RecBole#2208",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.356171Z"
+  },
+  {
+   "subject": "RUCAIBox/RecBole#2207",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.356246Z"
+  },
+  {
+   "subject": "dreamgaussian/dreamgaussian#183",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.356319Z"
+  },
+  {
+   "subject": "Tencent-Hunyuan/HunyuanDiT#247",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.356390Z"
+  },
+  {
+   "subject": "pydata/xarray#11164",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.356485Z"
+  },
+  {
+   "subject": "baichuan-inc/Baichuan2#428",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.356566Z"
+  },
+  {
+   "subject": "NVlabs/imaginaire#190",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.356636Z"
+  },
+  {
+   "subject": "facebookresearch/encodec#98",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.356712Z"
+  },
+  {
+   "subject": "facebookresearch/encodec#97",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.356784Z"
+  },
+  {
+   "subject": "IDEA-Research/Grounded-SAM-2#130",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.356861Z"
+  },
+  {
+   "subject": "OpenGVLab/Ask-Anything#264",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.356937Z"
+  },
+  {
+   "subject": "ali-vilab/VGen#162",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.357010Z"
+  },
+  {
+   "subject": "Doubiiu/DynamiCrafter#168",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.357088Z"
+  },
+  {
+   "subject": "pytorch/audio#4175",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.357181Z"
+  },
+  {
+   "subject": "pytorch/audio#4174",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.357266Z"
+  },
+  {
+   "subject": "TMElyralab/MuseV#179",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.357357Z"
+  },
+  {
+   "subject": "BAAI-Agents/Cradle#107",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.357429Z"
+  },
+  {
+   "subject": "zai-org/CogVLM2#220",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.357500Z"
+  },
+  {
+   "subject": "deforum/deforum-stable-diffusion#387",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.357564Z"
+  },
+  {
+   "subject": "KaiyangZhou/CoOp#91",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.357638Z"
+  },
+  {
+   "subject": "showlab/Show-o#113",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.357707Z"
+  },
+  {
+   "subject": "Vchitect/Latte#140",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.357776Z"
+  },
+  {
+   "subject": "Vchitect/Latte#139",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.357858Z"
+  },
+  {
+   "subject": "PixArt-alpha/PixArt-sigma#163",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.357928Z"
+  },
+  {
+   "subject": "PixArt-alpha/PixArt-sigma#164",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.358004Z"
+  },
+  {
+   "subject": "natanielruiz/deep-head-pose#132",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.358065Z"
+  },
+  {
+   "subject": "apchenstu/TensoRF#89",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.358163Z"
+  },
+  {
+   "subject": "apchenstu/TensoRF#88",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.358242Z"
+  },
+  {
+   "subject": "bytedance/1d-tokenizer#120",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.358323Z"
+  },
+  {
+   "subject": "bytedance/1d-tokenizer#119",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.358400Z"
+  },
+  {
+   "subject": "BAAI-DCAI/Bunny#153",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.358474Z"
+  },
+  {
+   "subject": "Vchitect/SEINE#32",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.358547Z"
+  },
+  {
+   "subject": "Vchitect/LaVie#73",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.358618Z"
+  },
+  {
+   "subject": "StanfordASL/Trajectron-plus-plus#106",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.358693Z"
+  },
+  {
+   "subject": "ikostrikov/jaxrl#31",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.358760Z"
+  },
+  {
+   "subject": "ikostrikov/jaxrl#30",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.358840Z"
+  },
+  {
+   "subject": "eyurtsev/FlowCytometryTools#47",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.358918Z"
+  },
+  {
+   "subject": "open-mmlab/mmsegmentation#3869",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.359014Z"
+  },
+  {
+   "subject": "open-mmlab/mmdetection3d#3140",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.359083Z"
+  },
+  {
+   "subject": "determined-ai/determined#10265",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.359158Z"
+  },
+  {
+   "subject": "anthropics/skills#362",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.359233Z"
+  },
+  {
+   "subject": "anthropics/skills#361",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.359306Z"
+  },
+  {
+   "subject": "Lightning-AI/pytorch-lightning#21539",
+   "tier": "B",
+   "score": 6.0,
+   "title": "",
+   "discovered_at": "2026-06-11T03:07:58.359379Z"
+  }
+ ]
 }

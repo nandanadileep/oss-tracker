@@ -12,10 +12,12 @@ It is not a product. It is a **harness for working on OSS contributions**, delib
 4. **Scan** — pre-flights any new repo / file we read for archived status, leaked secrets, missing license.
 5. **Queue** — keeps a single sequential work queue for the next PR to engage with. No scripts that touch PRs without per-PR human-or-agent review.
 6. **Progress log** — every action the harness takes is appended to a `progress.md` file, so future sessions can pick up without losing context (Anthropic "claude-progress.txt" pattern).
-7. **Automated workflows** — three GitHub Actions workflows run on a schedule:
-   - **Backlog Steward** — maintains existing PRs (nudge, reply, fix, close)
-   - **New Contributor** — opens new PRs on discovered issues
-   - **Candidate Discovery** — finds new repos and issues to contribute to
+7. **Automated workflows** — four GitHub Actions workflows run on a schedule
+   (code in `harness/`, design in `docs/DOMAIN_MODEL.md`, ops in `docs/AUTOMATION.md`):
+   - **Steward** — maintains existing PRs (reply triage, withdraw on stop-signals, nudge, escalate CLA)
+   - **Contribute** — opens new PRs on queued issues (fork → patch → verify → PR)
+   - **Discover** — finds and screens new issues to contribute to (weekly)
+   - **Heartbeat** — watchdog; opens a `needs-human` issue if runs go silent >25h
 
 ## Top-level layout
 
@@ -23,8 +25,12 @@ It is not a product. It is a **harness for working on OSS contributions**, delib
 oss/
 ├── AGENTS.md                  ← AI-agent entry point. Read this first.
 ├── README.md                  ← This file.
-├── VERSION                    ← 0.1.0
+├── VERSION                    ← 0.3.0
 ├── CHANGELOG.md               ← Harness release notes
+├── docs/DOMAIN_MODEL.md       ← The complete domain model (read before changing harness/)
+├── harness/                   ← The engine: ledger, domain, policy, patch, model, executor, apps/
+├── tests/                     ← pytest suite for the engine
+├── scripts/                   ← commit-state.sh, legacy migration
 └── .oss-harness/
     ├── config.json            ← User, scopes, rate limits, hard stops.
     ├── data/                  ← Raw GitHub API responses + the rated PR list.

@@ -1,0 +1,50 @@
+name: Steward
+
+on:
+  schedule:
+    - cron: "17 7 * * *"  # odd minute — :00 slots get delayed or dropped
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: "PRs to review"
+        default: "25"
+      dry_run:
+        description: "Dry run (no writes)"
+        default: "false"
+
+permissions:
+  contents: write
+  issues: write
+
+# all state-writing workflows share one group: runs queue, never overlap
+concurrency:
+  group: oss-harness
+  cancel-in-progress: false
+
+jobs:
+  steward:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run steward
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
+          PYTHONUNBUFFERED: "1"
+        run: |
+          python3 -m harness.apps.steward \
+            --batch-size "${{ github.event.inputs.batch_size || '25' }}" \
+            $([ "${{ github.event.inputs.dry_run }}" = "true" ] && echo --dry-run)
+
+      - name: Commit state
+        if: always()
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: bash scripts/commit-state.sh steward

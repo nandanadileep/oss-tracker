@@ -1,0 +1,528 @@
+{"id":"ev_1n2m9mezx7d8ysnfv","at":"2026-06-11T03:07:58.346911Z","run_id":"migration","event":"candidate_discovered","subject":"fixie-ai/ultravox#330","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mes547tssk0n","at":"2026-06-11T03:07:58.347257Z","run_id":"migration","event":"candidate_screened","subject":"fixie-ai/ultravox#330","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mepjg4wtxmdf","at":"2026-06-11T03:07:58.347323Z","run_id":"migration","event":"candidate_discovered","subject":"SysCV/sam-hq#165","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me8d1phfynen","at":"2026-06-11T03:07:58.347368Z","run_id":"migration","event":"candidate_screened","subject":"SysCV/sam-hq#165","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me6bs3kpxr8n","at":"2026-06-11T03:07:58.347406Z","run_id":"migration","event":"candidate_discovered","subject":"nutonomy/nuscenes-devkit#1191","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me6adhfqfsde","at":"2026-06-11T03:07:58.347446Z","run_id":"migration","event":"candidate_screened","subject":"nutonomy/nuscenes-devkit#1191","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mewcarn1fyzq","at":"2026-06-11T03:07:58.347490Z","run_id":"migration","event":"candidate_discovered","subject":"Vchitect/LaVie#72","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me4fmeq8gsdd","at":"2026-06-11T03:07:58.347523Z","run_id":"migration","event":"candidate_screened","subject":"Vchitect/LaVie#72","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me22ht1fqrrn","at":"2026-06-11T03:07:58.347560Z","run_id":"migration","event":"candidate_discovered","subject":"huggingface/transformers#43842","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9meap3zy62d0f","at":"2026-06-11T03:07:58.347603Z","run_id":"migration","event":"candidate_screened","subject":"huggingface/transformers#43842","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me0crf5f01zx","at":"2026-06-11T03:07:58.347641Z","run_id":"migration","event":"candidate_discovered","subject":"huggingface/diffusers#13109","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9meydaxajerbc","at":"2026-06-11T03:07:58.347673Z","run_id":"migration","event":"candidate_screened","subject":"huggingface/diffusers#13109","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meqvn572jtbf","at":"2026-06-11T03:07:58.347712Z","run_id":"migration","event":"candidate_discovered","subject":"huggingface/diffusers#13108","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mechkmnbzde2","at":"2026-06-11T03:07:58.347750Z","run_id":"migration","event":"candidate_screened","subject":"huggingface/diffusers#13108","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meenneh63txb","at":"2026-06-11T03:07:58.347787Z","run_id":"migration","event":"candidate_discovered","subject":"huggingface/diffusers#13103","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9meeeenn2r97b","at":"2026-06-11T03:07:58.347821Z","run_id":"migration","event":"candidate_screened","subject":"huggingface/diffusers#13103","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mepvp0b13ejb","at":"2026-06-11T03:07:58.347855Z","run_id":"migration","event":"candidate_discovered","subject":"huggingface/diffusers#13094","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9men2wgrx6ppp","at":"2026-06-11T03:07:58.347891Z","run_id":"migration","event":"candidate_screened","subject":"huggingface/diffusers#13094","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me3bsem2tg6q","at":"2026-06-11T03:07:58.347928Z","run_id":"migration","event":"candidate_discovered","subject":"speechbrain/speechbrain#3033","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me2g71pym7y8","at":"2026-06-11T03:07:58.347961Z","run_id":"migration","event":"candidate_screened","subject":"speechbrain/speechbrain#3033","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mew5s35pkapx","at":"2026-06-11T03:07:58.348006Z","run_id":"migration","event":"candidate_discovered","subject":"huggingface/optimum#2407","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me78yz13gg2p","at":"2026-06-11T03:07:58.348039Z","run_id":"migration","event":"candidate_screened","subject":"huggingface/optimum#2407","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mecmymdzwdnv","at":"2026-06-11T03:07:58.348111Z","run_id":"migration","event":"candidate_discovered","subject":"huggingface/optimum#2406","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me4rqjw8mepq","at":"2026-06-11T03:07:58.348154Z","run_id":"migration","event":"candidate_screened","subject":"huggingface/optimum#2406","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9menjwab1ck84","at":"2026-06-11T03:07:58.348194Z","run_id":"migration","event":"candidate_discovered","subject":"openai/whisper#2730","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mef9cz5tbpj9","at":"2026-06-11T03:07:58.348232Z","run_id":"migration","event":"candidate_screened","subject":"openai/whisper#2730","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meq7k4f6v7v0","at":"2026-06-11T03:07:58.348274Z","run_id":"migration","event":"candidate_discovered","subject":"CompVis/stable-diffusion#908","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mercscx1tpjr","at":"2026-06-11T03:07:58.348311Z","run_id":"migration","event":"candidate_screened","subject":"CompVis/stable-diffusion#908","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meeq4dm6h3ha","at":"2026-06-11T03:07:58.348351Z","run_id":"migration","event":"candidate_discovered","subject":"CompVis/stable-diffusion#907","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9meqryktamzwp","at":"2026-06-11T03:07:58.348388Z","run_id":"migration","event":"candidate_screened","subject":"CompVis/stable-diffusion#907","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9memtdg7ts9xy","at":"2026-06-11T03:07:58.348440Z","run_id":"migration","event":"candidate_discovered","subject":"meta-llama/llama#1412","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me0et0s9nb7t","at":"2026-06-11T03:07:58.348474Z","run_id":"migration","event":"candidate_screened","subject":"meta-llama/llama#1412","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mexk26rpfmrx","at":"2026-06-11T03:07:58.348518Z","run_id":"migration","event":"candidate_discovered","subject":"karpathy/nanoGPT#683","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mee368h83b6y","at":"2026-06-11T03:07:58.348563Z","run_id":"migration","event":"candidate_screened","subject":"karpathy/nanoGPT#683","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mewsj502kwd3","at":"2026-06-11T03:07:58.348609Z","run_id":"migration","event":"candidate_discovered","subject":"facebookresearch/segment-anything#853","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mecsn48a6ayt","at":"2026-06-11T03:07:58.348652Z","run_id":"migration","event":"candidate_screened","subject":"facebookresearch/segment-anything#853","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me381j29qnr1","at":"2026-06-11T03:07:58.348691Z","run_id":"migration","event":"candidate_discovered","subject":"hpcaitech/ColossalAI#6407","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me9zstd90n9m","at":"2026-06-11T03:07:58.348723Z","run_id":"migration","event":"candidate_screened","subject":"hpcaitech/ColossalAI#6407","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mekqa98n1kvq","at":"2026-06-11T03:07:58.348755Z","run_id":"migration","event":"candidate_discovered","subject":"hpcaitech/ColossalAI#6406","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me4fnkj22sq6","at":"2026-06-11T03:07:58.348788Z","run_id":"migration","event":"candidate_screened","subject":"hpcaitech/ColossalAI#6406","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mek566ag78m1","at":"2026-06-11T03:07:58.348823Z","run_id":"migration","event":"candidate_discovered","subject":"hpcaitech/ColossalAI#6405","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9menkd48hc4gt","at":"2026-06-11T03:07:58.348856Z","run_id":"migration","event":"candidate_screened","subject":"hpcaitech/ColossalAI#6405","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meffcsr4whef","at":"2026-06-11T03:07:58.348890Z","run_id":"migration","event":"candidate_discovered","subject":"zai-org/ChatGLM-6B#1516","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me4nmcthnavt","at":"2026-06-11T03:07:58.348923Z","run_id":"migration","event":"candidate_screened","subject":"zai-org/ChatGLM-6B#1516","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mer807tdg9s1","at":"2026-06-11T03:07:58.348967Z","run_id":"migration","event":"candidate_discovered","subject":"lm-sys/FastChat#3775","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9med597b5axc3","at":"2026-06-11T03:07:58.349009Z","run_id":"migration","event":"candidate_screened","subject":"lm-sys/FastChat#3775","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meb5qrna93mv","at":"2026-06-11T03:07:58.349043Z","run_id":"migration","event":"candidate_discovered","subject":"lm-sys/FastChat#3773","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mewxjrjnee1k","at":"2026-06-11T03:07:58.349079Z","run_id":"migration","event":"candidate_screened","subject":"lm-sys/FastChat#3773","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mea49xsbxt3t","at":"2026-06-11T03:07:58.349114Z","run_id":"migration","event":"candidate_discovered","subject":"suno-ai/bark#662","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9medbb74pj9t3","at":"2026-06-11T03:07:58.349148Z","run_id":"migration","event":"candidate_screened","subject":"suno-ai/bark#662","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me9e252gehfz","at":"2026-06-11T03:07:58.349180Z","run_id":"migration","event":"candidate_discovered","subject":"suno-ai/bark#661","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mecms5d2k9t0","at":"2026-06-11T03:07:58.349212Z","run_id":"migration","event":"candidate_screened","subject":"suno-ai/bark#661","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me583d7ytagh","at":"2026-06-11T03:07:58.349254Z","run_id":"migration","event":"candidate_discovered","subject":"TencentARC/GFPGAN#640","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mef7t8g8ezhk","at":"2026-06-11T03:07:58.349289Z","run_id":"migration","event":"candidate_screened","subject":"TencentARC/GFPGAN#640","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9memt37geq7df","at":"2026-06-11T03:07:58.349324Z","run_id":"migration","event":"candidate_discovered","subject":"LAION-AI/Open-Assistant#3779","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mem0qxdmrzmb","at":"2026-06-11T03:07:58.349357Z","run_id":"migration","event":"candidate_screened","subject":"LAION-AI/Open-Assistant#3779","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mexyyh2sg063","at":"2026-06-11T03:07:58.349390Z","run_id":"migration","event":"candidate_discovered","subject":"RVC-Project/Retrieval-based-Voice-Conversion-WebUI#2756","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mempjvzdy5vh","at":"2026-06-11T03:07:58.349431Z","run_id":"migration","event":"candidate_screened","subject":"RVC-Project/Retrieval-based-Voice-Conversion-WebUI#2756","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9memrecyzcd3r","at":"2026-06-11T03:07:58.349469Z","run_id":"migration","event":"candidate_discovered","subject":"facebookresearch/detectron2#5509","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me5ap747kvs3","at":"2026-06-11T03:07:58.349510Z","run_id":"migration","event":"candidate_screened","subject":"facebookresearch/detectron2#5509","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mezcn42snes6","at":"2026-06-11T03:07:58.349545Z","run_id":"migration","event":"candidate_discovered","subject":"facebookresearch/detectron2#5512","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me1z57fg9dxy","at":"2026-06-11T03:07:58.349579Z","run_id":"migration","event":"candidate_screened","subject":"facebookresearch/detectron2#5512","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mepa28yzrwyc","at":"2026-06-11T03:07:58.349614Z","run_id":"migration","event":"candidate_discovered","subject":"facebookresearch/detectron2#5510","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9metaapejxypt","at":"2026-06-11T03:07:58.349651Z","run_id":"migration","event":"candidate_screened","subject":"facebookresearch/detectron2#5510","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mezqgdpc8bgx","at":"2026-06-11T03:07:58.349687Z","run_id":"migration","event":"candidate_discovered","subject":"lllyasviel/ControlNet#751","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mem6wqbg8shg","at":"2026-06-11T03:07:58.349727Z","run_id":"migration","event":"candidate_screened","subject":"lllyasviel/ControlNet#751","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mec721bxcea5","at":"2026-06-11T03:07:58.349786Z","run_id":"migration","event":"candidate_discovered","subject":"openai/CLIP#530","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9megppw8064bd","at":"2026-06-11T03:07:58.349825Z","run_id":"migration","event":"candidate_screened","subject":"openai/CLIP#530","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9men0xb5nn5y8","at":"2026-06-11T03:07:58.349859Z","run_id":"migration","event":"candidate_discovered","subject":"tatsu-lab/stanford_alpaca#324","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mep10hmcvatp","at":"2026-06-11T03:07:58.349898Z","run_id":"migration","event":"candidate_screened","subject":"tatsu-lab/stanford_alpaca#324","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mexreq996k0m","at":"2026-06-11T03:07:58.349935Z","run_id":"migration","event":"candidate_discovered","subject":"hpcaitech/Open-Sora#911","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9meb78pkhgahf","at":"2026-06-11T03:07:58.349981Z","run_id":"migration","event":"candidate_screened","subject":"hpcaitech/Open-Sora#911","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meyw86298yjg","at":"2026-06-11T03:07:58.350018Z","run_id":"migration","event":"candidate_discovered","subject":"hpcaitech/Open-Sora#910","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mejnw5ypyrwy","at":"2026-06-11T03:07:58.350067Z","run_id":"migration","event":"candidate_screened","subject":"hpcaitech/Open-Sora#910","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me3ntxs5q7r0","at":"2026-06-11T03:07:58.350121Z","run_id":"migration","event":"candidate_discovered","subject":"Stability-AI/generative-models#474","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mexp0w3pgqvs","at":"2026-06-11T03:07:58.350159Z","run_id":"migration","event":"candidate_screened","subject":"Stability-AI/generative-models#474","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mezbbkyk286p","at":"2026-06-11T03:07:58.350198Z","run_id":"migration","event":"candidate_discovered","subject":"Stability-AI/generative-models#473","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9meggegjj17z7","at":"2026-06-11T03:07:58.350238Z","run_id":"migration","event":"candidate_screened","subject":"Stability-AI/generative-models#473","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me7ye3ymg9b0","at":"2026-06-11T03:07:58.350276Z","run_id":"migration","event":"candidate_discovered","subject":"Stability-AI/generative-models#472","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me0308q04afj","at":"2026-06-11T03:07:58.350323Z","run_id":"migration","event":"candidate_screened","subject":"Stability-AI/generative-models#472","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me0xrg7j04gs","at":"2026-06-11T03:07:58.350364Z","run_id":"migration","event":"candidate_discovered","subject":"Stability-AI/generative-models#471","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mea9p55s87xc","at":"2026-06-11T03:07:58.350404Z","run_id":"migration","event":"candidate_screened","subject":"Stability-AI/generative-models#471","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me2m1m44a780","at":"2026-06-11T03:07:58.350447Z","run_id":"migration","event":"candidate_discovered","subject":"black-forest-labs/flux#507","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me9n6qrv2af8","at":"2026-06-11T03:07:58.350486Z","run_id":"migration","event":"candidate_screened","subject":"black-forest-labs/flux#507","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meh861mrj4qk","at":"2026-06-11T03:07:58.350530Z","run_id":"migration","event":"candidate_discovered","subject":"junyanz/pytorch-CycleGAN-and-pix2pix#1715","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me82mcrx2m2n","at":"2026-06-11T03:07:58.350569Z","run_id":"migration","event":"candidate_screened","subject":"junyanz/pytorch-CycleGAN-and-pix2pix#1715","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mewj1937tyn0","at":"2026-06-11T03:07:58.350614Z","run_id":"migration","event":"candidate_discovered","subject":"haotian-liu/LLaVA#1921","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me0swh7a2r1n","at":"2026-06-11T03:07:58.350654Z","run_id":"migration","event":"candidate_screened","subject":"haotian-liu/LLaVA#1921","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me2tb1ek35mg","at":"2026-06-11T03:07:58.350710Z","run_id":"migration","event":"candidate_discovered","subject":"facebookresearch/audiocraft#598","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me6jgbdpk2b4","at":"2026-06-11T03:07:58.350743Z","run_id":"migration","event":"candidate_screened","subject":"facebookresearch/audiocraft#598","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9menfsxhsnxtp","at":"2026-06-11T03:07:58.350779Z","run_id":"migration","event":"candidate_discovered","subject":"graphdeco-inria/gaussian-splatting#1316","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me589e3vvn1x","at":"2026-06-11T03:07:58.350822Z","run_id":"migration","event":"candidate_screened","subject":"graphdeco-inria/gaussian-splatting#1316","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me8s9rp7g2wd","at":"2026-06-11T03:07:58.350855Z","run_id":"migration","event":"candidate_discovered","subject":"microsoft/unilm#1740","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mefxzbd6d087","at":"2026-06-11T03:07:58.350892Z","run_id":"migration","event":"candidate_screened","subject":"microsoft/unilm#1740","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me4namgeq9w0","at":"2026-06-11T03:07:58.350929Z","run_id":"migration","event":"candidate_discovered","subject":"huggingface/datasets#8004","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9memnv7qyhjfb","at":"2026-06-11T03:07:58.350967Z","run_id":"migration","event":"candidate_screened","subject":"huggingface/datasets#8004","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mewqcg486yx2","at":"2026-06-11T03:07:58.351002Z","run_id":"migration","event":"candidate_discovered","subject":"FunAudioLLM/CosyVoice#1827","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mekfxeesqtnt","at":"2026-06-11T03:07:58.351042Z","run_id":"migration","event":"candidate_screened","subject":"FunAudioLLM/CosyVoice#1827","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mex1x5s36kjb","at":"2026-06-11T03:07:58.351081Z","run_id":"migration","event":"candidate_discovered","subject":"FunAudioLLM/CosyVoice#1826","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mexqhz29gg9q","at":"2026-06-11T03:07:58.351119Z","run_id":"migration","event":"candidate_screened","subject":"FunAudioLLM/CosyVoice#1826","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me6239sxzf1b","at":"2026-06-11T03:07:58.351159Z","run_id":"migration","event":"candidate_discovered","subject":"QwenLM/Qwen3-VL#2027","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mee9w5yfdb60","at":"2026-06-11T03:07:58.351196Z","run_id":"migration","event":"candidate_screened","subject":"QwenLM/Qwen3-VL#2027","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meddsm5k07n8","at":"2026-06-11T03:07:58.351232Z","run_id":"migration","event":"candidate_discovered","subject":"KlingAIResearch/LivePortrait#557","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9metbn68rjy13","at":"2026-06-11T03:07:58.351266Z","run_id":"migration","event":"candidate_screened","subject":"KlingAIResearch/LivePortrait#557","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me064wwvc8dq","at":"2026-06-11T03:07:58.351299Z","run_id":"migration","event":"candidate_discovered","subject":"state-spaces/mamba#845","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mehce088wytr","at":"2026-06-11T03:07:58.351334Z","run_id":"migration","event":"candidate_screened","subject":"state-spaces/mamba#845","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meazqag6b9cc","at":"2026-06-11T03:07:58.351382Z","run_id":"migration","event":"candidate_discovered","subject":"sczhou/CodeFormer#441","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mef11v1nhp07","at":"2026-06-11T03:07:58.351420Z","run_id":"migration","event":"candidate_screened","subject":"sczhou/CodeFormer#441","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9med59abx4bn9","at":"2026-06-11T03:07:58.351459Z","run_id":"migration","event":"candidate_discovered","subject":"deepseek-ai/Janus#234","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9meppfj49gp1a","at":"2026-06-11T03:07:58.351497Z","run_id":"migration","event":"candidate_screened","subject":"deepseek-ai/Janus#234","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me6bfswzrmta","at":"2026-06-11T03:07:58.351546Z","run_id":"migration","event":"candidate_discovered","subject":"deepseek-ai/Janus#233","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mey2pac259f0","at":"2026-06-11T03:07:58.351587Z","run_id":"migration","event":"candidate_screened","subject":"deepseek-ai/Janus#233","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mesj4wkabm5q","at":"2026-06-11T03:07:58.351625Z","run_id":"migration","event":"candidate_discovered","subject":"deepseek-ai/Janus#232","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mef5np7by58k","at":"2026-06-11T03:07:58.351662Z","run_id":"migration","event":"candidate_screened","subject":"deepseek-ai/Janus#232","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9med45bqdxg2b","at":"2026-06-11T03:07:58.351700Z","run_id":"migration","event":"candidate_discovered","subject":"deepseek-ai/Janus#231","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9megd0m964kbg","at":"2026-06-11T03:07:58.351731Z","run_id":"migration","event":"candidate_screened","subject":"deepseek-ai/Janus#231","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me4nkg6ybkqr","at":"2026-06-11T03:07:58.351770Z","run_id":"migration","event":"candidate_discovered","subject":"deepseek-ai/Janus#230","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9meq249y7kabe","at":"2026-06-11T03:07:58.351806Z","run_id":"migration","event":"candidate_screened","subject":"deepseek-ai/Janus#230","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mezvbraz49tt","at":"2026-06-11T03:07:58.351841Z","run_id":"migration","event":"candidate_discovered","subject":"microsoft/Swin-Transformer#387","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mejka7jc31p8","at":"2026-06-11T03:07:58.351877Z","run_id":"migration","event":"candidate_screened","subject":"microsoft/Swin-Transformer#387","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mesa7ff2tcar","at":"2026-06-11T03:07:58.351917Z","run_id":"migration","event":"candidate_discovered","subject":"microsoft/Swin-Transformer#388","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me14734rnz30","at":"2026-06-11T03:07:58.351957Z","run_id":"migration","event":"candidate_screened","subject":"microsoft/Swin-Transformer#388","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9metk7d7zsxzf","at":"2026-06-11T03:07:58.351994Z","run_id":"migration","event":"candidate_discovered","subject":"encode/httpx#3764","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me0z929cva0d","at":"2026-06-11T03:07:58.352030Z","run_id":"migration","event":"candidate_screened","subject":"encode/httpx#3764","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mec68h2hev32","at":"2026-06-11T03:07:58.352064Z","run_id":"migration","event":"candidate_discovered","subject":"Zulko/moviepy#2554","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me58hjrykc2k","at":"2026-06-11T03:07:58.352100Z","run_id":"migration","event":"candidate_screened","subject":"Zulko/moviepy#2554","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meeb69msvvyc","at":"2026-06-11T03:07:58.352138Z","run_id":"migration","event":"candidate_discovered","subject":"dmlc/dgl#7915","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me54103q2tg4","at":"2026-06-11T03:07:58.352174Z","run_id":"migration","event":"candidate_screened","subject":"dmlc/dgl#7915","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meyqthrmk9zp","at":"2026-06-11T03:07:58.352207Z","run_id":"migration","event":"candidate_discovered","subject":"dmlc/dgl#7914","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me3p4e9vef3b","at":"2026-06-11T03:07:58.352245Z","run_id":"migration","event":"candidate_screened","subject":"dmlc/dgl#7914","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mefnfhbgqhq9","at":"2026-06-11T03:07:58.352282Z","run_id":"migration","event":"candidate_discovered","subject":"WongKinYiu/yolov7#2147","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9met4ankqpq54","at":"2026-06-11T03:07:58.352314Z","run_id":"migration","event":"candidate_screened","subject":"WongKinYiu/yolov7#2147","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mesta8j7kvf7","at":"2026-06-11T03:07:58.352354Z","run_id":"migration","event":"candidate_discovered","subject":"WongKinYiu/yolov7#2146","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me7b0nbgbyzm","at":"2026-06-11T03:07:58.352396Z","run_id":"migration","event":"candidate_screened","subject":"WongKinYiu/yolov7#2146","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mesrdctr3dzz","at":"2026-06-11T03:07:58.352434Z","run_id":"migration","event":"candidate_discovered","subject":"WongKinYiu/yolov7#2145","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me9e0dc3vj0z","at":"2026-06-11T03:07:58.352468Z","run_id":"migration","event":"candidate_screened","subject":"WongKinYiu/yolov7#2145","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9met7vd5134jd","at":"2026-06-11T03:07:58.352500Z","run_id":"migration","event":"candidate_discovered","subject":"CompVis/latent-diffusion#404","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mejtf54242nd","at":"2026-06-11T03:07:58.352537Z","run_id":"migration","event":"candidate_screened","subject":"CompVis/latent-diffusion#404","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mescabv89yd1","at":"2026-06-11T03:07:58.352573Z","run_id":"migration","event":"candidate_discovered","subject":"mwaskom/seaborn#3912","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me3j52jwfk48","at":"2026-06-11T03:07:58.352608Z","run_id":"migration","event":"candidate_screened","subject":"mwaskom/seaborn#3912","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9merx20yhzawv","at":"2026-06-11T03:07:58.352646Z","run_id":"migration","event":"candidate_discovered","subject":"mwaskom/seaborn#3911","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me5hff49jve7","at":"2026-06-11T03:07:58.352678Z","run_id":"migration","event":"candidate_screened","subject":"mwaskom/seaborn#3911","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mey78rq6shzg","at":"2026-06-11T03:07:58.352718Z","run_id":"migration","event":"candidate_discovered","subject":"dask/dask#12293","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me4z9vs55mrn","at":"2026-06-11T03:07:58.352753Z","run_id":"migration","event":"candidate_screened","subject":"dask/dask#12293","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mea9mmry8zjg","at":"2026-06-11T03:07:58.352797Z","run_id":"migration","event":"candidate_discovered","subject":"Rudrabha/Wav2Lip#774","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me9gtmgt91cx","at":"2026-06-11T03:07:58.352839Z","run_id":"migration","event":"candidate_screened","subject":"Rudrabha/Wav2Lip#774","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mec86336p53j","at":"2026-06-11T03:07:58.352885Z","run_id":"migration","event":"candidate_discovered","subject":"facebookresearch/dinov2#583","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9meberjf8dg3a","at":"2026-06-11T03:07:58.352921Z","run_id":"migration","event":"candidate_screened","subject":"facebookresearch/dinov2#583","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mehm0syr22ze","at":"2026-06-11T03:07:58.352959Z","run_id":"migration","event":"candidate_discovered","subject":"zai-org/CogVideo#812","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mer5x58366rq","at":"2026-06-11T03:07:58.352994Z","run_id":"migration","event":"candidate_screened","subject":"zai-org/CogVideo#812","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mes7fwrv5nc6","at":"2026-06-11T03:07:58.353032Z","run_id":"migration","event":"candidate_discovered","subject":"zai-org/CogVideo#811","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mempj5ky88m3","at":"2026-06-11T03:07:58.353066Z","run_id":"migration","event":"candidate_screened","subject":"zai-org/CogVideo#811","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me035fkp539g","at":"2026-06-11T03:07:58.353100Z","run_id":"migration","event":"candidate_discovered","subject":"openai/shap-e#182","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mecvxe6p0kmd","at":"2026-06-11T03:07:58.353137Z","run_id":"migration","event":"candidate_screened","subject":"openai/shap-e#182","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me8mhskxhp5c","at":"2026-06-11T03:07:58.353198Z","run_id":"migration","event":"candidate_discovered","subject":"Tencent-Hunyuan/HunyuanVideo#310","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mek9nrqe2p3a","at":"2026-06-11T03:07:58.353233Z","run_id":"migration","event":"candidate_screened","subject":"Tencent-Hunyuan/HunyuanVideo#310","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mexe2x8qr8mc","at":"2026-06-11T03:07:58.353273Z","run_id":"migration","event":"candidate_discovered","subject":"PKU-YuanGroup/Open-Sora-Plan#595","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9menyqhbxggt2","at":"2026-06-11T03:07:58.353309Z","run_id":"migration","event":"candidate_screened","subject":"PKU-YuanGroup/Open-Sora-Plan#595","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me7ct6fqj6hh","at":"2026-06-11T03:07:58.353347Z","run_id":"migration","event":"candidate_discovered","subject":"PKU-YuanGroup/Open-Sora-Plan#596","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mengzkk10v9t","at":"2026-06-11T03:07:58.353387Z","run_id":"migration","event":"candidate_screened","subject":"PKU-YuanGroup/Open-Sora-Plan#596","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9menbwdthd9zh","at":"2026-06-11T03:07:58.353421Z","run_id":"migration","event":"candidate_discovered","subject":"guoyww/AnimateDiff#435","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9meemexz9rctp","at":"2026-06-11T03:07:58.353455Z","run_id":"migration","event":"candidate_screened","subject":"guoyww/AnimateDiff#435","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meyd3t9xw6kf","at":"2026-06-11T03:07:58.353490Z","run_id":"migration","event":"candidate_discovered","subject":"guoyww/AnimateDiff#436","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9megj9r49gx5x","at":"2026-06-11T03:07:58.353526Z","run_id":"migration","event":"candidate_screened","subject":"guoyww/AnimateDiff#436","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me9yptgcfr0h","at":"2026-06-11T03:07:58.353559Z","run_id":"migration","event":"candidate_discovered","subject":"instantX-research/InstantID#299","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mecsa9pw92y1","at":"2026-06-11T03:07:58.353591Z","run_id":"migration","event":"candidate_screened","subject":"instantX-research/InstantID#299","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mennw21mzs8t","at":"2026-06-11T03:07:58.353633Z","run_id":"migration","event":"candidate_discovered","subject":"salesforce/LAVIS#809","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mexpdtkr54h5","at":"2026-06-11T03:07:58.353667Z","run_id":"migration","event":"candidate_screened","subject":"salesforce/LAVIS#809","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me246jf90bty","at":"2026-06-11T03:07:58.353703Z","run_id":"migration","event":"candidate_discovered","subject":"salesforce/LAVIS#810","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9med3z3mjwqm8","at":"2026-06-11T03:07:58.353735Z","run_id":"migration","event":"candidate_screened","subject":"salesforce/LAVIS#810","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mej45wt7tvtt","at":"2026-06-11T03:07:58.353768Z","run_id":"migration","event":"candidate_discovered","subject":"wandb/wandb#11344","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mej7jvxx3myz","at":"2026-06-11T03:07:58.353804Z","run_id":"migration","event":"candidate_screened","subject":"wandb/wandb#11344","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meyxgpmyxfpm","at":"2026-06-11T03:07:58.353840Z","run_id":"migration","event":"candidate_discovered","subject":"artidoro/qlora#303","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me8jfwcqjy1x","at":"2026-06-11T03:07:58.353875Z","run_id":"migration","event":"candidate_screened","subject":"artidoro/qlora#303","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me60n4n358s2","at":"2026-06-11T03:07:58.353911Z","run_id":"migration","event":"candidate_discovered","subject":"IDEA-Research/GroundingDINO#443","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me3xnrp9xhza","at":"2026-06-11T03:07:58.353943Z","run_id":"migration","event":"candidate_screened","subject":"IDEA-Research/GroundingDINO#443","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9medq5tnn92e2","at":"2026-06-11T03:07:58.353996Z","run_id":"migration","event":"candidate_discovered","subject":"AIGC-Audio/AudioGPT#107","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me5wyawzdev5","at":"2026-06-11T03:07:58.354031Z","run_id":"migration","event":"candidate_screened","subject":"AIGC-Audio/AudioGPT#107","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mexrmjbdkrx9","at":"2026-06-11T03:07:58.354063Z","run_id":"migration","event":"candidate_discovered","subject":"mozilla/TTS#797","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9meccd9122ept","at":"2026-06-11T03:07:58.354093Z","run_id":"migration","event":"candidate_screened","subject":"mozilla/TTS#797","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mefgj72eyn46","at":"2026-06-11T03:07:58.354129Z","run_id":"migration","event":"candidate_discovered","subject":"OpenGVLab/InternVL#1260","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mevg5keehe3x","at":"2026-06-11T03:07:58.354162Z","run_id":"migration","event":"candidate_screened","subject":"OpenGVLab/InternVL#1260","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mehx0atjd5vr","at":"2026-06-11T03:07:58.354197Z","run_id":"migration","event":"candidate_discovered","subject":"OpenGVLab/InternVL#1259","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me1ndrvb9vh4","at":"2026-06-11T03:07:58.354232Z","run_id":"migration","event":"candidate_screened","subject":"OpenGVLab/InternVL#1259","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mep61pmzk7jw","at":"2026-06-11T03:07:58.354265Z","run_id":"migration","event":"candidate_discovered","subject":"OpenGVLab/InternVL#1258","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9memfyh21x58h","at":"2026-06-11T03:07:58.354298Z","run_id":"migration","event":"candidate_screened","subject":"OpenGVLab/InternVL#1258","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me6gsshhnnck","at":"2026-06-11T03:07:58.354334Z","run_id":"migration","event":"candidate_discovered","subject":"OpenGVLab/InternVL#1256","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me5pg08kc59e","at":"2026-06-11T03:07:58.354369Z","run_id":"migration","event":"candidate_screened","subject":"OpenGVLab/InternVL#1256","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me1ssjggwgv1","at":"2026-06-11T03:07:58.354405Z","run_id":"migration","event":"candidate_discovered","subject":"OpenGVLab/InternVL#1255","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mefnwhgygmjm","at":"2026-06-11T03:07:58.354442Z","run_id":"migration","event":"candidate_screened","subject":"OpenGVLab/InternVL#1255","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me8h002sxs3f","at":"2026-06-11T03:07:58.354475Z","run_id":"migration","event":"candidate_discovered","subject":"vwxyzjn/cleanrl#538","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me0np5fpbxm7","at":"2026-06-11T03:07:58.354507Z","run_id":"migration","event":"candidate_screened","subject":"vwxyzjn/cleanrl#538","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mewt43bpems9","at":"2026-06-11T03:07:58.354539Z","run_id":"migration","event":"candidate_discovered","subject":"m87-labs/moondream#326","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mezdk8qdk2gx","at":"2026-06-11T03:07:58.354573Z","run_id":"migration","event":"candidate_screened","subject":"m87-labs/moondream#326","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mev2vc05a1zx","at":"2026-06-11T03:07:58.354608Z","run_id":"migration","event":"candidate_discovered","subject":"WongKinYiu/yolov9#662","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me0ynv54gbg3","at":"2026-06-11T03:07:58.354645Z","run_id":"migration","event":"candidate_screened","subject":"WongKinYiu/yolov9#662","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mehextqb8mc0","at":"2026-06-11T03:07:58.354678Z","run_id":"migration","event":"candidate_discovered","subject":"ashawkey/stable-dreamfusion#377","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mev055hzdns1","at":"2026-06-11T03:07:58.354718Z","run_id":"migration","event":"candidate_screened","subject":"ashawkey/stable-dreamfusion#377","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mes6rt4mzxrx","at":"2026-06-11T03:07:58.354753Z","run_id":"migration","event":"candidate_discovered","subject":"bentoml/BentoML#5549","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9menpggpm0sn6","at":"2026-06-11T03:07:58.354798Z","run_id":"migration","event":"candidate_screened","subject":"bentoml/BentoML#5549","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me8bcczk0mnj","at":"2026-06-11T03:07:58.354834Z","run_id":"migration","event":"candidate_discovered","subject":"MVIG-SJTU/AlphaPose#1241","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me84kt0ra7v7","at":"2026-06-11T03:07:58.354879Z","run_id":"migration","event":"candidate_screened","subject":"MVIG-SJTU/AlphaPose#1241","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meqkfvzs8s1j","at":"2026-06-11T03:07:58.354917Z","run_id":"migration","event":"candidate_discovered","subject":"netease-youdao/EmotiVoice#185","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9ment03v2064m","at":"2026-06-11T03:07:58.354952Z","run_id":"migration","event":"candidate_screened","subject":"netease-youdao/EmotiVoice#185","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mes03d1pjwh0","at":"2026-06-11T03:07:58.354994Z","run_id":"migration","event":"candidate_discovered","subject":"DepthAnything/Depth-Anything-V2#318","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mez9ppzrcrx7","at":"2026-06-11T03:07:58.355030Z","run_id":"migration","event":"candidate_screened","subject":"DepthAnything/Depth-Anything-V2#318","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mer28te0zdwf","at":"2026-06-11T03:07:58.355069Z","run_id":"migration","event":"candidate_discovered","subject":"sphinx-doc/sphinx#14303","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9meq7gzznckaf","at":"2026-06-11T03:07:58.355105Z","run_id":"migration","event":"candidate_screened","subject":"sphinx-doc/sphinx#14303","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meedv2aprtce","at":"2026-06-11T03:07:58.355138Z","run_id":"migration","event":"candidate_discovered","subject":"OpenTalker/video-retalking#286","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me9v1svr5grf","at":"2026-06-11T03:07:58.355172Z","run_id":"migration","event":"candidate_screened","subject":"OpenTalker/video-retalking#286","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mea1hjtaz0by","at":"2026-06-11T03:07:58.355209Z","run_id":"migration","event":"candidate_discovered","subject":"zai-org/GLM-4#803","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9menm690r7rjx","at":"2026-06-11T03:07:58.355247Z","run_id":"migration","event":"candidate_screened","subject":"zai-org/GLM-4#803","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meamdajqzyn7","at":"2026-06-11T03:07:58.355283Z","run_id":"migration","event":"candidate_discovered","subject":"threestudio-project/threestudio#530","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mefc1rxc233q","at":"2026-06-11T03:07:58.355319Z","run_id":"migration","event":"candidate_screened","subject":"threestudio-project/threestudio#530","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mer0en1qjh00","at":"2026-06-11T03:07:58.355357Z","run_id":"migration","event":"candidate_discovered","subject":"openai/point-e#120","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me1j8nmmzt57","at":"2026-06-11T03:07:58.355395Z","run_id":"migration","event":"candidate_screened","subject":"openai/point-e#120","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me3d663fxfg9","at":"2026-06-11T03:07:58.355429Z","run_id":"migration","event":"candidate_discovered","subject":"zai-org/CogVLM#554","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9meydj4w0pa4d","at":"2026-06-11T03:07:58.355470Z","run_id":"migration","event":"candidate_screened","subject":"zai-org/CogVLM#554","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me6565y8fe6w","at":"2026-06-11T03:07:58.355506Z","run_id":"migration","event":"candidate_discovered","subject":"zai-org/CogVLM#553","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mee5kkw7md7q","at":"2026-06-11T03:07:58.355544Z","run_id":"migration","event":"candidate_screened","subject":"zai-org/CogVLM#553","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me9vd37fjrwj","at":"2026-06-11T03:07:58.355577Z","run_id":"migration","event":"candidate_discovered","subject":"Stability-AI/StableCascade#146","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mexwm90vfasr","at":"2026-06-11T03:07:58.355623Z","run_id":"migration","event":"candidate_screened","subject":"Stability-AI/StableCascade#146","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mev10j9ytv10","at":"2026-06-11T03:07:58.355658Z","run_id":"migration","event":"candidate_discovered","subject":"CompVis/taming-transformers#267","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mekcz535tf6t","at":"2026-06-11T03:07:58.355693Z","run_id":"migration","event":"candidate_screened","subject":"CompVis/taming-transformers#267","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mejhe6n9qwk0","at":"2026-06-11T03:07:58.355727Z","run_id":"migration","event":"candidate_discovered","subject":"TMElyralab/MuseTalk#406","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mecc14kjhj60","at":"2026-06-11T03:07:58.355764Z","run_id":"migration","event":"candidate_screened","subject":"TMElyralab/MuseTalk#406","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meax9f848hyq","at":"2026-06-11T03:07:58.355801Z","run_id":"migration","event":"candidate_discovered","subject":"mosaicml/composer#3932","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9meq0s5kh3j2g","at":"2026-06-11T03:07:58.355836Z","run_id":"migration","event":"candidate_screened","subject":"mosaicml/composer#3932","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9menxzxxpca9x","at":"2026-06-11T03:07:58.355869Z","run_id":"migration","event":"candidate_discovered","subject":"mosaicml/composer#3931","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mez7vpqv037f","at":"2026-06-11T03:07:58.355909Z","run_id":"migration","event":"candidate_screened","subject":"mosaicml/composer#3931","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mee9ks5sba8q","at":"2026-06-11T03:07:58.355946Z","run_id":"migration","event":"candidate_discovered","subject":"deepseek-ai/DeepSeek-VL2#150","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me5rnpwfx5x5","at":"2026-06-11T03:07:58.355984Z","run_id":"migration","event":"candidate_screened","subject":"deepseek-ai/DeepSeek-VL2#150","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me49p1qagmra","at":"2026-06-11T03:07:58.356022Z","run_id":"migration","event":"candidate_discovered","subject":"AILab-CVC/VideoCrafter#108","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9merfyhp28rre","at":"2026-06-11T03:07:58.356059Z","run_id":"migration","event":"candidate_screened","subject":"AILab-CVC/VideoCrafter#108","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mep7wmdzen07","at":"2026-06-11T03:07:58.356095Z","run_id":"migration","event":"candidate_discovered","subject":"AILab-CVC/VideoCrafter#107","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mek09kpg464e","at":"2026-06-11T03:07:58.356133Z","run_id":"migration","event":"candidate_screened","subject":"AILab-CVC/VideoCrafter#107","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me611hzj05hd","at":"2026-06-11T03:07:58.356171Z","run_id":"migration","event":"candidate_discovered","subject":"RUCAIBox/RecBole#2208","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9meb20t6z9jfa","at":"2026-06-11T03:07:58.356210Z","run_id":"migration","event":"candidate_screened","subject":"RUCAIBox/RecBole#2208","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meq7qjfacn1v","at":"2026-06-11T03:07:58.356246Z","run_id":"migration","event":"candidate_discovered","subject":"RUCAIBox/RecBole#2207","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mewqzqvepwg8","at":"2026-06-11T03:07:58.356284Z","run_id":"migration","event":"candidate_screened","subject":"RUCAIBox/RecBole#2207","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mezj00x9eny9","at":"2026-06-11T03:07:58.356319Z","run_id":"migration","event":"candidate_discovered","subject":"dreamgaussian/dreamgaussian#183","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9meevzb99b1j2","at":"2026-06-11T03:07:58.356355Z","run_id":"migration","event":"candidate_screened","subject":"dreamgaussian/dreamgaussian#183","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me5z66vcywjr","at":"2026-06-11T03:07:58.356390Z","run_id":"migration","event":"candidate_discovered","subject":"Tencent-Hunyuan/HunyuanDiT#247","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me9w1hawm682","at":"2026-06-11T03:07:58.356446Z","run_id":"migration","event":"candidate_screened","subject":"Tencent-Hunyuan/HunyuanDiT#247","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meqxq5qjeg5b","at":"2026-06-11T03:07:58.356485Z","run_id":"migration","event":"candidate_discovered","subject":"pydata/xarray#11164","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9meffhry1rr0m","at":"2026-06-11T03:07:58.356522Z","run_id":"migration","event":"candidate_screened","subject":"pydata/xarray#11164","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me0712nzfb82","at":"2026-06-11T03:07:58.356566Z","run_id":"migration","event":"candidate_discovered","subject":"baichuan-inc/Baichuan2#428","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9merscq42fsjs","at":"2026-06-11T03:07:58.356601Z","run_id":"migration","event":"candidate_screened","subject":"baichuan-inc/Baichuan2#428","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mewv0e0nfa9g","at":"2026-06-11T03:07:58.356636Z","run_id":"migration","event":"candidate_discovered","subject":"NVlabs/imaginaire#190","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mescwd5xszne","at":"2026-06-11T03:07:58.356676Z","run_id":"migration","event":"candidate_screened","subject":"NVlabs/imaginaire#190","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mef04ey75933","at":"2026-06-11T03:07:58.356712Z","run_id":"migration","event":"candidate_discovered","subject":"facebookresearch/encodec#98","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me1j5yaf4de4","at":"2026-06-11T03:07:58.356747Z","run_id":"migration","event":"candidate_screened","subject":"facebookresearch/encodec#98","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9men5q66vpp1f","at":"2026-06-11T03:07:58.356784Z","run_id":"migration","event":"candidate_discovered","subject":"facebookresearch/encodec#97","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mem07qjk0m1c","at":"2026-06-11T03:07:58.356822Z","run_id":"migration","event":"candidate_screened","subject":"facebookresearch/encodec#97","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9megzax704587","at":"2026-06-11T03:07:58.356861Z","run_id":"migration","event":"candidate_discovered","subject":"IDEA-Research/Grounded-SAM-2#130","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mejpybnzcrjm","at":"2026-06-11T03:07:58.356896Z","run_id":"migration","event":"candidate_screened","subject":"IDEA-Research/Grounded-SAM-2#130","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mex9fcef29m7","at":"2026-06-11T03:07:58.356937Z","run_id":"migration","event":"candidate_discovered","subject":"OpenGVLab/Ask-Anything#264","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mem55c1hcjnm","at":"2026-06-11T03:07:58.356974Z","run_id":"migration","event":"candidate_screened","subject":"OpenGVLab/Ask-Anything#264","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me1hb55s6pdh","at":"2026-06-11T03:07:58.357010Z","run_id":"migration","event":"candidate_discovered","subject":"ali-vilab/VGen#162","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9meqrq8984042","at":"2026-06-11T03:07:58.357048Z","run_id":"migration","event":"candidate_screened","subject":"ali-vilab/VGen#162","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9medab54xa3je","at":"2026-06-11T03:07:58.357088Z","run_id":"migration","event":"candidate_discovered","subject":"Doubiiu/DynamiCrafter#168","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me0m1qj8n3bb","at":"2026-06-11T03:07:58.357128Z","run_id":"migration","event":"candidate_screened","subject":"Doubiiu/DynamiCrafter#168","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9menmgzyjdz51","at":"2026-06-11T03:07:58.357181Z","run_id":"migration","event":"candidate_discovered","subject":"pytorch/audio#4175","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me16h5hqztcv","at":"2026-06-11T03:07:58.357223Z","run_id":"migration","event":"candidate_screened","subject":"pytorch/audio#4175","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mez4wzy9tge2","at":"2026-06-11T03:07:58.357266Z","run_id":"migration","event":"candidate_discovered","subject":"pytorch/audio#4174","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me7x9857tbmx","at":"2026-06-11T03:07:58.357319Z","run_id":"migration","event":"candidate_screened","subject":"pytorch/audio#4174","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meff6v3a7b34","at":"2026-06-11T03:07:58.357357Z","run_id":"migration","event":"candidate_discovered","subject":"TMElyralab/MuseV#179","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mexx9wqvqqka","at":"2026-06-11T03:07:58.357390Z","run_id":"migration","event":"candidate_screened","subject":"TMElyralab/MuseV#179","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9medrs6ph3vc1","at":"2026-06-11T03:07:58.357429Z","run_id":"migration","event":"candidate_discovered","subject":"BAAI-Agents/Cradle#107","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9meqmfqxya31f","at":"2026-06-11T03:07:58.357462Z","run_id":"migration","event":"candidate_screened","subject":"BAAI-Agents/Cradle#107","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me6vcmkk98x4","at":"2026-06-11T03:07:58.357500Z","run_id":"migration","event":"candidate_discovered","subject":"zai-org/CogVLM2#220","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mergdrvsw571","at":"2026-06-11T03:07:58.357534Z","run_id":"migration","event":"candidate_screened","subject":"zai-org/CogVLM2#220","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mevmp1fz6b7p","at":"2026-06-11T03:07:58.357564Z","run_id":"migration","event":"candidate_discovered","subject":"deforum/deforum-stable-diffusion#387","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9megss9neb2hj","at":"2026-06-11T03:07:58.357600Z","run_id":"migration","event":"candidate_screened","subject":"deforum/deforum-stable-diffusion#387","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me3zm7f0y4kv","at":"2026-06-11T03:07:58.357638Z","run_id":"migration","event":"candidate_discovered","subject":"KaiyangZhou/CoOp#91","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me9rk9mq9e2f","at":"2026-06-11T03:07:58.357671Z","run_id":"migration","event":"candidate_screened","subject":"KaiyangZhou/CoOp#91","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mea75t9efwyn","at":"2026-06-11T03:07:58.357707Z","run_id":"migration","event":"candidate_discovered","subject":"showlab/Show-o#113","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mehh06akz1rt","at":"2026-06-11T03:07:58.357742Z","run_id":"migration","event":"candidate_screened","subject":"showlab/Show-o#113","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9megbkygqsf3w","at":"2026-06-11T03:07:58.357776Z","run_id":"migration","event":"candidate_discovered","subject":"Vchitect/Latte#140","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9med2kzkf4nv0","at":"2026-06-11T03:07:58.357819Z","run_id":"migration","event":"candidate_screened","subject":"Vchitect/Latte#140","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me3d6k2padzy","at":"2026-06-11T03:07:58.357858Z","run_id":"migration","event":"candidate_discovered","subject":"Vchitect/Latte#139","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me07wn02h7a2","at":"2026-06-11T03:07:58.357893Z","run_id":"migration","event":"candidate_screened","subject":"Vchitect/Latte#139","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me3j9y9wnkgc","at":"2026-06-11T03:07:58.357928Z","run_id":"migration","event":"candidate_discovered","subject":"PixArt-alpha/PixArt-sigma#163","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mebt9ddxpsyr","at":"2026-06-11T03:07:58.357963Z","run_id":"migration","event":"candidate_screened","subject":"PixArt-alpha/PixArt-sigma#163","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mer756g67b9p","at":"2026-06-11T03:07:58.358004Z","run_id":"migration","event":"candidate_discovered","subject":"PixArt-alpha/PixArt-sigma#164","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mesmv0fd4sw4","at":"2026-06-11T03:07:58.358035Z","run_id":"migration","event":"candidate_screened","subject":"PixArt-alpha/PixArt-sigma#164","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me30nwt71dhs","at":"2026-06-11T03:07:58.358065Z","run_id":"migration","event":"candidate_discovered","subject":"natanielruiz/deep-head-pose#132","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mewvdeqhcm2w","at":"2026-06-11T03:07:58.358117Z","run_id":"migration","event":"candidate_screened","subject":"natanielruiz/deep-head-pose#132","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mesr6bnmjsm7","at":"2026-06-11T03:07:58.358163Z","run_id":"migration","event":"candidate_discovered","subject":"apchenstu/TensoRF#89","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mexcfrbmfxt7","at":"2026-06-11T03:07:58.358203Z","run_id":"migration","event":"candidate_screened","subject":"apchenstu/TensoRF#89","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me2wczpnxwme","at":"2026-06-11T03:07:58.358242Z","run_id":"migration","event":"candidate_discovered","subject":"apchenstu/TensoRF#88","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mekzsxy1wcej","at":"2026-06-11T03:07:58.358286Z","run_id":"migration","event":"candidate_screened","subject":"apchenstu/TensoRF#88","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meh9n32n3jct","at":"2026-06-11T03:07:58.358323Z","run_id":"migration","event":"candidate_discovered","subject":"bytedance/1d-tokenizer#120","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9menc67f4jrz9","at":"2026-06-11T03:07:58.358366Z","run_id":"migration","event":"candidate_screened","subject":"bytedance/1d-tokenizer#120","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9memgds6teqb3","at":"2026-06-11T03:07:58.358400Z","run_id":"migration","event":"candidate_discovered","subject":"bytedance/1d-tokenizer#119","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mery6b840mqr","at":"2026-06-11T03:07:58.358439Z","run_id":"migration","event":"candidate_screened","subject":"bytedance/1d-tokenizer#119","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9menbzty36n6d","at":"2026-06-11T03:07:58.358474Z","run_id":"migration","event":"candidate_discovered","subject":"BAAI-DCAI/Bunny#153","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me668tt7wqfv","at":"2026-06-11T03:07:58.358511Z","run_id":"migration","event":"candidate_screened","subject":"BAAI-DCAI/Bunny#153","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me122xnf7fa6","at":"2026-06-11T03:07:58.358547Z","run_id":"migration","event":"candidate_discovered","subject":"Vchitect/SEINE#32","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me036b7qtkpw","at":"2026-06-11T03:07:58.358586Z","run_id":"migration","event":"candidate_screened","subject":"Vchitect/SEINE#32","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mejs4j7nvyd8","at":"2026-06-11T03:07:58.358618Z","run_id":"migration","event":"candidate_discovered","subject":"Vchitect/LaVie#73","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mek3h8hcg2j0","at":"2026-06-11T03:07:58.358656Z","run_id":"migration","event":"candidate_screened","subject":"Vchitect/LaVie#73","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meqsxpfky5vp","at":"2026-06-11T03:07:58.358693Z","run_id":"migration","event":"candidate_discovered","subject":"StanfordASL/Trajectron-plus-plus#106","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mefzx3y1grb2","at":"2026-06-11T03:07:58.358727Z","run_id":"migration","event":"candidate_screened","subject":"StanfordASL/Trajectron-plus-plus#106","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9metbwr24tfne","at":"2026-06-11T03:07:58.358760Z","run_id":"migration","event":"candidate_discovered","subject":"ikostrikov/jaxrl#31","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me9dtdskvmbc","at":"2026-06-11T03:07:58.358800Z","run_id":"migration","event":"candidate_screened","subject":"ikostrikov/jaxrl#31","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meeqyhz4119m","at":"2026-06-11T03:07:58.358840Z","run_id":"migration","event":"candidate_discovered","subject":"ikostrikov/jaxrl#30","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me51whc9z79s","at":"2026-06-11T03:07:58.358875Z","run_id":"migration","event":"candidate_screened","subject":"ikostrikov/jaxrl#30","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meey9ahhyxxr","at":"2026-06-11T03:07:58.358918Z","run_id":"migration","event":"candidate_discovered","subject":"eyurtsev/FlowCytometryTools#47","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mes3vdzvadk3","at":"2026-06-11T03:07:58.358970Z","run_id":"migration","event":"candidate_screened","subject":"eyurtsev/FlowCytometryTools#47","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me85vx9tp9dy","at":"2026-06-11T03:07:58.359014Z","run_id":"migration","event":"candidate_discovered","subject":"open-mmlab/mmsegmentation#3869","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mexgfkh34gk0","at":"2026-06-11T03:07:58.359048Z","run_id":"migration","event":"candidate_screened","subject":"open-mmlab/mmsegmentation#3869","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mexm4xm0f9vb","at":"2026-06-11T03:07:58.359083Z","run_id":"migration","event":"candidate_discovered","subject":"open-mmlab/mmdetection3d#3140","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me67tasv10fj","at":"2026-06-11T03:07:58.359120Z","run_id":"migration","event":"candidate_screened","subject":"open-mmlab/mmdetection3d#3140","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9me6baxf063ew","at":"2026-06-11T03:07:58.359158Z","run_id":"migration","event":"candidate_discovered","subject":"determined-ai/determined#10265","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me88ypcs6w4p","at":"2026-06-11T03:07:58.359196Z","run_id":"migration","event":"candidate_screened","subject":"determined-ai/determined#10265","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meta84sp46z4","at":"2026-06-11T03:07:58.359233Z","run_id":"migration","event":"candidate_discovered","subject":"anthropics/skills#362","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9medfeagwqcj6","at":"2026-06-11T03:07:58.359270Z","run_id":"migration","event":"candidate_screened","subject":"anthropics/skills#362","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9mescyzvpmeye","at":"2026-06-11T03:07:58.359306Z","run_id":"migration","event":"candidate_discovered","subject":"anthropics/skills#361","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9me2rq1cjx7x4","at":"2026-06-11T03:07:58.359343Z","run_id":"migration","event":"candidate_screened","subject":"anthropics/skills#361","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9meg8h5wzpw6x","at":"2026-06-11T03:07:58.359379Z","run_id":"migration","event":"candidate_discovered","subject":"Lightning-AI/pytorch-lightning#21539","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mekpv0x8ppwa","at":"2026-06-11T03:07:58.359412Z","run_id":"migration","event":"candidate_screened","subject":"Lightning-AI/pytorch-lightning#21539","data":{"score":6.0,"tier":"B"}}
+{"id":"ev_1n2m9medmdavs4z73","at":"2026-06-11T03:07:58.359446Z","run_id":"migration","event":"candidate_discovered","subject":"EleutherAI/lm-evaluation-harness#3580","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9mef2axm7jxwn","at":"2026-06-11T03:07:58.359480Z","run_id":"migration","event":"candidate_rejected","subject":"EleutherAI/lm-evaluation-harness#3580","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9me9a2ebt86na","at":"2026-06-11T03:07:58.408153Z","run_id":"run_1n2m9mejkt39reqgq","event":"heartbeat_alarm","subject":"heartbeat","data":{"last_ok_hours":null}}
+{"id":"ev_1n2m9n8kxftbm6qer","at":"2026-06-11T03:08:24.408818Z","run_id":"migration","event":"candidate_discovered","subject":"rapidsai/cudf#21444","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8bt70ncdrgs","at":"2026-06-11T03:08:24.409005Z","run_id":"migration","event":"candidate_rejected","subject":"rapidsai/cudf#21444","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8223n5d95gz","at":"2026-06-11T03:08:24.409059Z","run_id":"migration","event":"candidate_discovered","subject":"mage-ai/mage-ai#6024","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n818bavhnhw9","at":"2026-06-11T03:08:24.409110Z","run_id":"migration","event":"candidate_rejected","subject":"mage-ai/mage-ai#6024","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n80nqm7kpgqs","at":"2026-06-11T03:08:24.409160Z","run_id":"migration","event":"candidate_discovered","subject":"chroma-core/chroma#6437","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8e0zcn4t0mq","at":"2026-06-11T03:08:24.409208Z","run_id":"migration","event":"candidate_rejected","subject":"chroma-core/chroma#6437","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n849y3z1nnqb","at":"2026-06-11T03:08:24.409274Z","run_id":"migration","event":"candidate_discovered","subject":"lancedb/lancedb#3028","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8n6pafnbmnw","at":"2026-06-11T03:08:24.409319Z","run_id":"migration","event":"candidate_rejected","subject":"lancedb/lancedb#3028","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8gjkannqga6","at":"2026-06-11T03:08:24.409371Z","run_id":"migration","event":"candidate_discovered","subject":"huggingface/diffusers#13093","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8d3e47ph1vm","at":"2026-06-11T03:08:24.409413Z","run_id":"migration","event":"candidate_rejected","subject":"huggingface/diffusers#13093","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n84bbmxp6e54","at":"2026-06-11T03:08:24.409450Z","run_id":"migration","event":"candidate_discovered","subject":"vllm-project/vllm#34163","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n89m5j1jez1b","at":"2026-06-11T03:08:24.409496Z","run_id":"migration","event":"candidate_rejected","subject":"vllm-project/vllm#34163","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8ycn8pgfvj0","at":"2026-06-11T03:08:24.409543Z","run_id":"migration","event":"candidate_discovered","subject":"PyGithub/PyGithub#3450","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n81q6yng4qs6","at":"2026-06-11T03:08:24.409580Z","run_id":"migration","event":"candidate_rejected","subject":"PyGithub/PyGithub#3450","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8wyed8n7n47","at":"2026-06-11T03:08:24.409627Z","run_id":"migration","event":"candidate_discovered","subject":"microsoft/agent-lightning#480","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8nr935g85sv","at":"2026-06-11T03:08:24.409666Z","run_id":"migration","event":"candidate_rejected","subject":"microsoft/agent-lightning#480","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8cbr8cv6t6r","at":"2026-06-11T03:08:24.409703Z","run_id":"migration","event":"candidate_discovered","subject":"microsoft/agent-lightning#481","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n801hk7q2q3a","at":"2026-06-11T03:08:24.409747Z","run_id":"migration","event":"candidate_rejected","subject":"microsoft/agent-lightning#481","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8p64pn18faz","at":"2026-06-11T03:08:24.409794Z","run_id":"migration","event":"candidate_discovered","subject":"microsoft/agent-lightning#482","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n82q4q75v115","at":"2026-06-11T03:08:24.409834Z","run_id":"migration","event":"candidate_rejected","subject":"microsoft/agent-lightning#482","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8qc9zd772xy","at":"2026-06-11T03:08:24.409876Z","run_id":"migration","event":"candidate_discovered","subject":"microsoft/agent-lightning#483","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8bsvk9nkttb","at":"2026-06-11T03:08:24.409913Z","run_id":"migration","event":"candidate_rejected","subject":"microsoft/agent-lightning#483","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8faks3ffhz5","at":"2026-06-11T03:08:24.409952Z","run_id":"migration","event":"candidate_discovered","subject":"microsoft/agent-lightning#484","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8dpa76tp9kf","at":"2026-06-11T03:08:24.409993Z","run_id":"migration","event":"candidate_rejected","subject":"microsoft/agent-lightning#484","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8mevj3ydgvt","at":"2026-06-11T03:08:24.410029Z","run_id":"migration","event":"candidate_discovered","subject":"microsoft/agent-lightning#485","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n85vmgsf81md","at":"2026-06-11T03:08:24.410069Z","run_id":"migration","event":"candidate_rejected","subject":"microsoft/agent-lightning#485","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8wp6c890cyv","at":"2026-06-11T03:08:24.410104Z","run_id":"migration","event":"candidate_discovered","subject":"microsoft/agent-lightning#486","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8ez4xxz6ztv","at":"2026-06-11T03:08:24.410143Z","run_id":"migration","event":"candidate_rejected","subject":"microsoft/agent-lightning#486","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8qgw9825wf4","at":"2026-06-11T03:08:24.410206Z","run_id":"migration","event":"candidate_discovered","subject":"lancedb/lancedb#3483","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n85jskkxhnp3","at":"2026-06-11T03:08:24.410248Z","run_id":"migration","event":"candidate_rejected","subject":"lancedb/lancedb#3483","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8q7m5re91tn","at":"2026-06-11T03:08:24.410281Z","run_id":"migration","event":"candidate_discovered","subject":"Lightning-AI/pytorch-lightning#21529","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8c3a31bsqzf","at":"2026-06-11T03:08:24.410316Z","run_id":"migration","event":"candidate_rejected","subject":"Lightning-AI/pytorch-lightning#21529","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n84mje9p22g2","at":"2026-06-11T03:08:24.410354Z","run_id":"migration","event":"candidate_discovered","subject":"PaddlePaddle/PaddleOCR#17685","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8t7q38y62sb","at":"2026-06-11T03:08:24.410391Z","run_id":"migration","event":"candidate_rejected","subject":"PaddlePaddle/PaddleOCR#17685","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n87bvqsqj11t","at":"2026-06-11T03:08:24.410429Z","run_id":"migration","event":"candidate_discovered","subject":"espnet/espnet#6363","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n83es1gx8rvz","at":"2026-06-11T03:08:24.410471Z","run_id":"migration","event":"candidate_rejected","subject":"espnet/espnet#6363","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8640sva4g04","at":"2026-06-11T03:08:24.410508Z","run_id":"migration","event":"candidate_discovered","subject":"apache/tvm#18774","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8ytj0fxtn95","at":"2026-06-11T03:08:24.410542Z","run_id":"migration","event":"candidate_rejected","subject":"apache/tvm#18774","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8rd74z25yys","at":"2026-06-11T03:08:24.410579Z","run_id":"migration","event":"candidate_discovered","subject":"python-poetry/poetry#10736","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8dbcke20j05","at":"2026-06-11T03:08:24.410613Z","run_id":"migration","event":"candidate_rejected","subject":"python-poetry/poetry#10736","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n84239yyh5yd","at":"2026-06-11T03:08:24.410650Z","run_id":"migration","event":"candidate_discovered","subject":"public-apis/public-apis#5082","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8qfpmkpbbrb","at":"2026-06-11T03:08:24.410686Z","run_id":"migration","event":"candidate_rejected","subject":"public-apis/public-apis#5082","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8g14scmfqqq","at":"2026-06-11T03:08:24.410718Z","run_id":"migration","event":"candidate_discovered","subject":"public-apis/public-apis#5083","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n84hs3rkcr7m","at":"2026-06-11T03:08:24.410759Z","run_id":"migration","event":"candidate_rejected","subject":"public-apis/public-apis#5083","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8xp18mpajyw","at":"2026-06-11T03:08:24.410795Z","run_id":"migration","event":"candidate_discovered","subject":"public-apis/public-apis#5084","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8v11mjp59w1","at":"2026-06-11T03:08:24.410828Z","run_id":"migration","event":"candidate_rejected","subject":"public-apis/public-apis#5084","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n85a3mw6yd7r","at":"2026-06-11T03:08:24.410859Z","run_id":"migration","event":"candidate_discovered","subject":"public-apis/public-apis#5085","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8cah29gccq3","at":"2026-06-11T03:08:24.410896Z","run_id":"migration","event":"candidate_rejected","subject":"public-apis/public-apis#5085","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8zzbr0fc8jg","at":"2026-06-11T03:08:24.410933Z","run_id":"migration","event":"candidate_discovered","subject":"public-apis/public-apis#5086","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n87w4x354ebz","at":"2026-06-11T03:08:24.410971Z","run_id":"migration","event":"candidate_rejected","subject":"public-apis/public-apis#5086","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n80y9wn76wfg","at":"2026-06-11T03:08:24.411031Z","run_id":"migration","event":"candidate_discovered","subject":"public-apis/public-apis#5087","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8q7avgwzjr8","at":"2026-06-11T03:08:24.411066Z","run_id":"migration","event":"candidate_rejected","subject":"public-apis/public-apis#5087","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8n8ntc5v56w","at":"2026-06-11T03:08:24.411104Z","run_id":"migration","event":"candidate_discovered","subject":"public-apis/public-apis#5088","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8h53eegd7d1","at":"2026-06-11T03:08:24.411144Z","run_id":"migration","event":"candidate_rejected","subject":"public-apis/public-apis#5088","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n89h432h9k0h","at":"2026-06-11T03:08:24.411180Z","run_id":"migration","event":"candidate_discovered","subject":"huggingface/transformers#43775","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8w7bbr6mbfn","at":"2026-06-11T03:08:24.411223Z","run_id":"migration","event":"candidate_rejected","subject":"huggingface/transformers#43775","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8zbnzn2e9w2","at":"2026-06-11T03:08:24.411262Z","run_id":"migration","event":"candidate_discovered","subject":"google-research/vision_transformer#320","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8754aj99rmq","at":"2026-06-11T03:08:24.411304Z","run_id":"migration","event":"candidate_rejected","subject":"google-research/vision_transformer#320","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n80qh2bsq2mv","at":"2026-06-11T03:08:24.411350Z","run_id":"migration","event":"candidate_discovered","subject":"sgl-project/sglang#18397","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8qyrd46rwwb","at":"2026-06-11T03:08:24.411383Z","run_id":"migration","event":"candidate_rejected","subject":"sgl-project/sglang#18397","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n850hwyj8jh1","at":"2026-06-11T03:08:24.411421Z","run_id":"migration","event":"candidate_discovered","subject":"Project-MONAI/MONAI#8739","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8jb87zpk19n","at":"2026-06-11T03:08:24.411462Z","run_id":"migration","event":"candidate_rejected","subject":"Project-MONAI/MONAI#8739","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n81m55n4mgtz","at":"2026-06-11T03:08:24.411499Z","run_id":"migration","event":"candidate_discovered","subject":"anthropics/skills#363","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8j2kafg7q0n","at":"2026-06-11T03:08:24.411538Z","run_id":"migration","event":"candidate_rejected","subject":"anthropics/skills#363","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8bpfsbv8xpj","at":"2026-06-11T03:08:24.411574Z","run_id":"migration","event":"candidate_discovered","subject":"microsoft/autogen#7211","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8z1m02xyaky","at":"2026-06-11T03:08:24.411618Z","run_id":"migration","event":"candidate_rejected","subject":"microsoft/autogen#7211","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8nxs131qcar","at":"2026-06-11T03:08:24.411652Z","run_id":"migration","event":"candidate_discovered","subject":"meta-llama/llama-cookbook#1021","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n80445942h47","at":"2026-06-11T03:08:24.411686Z","run_id":"migration","event":"candidate_rejected","subject":"meta-llama/llama-cookbook#1021","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8ngamgga20p","at":"2026-06-11T03:08:24.411724Z","run_id":"migration","event":"candidate_discovered","subject":"usestrix/strix#204","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8zmv2sapd22","at":"2026-06-11T03:08:24.411763Z","run_id":"migration","event":"candidate_rejected","subject":"usestrix/strix#204","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n80dnzacn4bc","at":"2026-06-11T03:08:24.411804Z","run_id":"migration","event":"candidate_discovered","subject":"Wan-Video/Wan2.1#574","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8sb2d4qwwys","at":"2026-06-11T03:08:24.411837Z","run_id":"migration","event":"candidate_rejected","subject":"Wan-Video/Wan2.1#574","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8d94rb3fmr0","at":"2026-06-11T03:08:24.411875Z","run_id":"migration","event":"candidate_discovered","subject":"facebookresearch/hydra#3133","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n86x5fn55eq5","at":"2026-06-11T03:08:24.411910Z","run_id":"migration","event":"candidate_rejected","subject":"facebookresearch/hydra#3133","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8fbq9stegdd","at":"2026-06-11T03:08:24.411947Z","run_id":"migration","event":"candidate_discovered","subject":"facebookresearch/seamless_communication#572","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8dacs0g6gx5","at":"2026-06-11T03:08:24.411985Z","run_id":"migration","event":"candidate_rejected","subject":"facebookresearch/seamless_communication#572","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8ezn17y4aa3","at":"2026-06-11T03:08:24.412024Z","run_id":"migration","event":"candidate_discovered","subject":"modelscope/facechain#650","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8c2czvveze4","at":"2026-06-11T03:08:24.412064Z","run_id":"migration","event":"candidate_rejected","subject":"modelscope/facechain#650","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8kanwqa094b","at":"2026-06-11T03:08:24.412100Z","run_id":"migration","event":"candidate_discovered","subject":"arrow-py/arrow#1243","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8zksm8q9fk0","at":"2026-06-11T03:08:24.412139Z","run_id":"migration","event":"candidate_rejected","subject":"arrow-py/arrow#1243","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n88r9h7jtxsm","at":"2026-06-11T03:08:24.412175Z","run_id":"migration","event":"candidate_discovered","subject":"vwxyzjn/cleanrl#554","data":{"source":"legacy_queue"}}
+{"id":"ev_1n2m9n8s6kjqh0mr7","at":"2026-06-11T03:08:24.412215Z","run_id":"migration","event":"candidate_rejected","subject":"vwxyzjn/cleanrl#554","data":{"reason":"legacy_done"}}
+{"id":"ev_1n2m9n8s53ye9yk84","at":"2026-06-11T03:08:24.459236Z","run_id":"run_1n2m9n8re59gvg0s4","event":"run_started","subject":"discover","data":{"dry_run":true}}
+{"id":"ev_1n2m9nbd1hhba0dzy","at":"2026-06-11T03:08:27.295884Z","run_id":"run_1n2m9n8re59gvg0s4","event":"run_finished","subject":"discover","data":{"outcome":"ok"}}
+{"id":"ev_1n2m9ptxbsc2fvtam","at":"2026-06-11T03:09:14.888698Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"run_started","subject":"discover","data":{"dry_run":true}}
+{"id":"ev_1n2m9pwzkmx61jn5z","at":"2026-06-11T03:09:16.665941Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"verl-project/verl-omni#159","data":{"source":"good first issue","title":"[RFC] SD3.5-Medium Flow-GRPO OCR as the standard fast convergence test"}}
+{"id":"ev_1n2m9pwmb4yvt9qvf","at":"2026-06-11T03:09:16.666825Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"verl-project/verl-omni#159","data":{"reason":"too fresh (racing humans)"}}
+{"id":"ev_1n2m9pwrvjesmb532","at":"2026-06-11T03:09:16.667225Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"razbuild/raztint#9","data":{"source":"good first issue","title":"Expand docs with examples, tutorial, and README enhancements"}}
+{"id":"ev_1n2m9pwhyy7567jmn","at":"2026-06-11T03:09:16.667467Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_screened","subject":"razbuild/raztint#9","data":{"score":9.926027397260274,"tier":"A"}}
+{"id":"ev_1n2m9pw9j16x8nqx1","at":"2026-06-11T03:09:16.667662Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"Scottcjn/rustchain-bounties#728","data":{"source":"good first issue","title":"[BOUNTY: 1 RTC] Answer Questions in GitHub Discussions (Up to 10 RTC)"}}
+{"id":"ev_1n2m9pw85cdx43w2q","at":"2026-06-11T03:09:16.667815Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_screened","subject":"Scottcjn/rustchain-bounties#728","data":{"score":7.736986301369863,"tier":"B"}}
+{"id":"ev_1n2m9pwwka1r2978w","at":"2026-06-11T03:09:16.667953Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"harshdwivediiiii/Devcity-Ai#1","data":{"source":"good first issue","title":"Fake / Static Metrics Undermining Product Credibility"}}
+{"id":"ev_1n2m9pww8y4a7f4x6","at":"2026-06-11T03:09:16.668070Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"harshdwivediiiii/Devcity-Ai#1","data":{"reason":"assigned"}}
+{"id":"ev_1n2m9pwrwed4t94ws","at":"2026-06-11T03:09:16.668206Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"josdem/py-vetlog-calendar#118","data":{"source":"good first issue","title":"Create a new Google calendar event for the doctor"}}
+{"id":"ev_1n2m9pwsxb1ma5dxn","at":"2026-06-11T03:09:16.668334Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"josdem/py-vetlog-calendar#118","data":{"reason":"too fresh (racing humans)"}}
+{"id":"ev_1n2m9pw871dv8b72e","at":"2026-06-11T03:09:16.668458Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"qorexdevs/quicksave#24","data":{"source":"good first issue","title":"add -z/--gzip to compress the streamed export"}}
+{"id":"ev_1n2m9pwxx3cm9xdc4","at":"2026-06-11T03:09:16.668590Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"qorexdevs/quicksave#24","data":{"reason":"too fresh (racing humans)"}}
+{"id":"ev_1n2m9pwa2d4vz2751","at":"2026-06-11T03:09:16.668732Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"scipy/scipy#7168","data":{"source":"good first issue","title":"DOC: Add \"Examples\" to docstrings"}}
+{"id":"ev_1n2m9pwr83tnxwe1z","at":"2026-06-11T03:09:16.668861Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"scipy/scipy#7168","data":{"reason":"stale (>18 months)"}}
+{"id":"ev_1n2m9pw1cs8kg19tt","at":"2026-06-11T03:09:16.668983Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"josdem/py-vetlog-calendar#112","data":{"source":"good first issue","title":"Create an entry point to list all surgeries from the previous 7 days and no medical logs"}}
+{"id":"ev_1n2m9pw59p5mfjr2b","at":"2026-06-11T03:09:16.669102Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"josdem/py-vetlog-calendar#112","data":{"reason":"assigned"}}
+{"id":"ev_1n2m9pwbtqpyg7eaf","at":"2026-06-11T03:09:16.669226Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"hexsecs/canarchy#414","data":{"source":"good first issue","title":"filter: accept decimal IDs/PGNs and don't return empty data on invalid expression"}}
+{"id":"ev_1n2m9pwdhx6tggv1m","at":"2026-06-11T03:09:16.669339Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"hexsecs/canarchy#414","data":{"reason":"too fresh (racing humans)"}}
+{"id":"ev_1n2m9pwfze98pe6wq","at":"2026-06-11T03:09:16.669475Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"hexsecs/canarchy#411","data":{"source":"good first issue","title":"j1939 summary: dedupe repeated BAM identifiers (VIN listed per session)"}}
+{"id":"ev_1n2m9pwmbwf5ss8e8","at":"2026-06-11T03:09:16.669602Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"hexsecs/canarchy#411","data":{"reason":"too fresh (racing humans)"}}
+{"id":"ev_1n2m9pwga4pgs3fpy","at":"2026-06-11T03:09:16.669721Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"vllm-project/vllm#33267","data":{"source":"good first issue","title":"[Feature]: Remove attention layer name from `unified_kv_cache_update`"}}
+{"id":"ev_1n2m9pwke5ht2y30d","at":"2026-06-11T03:09:16.669844Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"vllm-project/vllm#33267","data":{"reason":"assigned"}}
+{"id":"ev_1n2m9pwrnebwvxr3g","at":"2026-06-11T03:09:16.669956Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"Abhigyan-Shekhar/Waggle-mcp#304","data":{"source":"good first issue","title":"docs(issue-templates): make screenshot guidance conditional instead of a blanket requirement"}}
+{"id":"ev_1n2m9pwx76razetj9","at":"2026-06-11T03:09:16.670082Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"Abhigyan-Shekhar/Waggle-mcp#304","data":{"reason":"too fresh (racing humans)"}}
+{"id":"ev_1n2m9pw3fe4c1rsgs","at":"2026-06-11T03:09:16.670204Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"Abhigyan-Shekhar/Waggle-mcp#303","data":{"source":"good first issue","title":"docs(graph-ui): document how to refresh Graph Studio screenshots and sample-preview.html"}}
+{"id":"ev_1n2m9pwdrw071n6dh","at":"2026-06-11T03:09:16.670315Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"Abhigyan-Shekhar/Waggle-mcp#303","data":{"reason":"too fresh (racing humans)"}}
+{"id":"ev_1n2m9pwp2f5gaksyt","at":"2026-06-11T03:09:16.670435Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"Abhigyan-Shekhar/Waggle-mcp#302","data":{"source":"good first issue","title":"docs(codex): explain the AGENTS.md managed memory block and safe workspace customization"}}
+{"id":"ev_1n2m9pw7ta25ac6ey","at":"2026-06-11T03:09:16.670546Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"Abhigyan-Shekhar/Waggle-mcp#302","data":{"reason":"too fresh (racing humans)"}}
+{"id":"ev_1n2m9pw048q57bvf7","at":"2026-06-11T03:09:16.670666Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"Abhigyan-Shekhar/Waggle-mcp#301","data":{"source":"good first issue","title":"test(packaging): verify examples/codex_config.example.toml stays aligned with docs/install/codex.md"}}
+{"id":"ev_1n2m9pw2h5a1tm77z","at":"2026-06-11T03:09:16.670780Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"Abhigyan-Shekhar/Waggle-mcp#301","data":{"reason":"too fresh (racing humans)"}}
+{"id":"ev_1n2m9pwnmwbkzjwma","at":"2026-06-11T03:09:16.670901Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"Abhigyan-Shekhar/Waggle-mcp#300","data":{"source":"good first issue","title":"docs(contributing): add a maintainer triage checklist for good first issue vs help wanted vs blocked"}}
+{"id":"ev_1n2m9pw80dfe625rw","at":"2026-06-11T03:09:16.671001Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"Abhigyan-Shekhar/Waggle-mcp#300","data":{"reason":"too fresh (racing humans)"}}
+{"id":"ev_1n2m9pw44gtep4twn","at":"2026-06-11T03:09:16.671121Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"Abhigyan-Shekhar/Waggle-mcp#299","data":{"source":"good first issue","title":"test(server): cover _resolve_drive_token_path custom path and export-root fallback"}}
+{"id":"ev_1n2m9pwnpzhwx145h","at":"2026-06-11T03:09:16.671216Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"Abhigyan-Shekhar/Waggle-mcp#299","data":{"reason":"too fresh (racing humans)"}}
+{"id":"ev_1n2m9pwkv98jych2z","at":"2026-06-11T03:09:16.671323Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"Abhigyan-Shekhar/Waggle-mcp#298","data":{"source":"good first issue","title":"docs(reference): document Google Drive push/pull/share prerequisites and token-file behavior"}}
+{"id":"ev_1n2m9pwp24zvpsf92","at":"2026-06-11T03:09:16.671411Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"Abhigyan-Shekhar/Waggle-mcp#298","data":{"reason":"too fresh (racing humans)"}}
+{"id":"ev_1n2m9pwbcwqbc42at","at":"2026-06-11T03:09:16.671516Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"Abhigyan-Shekhar/Waggle-mcp#297","data":{"source":"good first issue","title":"docs(issue-templates): link bug and feature forms to troubleshooting, repository map, and security policy"}}
+{"id":"ev_1n2m9pwav3d3sypbz","at":"2026-06-11T03:09:16.671611Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"Abhigyan-Shekhar/Waggle-mcp#297","data":{"reason":"too fresh (racing humans)"}}
+{"id":"ev_1n2m9pwd1bkgbfqe6","at":"2026-06-11T03:09:16.671700Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"Abhigyan-Shekhar/Waggle-mcp#296","data":{"source":"good first issue","title":"docs(install): add a client support matrix to docs/install/README.md"}}
+{"id":"ev_1n2m9pwcqqkaew3qv","at":"2026-06-11T03:09:16.671792Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"Abhigyan-Shekhar/Waggle-mcp#296","data":{"reason":"too fresh (racing humans)"}}
+{"id":"ev_1n2m9pw1kxagfm5mb","at":"2026-06-11T03:09:16.671877Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"Abhigyan-Shekhar/Waggle-mcp#295","data":{"source":"good first issue","title":"test(auth): add dedicated coverage for API key generation, hashing, and scope checks"}}
+{"id":"ev_1n2m9pwv2xjed9tj7","at":"2026-06-11T03:09:16.671961Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"Abhigyan-Shekhar/Waggle-mcp#295","data":{"reason":"too fresh (racing humans)"}}
+{"id":"ev_1n2m9pwza4hqxvqzm","at":"2026-06-11T03:09:16.672055Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"civicband/clerk-fetchers#66","data":{"source":"good first issue","title":"Torrance, CA"}}
+{"id":"ev_1n2m9pwg7djp3vc95","at":"2026-06-11T03:09:16.672147Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"civicband/clerk-fetchers#66","data":{"reason":"label:invalid"}}
+{"id":"ev_1n2m9pwax52q1tb5s","at":"2026-06-11T03:09:16.672252Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"DotDev262/WinHome#236","data":{"source":"good first issue","title":"[Docs] Expand module documentation with real-world examples"}}
+{"id":"ev_1n2m9pw3a2jq5gfsh","at":"2026-06-11T03:09:16.672347Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"DotDev262/WinHome#236","data":{"reason":"assigned"}}
+{"id":"ev_1n2m9pwezdtw9jway","at":"2026-06-11T03:09:16.672454Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"SimplexLab/TorchJD#667","data":{"source":"good first issue","title":"Scalarizer Tracker"}}
+{"id":"ev_1n2m9pw6nv4an8azx","at":"2026-06-11T03:09:16.672547Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_screened","subject":"SimplexLab/TorchJD#667","data":{"score":7.901369863013699,"tier":"B"}}
+{"id":"ev_1n2m9pwrj4ad0qdpn","at":"2026-06-11T03:09:16.672650Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"generative-computing/mellea#1255","data":{"source":"good first issue","title":"Remove author from \"Last Updated\" footer"}}
+{"id":"ev_1n2m9pwdfskgpprjr","at":"2026-06-11T03:09:16.672750Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"generative-computing/mellea#1255","data":{"reason":"too fresh (racing humans)"}}
+{"id":"ev_1n2m9pwfbds6mh479","at":"2026-06-11T03:09:16.672846Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"yarsa/nepal-compliance#265","data":{"source":"good first issue","title":"Help wanted: fix \"Label Large PR\" workflow failed for forked PRs"}}
+{"id":"ev_1n2m9pwamymryscfj","at":"2026-06-11T03:09:16.672939Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_screened","subject":"yarsa/nepal-compliance#265","data":{"score":9.964383561643835,"tier":"A"}}
+{"id":"ev_1n2m9pwfckyg3k6xa","at":"2026-06-11T03:09:16.673051Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"doronz88/pymobiledevice3#1669","data":{"source":"good first issue","title":"Bluetooth packet logger"}}
+{"id":"ev_1n2m9pw0sfgvysfr2","at":"2026-06-11T03:09:16.673138Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_screened","subject":"doronz88/pymobiledevice3#1669","data":{"score":9.882191780821918,"tier":"A"}}
+{"id":"ev_1n2m9pws165p2ycg6","at":"2026-06-11T03:09:16.673232Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"OpenHands/OpenHands#11938","data":{"source":"good first issue","title":"Frontmatter field for multiple repos"}}
+{"id":"ev_1n2m9pw6h6r0nfve0","at":"2026-06-11T03:09:16.673323Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_screened","subject":"OpenHands/OpenHands#11938","data":{"score":7.493150684931507,"tier":"B"}}
+{"id":"ev_1n2m9pwe6h2r0kgmp","at":"2026-06-11T03:09:16.673424Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"crytic/slither#595","data":{"source":"good first issue","title":"Support slither.conf.json and slither.config.json"}}
+{"id":"ev_1n2m9pwgsppmp86s5","at":"2026-06-11T03:09:16.673521Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"crytic/slither#595","data":{"reason":"stale (>18 months)"}}
+{"id":"ev_1n2m9pw0mfp83j3gm","at":"2026-06-11T03:09:16.673613Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"apache/airflow-steward#350","data":{"source":"good first issue","title":"Add a `skill-and-tool-validator.yml` CI workflow"}}
+{"id":"ev_1n2m9pwed2dtjrbx5","at":"2026-06-11T03:09:16.673715Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_rejected","subject":"apache/airflow-steward#350","data":{"reason":"assigned"}}
+{"id":"ev_1n2m9pyd59dwyxy1x","at":"2026-06-11T03:09:18.552248Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"canonical/charm-logrotated#80","data":{"source":"help wanted","title":"The charm fails to install when /tmp is mounted with \"noexec\""}}
+{"id":"ev_1n2m9pym79dj1t9ak","at":"2026-06-11T03:09:18.552858Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_screened","subject":"canonical/charm-logrotated#80","data":{"score":6.909589041095891,"tier":"B"}}
+{"id":"ev_1n2m9pynh3535azy8","at":"2026-06-11T03:09:18.553230Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"agentscope-ai/agentscope#1680","data":{"source":"help wanted","title":"feat(tts): implement Gemini TTS API"}}
+{"id":"ev_1n2m9pyqhhyftcwxg","at":"2026-06-11T03:09:18.553416Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_screened","subject":"agentscope-ai/agentscope#1680","data":{"score":6.958904109589041,"tier":"B"}}
+{"id":"ev_1n2m9pyg2q3500b1m","at":"2026-06-11T03:09:18.553573Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"agentscope-ai/agentscope#1679","data":{"source":"help wanted","title":"feat(tts): implement OpenAI TTS API"}}
+{"id":"ev_1n2m9pyevsnd4s514","at":"2026-06-11T03:09:18.553706Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_screened","subject":"agentscope-ai/agentscope#1679","data":{"score":6.958904109589041,"tier":"B"}}
+{"id":"ev_1n2m9pywz2d43kmnw","at":"2026-06-11T03:09:18.553832Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_discovered","subject":"agentscope-ai/agentscope#1685","data":{"source":"help wanted","title":"feat(tts): implement DashScope CosyVoice TTS API"}}
+{"id":"ev_1n2m9pyp54zdb7299","at":"2026-06-11T03:09:18.553949Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"candidate_screened","subject":"agentscope-ai/agentscope#1685","data":{"score":6.958904109589041,"tier":"B"}}
+{"id":"ev_1n2m9py1hyrqmqppf","at":"2026-06-11T03:09:18.558548Z","run_id":"run_1n2m9pt7bc6ejmbn8","event":"run_finished","subject":"discover","data":{"outcome":"ok"}}
+{"id":"ev_1n2m9q6sa850a1xgb","at":"2026-06-11T03:09:26.139868Z","run_id":"run_1n2m9q6hex434tckn","event":"run_started","subject":"steward","data":{"dry_run":true}}
+{"id":"ev_1n2m9q8k0hnnk4kyk","at":"2026-06-11T03:09:28.202703Z","run_id":"run_1n2m9q6hex434tckn","event":"case_reviewed","subject":"Zulko/moviepy#2554","data":{"reason":"error","detail":"error: GhError: Unknown JSON field: \"merged\"\nAvailable fields:\n  additions\n  assignees\n  author\n  autoMergeRequest\n  baseRefName\n  baseRefOid\n  body\n  changedFiles\n  closed\n  c"}}
+{"id":"ev_1n2m9q8scdvz5p20y","at":"2026-06-11T03:09:28.688813Z","run_id":"run_1n2m9q6hex434tckn","event":"case_reviewed","subject":"pytorch/vision#9384","data":{"reason":"error","detail":"error: GhError: Unknown JSON field: \"merged\"\nAvailable fields:\n  additions\n  assignees\n  author\n  autoMergeRequest\n  baseRefName\n  baseRefOid\n  body\n  changedFiles\n  closed\n  c"}}
+{"id":"ev_1n2m9q99mwpm46grj","at":"2026-06-11T03:09:29.157250Z","run_id":"run_1n2m9q6hex434tckn","event":"case_reviewed","subject":"determined-ai/determined#10265","data":{"reason":"error","detail":"error: GhError: Unknown JSON field: \"merged\"\nAvailable fields:\n  additions\n  assignees\n  author\n  autoMergeRequest\n  baseRefName\n  baseRefOid\n  body\n  changedFiles\n  closed\n  c"}}
+{"id":"ev_1n2m9q9262expjjpb","at":"2026-06-11T03:09:29.624634Z","run_id":"run_1n2m9q6hex434tckn","event":"case_reviewed","subject":"sphinx-doc/sphinx#14303","data":{"reason":"error","detail":"error: GhError: Unknown JSON field: \"merged\"\nAvailable fields:\n  additions\n  assignees\n  author\n  autoMergeRequest\n  baseRefName\n  baseRefOid\n  body\n  changedFiles\n  closed\n  c"}}
+{"id":"ev_1n2m9q96gh3qa7gg8","at":"2026-06-11T03:09:29.624981Z","run_id":"run_1n2m9q6hex434tckn","event":"run_finished","subject":"steward","data":{"outcome":"ok"}}
+{"id":"ev_1n2m9r0be28j5srmd","at":"2026-06-11T03:09:52.991847Z","run_id":"run_1n2m9r0mhzpjark43","event":"run_started","subject":"steward","data":{"dry_run":true}}
+{"id":"ev_1n2m9r43xwgb7sed9","at":"2026-06-11T03:09:56.995607Z","run_id":"run_1n2m9r0mhzpjark43","event":"case_reviewed","subject":"Zulko/moviepy#2554","data":{"reason":"healthy","detail":""}}
+{"id":"ev_1n2m9r7wdhfn3xk63","at":"2026-06-11T03:09:59.714708Z","run_id":"run_1n2m9r0mhzpjark43","event":"case_reviewed","subject":"pytorch/vision#9384","data":{"reason":"maintainer_replied","detail":"zy1git: I took a look at the test errors and wanted to share a few observations:\r\n\r\na, the signature order does not match F.resize: resize_mask(mask, size, max_size, interpolation) should be resize_ma"}}
+{"id":"ev_1n2m9r7b9s6th3jdk","at":"2026-06-11T03:09:59.715608Z","run_id":"run_1n2m9r0mhzpjark43","event":"maintainer_interaction","subject":"pytorch/vision#9384","data":{"sentiment":"neutral","detail":"zy1git: I took a look at the test errors and wanted to share a few observations:\r\n\r\na, the signature order does not match F.resize: resize_mask(mask, size, max_size, interpolation) should be resize_ma"}}
+{"id":"ev_1n2m9r75z0zqfax9y","at":"2026-06-11T03:09:59.719889Z","run_id":"run_1n2m9r0mhzpjark43","event":"action_proposed","subject":"Mr-Neutr0n/oss-tracker","data":{"action_id":"act_1n2m9r75ve63nzhwt","kind":"open_escalation_issue","rationale":"Maintainer replied on pytorch/vision#9384: zy1git: I took a look at the test errors and wanted to share a few observations:\r\n\r\na, the signature order does not match F.resize: resize_mask(mask, size, max_size, interpolation) should be resize_mask(mask, — review and reply, or authorize an agent reply."}}
+{"id":"ev_1n2m9r7fws25wyhny","at":"2026-06-11T03:09:59.729123Z","run_id":"run_1n2m9r0mhzpjark43","event":"action_executed","subject":"Mr-Neutr0n/oss-tracker","data":{"action_id":"act_1n2m9r75ve63nzhwt","kind":"open_escalation_issue","dry_run":true}}
+{"id":"ev_1n2m9r7t6fxfxxkyf","at":"2026-06-11T03:09:59.729330Z","run_id":"run_1n2m9r0mhzpjark43","event":"escalation_opened","subject":"pytorch/vision#9384","data":{"key":"social:pytorch/vision#9384","reason":"social","url":""}}
+{"id":"ev_1n2m9raq3t79jhvx5","at":"2026-06-11T03:10:02.462834Z","run_id":"run_1n2m9r0mhzpjark43","event":"case_reviewed","subject":"determined-ai/determined#10265","data":{"reason":"cla_blocking","detail":"verification/cla-signed"}}
+{"id":"ev_1n2m9raynpdmv8hbh","at":"2026-06-11T03:10:02.467281Z","run_id":"run_1n2m9r0mhzpjark43","event":"action_proposed","subject":"Mr-Neutr0n/oss-tracker","data":{"action_id":"act_1n2m9ra425qetfxhq","kind":"open_escalation_issue","rationale":"CLA check `verification/cla-signed` is blocking determined-ai/determined#10265. Sign once for the org; the harness retries after."}}
+{"id":"ev_1n2m9ra2e008jsjqg","at":"2026-06-11T03:10:02.475719Z","run_id":"run_1n2m9r0mhzpjark43","event":"action_executed","subject":"Mr-Neutr0n/oss-tracker","data":{"action_id":"act_1n2m9ra425qetfxhq","kind":"open_escalation_issue","dry_run":true}}
+{"id":"ev_1n2m9rarj8dbr9p0q","at":"2026-06-11T03:10:02.475896Z","run_id":"run_1n2m9r0mhzpjark43","event":"escalation_opened","subject":"determined-ai","data":{"key":"cla_signature:determined-ai","reason":"cla_signature","url":""}}
+{"id":"ev_1n2m9rdj63amvdab1","at":"2026-06-11T03:10:05.190721Z","run_id":"run_1n2m9r0mhzpjark43","event":"case_reviewed","subject":"sphinx-doc/sphinx#14303","data":{"reason":"ci_failed","detail":""}}
+{"id":"ev_1n2m9rd0z41w7z6kv","at":"2026-06-11T03:10:05.191682Z","run_id":"run_1n2m9r0mhzpjark43","event":"ci_observed","subject":"sphinx-doc/sphinx#14303","data":{"status":"ci_failed"}}
+{"id":"ev_1n2m9rdtbnkzmb92d","at":"2026-06-11T03:10:05.192092Z","run_id":"run_1n2m9r0mhzpjark43","event":"run_finished","subject":"steward","data":{"outcome":"ok"}}
+{"id":"ev_1n2m9rq5mfswkq9mg","at":"2026-06-11T03:10:15.288250Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"run_started","subject":"contribute","data":{"dry_run":true}}
+{"id":"ev_1n2m9rqjpmqapw6ph","at":"2026-06-11T03:10:15.825646Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"candidate_claimed","subject":"yarsa/nepal-compliance#265","data":{}}
+{"id":"ev_1n2m9rt79yh4kfe1n","at":"2026-06-11T03:10:18.594938Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"preflight_passed","subject":"yarsa/nepal-compliance","data":{"reasons":[]}}
+{"id":"ev_1n2m9rvh8r9gp8jw3","at":"2026-06-11T03:10:19.218023Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"contribution_started","subject":"yarsa/nepal-compliance#265","data":{}}
+{"id":"ev_1n2m9rvzqwb0j43ns","at":"2026-06-11T03:10:19.820559Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"candidate_claimed","subject":"razbuild/raztint#9","data":{}}
+{"id":"ev_1n2m9rxqaba9bvq6v","at":"2026-06-11T03:10:21.538670Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"preflight_passed","subject":"razbuild/raztint","data":{"reasons":[]}}
+{"id":"ev_1n2m9ryt6ef87wp3v","at":"2026-06-11T03:10:22.059817Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"contribution_started","subject":"razbuild/raztint#9","data":{}}
+{"id":"ev_1n2m9ry1ma4dpre80","at":"2026-06-11T03:10:22.540558Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"candidate_claimed","subject":"doronz88/pymobiledevice3#1669","data":{}}
+{"id":"ev_1n2m9s0ydrrzet1gw","at":"2026-06-11T03:10:24.340395Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"preflight_passed","subject":"doronz88/pymobiledevice3","data":{"reasons":[]}}
+{"id":"ev_1n2m9s1kd8mr32ack","at":"2026-06-11T03:10:25.190962Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"contribution_started","subject":"doronz88/pymobiledevice3#1669","data":{}}
+{"id":"ev_1n2m9s157s55q0tzr","at":"2026-06-11T03:10:25.660348Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"candidate_claimed","subject":"SimplexLab/TorchJD#667","data":{}}
+{"id":"ev_1n2m9s3t6wrr0p4pr","at":"2026-06-11T03:10:27.594937Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"preflight_passed","subject":"SimplexLab/TorchJD","data":{"reasons":[]}}
+{"id":"ev_1n2m9s4qn147680cb","at":"2026-06-11T03:10:28.565552Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"contribution_started","subject":"SimplexLab/TorchJD#667","data":{}}
+{"id":"ev_1n2m9s5dse6eas7aj","at":"2026-06-11T03:10:29.034437Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"candidate_claimed","subject":"Scottcjn/rustchain-bounties#728","data":{}}
+{"id":"ev_1n2m9s6qp48dzjmxm","at":"2026-06-11T03:10:30.688168Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"preflight_blocked","subject":"Scottcjn/rustchain-bounties","data":{"reasons":["NO_LICENSE"]}}
+{"id":"ev_1n2m9s6mg40r1rkqv","at":"2026-06-11T03:10:30.688767Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"candidate_rejected","subject":"Scottcjn/rustchain-bounties#728","data":{"reason":"NO_LICENSE"}}
+{"id":"ev_1n2m9s7gec4mgkp73","at":"2026-06-11T03:10:31.197646Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"candidate_claimed","subject":"OpenHands/OpenHands#11938","data":{}}
+{"id":"ev_1n2m9s8m3wqgptmbj","at":"2026-06-11T03:10:32.939746Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"preflight_passed","subject":"OpenHands/OpenHands","data":{"reasons":[]}}
+{"id":"ev_1n2m9sb9kha2y6a3t","at":"2026-06-11T03:10:35.233672Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"contribution_started","subject":"OpenHands/OpenHands#11938","data":{}}
+{"id":"ev_1n2m9sbtknpkv99xm","at":"2026-06-11T03:10:35.665448Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"candidate_claimed","subject":"agentscope-ai/agentscope#1680","data":{}}
+{"id":"ev_1n2m9sdybcee77egb","at":"2026-06-11T03:10:37.578366Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"preflight_passed","subject":"agentscope-ai/agentscope","data":{"reasons":[]}}
+{"id":"ev_1n2m9sem7vansfm70","at":"2026-06-11T03:10:38.887728Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"contribution_started","subject":"agentscope-ai/agentscope#1680","data":{}}
+{"id":"ev_1n2m9sftxg14546v4","at":"2026-06-11T03:10:39.328460Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"candidate_claimed","subject":"agentscope-ai/agentscope#1679","data":{}}
+{"id":"ev_1n2m9sh8ncsm8n06c","at":"2026-06-11T03:10:41.630095Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"preflight_passed","subject":"agentscope-ai/agentscope","data":{"reasons":[]}}
+{"id":"ev_1n2m9skcg6j2rjr7n","at":"2026-06-11T03:10:43.014709Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"contribution_started","subject":"agentscope-ai/agentscope#1679","data":{}}
+{"id":"ev_1n2m9skda7mdm7tb4","at":"2026-06-11T03:10:43.466453Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"candidate_claimed","subject":"agentscope-ai/agentscope#1685","data":{}}
+{"id":"ev_1n2m9sntpjt4m3nmw","at":"2026-06-11T03:10:45.260637Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"preflight_passed","subject":"agentscope-ai/agentscope","data":{"reasons":[]}}
+{"id":"ev_1n2m9spe7senev6sw","at":"2026-06-11T03:10:46.650258Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"contribution_started","subject":"agentscope-ai/agentscope#1685","data":{}}
+{"id":"ev_1n2m9spwr9b7b57qm","at":"2026-06-11T03:10:46.651312Z","run_id":"run_1n2m9rq8ghc16c9tx","event":"run_finished","subject":"contribute","data":{"outcome":"ok"}}

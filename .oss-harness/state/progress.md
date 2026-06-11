@@ -1747,3 +1747,8 @@ New candidates:
 - Issues added: 0
 - Deduped: 1
 - Dry run: False
+
+## 2026-06-11 — 0.3.0: full rewrite as harness/ package
+- Implemented docs/DOMAIN_MODEL.md end-to-end: event-sourced ledger, decide/act split (ActionValidator + Executor), reputation standing, NudgePolicy, patch guardrails, direct-HTTP model chain (opencode CLI removed), env-scrubbed verification, escalation issues with blocking scopes.
+- Replaced 3 workflows with 4 (Contribute/Steward/Discover/Heartbeat): odd-minute crons, shared concurrency group, union-merge state commits if: always().
+- Migrated legacy queue (161 queued, 41 done) into ledger. 89 unit tests green. Dry-runs verified live: discovery queued 10, steward correctly escalated a CLA block (determined-ai) and a maintainer reply (pytorch/vision), contribute preflight blocked an unlicensed repo.

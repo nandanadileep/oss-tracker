@@ -1,0 +1,55 @@
+name: Contribute
+
+on:
+  schedule:
+    - cron: "41 4 * * *"
+  workflow_dispatch:
+    inputs:
+      max_prs:
+        description: "Max PRs to open"
+        default: "5"
+      dry_run:
+        description: "Dry run (no writes)"
+        default: "false"
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: oss-harness
+  cancel-in-progress: false
+
+jobs:
+  contribute:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # target repos' test suites may need these (env-scrubbed when they run)
+      - uses: oven-sh/setup-bun@v2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Run contributor
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
+          PYTHONUNBUFFERED: "1"
+        run: |
+          python3 -m harness.apps.contribute \
+            --max-prs "${{ github.event.inputs.max_prs || '5' }}" \
+            $([ "${{ github.event.inputs.dry_run }}" = "true" ] && echo --dry-run)
+
+      - name: Commit state
+        if: always()
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: bash scripts/commit-state.sh contribute

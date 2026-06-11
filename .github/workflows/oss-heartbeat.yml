@@ -1,0 +1,28 @@
+name: Heartbeat
+
+# The watchdog that watches the watchers. Deliberately OUTSIDE the
+# oss-harness concurrency group: it must run even when a main job is stuck.
+on:
+  schedule:
+    - cron: "53 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  heartbeat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check pulse
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: python3 -m harness.apps.heartbeat

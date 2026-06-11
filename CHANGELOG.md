@@ -2,6 +2,30 @@
 
 All notable changes to this harness are documented here. Format: semver-ish, date-stamped.
 
+## 0.3.0 — 2026-06-11
+
+Full rewrite as the `harness/` package implementing `docs/DOMAIN_MODEL.md`.
+
+- **Decide/act separation**: all external writes go through `ProposedAction` →
+  deterministic `ActionValidator` (rate caps, burst window, lint, secret scan,
+  relationship standing, idempotency) → `Executor`. The model never holds writes.
+- **Event-sourced state**: `.oss-harness/state/ledger.jsonl` is the source of
+  truth; queue/relationships/budgets are folds. Legacy queue.json migrated
+  (161 queued + 41 done) via `scripts/migrate-legacy-state.py`.
+- **Direct-HTTP model chain** (`harness/model.py`) replaces the opencode CLI:
+  anonymous Zen free tier (no API key — verified live), 524→125s backoff,
+  429 Retry-After, compact-context timeout retry, fallback past rotated-away
+  free models, per-contribution budgets. Root cause of every New Contributor failure.
+- **Four workflows** replace three: Contribute (daily), Steward (daily),
+  Discover (weekly), Heartbeat (6h watchdog). Odd-minute crons, shared
+  concurrency group, union-merge state commits `if: always()`.
+- **Reputation model**: per-repo standing (virgin→welcomed/cooled/blocked),
+  stop-signal detection, NudgePolicy, AI-policy preflight, PR disclosure line.
+- **Safety**: env-scrubbed test execution in target repos, fork-only force-push
+  invariant, injection heuristics, deletion/truncation guardrails, escalation
+  issues (`needs-human`) with blocking scopes — CLA et al. come to Hari, nothing else does.
+- 89 unit tests (`pytest tests/`). Old `agent/*.py` scripts removed.
+
 ## 0.2.0 — 2026-06-02
 
 Second session. Switched from "nudge only" to "do the work" mode per user request.
