@@ -21,6 +21,8 @@ import os
 import time
 import urllib.error
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import TimeoutError as FutureTimeout
 from dataclasses import dataclass, field
 
 from .config import ModelEndpoint
@@ -132,7 +134,7 @@ class ProviderChain:
                 "seed": 42 + attempt,
             }
             t0 = self.clock()
-            status, raw = self.transport(ep, payload)
+            status, raw = self._call_with_deadline(ep, payload)
             elapsed = self.clock() - t0
             if budget:
                 budget.charge(elapsed)
@@ -177,6 +179,23 @@ class ProviderChain:
             else:
                 raise ModelUnavailable(f"unexpected status {status}")
         raise ModelUnavailable("attempts exhausted")
+
+    def _call_with_deadline(self, ep: ModelEndpoint, payload: dict) -> tuple[int, str]:
+        """Hard wall-clock deadline around the transport.
+
+        urllib's timeout is socket-INACTIVITY, not wall-clock: a server that
+        drips keepalives holds urlopen open forever (observed in CI — a model
+        call sat 12+ min with a 240s 'timeout'). The future may leak a thread;
+        the chain moving on matters more than the thread.
+        """
+        pool = ThreadPoolExecutor(max_workers=1)  # no `with`: __exit__ would
+        future = pool.submit(self.transport, ep, payload)  # block on the hung thread
+        try:
+            return future.result(timeout=ep.timeout_s + 30)
+        except FutureTimeout:
+            return 0, f"wall-clock deadline {ep.timeout_s + 30}s exceeded"
+        finally:
+            pool.shutdown(wait=False)
 
     @staticmethod
     def _note(ep: ModelEndpoint, msg: str) -> None:

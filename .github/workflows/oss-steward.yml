@@ -32,6 +32,16 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Gateway probe
+        run: |
+          curl -m 30 -sS -o /dev/null \
+            -w "gateway probe: HTTP %{http_code} connect=%{time_connect}s total=%{time_total}s\n" \
+            -X POST https://opencode.ai/zen/v1/chat/completions \
+            -H 'Content-Type: application/json' \
+            -H 'User-Agent: oss-harness/0.4 (github.com/Mr-Neutr0n/oss-tracker)' \
+            -d '{"model":"big-pickle","messages":[{"role":"user","content":"Reply OK"}],"max_tokens":5}' \
+            || echo "gateway probe: FAILED"
+
       - name: Run steward
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}

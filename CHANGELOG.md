@@ -2,6 +2,27 @@
 
 All notable changes to this harness are documented here. Format: semver-ish, date-stamped.
 
+## 0.4.0 — 2026-06-11
+
+The sandbox patch engine: a real coding agent instead of one-shot patches.
+
+- **Agent-in-sandbox engine** (`harness/sandbox.py`, primary): the opencode CLI
+  runs agentically inside the cloned fork — reads real files, edits in place,
+  runs tests — like Claude Code in a local checkout. Scrubbed env, isolated
+  config, 15-min cap, zero GitHub access; its git diff passes the same gates
+  (`patch.validate_worktree`) before commit/push/PR. One-shot pipeline stays
+  as fallback (`--engine auto|sandbox|oneshot`).
+- **Wall-clock deadline on model calls**: urllib timeouts are socket-inactivity
+  only — a CI call sat 12+ min past its "240s timeout" while the server dripped
+  keepalives. Every transport call now runs under a hard deadline.
+- **Gateway probe step** in Contribute/Steward: timed curls at run start make
+  runner→gateway latency visible in every log.
+- **Bench-ordered model chain**: big-pickle 19s pass, north-mini-code 6s pass,
+  deepseek-flash 49s, nemotron 52s; mimo dropped (failed output contract).
+- Stage-by-stage progress streaming; `--only owner/repo#N` targeted test runs;
+  dry-runs no longer satisfy the same-day re-run guard.
+- 105 unit tests.
+
 ## 0.3.0 — 2026-06-11
 
 Full rewrite as the `harness/` package implementing `docs/DOMAIN_MODEL.md`.

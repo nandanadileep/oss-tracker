@@ -17,6 +17,9 @@ on:
       only:
         description: "Process exactly this candidate (owner/repo#N)"
         default: ""
+      engine:
+        description: "Patch engine (auto/sandbox/oneshot)"
+        default: "auto"
 
 permissions:
   contents: write
@@ -43,6 +46,26 @@ jobs:
         with:
           node-version: "22"
 
+      - name: Install opencode (sandbox engine)
+        run: |
+          curl -fsSL https://opencode.ai/install | bash
+          echo "$HOME/.opencode/bin" >> $GITHUB_PATH
+          "$HOME/.opencode/bin/opencode" --version
+
+      - name: Gateway probe
+        run: |
+          # quantify runner -> Zen gateway latency in the first seconds of every
+          # run, so model slowness is never a mystery again. Informational only.
+          for i in 1 2; do
+            curl -m 30 -sS -o /dev/null \
+              -w "gateway probe $i: HTTP %{http_code} connect=%{time_connect}s total=%{time_total}s\n" \
+              -X POST https://opencode.ai/zen/v1/chat/completions \
+              -H 'Content-Type: application/json' \
+              -H 'User-Agent: oss-harness/0.4 (github.com/Mr-Neutr0n/oss-tracker)' \
+              -d '{"model":"big-pickle","messages":[{"role":"user","content":"Reply OK"}],"max_tokens":5}' \
+              || echo "gateway probe $i: FAILED"
+          done
+
       - name: Run contributor
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
@@ -52,6 +75,7 @@ jobs:
         run: |
           python3 -m harness.apps.contribute \
             --max-prs "${{ github.event.inputs.max_prs || '5' }}" \
+            --engine "${{ github.event.inputs.engine || 'auto' }}" \
             $([ "${{ github.event.inputs.dry_run }}" = "true" ] && echo --dry-run) \
             $([ "${{ github.event.inputs.force }}" = "true" ] && echo --force) \
             $([ -n "${{ github.event.inputs.only }}" ] && echo --only "${{ github.event.inputs.only }}")

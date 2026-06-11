@@ -7,7 +7,8 @@ Implements docs/DOMAIN_MODEL.md. Layout mirrors the bounded contexts:
                  RepoRelationship, Escalation
     config.py    hard stops & tunables (.oss-harness/config.json)
     policy.py    preflight, lint, ActionValidator — the deterministic gates
-    patch.py     PatchPlan: parse → validate → fuzzy-apply, guardrails
+    sandbox.py   primary patch engine: agent session in the worktree
+    patch.py     diff gates for both engines; one-shot parse/fuzzy-apply
     model.py     ProviderChain: direct-HTTP LLM calls, retry matrix, budgets
     gh.py        GitHub adapter (gh CLI), pacing, fork lifecycle, CI rollup
     verify.py    local test execution, env scrubbing, baseline deltas

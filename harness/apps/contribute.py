@@ -15,6 +15,7 @@ from pathlib import Path
 
 from .. import gh as github
 from .. import patch as patching
+from .. import sandbox
 from ..domain import (Contribution, ContributionState, Escalation,
                       EscalationReason)
 from ..events import Ev
@@ -108,7 +109,29 @@ def _say(subject: str, msg: str) -> None:
     print(f"[contribute]   {subject}: {msg}", flush=True)
 
 
-def process_candidate(ctx, cand, chain: ProviderChain, patterns, workdir: Path) -> str:
+def _engine_sandbox(ctx, subject: str, cand, repo_path: Path, issue: dict,
+                    patterns) -> tuple[str, set[str]]:
+    """Primary engine: real agent session in the worktree, then diff gates."""
+    res = sandbox.run_agent(repo_path, cand.repo, issue, say=_say_raw)
+    try:
+        flags = patching.validate_worktree(
+            repo_path, res.files, patterns,
+            max_files=ctx.cfg.limits.max_files_changed,
+            max_lines=ctx.cfg.limits.max_lines_changed)
+    except patching.PatchError:
+        sandbox.rollback(repo_path)
+        raise
+    ctx.ledger.append(Ev.PATCH_APPLIED, subject, engine="sandbox", files=res.files)
+    _say(subject, f"sandbox diff accepted ({', '.join(res.files)})")
+    return res.summary, flags
+
+
+def _say_raw(msg, **kwargs):
+    print(msg, flush=True)
+
+
+def process_candidate(ctx, cand, chain: ProviderChain, patterns, workdir: Path,
+                      engine: str = "auto") -> str:
     """Returns a short outcome string for the report."""
     cfg, ledger, ex = ctx.cfg, ctx.ledger, ctx.executor
     contrib = Contribution(repo=cand.repo, issue_number=cand.issue_number)
@@ -172,47 +195,67 @@ def process_candidate(ctx, cand, chain: ProviderChain, patterns, workdir: Path) 
     baseline = run_tests(repo_path)  # §5 baseline rule
     _say(subject, f"baseline: {baseline.outcome}")
 
-    # patch loop
-    feedback, plan, applied = "", None, []
-    for attempt in range(MAX_PATCH_ATTEMPTS):
-        cap = COMPACT_CHARS if attempt else CONTEXT_CHARS
-        context = collect_context(repo_path, issue, cap)
-        prompt = build_prompt(issue, context, feedback)
-        compact = build_prompt(issue, context[:COMPACT_CHARS], feedback)
-        try:
-            _say(subject, f"model patch attempt {attempt + 1}/{MAX_PATCH_ATTEMPTS} "
-                          f"({len(prompt)} chars)")
-            output = chain.complete(prompt, purpose="patch", subject=subject,
-                                    budget=budget, compact_prompt=compact)
-        except BudgetExceeded as e:
-            ledger.append(Ev.BUDGET_EXHAUSTED, subject, detail=str(e))
-            ledger.append(Ev.CONTRIBUTION_ABANDONED, subject, reason="budget")
-            return "abandoned: budget"
-        try:
-            plan = patching.parse_output(output)
-            applied = patching.apply_plan(repo_path, plan, patterns,
-                                          max_files=cfg.limits.max_files_changed,
-                                          max_lines=cfg.limits.max_lines_changed)
-            ledger.append(Ev.PATCH_APPLIED, subject, files=applied)
-            break
-        except patching.PatchError as e:
-            _say(subject, f"patch rejected: {e}")
-            feedback = f"Error: {e}\n\nYour previous response (first 2000 chars):\n{output[:2000]}"
-            ledger.append(Ev.PATCH_REJECTED, subject, attempt=attempt, error=str(e)[:200])
-            plan = None
-    if plan is None:
-        ledger.append(Ev.CONTRIBUTION_ABANDONED, subject, reason="patch_attempts_exhausted")
-        return "abandoned: no valid patch"
+    # ── patch engines: sandbox (primary) → one-shot (fallback) ──────────────
+    summary, commit_message, flags, test_commands = "", "", set(), []
+    engine_used = ""
 
-    if "touches_manifest" in plan.flags:
+    if engine in ("auto", "sandbox") and (sandbox.available() or engine == "sandbox"):
+        try:
+            summary, flags = _engine_sandbox(ctx, subject, cand, repo_path, issue, patterns)
+            engine_used = "sandbox"
+            commit_message = f"Fix #{cand.issue_number}: {(issue.get('title') or '')[:60]}"
+        except (sandbox.SandboxError, patching.PatchError) as e:
+            _say(subject, f"sandbox engine failed: {e}")
+            ledger.append(Ev.PATCH_REJECTED, subject, engine="sandbox", error=str(e)[:200])
+            if engine == "sandbox":
+                ledger.append(Ev.CONTRIBUTION_ABANDONED, subject, reason="sandbox_failed")
+                return "abandoned: sandbox engine failed"
+
+    if not engine_used:
+        feedback, plan = "", None
+        for attempt in range(MAX_PATCH_ATTEMPTS):
+            cap = COMPACT_CHARS if attempt else CONTEXT_CHARS
+            context = collect_context(repo_path, issue, cap)
+            prompt = build_prompt(issue, context, feedback)
+            compact = build_prompt(issue, context[:COMPACT_CHARS], feedback)
+            try:
+                _say(subject, f"model patch attempt {attempt + 1}/{MAX_PATCH_ATTEMPTS} "
+                              f"({len(prompt)} chars)")
+                output = chain.complete(prompt, purpose="patch", subject=subject,
+                                        budget=budget, compact_prompt=compact)
+            except BudgetExceeded as e:
+                ledger.append(Ev.BUDGET_EXHAUSTED, subject, detail=str(e))
+                ledger.append(Ev.CONTRIBUTION_ABANDONED, subject, reason="budget")
+                return "abandoned: budget"
+            try:
+                plan = patching.parse_output(output)
+                applied = patching.apply_plan(repo_path, plan, patterns,
+                                              max_files=cfg.limits.max_files_changed,
+                                              max_lines=cfg.limits.max_lines_changed)
+                ledger.append(Ev.PATCH_APPLIED, subject, engine="oneshot", files=applied)
+                break
+            except patching.PatchError as e:
+                _say(subject, f"patch rejected: {e}")
+                feedback = f"Error: {e}\n\nYour previous response (first 2000 chars):\n{output[:2000]}"
+                ledger.append(Ev.PATCH_REJECTED, subject, attempt=attempt, error=str(e)[:200])
+                plan = None
+        if plan is None:
+            ledger.append(Ev.CONTRIBUTION_ABANDONED, subject, reason="patch_attempts_exhausted")
+            return "abandoned: no valid patch"
+        engine_used = "oneshot"
+        summary, flags = plan.summary, plan.flags
+        commit_message = plan.commit_message
+        test_commands = plan.test_commands
+
+    if "touches_manifest" in flags:
         ex.escalate(Escalation(EscalationReason.NEW_DEPENDENCY, subject,
                                f"Patch for {subject} edits a dependency manifest; needs approval."))
         ledger.append(Ev.CONTRIBUTION_ESCALATED, subject, reason="new_dependency")
         return "escalated: new dependency"
 
     contrib = contrib.advance(ContributionState.PATCHED)
-    _say(subject, f"patch applied ({', '.join(applied)}); verifying")
-    result = delta(baseline, run_tests(repo_path, plan.test_commands or detect_commands(repo_path)))
+    _say(subject, f"verifying ({engine_used} engine)")
+    result = delta(baseline, run_tests(repo_path, test_commands or detect_commands(repo_path)))
     _say(subject, f"verification: {result.outcome}")
     ledger.append(Ev.VERIFICATION_RAN, subject, outcome=result.outcome, detail=result.detail[:300])
     if result.outcome == "failed":
@@ -221,7 +264,7 @@ def process_candidate(ctx, cand, chain: ProviderChain, patterns, workdir: Path) 
     contrib = contrib.advance(ContributionState.VERIFIED)
 
     github.commit_and_push(repo_path, branch,
-                           plan.commit_message or f"Fix #{cand.issue_number}: {issue.get('title', '')[:60]}",
+                           commit_message or f"Fix #{cand.issue_number}: {issue.get('title', '')[:60]}",
                            login=cfg.login, email=cfg.git_email, signoff=cfg.dco_authorized)
 
     verification_note = {"passed": "Local tests pass.",
@@ -229,10 +272,10 @@ def process_candidate(ctx, cand, chain: ProviderChain, patterns, workdir: Path) 
                          "infra_failure": "Local test infra unavailable in CI sandbox.",
                          "timeout": "Local test run timed out; relying on repo CI.",
                          }.get(result.outcome, "")
-    body = (f"Fixes #{cand.issue_number}\n\n{plan.summary or 'Minimal fix for the linked issue.'}\n\n"
+    body = (f"Fixes #{cand.issue_number}\n\n{summary or 'Minimal fix for the linked issue.'}\n\n"
             f"{verification_note}\n\n---\n{cfg.disclosure}")
     action = ex.propose("open_pr", cand.repo, cand.issue_number,
-                        rationale=plan.summary[:200],
+                        rationale=(summary or "fix")[:200],
                         head=f"{cfg.login}:{branch}", base=facts.default_branch,
                         title=f"Fix #{cand.issue_number}: {(issue.get('title') or '')[:70]}",
                         body=body, draft=(result.outcome != "passed"))
@@ -251,6 +294,8 @@ def main(argv=None) -> int:
     ap.add_argument("--force", action="store_true", help="ignore same-day re-run guard")
     ap.add_argument("--only", default="", metavar="OWNER/REPO#N",
                     help="process exactly this candidate (testing); implies --force")
+    ap.add_argument("--engine", choices=("auto", "sandbox", "oneshot"), default="auto",
+                    help="patch engine: sandbox agent (primary), one-shot (fallback)")
     args = ap.parse_args(argv)
 
     with harness_run("contribute", dry_run=args.dry_run) as ctx:
@@ -288,7 +333,8 @@ def main(argv=None) -> int:
                     continue  # escalation blocking scope (§9)
                 attempted += 1
                 try:
-                    outcome = process_candidate(ctx, cand, chain, patterns, Path(tmp))
+                    outcome = process_candidate(ctx, cand, chain, patterns, Path(tmp),
+                                                engine=args.engine)
                 except ChainExhausted:
                     print("[contribute] model chain exhausted; ending batch", file=sys.stderr)
                     break

@@ -1,4 +1,10 @@
-"""PatchPlan: parse model output → validate → fuzzy-apply, transactionally.
+"""Patch validation and application — both engines funnel through here.
+
+Two entry points:
+  - apply_plan():        the one-shot fallback engine — parse model text,
+                         fuzzy-locate, apply transactionally.
+  - validate_worktree(): the sandbox engine — an agent already edited the
+                         repo; validate its git diff with the SAME gates.
 
 Owns every patch edge case in DOMAIN_MODEL.md §5: forbidden paths, traversal,
 binary files, EOL preservation, ambiguous matches, deletion guardrails,
@@ -8,6 +14,7 @@ truncation artefacts, secret-introducing diffs, full rollback on any failure.
 from __future__ import annotations
 
 import re
+import subprocess
 from dataclasses import dataclass, field
 from difflib import SequenceMatcher
 from pathlib import Path
@@ -242,3 +249,48 @@ def apply_plan(repo_root: Path, plan: PatchPlan, secret_patterns,
             _write(repo_root / rel, changed[rel][0])
         raise PatchError("write failed; rolled back")
     return sorted(changed)
+
+
+# ── worktree validation (sandbox engine) ───────────────────────────────────
+
+def _git_show_head(repo_path: Path, rel: str) -> str:
+    r = subprocess.run(["git", "-C", str(repo_path), "show", f"HEAD:{rel}"],
+                       capture_output=True, text=True, timeout=60)
+    return r.stdout if r.returncode == 0 else ""  # new file -> empty baseline
+
+
+def validate_worktree(repo_path: Path, files: list[str], secret_patterns,
+                      *, max_files: int = 6, max_lines: int = 300) -> set[str]:
+    """Validate an agent-edited worktree with the same gates as apply_plan.
+
+    Returns flags (e.g. {"touches_manifest"}). Raises PatchError on any
+    violation — the CALLER rolls the worktree back (sandbox.rollback) so a
+    rejected diff never reaches a commit.
+    """
+    repo_path = Path(repo_path)
+    if not files:
+        raise PatchError("worktree has no changes")
+    flags: set[str] = set()
+    changed: dict[str, tuple[str, str]] = {}
+
+    for rel in files:
+        target = validate_path(repo_path, rel)  # forbidden dirs/CI/locks/symlink/binary
+        old = _git_show_head(repo_path, rel)
+        if not target.exists():
+            if old.splitlines() and len(old.splitlines()) > HARD_DELETE_CAP:
+                raise PatchError(f"{rel}: agent deleted a {len(old.splitlines())}-line file")
+            new = ""
+        else:
+            with target.open(encoding="utf-8", errors="replace", newline="") as f:
+                new = f.read()
+        deletion_guardrail(rel, old, new)
+        added = "\n".join(set(new.splitlines()) - set(old.splitlines()))
+        hits = scan_secrets(added, secret_patterns)
+        if hits:
+            raise PatchError(f"{rel}: diff introduces secret-shaped content ({hits[0]})")
+        changed[rel] = (old, new)
+        if Path(rel).name in MANIFEST_NAMES:
+            flags.add("touches_manifest")
+
+    size_guardrail(PatchPlan(), changed, max_files, max_lines)
+    return flags

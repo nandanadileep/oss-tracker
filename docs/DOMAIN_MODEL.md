@@ -196,7 +196,27 @@ Edge cases the model must own (all hit in practice):
 
 **`BranchRef`** — `name` (`agent/issue-<n>-<slug>`; include slug so two issues never collide; *never* reuse a branch across contributions), `base_branch` (live-fetched default unless the issue/CONTRIBUTING says target `develop` etc. — nltk targets `develop`; we handle this), `base_sha` (pinned at branch time for reproducibility).
 
-**`PatchPlan`** — the model's proposed change, parsed from the structured output contract.
+**Patch engines.** Two engines produce the change; both funnel through the
+same deterministic gates before anything is committed:
+
+1. **`SandboxSession` (primary)** — a real coding agent (opencode CLI with
+   read/edit/bash tools) runs *inside* the cloned fork, exactly like running
+   Claude Code in a local checkout. The agent reads the actual files it needs,
+   edits in place, runs tests, iterates — a closed loop with ground truth, which
+   is why it beats one-shot generation. Containment:
+   - **scrubbed environment** (no PAT, no API keys — §2) and an isolated CLI
+     config via `OPENCODE_CONFIG` (anonymous Zen; never the operator's own config);
+   - **no GitHub access** — the agent can only mutate the local worktree;
+   - hard wall-clock cap (default 15 min); timeout or nonzero exit → full
+     `git checkout . && git clean -fd` rollback;
+   - its `git diff` is then validated by `validate_worktree()` — the same
+     forbidden-path / deletion / truncation / secret / size gates as the
+     one-shot engine, plus a deleted-large-file check. Rejection → rollback.
+   - the issue body is quoted in the prompt as untrusted data (§8).
+
+2. **`PatchPlan` (one-shot fallback)** — used when the agent CLI is unavailable
+   or its session fails. The model's proposed change, parsed from the
+   structured output contract:
 - `edits: list[Edit{path, kind: search_replace|full_file|create|delete, search, replace, confidence}]`
 - `summary`, `commit_message`, `test_commands`, `model_confidence (1-10)`
 - Validation gates (all deterministic, pre-apply):
@@ -274,9 +294,10 @@ healthy → needs_attention(reason) → acting → acted → healthy
 
 ### `ProviderChain` (value object)
 Ordered list of `ModelEndpoint{base_url, model_id, api_key_ref, timeout_s, max_tokens, cost_per_mtok}`.
-Default: `zen-gateway/qwen3.5-plus (direct OpenAI-compatible HTTP)` → `zen free alternates` → `paid fallback`.
-**Never the opencode CLI as a completion transport** — cold-boot overhead + opaque timeouts killed every New Contributor run. Direct HTTP, OpenAI SDK or stdlib.
-Free-tier models are promotional and rotate without notice → a `model_unavailable` (404/400 model-not-found) response triggers automatic chain advance + a `model-rotation` note in the run report; chain exhaustion → run degrades to **stewardship-read-only mode** (collect state, write report, open `needs-human` if it persists 48h) — never crash.
+Default (anonymous Zen free tier, bench-ordered): `big-pickle` (opencode's curated alias — re-pointed when promotions rotate, so it self-heals) → `north-mini-code-free` → `deepseek-v4-flash-free` → `nemotron-3-ultra-free`.
+**The CLI is never a completion transport** — one-shot text generation goes over direct HTTP. The CLI *is* used agentically, as the sandbox patch engine (§5), which is its intended mode.
+**Wall-clock deadline rule:** socket-level timeouts are inactivity timeouts — a server dripping keepalives holds the connection open forever (observed in CI: a "240s-timeout" call sat 12+ minutes). Every transport call runs under a hard wall-clock deadline (`timeout_s + 30`); breach → treated as timeout, chain logic proceeds.
+Free-tier models are promotional and rotate without notice → a `model_unavailable` (404/400 model-not-found, or 401 "promotion ended") response triggers automatic chain advance + a `model-rotation` note in the run report; chain exhaustion → run degrades to **stewardship-read-only mode** (collect state, write report, open `needs-human` if it persists 48h) — never crash.
 
 ### `ModelCall` (entity, journaled)
 `{purpose: triage|patch|pr_body|reply|classify, prompt_hash, endpoint, attempt, tokens_in/out, latency_ms, outcome, cost}`.
@@ -445,7 +466,9 @@ Each is handled in the section noted; this is the checklist for tests.
 
 **Git mechanics**: force-push only to own fork with `--force-with-lease` (§5) · CRLF/BOM/trailing-newline preservation (§5) · symlink/path-traversal edits rejected (§5) · partial-apply rollback (§5) · branch-name collisions (§5) · base pinned at `base_sha` (§5) · merge-conflict semantic vs trivial split (§5).
 
-**Model layer**: CLI transport banned — direct HTTP (§7) · 524/429/timeout retry matrix (§7) · free-model rotation → chain advance (§7) · truncation → deletion guardrails + compact retry (§5, §7) · prose-instead-of-patch → parse-error feedback loop (§7) · ambiguous search-block match (§5) · hallucinated paths (§5) · model-emitted secrets (§5) · prompt injection via issue/comment/code/CI-log content (§8) · per-contribution call/cost/time budgets (§7).
+**Model layer**: CLI as completion transport banned; CLI as sandboxed agent is the primary engine (§5, §7) · socket-inactivity ≠ wall-clock — hard deadline wrapper on every transport call (§7) · Cloudflare blocks default urllib UA → honest custom UA (§7) · gateway probe step quantifies runner→gateway latency at the top of every run · 524/429/timeout retry matrix (§7) · free-model rotation → chain advance (§7) · truncation → deletion guardrails + compact retry (§5, §7) · prose-instead-of-patch → parse-error feedback loop (§7) · ambiguous search-block match (§5) · hallucinated paths — one-shot only; the sandbox agent reads real files (§5) · model-emitted secrets (§5) · prompt injection via issue/comment/code/CI-log content (§8) · per-contribution call/cost/time budgets (§7).
+
+**Sandbox engine**: agent session timeout → rollback (§5) · nonzero exit → rollback (§5) · zero-change session → error, fall back to one-shot (§5) · agent deletes a large file → diff gate rejects (§5) · isolated CLI config via env, operator config untouched (§5) · scrubbed env: agent and any code it runs never see credentials (§2, §5).
 
 **Verification**: infra-failure ≠ test-failure (§5) · pre-existing baseline failures (§5) · no-tests = pass-with-disclosure (§5) · flaky CI classification (§5) · env-scrubbed subprocesses for untrusted code (§2) · global verification time budget (§5).
 
