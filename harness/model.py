@@ -62,7 +62,7 @@ def _http_transport(endpoint: ModelEndpoint, payload: dict) -> tuple[int, str]:
     headers = {
         "Content-Type": "application/json",
         # Cloudflare blocks urllib's default UA (error 1010); identify honestly
-        "User-Agent": "oss-harness/0.3 (github.com/Mr-Neutr0n/oss-tracker)",
+        "User-Agent": "oss-harness/0.3 (github.com/nandanadileep/oss-tracker)",
     }
     key = os.environ.get(endpoint.api_key_env, "") if endpoint.api_key_env else ""
     if key:

@@ -44,9 +44,9 @@ class ModelEndpoint:
 
 @dataclass(frozen=True)
 class Config:
-    login: str = "Mr-Neutr0n"
-    git_email: str = "64578610+Mr-Neutr0n@users.noreply.github.com"
-    tracker_repo: str = "Mr-Neutr0n/oss-tracker"
+    login: str = "nandanadileep"
+    git_email: str = "nandanadileep29@gmail.com"
+    tracker_repo: str = "nandanadileep/oss-tracker"
     dco_authorized: bool = True
     disclosure: str = (
         "This change was prepared with AI assistance under human direction and review."
@@ -66,7 +66,7 @@ class Config:
         ModelEndpoint("zen-nemotron", "https://opencode.ai/zen/v1", "nemotron-3-ultra-free"),
     )
     secret_patterns_file: str = f"{HARNESS_DIR}/lint/secret-patterns.txt"
-    exclude_owners: tuple[str, ...] = ("Mr-Neutr0n", "baby-ai-stealth")
+    exclude_owners: tuple[str, ...] = ("nandanadileep", "baby-ai-stealth")
 
     @property
     def state_dir(self) -> Path:

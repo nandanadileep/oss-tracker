@@ -69,7 +69,7 @@ jobs:
               -w "gateway probe $i: HTTP %{http_code} connect=%{time_connect}s total=%{time_total}s\n" \
               -X POST https://opencode.ai/zen/v1/chat/completions \
               -H 'Content-Type: application/json' \
-              -H 'User-Agent: oss-harness/0.4 (github.com/Mr-Neutr0n/oss-tracker)' \
+              -H 'User-Agent: oss-harness/0.4 (github.com/nandanadileep/oss-tracker)' \
               -d '{"model":"big-pickle","messages":[{"role":"user","content":"Reply OK"}],"max_tokens":5}' \
               || echo "gateway probe $i: FAILED"
           done

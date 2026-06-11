@@ -1,13 +1,13 @@
 {
   "version": "0.1.0",
   "user": {
-    "login": "Mr-Neutr0n",
-    "name": "Harikrishna KP",
-    "gh_cli_account": "Mr-Neutr0n"
+    "login": "nandanadileep",
+    "name": "Nandana Dileep",
+    "gh_cli_account": "nandanadileep"
   },
   "scope": {
     "include_owners": [],
-    "exclude_owners": ["Mr-Neutr0n", "baby-ai-stealth"],
+    "exclude_owners": ["nandanadileep", "baby-ai-stealth"],
     "include_forks": false
   },
   "limits": {

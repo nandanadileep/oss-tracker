@@ -7,10 +7,10 @@ set -euo pipefail
 
 LABEL="${1:-run}"
 
-git config user.email "64578610+Mr-Neutr0n@users.noreply.github.com"
-git config user.name "Mr-Neutr0n"
+git config user.email "nandanadileep29@gmail.com"
+git config user.name "nandanadileep"
 if [ -n "${GH_PAT:-}" ]; then
-  git remote set-url origin "https://x-access-token:${GH_PAT}@github.com/${GITHUB_REPOSITORY:-Mr-Neutr0n/oss-tracker}.git"
+  git remote set-url origin "https://x-access-token:${GH_PAT}@github.com/${GITHUB_REPOSITORY:-nandanadileep/oss-tracker}.git"
 fi
 
 git add -A .oss-harness/state/ .oss-harness/reports/ 2>/dev/null || true

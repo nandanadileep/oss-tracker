@@ -66,7 +66,7 @@ Three principles govern everything below:
 
 ### Entities
 
-**Operator** — Hari. Fields: `github_login` (Mr-Neutr0n), `email`, `signed_clas: list[ClaRecord]`, `dco_authorization: bool` (whether the agent may `git commit -s` on his behalf), `timezone`, `notification_channel`.
+**Operator** — You. Fields: `github_login` (nandanadileep), `email`, `signed_clas: list[ClaRecord]`, `dco_authorization: bool` (whether the agent may `git commit -s` on your behalf), `timezone`, `notification_channel`.
 
 **Credential** — a secret the harness uses.
 - `kind: GH_PAT | OPENCODE_API_KEY | FALLBACK_MODEL_KEY`
@@ -269,7 +269,7 @@ same deterministic gates before anything is committed:
 On `failed`: fetch logs, classify `caused_by_us | flaky | pre_existing | infra`. Only `caused_by_us` enters the fixing loop (≤ `max_fix_iterations`, default 3). `flaky` (matrix job timeout, network blip, same test green on re-run elsewhere) → wait for maintainer or re-request once if we have permission; never push noise commits to retrigger.
 
 ### Revision rules
-- Updating our own fork branch after rebase **requires `--force-with-lease` to our fork — this is allowed and necessary**. The invariant is precisely: *never force-push any ref outside `Mr-Neutr0n/*`*. (The old blanket "never force-push" rule breaks rebase workflows.)
+- Updating our own fork branch after rebase **requires `--force-with-lease` to our fork — this is allowed and necessary**. The invariant is precisely: *never force-push any ref outside `nandanadileep/*`*. (The old blanket "never force-push" rule breaks rebase workflows.)
 - Merge conflicts with base: rebase onto live base; conflicts the model can't resolve confidently (overlapping semantic changes) → `escalated(conflict_judgment)`.
 - `changes_requested` with contradictory feedback from two maintainers → `escalated(conflicting_review)`.
 - Review comments asking "why did you do X?" → the model may answer technically; anything about identity, motivation, employment, or AI usage → respond with the standard disclosure honestly; hostile threads → one polite reply max, then `escalated(social)`.

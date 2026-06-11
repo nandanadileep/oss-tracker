@@ -121,7 +121,7 @@ We take our `AGENTS.md` hard rules and turn them into code:
 | Rule | Implementation |
 |---|---|
 | Never bulk-act | Batch size hard-coded to 5 PRs max per run |
-| Never force-push upstream | `gh` CLI operations are read-only or comment-only; code pushes only to `Mr-Neutr0n/*` forks |
+| Never force-push upstream | `gh` CLI operations are read-only or comment-only; code pushes only to `nandanadileep/*` forks |
 | Comments after reading | `opencode` prompt includes the full PR context (comments, reviews, CI) before deciding |
 | One PR at a time | Sequential loop within the batch; no parallel PR execution |
 | Never re-open/un-close | Close action requires a specific `reason` field in the JSON output; blocked without it |

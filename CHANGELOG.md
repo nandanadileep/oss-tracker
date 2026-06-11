@@ -78,7 +78,7 @@ What changed in 0.2.0:
 
 ## 0.1.0 — 2026-06-01
 
-Initial scaffold. Bare-minimum harness for managing Hari's (@Mr-Neutr0n) open-source contribution backlog.
+Initial scaffold. Bare-minimum harness for managing open-source contribution backlog.
 
 What ships in 0.1.0:
 

@@ -54,7 +54,7 @@ def test_preflight_blocks_archived_unlicensed_forbidden(cfg):
 
 
 def test_preflight_blocks_excluded_owner_and_cooldown(cfg):
-    facts = RepoFacts("Mr-Neutr0n/own", license_spdx="MIT")
+    facts = RepoFacts("nandanadileep/own", license_spdx="MIT")
     assert "EXCLUDED_OWNER" in preflight(facts, None, cfg).reasons
     rel = RepoRelationship("o/r").apply(Signal.PR_CLOSED_UNMERGED, iso_now())
     rep = preflight(RepoFacts("o/r", license_spdx="MIT"), rel, cfg)

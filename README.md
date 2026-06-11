@@ -1,6 +1,6 @@
-# oss — Open-Source Contribution Harness for @Mr-Neutr0n (Hari)
+# oss — Open-Source Contribution Harness for @nandanadileep
 
-This folder is the **single source of truth** for Hari's open-source contribution work — a place where the 218 open PRs, 155 closed PRs, 233 external repos, the maintainer relationships, the lint rules that keep new contributions clean, and the security scanners that pre-flight any code we read, all live together.
+This folder is the **single source of truth** for your open-source contribution work — a place where your open PRs, closed PRs, external repos, maintainer relationships, lint rules, and security scanners all live together.
 
 It is not a product. It is a **harness for working on OSS contributions**, deliberately small.
 

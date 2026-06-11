@@ -4,7 +4,7 @@
 
 ## What this folder is
 
-`oss/` is **Hari's (@Mr-Neutr0n) personal open-source contribution harness**. It tracks his 218 open PRs and 155 closed PRs across 233 external repos. It is not a product. It is a control room for staying a good OSS citizen.
+`oss/` is **your personal open-source contribution harness**. It tracks your open PRs and closed PRs across external repos. It is not a product. It is a control room for staying a good OSS citizen.
 
 ## Where to look
 
